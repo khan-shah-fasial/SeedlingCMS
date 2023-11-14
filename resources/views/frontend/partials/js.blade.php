@@ -2,6 +2,10 @@
 <script src="/assets/frontend/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/frontend/js/jquery.min.js"></script>
 
+<!---- seedling banner --------->
+<script src="/assets/frontend/js/combined.js"></script>
+<!---- seedling banner --------->
+
 <!--aos js-->
 <script src="/assets/frontend/js/aos.js"></script>
 

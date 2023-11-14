@@ -11,52 +11,27 @@
 
 </head>
 
-<body>
-
-    <!----=========topbar=========----->
-
-    @include('frontend.partials.topbar')
-
-    <!----=========End topbar=========----->
+<body id="index">
 
 
 
+    <!---========Header======----->
 
+        @include('frontend.partials.header')
 
-    <div class="mian_secrtion">
-        <div class="container">
-            <div class="row">
+    <!---========end Header======----->
 
-                <!---========sidebar======----->
+    <!---======== page content ====-------->
 
-                @include('frontend.partials.sidebar')
+        @yield('page.content')
 
-                <!---========end sidebar======----->
+    <!---======== page content ===== -------->
 
-                <div class="col-lg-10 col-12 pd-0">
+    <!-----------------------Footer Start------------------------------------------->
 
-                    <!---========Header======----->
+        @include('frontend.partials.footer')
 
-                    @include('frontend.partials.header')
-
-                    <!---========end Header======----->
-
-                    <!---======== page content ====-------->
-
-                    @yield('page.content')
-
-                    <!---======== page content ===== -------->
-
-                    <!--------------------------Footer Start---------------------------------------------------------->
-
-                    @include('frontend.partials.footer')
-
-                    <!--Footer Ends-->
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--Footer Ends-->
 
 
     <!--javascript-->
