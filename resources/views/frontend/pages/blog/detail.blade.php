@@ -1,8 +1,12 @@
 @extends('frontend.layouts.app')
 
 @php
-$url = request()->segment('1');
-$page = DB::table('blog_categories')->where('slug', $url)->first();
+    $url = request()->segment('1');
+    $page = DB::table('blog_categories')
+        ->where('slug', $url)
+        ->first();
+    $count = count($author);
+    $i = 1;
 @endphp
 
 @section('page.title', "$detail->meta_title")
@@ -14,9 +18,9 @@ $page = DB::table('blog_categories')->where('slug', $url)->first();
 @section('page.publish_time', "$detail->updated_at")
 
 @section('page.schema')
-<!--------------------------- Page Schema --------------------------------->
+    <!--------------------------- Page Schema --------------------------------->
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org/", 
       "@type": "BreadcrumbList", 
@@ -39,8 +43,8 @@ $page = DB::table('blog_categories')->where('slug', $url)->first();
     }
 </script>
 
-@if($page->name != 'Deal Update' )
-<script type="application/ld+json">
+    @if ($page->name != 'Deal Update')
+        <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "{{ $page->name }}Posting",
@@ -48,12 +52,16 @@ $page = DB::table('blog_categories')->where('slug', $url)->first();
         "@type": "WebPage",
         "@id": "{{ url()->current() }}"
       },
-      "headline": "@php echo str_replace('&nbsp;',' ',htmlspecialchars_decode ($detail->title)); @endphp",
-      "description": "@php echo str_replace('&nbsp;',' ',htmlspecialchars_decode ($detail->short_description)); @endphp",
+      "headline": "{{ strip_tags(htmlspecialchars_decode($detail->title)) }}",
+      "description": "{{ strip_tags(htmlspecialchars_decode($detail->short_description)) }}",
       "image": "{{ asset('storage/' . $detail->main_image) }}",  
       "author": {
         "@type": "Person",
-        "name": "{{ $author->name }}",
+        "name": [
+          @foreach ($author as $row) @php $author_name = DB::table('users')->where('id', $row)->first(); @endphp
+            "{{ $author_name->name }}",
+          @endforeach
+        ],
         "url": "{{ url('') }}/"
       },  
       "publisher": {
@@ -67,235 +75,263 @@ $page = DB::table('blog_categories')->where('slug', $url)->first();
       "datePublished": "{{ $detail->updated_at }}"
     }
 </script>
-@endif
-    
-<!--------------------------- Page Schema end--------------------------------->
+    @endif
+
+    <!--------------------------- Page Schema end--------------------------------->
 @endsection
 
 @section('page.content')
 
-<!-------================ blog detail start ============ ------------>
+    <!-------================ blog detail start ============ ------------>
 
 
-<!-- -------------------- blog details banner start ---------------- -->
+    <!--Blog Details Banner start-->
+    <section class="blog_d_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="heading text-center">
+                        {{ $detail->title }}
+                    </h1>
 
-<div class="blog_details_page_banner">
-    <img src="{{ asset('storage/' . $detail->main_image) }}" alt="{{ $detail->alt_main_image }}" />
-
-</div>
-
-<!-- -------------------- blog details banner end   ---------------- -->
-
-<!-- -------------------- blog details breadcrumb start ---------------- -->
-
-<section class="blog_details_page_breadcrumb">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 px0">
-                <ul class="d-flex align-items-center gap-3 list-unstyled" data-aos="fade-up" data-aos-once="true">
-                    <li>
-                        <a href="{{ url(route('index')) }}" class="text-decoration-none" data-aos="fade-up"
-                            data-aos-once="true">Home</a>
-                    </li>
-                    <li>></li>
-                    <li>
-                        <a href="{{ url(route(''. $url.'')) }}" class="text-decoration-none" data-aos="fade-up"
-                            data-aos-once="true">
-                            {{ ucfirst($page->name) }}
-                        </a>
-                    </li>
-                    <li>></li>
-                    <li>{{ $detail->title }}</li>
-                </ul>
-            </div>
-            <div class="col-md-4 px0">
-                <div class="d-flex align-items-center justify-content-md-end gap-4">
-                    <p class="d-flex align-items-center gap-2 author" data-aos="fade-up" data-aos-once="true">
-                        <img src="/assets/frontend/images/author.png" alt="" />
-                        <span>{{ $author->name }}</span>
-                    </p>
-                    <p class="d-flex align-items-center gap-2 author" data-aos="fade-up" data-aos-once="true">
-                        <img src="/assets/frontend/images/calender.png" alt="" />
-                        <span>{{ $detail->created_at->format('F j, Y') }}</span>
-                    </p>
+                    <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item active"><a href="{{ url(route('index')) }}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <a href="{{ url(route('blog')) }}">Blogs</a>
+                            </li>
+                            <li class="breadcrumb-item home" aria-current="page">
+                                {{ $detail->title }}
+                            </li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
-</section>
-
-<!-- -------------------- blog details breadcrumb end   ---------------- -->
-
-<!-- -------------------- blog details Title start ---------------- -->
-
-<section class="blog_details_page_title_desc pt-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 px0">
-                <h1>{{ $detail->title }}</h1>
-                @php echo html_entity_decode($detail->content) @endphp
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- -------------------- blog details Title end   ---------------- -->
-
-<!-- -------------------- blog details social start ---------------- -->
-
-<section class="blog_details_social pt-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 px0">
-                <div class="category d-flex align-items-center gap-md-5 gap-2">
-                    @php
-                    $category = json_decode($detail->blog_category_ids);
-                    @endphp
-
-                    @foreach ($category as $row)
-                    @php $category_name = DB::table('blog_categories')->where('id', $row)->first()->name; @endphp
-
-                    <span data-aos="fade-up" data-aos-once="true">{{ $category_name }}</span>
-                    @endforeach
-
+    </section>
+    <!-- Blog Details Banner End-->
+    <!--Blog Details content start-->
+    <section class="blog_d_content">
+        <div class="container">
+            <div class="row">
+                <div class="img_btn">
+                    <img src="{{ asset('storage/' . $detail->main_image) }}" alt="{{ $detail->alt_main_image }}"
+                        class="big_img mb-4" />
+                    <button class="content_btn">
+                        {{ $detail->updated_at->format('F j, Y') }}
+                    </button>
                 </div>
-            </div>
-            <div class="col-md-6 px0">
-                <!-- <div class="icons d-flex align-items-center justify-content-end gap-3 mt-md-2 mt-4">
-                    <img src="/assets/frontend/images/icon_1.png" alt="" data-aos="fade-up" data-aos-once="true" />
-                    <img src="/assets/frontend/images/icon_2.png" alt="" data-aos="fade-up" data-aos-once="true" />
-                    <img src="/assets/frontend/images/icon_3.png" alt="" data-aos="fade-up" data-aos-once="true" />
-                    <img src="/assets/frontend/images/icon_4.png" alt="" data-aos="fade-up" data-aos-once="true" />
-                </div> -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- -------------------- blog details social end   ---------------- -->
-
-<!-- -------------------- blog details buttons start ---------------- -->
-
-<section class="blog_details_page_buttons">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="buttons d-flex align-items-center justify-content-between">
-                    @if($previous_slug != null)
-                    <a
-                        href="{{ url(route('blog.detail', ['category' => $url,'slug' => strtolower(str_replace(' ', '-',$previous_slug))] )) }}">
-                        <button data-aos="fade-up" data-aos-once="true">
-                            << Previous Post</button>
-                    </a>
-                    @endif
-
-                    @if($next_slug != null)
-                    <a
-                        href="{{ url(route('blog.detail', ['category' => $url,'slug' => strtolower(str_replace(' ', '-',$next_slug))] )) }}">
-                        <button data-aos="fade-up" data-aos-once="true">Next Post >></button>
-                    </a>
-                    @endif
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- -------------------- blog details buttons end   ---------------- -->
-<!-- -------------------- blog details comments start ---------------- -->
-@if($url == 'blog')
-<section class="blog_details_page_comments">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="heading" data-aos="fade-up" data-aos-once="true">Comments</h1>
-            </div>
-            @php $comment = DB::table('blog_comments')->where('status', 1)->where('blog_id', $detail->id)->orderBy('id',
-            'desc')->get(); @endphp
-
-            @foreach ($comment as $row)
-
-            <div class="col-xl-1 col-md-2">
-                <div class="avatar" data-aos="fade-up" data-aos-once="true">
-                    <img src="/assets/frontend/images/profile.png" alt="" />
-                </div>
-            </div>
-            <div class="col-xl-9 col-md-8">
-                <p class="name" data-aos="fade-up" data-aos-once="true">{{ $row->name }}</p>
-                <p class="date" data-aos="fade-up" data-aos-once="true">
-                    {{ date('F d, Y \a\t h:i a', strtotime($row->created_at)) }}</p>
-                <p class="comment" data-aos="fade-up" data-aos-once="true">
-                    {{ $row->comment }}
-                </p>
-            </div>
-
-            @endforeach
-
-            <div class="col-md-12 mt-md-0 mt-4">
-                <h1 class="post_heading" data-aos="fade-up" data-aos-once="true">Post A Comment</h1>
-                <p class="post_comment" data-aos="fade-up" data-aos-once="true">
-                    Your email address will not be published *
-                </p>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#comment" data-aos="fade-up"
-                    data-aos-once="true">Post Comment</button>
-            </div>
-        </div>
-    </div>
-</section>
-@endif
-
-<!-- -------------------- blog details comments end   ---------------- -->
-
-<!-- -------------------- service related start ---------------------- -->
-
-@if(count($blog) > 0)
-<section class="service_related">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="heading mb-4 text-center" data-aos="fade-up" data-aos-once="true">Related
-                    {{ ucfirst($page->name) }}</h1>
-            </div>
-
-            @foreach ($blog as $row)
-
-            <div class="col-md-4 px0 mb-3">
-                <div class="blog_big_box" data-aos="fade-up" data-aos-once="true">
-                    <img src="{{ asset('storage/' . $row->main_image) }}" alt="" class="blog_img" />
-                    <div class="blog_content">
-                        <p>{{ $row->short_description }}</p>
-                        <a
-                            href="{{ url(route('blog.detail', ['category' => $url, 'slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}">View
-                            More</a>
+                <div class="d-flex align-item-center gap-5 pb-md-3">
+                    <div>
+                        <img src="images/icon-author.png" alt="" class="me-2" />
+                        <span class="">
+                            @foreach ($author as $row)
+                                @php
+                                    $author_name = DB::table('users')
+                                        ->where('id', $row)
+                                        ->first();
+                                @endphp
+                                {{ $author_name->name }} @if ($count > $i)
+                                    ,
+                                @endif
+                                @php $i++ @endphp
+                            @endforeach
+                        </span>
+                    </div>
+                    <div>
+                        <img src="images/dot.png" alt="" class="me-2" />
+                        <span>Family, Lawyer</span>
                     </div>
                 </div>
+                <hr />
+                <div>
+
+                    @php echo html_entity_decode($detail->content) @endphp
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="socialicons">
+        <div class="container">
+            <div class="row">
+                <hr class="m-0">
+                <div class="row py-md-3 align-items-center">
+                    <div class="col-md-6">
+                        <div class="float-left-1 text-center row">
+                            @php
+                                $category = json_decode($detail->blog_category_ids);
+                            @endphp
+
+                            @foreach ($category as $row)
+                                @php
+                                    $category_name = DB::table('blog_categories')
+                                        ->where('id', $row)
+                                        ->first()->name;
+                                @endphp
+                                <div class="rectangle-div col-md-2">
+                                    <span>{{ $category_name }}</span>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        {{-- <div class="float-right-1">
+              <div class="icons">
+                <a href="#">
+
+                  <img class="icon-instagram" alt="" src="images/instagram-icon.png">
+                </a>
+              </div>
+              <div class="icons">
+                <a href="#">
+
+                  <img class="icon-instagram" alt="" src="images/fb-icon.png">
+                </a>
+              </div>
+              <div class="icons">
+                <a href="#">
+                  <img class="icon-instagram" alt="" src="images/twitter-icon.png">
+              </a>
+              </div>
+              <div class="icons">
+                <a href="#">
+
+                  <img class="icon-instagram" alt="" src="images/linkedin-icon.png">
+                </a>
+              </div>
+            </div> --}}
+                    </div>
+                </div>
+
+                <hr class="m-0">
+            </div>
+        </div>
+
+    </section>
+    <section class="my-box-1 ">
+        <div class="container bg-grey py-md-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between">
+                        @if ($previous_slug != null)
+                            <a
+                                href="{{ url(route('blog.detail', ['category' => $url, 'slug' => strtolower(str_replace(' ', '-', $previous_slug))])) }}">
+                                <div class="arrow-icons">
+                                    <img src="assets/frontend/images/arrow-left.png" alt="">
+                                </div>
+                            </a>
+                        @endif
+
+                        @if ($next_slug != null)
+                            <a
+                                href="{{ url(route('blog.detail', ['category' => $url, 'slug' => strtolower(str_replace(' ', '-', $next_slug))])) }}">
+                                <div class="arrow-icons">
+                                    <img src="assets/frontend/images/arrow-right.png" alt="">
+                                </div>
+                            </a>
+                        @endif
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    @if ($previous_slug != null)
+                        <p class="font-size-20"> <b> Your Guide to Free <br> Open Lawyer Software</b> </p>
+                    @endif
+                </div>
+                <div class="col-md-6">
+                    @if ($next_slug != null)
+                        <div class="d-flex justify-content-end text-end">
+                            <p class="font-size-20"><b> Your Guide to Free <br> Open Lawyer Software</b></p>
+                        </div>
+                    @endif
+                </div>
+
+
             </div>
 
+        </div>
+    </section>
+    <!--------------------------------=================== comment =========----------->
+
+    <section class="comments">
+        <div class="container">
+
+            <div class="heading-3">
+                <span class="font-size-24">
+                    <b>Comments</b>
+                </span>
+            </div>
+            @php
+                $comment = DB::table('blog_comments')
+                    ->where('status', 1)
+                    ->where('blog_id', $detail->id)
+                    ->orderBy('id', 'desc')
+                ->get(); @endphp
+
+            <hr class="m-0">
+            @foreach ($comment as $row)
+                <div class="py-5">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-1">
+                            <div class="col-space-1">
+                                <img src="/images/Ellipse26.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-9 px-md-5">
+                            <div class="heading-4">
+                                <span class="font-size-20">
+                                    <b>{{ $row->name }}</b>
+                                </span>
+                            </div>
+                            <div class="heading-5">
+                                <span class="light-color">
+                                    {{ date('F d, Y \a\t h:i a', strtotime($row->created_at)) }}
+                                </span>
+                            </div>
+                            <div class="heading-5 pt-md-2">
+                                <span class="">
+                                    {{ $row->comment }}
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2">
+                            {{-- <button class="content_btn">Reply</button> - --}}
+                        </div>
+                    </div>
+
+                </div>
             @endforeach
 
+
+            <div class="heading-6">
+                <span class="font-size-24">
+                    <b>Post A Comment</b>
+                </span>
+            </div>
+            <div class="heading-6">
+                <span class="font-size-20">
+                    Your email address will not be published *
+                </span>
+            </div>
+            <div class="form-comments">
+
+                @include('frontend.component.comment_form')
+
+
+            </div>
+
         </div>
-    </div>
-</section>
-@endif
 
-<!-- -------------------- service related  end ---------------------- -->
+    </section>
+    @include('frontend.component.get_in_touch')
 
-<!-- ---------- service get in touch  start ---------------------- -->
-
-@include('frontend.component.get_in_touch')
-
-<!-- -------------- service get in touch  end ---------------------- -->
-
-<!------------------ awards_section Start -------------------------->
-@include('frontend.component.awards')
-<!------------------ awards_section End -------------------------->
-
-@if($url == 'blog')
-@include('frontend.component.comment_form')
-@endif
-
-
-<!----------========= blog detail end ========== ------------------->
+    <!----------========= blog detail end ========== ------------------->
 
 @endsection

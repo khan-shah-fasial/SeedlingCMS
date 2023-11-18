@@ -10,44 +10,28 @@
 
 
 
-<!--  ----------------- 404 start --------------------- -->
+<!--  ----------------- Thank You --------------------- -->
 
 
-<section class="thankyou">
+<section class="thankyou_page pd80 bg_image2 text-center">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="thankyou_container d-flex align-items-center justify-content-center flex-column">
-                    <h1 class="mb-0">Thank You</h1>
-                    <img src="/assets/frontend/images/thankyou.png" alt="" class="py-3">
-                    <h6>for Contacting us !</h6>
-                    <p>We’ll reach you out immediately</p>
-                    <a class="btn btn-success" href="{{url('/')}}">Back to Homepage</a>
+                <h3 class="thankyou_hed">Thank You!</h3>
+                <h5 class="thankyou_hed1">For Contacting Us!</h5>
+                <p class="thanks_para mb-3">We will reach you out immediately</p>
+                <div  class="mt-4" >
+                <a class="backhomebutton" href="{{ url(route('index')) }}">Back to Home Page</a>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
 </section>
 
 
 
 
-<!--  ----------------- 404 End --------------------- -->
+<!--  ----------------- thank you End --------------------- -->
 
-
-
-
-
-
-
-
-
-@include('frontend.component.get_in_touch')
-
-<!-- -------------- service get in touch  end ---------------------- -->
-
-<!------------------ awards_section Start -------------------------->
-@include('frontend.component.awards')
-<!------------------ awards_section End -------------------------->
 
 @endsection

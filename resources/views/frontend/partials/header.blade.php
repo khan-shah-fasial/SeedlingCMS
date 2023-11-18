@@ -338,7 +338,7 @@
                   data-bs-target="#ask-modal"
                   type="button"
                 >
-                  <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="" />
+                  <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
                   <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" />
                   <span>Ask an Expert</span>
                 </button>

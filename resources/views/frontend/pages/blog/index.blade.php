@@ -2,27 +2,25 @@
 
 @section('page.title', 'Ahlawat Associates: Top Lawyers &amp; Law Firms in Delhi, India')
 
-@section('page.description', 'Ahlawat &amp; Associates is one of the best law firms in Delhi, India. We provide legal
-assistance for startups, FDI, Property law, IP, and more')
+@section('page.description',
+    'Ahlawat &amp; Associates is one of the best law firms in Delhi, India. We provide legal
+    assistance for startups, FDI, Property law, IP, and more')
 
 @section('page.type', 'blogs')
 
 @section('page.content')
 
-<!----------------=============== blog start ================------------->
-<!-- -------------------- blog banner start ---------------- -->
-
-<section class="blog_page_banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <h1 class="heading">Blog</h1>
+    <!----------------=============== blog start ================------------->
+    <!-- -------------------- blog banner start ---------------- -->
+    <!--blog banner start -->
+    <section class="blog_banner text-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="heading fs-2">Latest Post</h1>
                     <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                         <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item home">
-                                <a href="{{ url(route('index')) }}" data-aos="fade-up" data-aos-once="true">Home</a>
-                            </li>
+                            <li class="breadcrumb-item home"><a href="{{ url(route('index')) }}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 Blog
                             </li>
@@ -31,73 +29,102 @@ assistance for startups, FDI, Property law, IP, and more')
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- -------------------- blog banner end   ---------------- -->
+    <!--blog banner end -->
 
-@include('frontend.component.category_breadcrumb')
+    <!--blog image start -->
 
-<!-- -------------------- blog banner start ---------------- -->
+    <section class="blog_image">
+        <div class="container">
+            <div class="row" id="blog_data">
 
-<section class="blog_page_cards">
-    <div class="container">
-        <div class="row" id="blog_data">
+                @include('frontend.component.blog_list_card')
 
-            @include('frontend.component.blog_list_card')
+
+
+                {{--
+            <div class="col-md-12 ">
+              <div
+                class="pagination d-flex align-items-center justify-content-center"
+              >
+            
+                <ul
+                  class="d-flex align-items-center justify-content-center gap-3 list-unstyled"
+                >
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li><img src="assets/frontend/images/pagination.png" alt="" /></li>
+                </ul> 
+
+                @if (count($blog) > '5')
+                
+                    <button class="footer_btn" id="load-more">View More</button>
+
+                @endif
+                
+              </div>
+            </div> --}}
+
+
+            </div>
+
+            <div class="col-md-12 ">
+                <div class="pagination d-flex align-items-center justify-content-center">
+
+                    @if (count($blog) > '5')
+                        <button class="footer_btn" id="load-more">View More</button>
+                    @endif
+
+                </div>
+            </div>
 
         </div>
-    </div>
-    @if(count($blog) > '5')
-    <div class="text-center">
-        <button class="load-more" id="load-more">View More</button>
-    </div>
-    @endif
+    </section>
 
-</section>
 
-<!-- -------------------- blog banner end   ---------------- -->
 
-<!-- ---------- service get in touch  start ---------------------- -->
+    <!--blog image end -->
 
-@include('frontend.component.get_in_touch')
+    <!-------Random Blog Start------------->
 
-<!-- -------------- service get in touch  end ---------------------- -->
+    @include('frontend.component.random_blog_list_section')
 
-<!------------------ awards_section Start -------------------------->
-@include('frontend.component.awards')
-<!------------------ awards_section End -------------------------->
+    <!-------Random Blog End-->
 
-<!----------------=============== blog end ================------------->
+
+    <!----------------=============== blog end ================------------->
 @endsection
 
 @section('component.scripts')
-<script>
-var currentPage = 1; // Track the current page number
+    <script>
+        var currentPage = 1; // Track the current page number
 
-$('#load-more').click(function() {
-    currentPage++; // Increment the page number
+        $('#load-more').click(function() {
+            currentPage++; // Increment the page number
 
-    $.ajax({
-            url: "{{ route('blog-data') }}",
-            type: 'GET', // Change the method to GET
-            data: {
-                page: currentPage
-            },
-        })
-        .done(function(response) {
-            if (response.html === '') {
-                $('#load-more').hide(); // Hide the button when there's no more data
-                return;
-            }
-            $('#blog_data').append(response.html);
-        })
-        .fail(function() {
-            console.log("error");
-        })
-        .always(function() {
-            console.log("complete");
+            $.ajax({
+                    url: "{{ route('blog-data') }}",
+                    type: 'GET', // Change the method to GET
+                    data: {
+                        page: currentPage
+                    },
+                })
+                .done(function(response) {
+                    if (response.html === '') {
+                        $('#load-more').hide(); // Hide the button when there's no more data
+                        return;
+                    }
+                    $('#blog_data').append(response.html);
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
         });
-});
-</script>
+    </script>
 @endsection

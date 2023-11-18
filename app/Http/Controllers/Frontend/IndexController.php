@@ -60,7 +60,7 @@ class IndexController extends Controller
 //--------------=============================== Blog  ================================------------------------------
 
     public function blog(){
-        $blog = Blog::where('status', 1)->whereJsonContains('blog_category_ids', '3')->orderBy('created_at', 'desc')->paginate(6);
+        $blog = Blog::where('status', 1)->whereJsonContains('blog_category_ids', '3')->orderBy('updated_at', 'desc')->paginate(6);
 
         return view('frontend.pages.blog.index', compact('blog'));
     }
@@ -72,7 +72,7 @@ class IndexController extends Controller
     
         $blog = Blog::where('status', 1)
             ->whereJsonContains('blog_category_ids', '3')
-            ->orderBy('created_at', 'desc')
+            ->orderBy('updated_at', 'desc')
             ->paginate($perPage, ['*'], 'page', $page);
     
         if ($request->ajax()) {
@@ -90,7 +90,7 @@ class IndexController extends Controller
 
         $detail = Blog::where('slug', $slug)->where('status', 1)->first();
 
-        $author = User::find($detail->user_id);
+        $author = json_decode($detail->user_id, true);
 
         $blog = Blog::where('status', 1)->whereJsonContains('blog_category_ids', json_decode($detail->blog_category_ids)['0'])->where('id', '!=', $detail->id)->limit(3)->orderBy('id', 'desc')->get();
 
@@ -174,7 +174,7 @@ class IndexController extends Controller
     {
         $rules = [
             'cv' => 'nullable|mimetypes:application/pdf,application/msword',
-            'g-recaptcha-response' => 'required|captcha',
+            //'g-recaptcha-response' => 'required|captcha',
         ];
     
         $validator = \Validator::make($request->all(), $rules); // Pass $request->all() as the first argument
@@ -205,7 +205,7 @@ class IndexController extends Controller
         $subject = 'Lead Enquiry';
 
         // Format $contactData into an HTML table
-        $body = '<table>';
+        $body = '<h2>A lead enquiry from the website seedling.webtesting.pw.</h2></br><table>';
         foreach ($contactData as $key => $value) {
                 if($key != '_token' && $key != 'g-recaptcha-response' && $key != 'cv'){
                     $body .= "<tr><td>$key</td><td>$value</td></tr>";

@@ -220,3 +220,38 @@ $(document).ready(function() {
         }, 2000);
     }
 });
+
+//have_Any_question_form
+$(document).ready(function() {
+    initValidate('#have_any_question_form');
+    $("#have_any_question_form").submit(function(e) {
+        var form = $(this);
+        ajaxSubmit(e, form, responseHandler);
+    });
+
+    var responseHandler = function(response) {
+        $('input, textarea').val('');
+        $("select option:first").prop('selected', true);
+        setTimeout(function() {
+            window.location.href = $('#baseUrl').attr('href') + '/thank-you';
+        }, 2000);
+    }
+});
+
+//Ask popup form
+$(document).ready(function() {
+    initValidate('#ask_popup_form');
+    $("#ask_popup_form").submit(function(e) {
+        var form = $(this);
+        ajaxSubmit(e, form, responseHandler);
+    });
+
+    var responseHandler = function(response) {
+        $('input, textarea').val('');
+        $("select option:first").prop('selected', true);
+        setTimeout(function() {
+            window.location.href = $('#baseUrl').attr('href') + '/thank-you';
+        }, 2000);
+    }
+});
+
