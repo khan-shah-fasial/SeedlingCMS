@@ -154,14 +154,15 @@
                                     <option value="3">Three</option>
                                 </select>
                             </form>
+                            <label for="699" class="price_list">
+    <h4>₹699 <span>for 20 mins</span></h4>
+</label>
+<input type="radio" id="699" name="price" hidden>
 
-                            <div class="price_list">
-                                <h4>₹699 <span>for 20 mins</span></h4>
-                            </div>
-                            <div class="price_list">
-                                <h4>₹999 <span>for 40 mins</span></h4>
-                            </div>
-
+<label for="999" class="price_list">
+    <h4>₹999 <span>for 40 mins</span></h4>
+</label>
+<input type="radio" id="999" name="price" hidden>
                             <p class="desc">
                                 A 20 minute consultation will be enough to identify the material facts, process and
                                 documents to be collected in your case
