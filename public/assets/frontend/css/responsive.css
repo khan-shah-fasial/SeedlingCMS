@@ -146,6 +146,19 @@
 }
 
 @media (max-width: 767px) {
+    .get_in_touch {
+        padding: 20px;
+        border-radius: 40px 0 40px 0;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .breadcrumb_heading {
+        font-size: 20px;
+    }
+
+    .breadcrumb {
+        font-size: 13px;
+    }
     html {
         overflow-x: hidden;
     }
@@ -442,7 +455,6 @@
 
     .blogs .blog_box .blog_img_container .blog_img {
         border-radius: 30px 0 30px 0;
-        height: 145px;
     }
 
     .blog_d_banner {
@@ -451,10 +463,6 @@
     .blog_d_banner .heading {
         font-size: 19px;
         line-height: 29px;
-    }
-
-    .breadcrumb {
-        justify-content: center;
     }
 
     .blog_d_content {

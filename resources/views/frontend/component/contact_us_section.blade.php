@@ -9,7 +9,7 @@
                 </h2>
                 <div class="contact_icon_box">
                     <div class="row">
-                        <div class="col-6 mb-md-0 mb-4">
+                        <div class="col-md-6 mb-md-0 mb-4">
                             <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column text-center"
                                 data-aos="fade-up" data-aos-once="true">
                                 <div class="contact_icon_box" data-aos="fade-up" data-aos-once="true">
@@ -26,7 +26,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 mb-md-0 mb-4">
                             <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column text-center"
                                 data-aos="fade-up" data-aos-once="true">
                                 <div class="contact_icon_box" data-aos="fade-up" data-aos-once="true">
@@ -40,8 +40,8 @@
                                     +{{ get_settings('mobile') }}
                                 </p>
                                 <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
-                                    <!-- {{ get_settings('email') }} -->
-                                    contact@ahlawat <br> associates.in
+                                    {{ get_settings('email') }}
+                                    <!-- contact@ahlawat <br> associates.in -->
 
                                 </p>
                             </div>

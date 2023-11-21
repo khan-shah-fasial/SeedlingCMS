@@ -13,6 +13,16 @@ body {
     overflow-x: hidden;
 }
 
+.breadcrumb_heading {
+    font-size: 36px;
+}
+
+.breadcrumb {
+    justify-content: center;
+    margin-bottom: 0 !important;
+    color: white;
+}
+
 .main_heading {
     font-size: 40px;
     line-height: 48px;
@@ -202,12 +212,11 @@ header ul.dropdown ul {
 }
 .popup .contact_form_container .form-select,
 .popup .contact_form_container form input {
-    width: 100%;
+    width: 100% !important;
     padding: 17px 22px;
     background: transparent;
     border: 1px solid #53515170;
     outline: none;
-    margin-bottom: 17px;
     border-radius: 30px 0 30px 0;
     color: #797777;
 }
@@ -2646,3 +2655,66 @@ body .backhomebutton {
 }
 
 /* show less show more */
+
+.category ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0;
+}
+.category ul li {
+    background: lightgray;
+    padding: 10px 30px;
+    border-radius: 20px 0 20px 0;
+}
+
+.get_in_touch {
+    background: #efefef;
+    padding: 40px;
+    border-radius: 60px 0 60px 0;
+    margin: 45px 0;
+}
+.number {
+    background: #e36d6a;
+    padding: 20px 40px;
+    border-radius: 30px 0 30px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.number:hover {
+    color: white !important;
+}
+
+.radio_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.radio_container input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+.radio_container label {
+    background: #ccc;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 40px 0px 40px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.radio_container .price {
+    font-size: 33px;
+}
+
+.radio_container input[type="radio"]:checked + label {
+    background-color: #e36d6a;
+    color: #f1f3f5;
+    font-weight: 900;
+    transition: 0.3s;
+}

@@ -37,19 +37,29 @@ aria-hidden="true"
           <p class="mb-3">
             There are many variations of passages of lorem available..
           </p>
-          <input type="text" name="name" placeholder="Name" class="form-control" required/>
+          <div class="mb-3" >
+            <input type="text" name="name" placeholder="Name" class="form-control" required/>
+          </div>
           <div
-            class="contact_email_phone d-flex align-items-center gap-3"
+            class="contact_email_phone d-flex align-items-center gap-3 mb-3"
           >
+          <div   >
+
             <input type="email" name="email" placeholder="Email" class="form-control" required/>
+          </div>
+          <div>
+
             <input type="number" name="phone"  placeholder="Phone" class="form-control" required/>
           </div>
-          <select name="services" class="contact_form_select form-select">
-            <option value="">Services</option>
-            <option value="">Option !</option>
-            <option value="">Option !</option>
-            <option value="">Option !</option>
-          </select>
+          </div>
+
+          <select class="form-select mb-3" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+         
           <button type="submit" class="contact_form_button">Send</button>
         </form>
       </div>

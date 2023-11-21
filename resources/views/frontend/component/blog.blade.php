@@ -10,7 +10,7 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
        <div class="row">
           <div class="col-md-12">
              <h3 class="color_heading text-center mb-2"data-aos="fade-up" data-aos-once="true">
-                BLOG
+                BLOGS
              </h3>
              <h1 class="main_heading text-center mb-4"data-aos="fade-up" data-aos-once="true">
                 Insights from our experts on various subjects
