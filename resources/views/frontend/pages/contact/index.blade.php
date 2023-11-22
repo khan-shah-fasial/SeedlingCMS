@@ -19,11 +19,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div>
-                        <h1 class="heading text-center fs-2">Contact Us</h1>
-                        <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
+                        <h1 class="breadcrumb_heading text-center">Contact Us</h1>
+                        <nav aria-label="breadcrumb" class="breadcrumb">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item home"><a href="{{ url(route('index')) }}">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">
+                                <li class="breadcrumb-item"><a href="{{ url(route('index')) }}">Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page">
                                     Contact Us
                                 </li>
                             </ol>
@@ -153,8 +153,24 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
+
+
+                                <div class="radio_container">
+        <input type="radio" name="radio" id="one" checked />
+        <label for="one"> <span class="price" >
+        ₹699
+        </span> for 20 mins</label>
+        <input type="radio" name="radio" id="two" />
+        <label for="two"> <span class="price" >
+        ₹999
+        </span>  for 40 mins</label>
+      </div>
+
+
+
+
                             </form>
-                            <label for="699" class="price_list">
+                            <!-- <label for="699" class="price_list">
     <h4>₹699 <span>for 20 mins</span></h4>
 </label>
 <input type="radio" id="699" name="price" hidden>
@@ -162,7 +178,7 @@
 <label for="999" class="price_list">
     <h4>₹999 <span>for 40 mins</span></h4>
 </label>
-<input type="radio" id="999" name="price" hidden>
+<input type="radio" id="999" name="price" hidden> -->
                             <p class="desc">
                                 A 20 minute consultation will be enough to identify the material facts, process and
                                 documents to be collected in your case

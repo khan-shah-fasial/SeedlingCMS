@@ -91,11 +91,11 @@ $i = 1;
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="heading text-center">
+                <h1 class="breadcrumb_heading text-center">
                     {{ $detail->title }}
                 </h1>
 
-                <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
+                <nav aria-label="breadcrumb" class="breadcrumb">
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item active"><a href="{{ url(route('index')) }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">
@@ -154,15 +154,16 @@ $i = 1;
         </div>
     </div>
 </section>
-<section class="socialicons">
+
+
+<section class="category"  >
     <div class="container">
         <div class="row">
-            <hr class="m-0">
-            <div class="row py-md-3 align-items-center">
-                <div class="col-md-6">
-                    <div class="float-left-1 text-center row">
-                        @php
-                        $category = json_decode($detail->blog_category_ids);
+            <div class="col-md-12">
+                <hr>
+                <ul >
+                @php
+                $category = json_decode($detail->blog_category_ids);
                         @endphp
 
                         @foreach ($category as $row)
@@ -171,47 +172,22 @@ $i = 1;
                         ->where('id', $row)
                         ->first()->name;
                         @endphp
-                        <div class="rectangle-div col-md-2">
-                            <span>{{ $category_name }}</span>
-                        </div>
+                        <li>
+                        {{ $category_name }}
+                         </li>
+                        
                         @endforeach
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    {{-- <div class="float-right-1">
-              <div class="icons">
-                <a href="#">
-
-                  <img class="icon-instagram" alt="" src="images/instagram-icon.png">
-                </a>
-              </div>
-              <div class="icons">
-                <a href="#">
-
-                  <img class="icon-instagram" alt="" src="images/fb-icon.png">
-                </a>
-              </div>
-              <div class="icons">
-                <a href="#">
-                  <img class="icon-instagram" alt="" src="images/twitter-icon.png">
-              </a>
-              </div>
-              <div class="icons">
-                <a href="#">
-
-                  <img class="icon-instagram" alt="" src="images/linkedin-icon.png">
-                </a>
-              </div>
-            </div> --}}
-                </div>
+                   
+                </ul>
+                <hr>
             </div>
-
-            <hr class="m-0">
         </div>
     </div>
-
 </section>
+
+
+
+
 <section class="my-box-1 ">
     <div class="container bg-grey py-md-2">
         <div class="row">
