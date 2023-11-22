@@ -49,20 +49,18 @@
           <div class="row">
             <div class="col-md-12">
               <h1 class="service_banner_heading mb-3">
-                REGISTER A PRIVATE LIMITED COMPANY
+                {{ $detail->breadcrumb_title }}
               </h1>
               <p class="service_banner_para">
-                Being the most sought-after business format, it boasts of several
-                benefits such as extreme flexibility, separate legal existence and
-                most importantly easy incorporation procedure.
+                {{ $detail->breadcrumb_subtitle }}
               </p>
               <div
                 class="service_price_btn d-flex align-items-center gap-4 justify-content-center"
               >
-                <h2 class="mb-0">Price Start at Rs 899/-</h2>
-                <button class="d-flex align-items-center gap-2">
-                  <img src="images/nav_btn_icon.png" alt="" />
-                  <img src="images/ask_hover_btn.png" alt="" />
+                <h2 class="mb-0">Price Start at Rs {{ $detail->indian_price }}/-</h2>
+                <button class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#ask-modal">
+                  <img src="assets/frontend/images/nav_btn_icon.png" alt="" />
+                  <img src="assets/frontend/images/ask_hover_btn.png" alt="" />
                   <span>Ask an Expert</span>
                 </button>
               </div>
@@ -72,47 +70,43 @@
       </section>
       <!-- -------------------------- Service banner End ---------------- -->
   
-      <!-- -------------------------- Service steps Start ---------------- -->
+@php 
+    $progress_bar = json_decode($detail->progress_bar, true);
+@endphp
+
+@if(count($progress_bar) > 0)
+<!-- -------------------------- Service steps Start ---------------- -->
   
       <div class="service_steps">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <h1 class="service_steps_heading text-center">
-                Company Registration
-                <span style="color: #f2635f">4 Easy Steps</span>
+                {{ $detail->progress_bar_title }}
               </h1>
               <div class="service_steps_main_timeline">
                 <div class="conference_center_line"></div>
                 <div class="conference_timeline_content">
-                  <div class="timeline_article timeline_article_bottom">
-                    <div class="meta_date">04</div>
-                    <div class="content_box">
-                      <h3>Lorem Ipsum</h3>
-                      <p>Being the most sought-after business format,</p>
-                    </div>
-                  </div>
-                  <div class="timeline_article timeline_article_top">
-                    <div class="meta_date">03</div>
-                    <div class="content_box">
-                      <h3>Lorem Ipsum</h3>
-                      <p>Being the most sought-after business format,</p>
-                    </div>
-                  </div>
-                  <div class="timeline_article timeline_article_bottom">
-                    <div class="meta_date">02</div>
-                    <div class="content_box">
-                      <h3>Lorem Ipsum</h3>
-                      <p>Being the most sought-after business format,</p>
-                    </div>
-                  </div>
-                  <div class="timeline_article timeline_article_top">
-                    <div class="meta_date">01</div>
-                    <div class="content_box">
-                      <h3>Lorem Ipsum</h3>
-                      <p>Being the most sought-after business format,</p>
-                    </div>
-                  </div>
+                    
+                    @php 
+                        $i = 1; 
+                        $progress_bar_reversed = array_reverse($progress_bar);
+                        $i = count($progress_bar_reversed) + 1;
+                    @endphp
+                    
+                    @foreach ($progress_bar_reversed as $innerArray)
+                        @foreach ($innerArray as $title => $description)
+                            @php $i--; @endphp 
+                            <div class="timeline_article timeline_article_{{ $i % 2 == 0 ? 'bottom' : 'top' }}">
+                                <div class="meta_date">{{ $i }}</div>
+                                <div class="content_box">
+                                    <h3>{{ $title }}</h3>
+                                    <p>{{ $description }}</p>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endforeach
+                  
                 </div>
               </div>
             </div>
@@ -120,9 +114,10 @@
         </div>
       </div>
   
-      <!-- -------------------------- Service steps End ---------------- -->
-  
-      <!-- -------------------------- Service last start ---------------- -->
+<!-- -------------------------- Service steps End ---------------- -->
+@endif  
+
+<!-- -------------------------- Service last start ---------------- -->
   
       <div class="service_last">
         <div class="container">
@@ -130,32 +125,10 @@
             <div class="col-md-8">
               <!-- -------------service last header start -------------- -->
               <div>
-                <h1 class="service_last_logo" data-aos="fade-up"data-aos-once="true" >What is it ?</h1>
-                <h2 class="service_last_heading"data-aos="fade-up"data-aos-once="true" >
-                  Private Limited Company Registration in India
-                </h2>
-                <p class="service_last_para" data-aos="fade-up"data-aos-once="true" >
-                  Your dream to start a business in India can't come to
-                  realization if you don't have a proper business entity to
-                  support it. A private limited company is India's most prominent
-                  form of business entity. From veterans to novices, from budding
-                  start-ups to established entrepreneurs, and from north India to
-                  south India, it is considered the best business entity.
-                </p>
-                <p class="service_last_para" data-aos="fade-up"data-aos-once="true" >
-                  In order to start your business with such an entity, you must go
-                  through four simple steps. The first step is to obtain the DSC
-                  signature, and the second is to apply for the Director
-                  Identification Number. Third, get name approval and fill SPICe+
-                  form and lastly obtain PAN and TAN number.
-                </p>
-                <h3 class="service_last_sub_heading" data-aos="fade-up"data-aos-once="true" >
-                  Private Limited Company Registration in India
-                </h3>
-                <p class="service_last_sub_para" data-aos="fade-up"data-aos-once="true">
-                  Private Limited Companies have many benefits and some of them
-                  are as follows:
-                </p>
+                <h1 class="service_last_logo" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h1>
+                <div class="service_content"data-aos="fade-up"data-aos-once="true" >
+                    @php echo html_entity_decode($detail->content) @endphp
+                </div>
               </div>
               <!-- -------------service last header End -------------- -->
               <!-- -------------service last Benefit Start -------------- -->
