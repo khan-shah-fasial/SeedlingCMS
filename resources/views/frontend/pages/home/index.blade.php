@@ -17,8 +17,8 @@ assistance for startups, FDI, Property law, IP, and more')
         <div class="current">
           <div class="image">
             <picture>
-              <source srcset="{{ asset('/assets/frontend/images/main_banner1.png') }} 2400w" type="image/webp" sizes="100vw" />
-              <img alt="See Things in a New Way" src="{{ asset('/assets/frontend/images/main_banner1.png') }}" srcset="{{ asset('/assets/frontend/images/main_banner1.png') }} 2400w" sizes="100vw" />
+              <source srcset="{{ asset('/assets/frontend/images/banner_1.png') }} 2400w" type="image/webp" sizes="100vw" />
+              <img alt="See Things in a New Way" src="{{ asset('/assets/frontend/images/banner_1.png') }}" srcset="{{ asset('/assets/frontend/images/banner_1.png') }} 2400w" sizes="100vw" />
             </picture>
           </div>
           <div class="titleGroup">
