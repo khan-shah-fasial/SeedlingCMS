@@ -1,77 +1,65 @@
 @extends('frontend.layouts.app')
 
-@section('page.title', 'Ahlawat Associates: Top Lawyers &amp; Law Firms in Delhi, India')
+@section('page.title', 'Seedling Associates: Top Lawyers &amp; Law Firms in Delhi, India')
 
-@section('page.description', 'Ahlawat &amp; Associates is one of the best law firms in Delhi, India. We provide legal assistance for startups, FDI, Property law, IP, and more')
+@section('page.description', 'Seedling & Associates is one of the best law firms in Delhi, India. We provide legal assistance for startups, FDI, Property law, IP, and more')
 
 @section('page.type', 'practice area')
 
 @section('page.content')
 
 
-<!-------===========practicearea list start===================------------>
+    <!-------===========practicearea list start===================------------>
 
-<section class="faq_page_banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <h1 class="heading">Practice Area</h1>
+    <!-- --------------- blog banner start ---------------- -->
+    <section class="blog_banner text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="heading fs-2">Practice Areas</h1>
                     <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                         <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item home">
-                                <a href="{{ url(route('index')) }}">Home</a>
-                            </li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                Practice Area
-                            </li>
+                            <li class="breadcrumb-item home"><a href="{{ url(route('index')) }}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Practice Areas</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ------------------- practice area box start ---------------- -->
-<section class="practice_w_box">
-    <div class="container">
-        <div class="row">
-            @foreach($practiceAreas as $row)
-            <div class="col-md-4 mb-2 px0">
-                <a href="{{ url(route('practicearea-detail', ['slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}"
-                    class="btn_hover btn-3 hover-border-5 text-center ">
-                    <span>{{$row->title}}</span>
-                </a>
+    <!-- --------------- blog banner end ---------------- -->
 
+    <!-- --------------- blog image start ---------------- -->
 
+    <section class="blog_image">
+        <div class="container">
+            <div class="row">
 
-                {{--
-                 <a
-                    href="{{ url(route('practicearea-detail', ['slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}">
-                    <div class="practice_w_card d-flex align-items-center justify-content-center m-2 py-5">
-                        <img src="{{ asset('storage/' . $row->breadcrumb_image) }}" alt="{{$row->title}}"
-                        class="mb-4 w-100" />
-                        <h4 class="heading text-center">{{$row->title}}</h4>
+                @foreach($practiceAreas as $row)
+                    <div class="col-md-3">
+                        <div class="practice_listing_box" data-aos="fade-up"data-aos-once="true">
+                            <img src="{{ asset('storage/' . $row->thumnail_image) }}" alt="{{ $row->alt_thumnail_image }}" class="blog_img" />
+                            <div class="practice_listing_content">
+                                <h4>{{ $row->title }}</h4>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">Learn More <img src="assets/frontend/images/right_arrow1.png"></a>
+                            </div>
+                        </div>
                     </div>
-                </a> 
-                --}}
+                @endforeach
+
             </div>
-            @endforeach
         </div>
-    </div>
-</section>
-<!-- ------------------- practice area box end ---------------- -->
+    </section>
 
-<!-- ---------- service get in touch  start ---------------------- -->
+    <!-- --------------- blog image end ---------------- -->
 
-@include('frontend.component.get_in_touch')
+    <!-- -------------------- Blog Start --------------- -->
 
-<!-- -------------- service get in touch  end ---------------------- -->
+    @include('frontend.component.random_blog_list_section')
 
-<!------------------ awards_section Start -------------------------->
-@include('frontend.component.awards')
-<!------------------ awards_section End -------------------------->
+    <!-- -------------------- Blog End --------------- -->
 
-<!-------===========practicearea end===================------------>
+    <!-------===========practicearea end===================------------>
 @endsection
+

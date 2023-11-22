@@ -141,7 +141,7 @@ $i = 1;
                 </div>
                 <div>
                     <img src="assets/frontend/images/dot.png" alt="" class="me-2" />
-                    <span>Family, Lawyer</span>
+                    <span>{{ $author_name->designation }}</span>
                 </div>
             </div>
             <hr />
@@ -256,7 +256,7 @@ $i = 1;
 
                 <div class="col-md-1">
                     <div class="col-space-1">
-                        <img src="/images/Ellipse26.jpg" alt="">
+                        <img src="/assets/frontend/images/Ellipse26.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-9 px-md-5">
