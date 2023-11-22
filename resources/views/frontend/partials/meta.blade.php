@@ -1,9 +1,9 @@
 @php
 
-$title = !empty(trim($__env->yieldContent('page.title'))) ? str_replace(['&nbsp;', '&amp;', '&amp;amp;'], ['&amp;', '&', '&'], htmlspecialchars_decode($__env->yieldContent('page.title'))) : 'Ahlawat Associates:Top Lawyers &amp; Law Firms in Delhi, India';
+$title = !empty(trim($__env->yieldContent('page.title'))) ? str_replace(['&nbsp;', '&amp;', '&amp;amp;'], ['&amp;', '&', '&'], htmlspecialchars_decode($__env->yieldContent('page.title'))) : 'Seedling Associates:Top Lawyers &amp; Law Firms in Delhi, India';
 
 $description = !empty(trim($__env->yieldContent('page.description'))) ? str_replace(['&nbsp;', '&amp;', '&amp;amp;'], ['&amp;', '&', '&'], htmlspecialchars_decode($__env->yieldContent('page.description'))) :
-'Ahlawat Associates is one of the best law firms in Delhi, India. We provide legal assistance for startups, FDI,
+'Seedling Associates is one of the best law firms in Delhi, India. We provide legal assistance for startups, FDI,
 Property law, IP, and more.';
 
 $page_type = !empty(trim($__env->yieldContent('page.type'))) ? $__env->yieldContent('page.type') : 'website';
@@ -70,7 +70,7 @@ $url = url()->current();
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Ahlawat Associates",
+    "name": "Seedling Associates",
     "url": "{{ url('') }}/",
     "logo": "{{ asset('/assets/frontend/images/logo.png') }}",
     "sameAs": [
@@ -89,7 +89,7 @@ $url = url()->current();
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "name": "Ahlawat Associates",
+    "name": "Seedling Associates",
     "image": "{{ asset('/assets/frontend/images/logo.png') }}",
     "@id": "",
     "url": "{{ url('') }}/",
