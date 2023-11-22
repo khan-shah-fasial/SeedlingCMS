@@ -1,9 +1,9 @@
 @extends('frontend.layouts.app')
 
-@section('page.title', 'Ahlawat Associates: Top Lawyers &amp; Law Firms in Delhi, India')
+@section('page.title', 'Seedling Associates: Top Lawyers &amp; Law Firms in Delhi, India')
 
 @section('page.description',
-    'Ahlawat &amp; Associates is one of the best law firms in Delhi, India. We provide legal
+    'Seedling & Associates is one of the best law firms in Delhi, India. We provide legal
     assistance for startups, FDI, Property law, IP, and more')
 
 @section('page.type', 'website')

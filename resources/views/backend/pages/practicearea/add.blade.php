@@ -7,6 +7,28 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
+                                <h4 class="header-title"><b>Breadcrumb</b></h4>
+                                <hr>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group mb-3">
+                                    <label>Breadcrumb Title <span class="red">*</span></label>
+                                    <input type="text" class="form-control" name="breadcrumb_title" value="" required>
+                                </div>
+                            </div>        
+                            <div class="col-sm-6">
+                                <div class="form-group mb-3">
+                                    <label>Breadcrumb Subtitle <span class="red">*</span></label>
+                                    <input type="text" class="form-control" name="breadcrumb_subtitle" value="" required>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
                                 <h4 class="header-title"><b>Overview</b></h4>
                                 <hr>
                             </div>                        
@@ -82,18 +104,7 @@
                                     </div>
                                 </div>
                             </div> 
-                            <div class="col-sm-6">
-                                <div class="form-group mb-3">
-                                    <label>Breadcrumb Title <span class="red">*</span></label>
-                                    <input type="text" class="form-control" name="breadcrumb_title" value="" required>
-                                </div>
-                            </div>        
-                            <div class="col-sm-6">
-                                <div class="form-group mb-3">
-                                    <label>Breadcrumb Subtitle <span class="red">*</span></label>
-                                    <input type="text" class="form-control" name="breadcrumb_subtitle" value="" required>
-                                </div>
-                            </div>                                                                                                                                                                   
+                                                                                                                                                                  
                         </div>                                      
                     </div>
                 </div>
