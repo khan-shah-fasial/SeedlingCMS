@@ -12,100 +12,93 @@ assistance for startups, FDI, Property law, IP, and more')
 <!-----===== home content start============---->
 
 <div id="banner" class="noBannerImage noBannerImage">
-    <div id="homeAnimation">
+   <div id="homeAnimation">
       <div class="results_list">
-        <div class="current">
-          <div class="image">
-            <picture>
-              <source srcset="{{ asset('/assets/frontend/images/banner_1.png') }} 2400w" type="image/webp" sizes="100vw" />
-              <img alt="See Things in a New Way" src="{{ asset('/assets/frontend/images/banner_1.png') }}" srcset="{{ asset('/assets/frontend/images/banner_1.png') }} 2400w" sizes="100vw" />
-            </picture>
-          </div>
-          <div class="titleGroup">
-            <div class="title">
-              Our mission is to facilitate the path to business success and legal compliance.
-            </div>
-            <div class="desc">
-                Our experts will assist you in unlocking the power of intellectual property, safeguarding your
-                innovation and creativity.
-             
-            </div>
-            
-          </div>
-          <div class="contentGroup">
-            <div class="teaser"></div>
-            <div class="content"></div>
-          </div>
-          <div class="animatingSlash"></div>
-        </div>
-        <div>
-          <div class="image">
-            <picture>
-              <source srcset="{{ asset('/assets/frontend/images/main_banner2.png') }} 2400w" type="image/webp" sizes="100vw" />
-              <img alt="Effective Partnership" src="{{ asset('/assets/frontend/images/main_banner2.png') }}" srcset="{{ asset('/assets/frontend/images/main_banner2.png') }} 2400w" sizes="100vw"/>
-            </picture>
-          </div>
-          
-          <div class="contentGroup">
-            <div class="teaser">
-              Your gateway to hassle-free licenses and registrations
-            </div>
-            <div class="content">
-              <p>
-                 Make the most of your business potential with our simplified licensing and registration services.
-              </p>
-            </div>
-          </div>
-          <div class="animatingSlash"></div>
-        </div>
-        
-        <div>
-          <div class="image">
-            <picture>
-              <source srcset="{{ asset('/assets/frontend/images/main_banner1.png') }} 2400w" type="image/webp" sizes="100vw" />
-              <img alt="See Things in a New Way" src="{{ asset('/assets/frontend/images/main_banner1.png') }}" srcset="{{ asset('/assets/frontend/images/main_banner1.png') }} 2400w" sizes="100vw" />
-            </picture>
-          </div>
-          <div class="titleGroup">
-            <div class="title">
-             Our mission is to facilitate the path to business success and legal compliance.
-            </div>
-            <div class="desc">
-             Our experts will assist you in unlocking the power of intellectual property, safeguarding your
-                innovation and creativity.
-            </div>
-            
-          </div>
-          <div class="contentGroup">
-            <div class="teaser"></div>
-            <div class="content"></div>
-          </div>
-          <div class="animatingSlash"></div>
-        </div>
-        <div>
-          <div class="image">
-            <picture>
-              <source srcset="{{ asset('/assets/frontend/images/main_banner2.png') }} 2400w" type="image/webp" sizes="100vw" />
-              <img alt="Effective Partnership" src="{{ asset('/assets/frontend/images/main_banner2.png') }}" srcset="{{ asset('/assets/frontend/images/main_banner2.png') }} 2400w" sizes="100vw"/>
-            </picture>
-          </div>
-          
-          <div class="contentGroup">
-            <div class="teaser">
-              Your gateway to hassle-free licenses and registrations
-            </div>
-            <div class="content">
-              <p>
-               Make the most of your business potential with our simplified licensing and registration services.
-              </p>
-            </div>
-          </div>
-          <div class="animatingSlash"></div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+         <div class="current">
+             <div class="image">
+                 <picture>
+                     <source srcset="{{ asset('storage/' . get_settings('Banner_1')) }}" type="image/webp" sizes="100vw" />
+                     <img alt="See Things in a New Way" src="{{ asset('storage/' . get_settings('Banner_1')) }}" srcset="{{ asset('storage/' . get_settings('Banner_1')) }} 2400w" sizes="100vw" />
+                 </picture>
+             </div>
+             <div class="titleGroup">
+                 <div class="title">
+                     Our mission is to facilitate the path to business success and legal compliance.
+                 </div>
+                 <div class="desc">
+                     Our experts will assist you in unlocking the power of intellectual property, safeguarding your
+                     innovation and creativity.
+                 </div>
+             </div>
+             <div class="contentGroup">
+                 <div class="teaser"></div>
+                 <div class="content"></div>
+             </div>
+             <div class="animatingSlash"></div>
+         </div>
+         <div>
+             <div class="image">
+                 <picture>
+                     <source srcset="{{ asset('storage/' . get_settings('Banner_2')) }}" type="image/webp" sizes="100vw" />
+                     <img alt="Effective Partnership" src="{{ asset('storage/' . get_settings('Banner_2')) }}" srcset="{{ asset('storage/' . get_settings('Banner_2')) }} 2400w" sizes="100vw" />
+                 </picture>
+             </div>
+             <div class="contentGroup">
+                 <div class="teaser">
+                     Your gateway to hassle-free licenses and registrations
+                 </div>
+                 <div class="content">
+                     <p>
+                         Make the most of your business potential with our simplified licensing and registration services.
+                     </p>
+                 </div>
+             </div>
+             <div class="animatingSlash"></div>
+         </div>
+         <div>
+             <div class="image">
+                 <picture>
+                     <source srcset="{{ asset('storage/' . get_settings('Banner_3')) }}" type="image/webp" sizes="100vw" />
+                     <img alt="See Things in a New Way" src="{{ asset('storage/' . get_settings('Banner_3')) }}" srcset="{{ asset('storage/' . get_settings('Banner_3')) }} 2400w" sizes="100vw" />
+                 </picture>
+             </div>
+             <div class="titleGroup">
+                 <div class="title">
+                     Our mission is to facilitate the path to business success and legal compliance.
+                 </div>
+                 <div class="desc">
+                     Our experts will assist you in unlocking the power of intellectual property, safeguarding your
+                     innovation and creativity.
+                 </div>
+             </div>
+             <div class="contentGroup">
+                 <div class="teaser"></div>
+                 <div class="content"></div>
+             </div>
+             <div class="animatingSlash"></div>
+         </div>
+         <div>
+             <div class="image">
+                 <picture>
+                     <source srcset="{{ asset('storage/' . get_settings('Banner_4')) }}" type="image/webp" sizes="100vw" />
+                     <img alt="Effective Partnership" src="{{ asset('storage/' . get_settings('Banner_4')) }}" srcset="{{ asset('storage/' . get_settings('Banner_4')) }} 2400w" sizes="100vw" />
+                 </picture>
+             </div>
+             <div class="contentGroup">
+                 <div class="teaser">
+                     Your gateway to hassle-free licenses and registrations
+                 </div>
+                 <div class="content">
+                     <p>
+                         Make the most of your business potential with our simplified licensing and registration services.
+                     </p>
+                 </div>
+             </div>
+             <div class="animatingSlash"></div>
+         </div>
+     </div>
+   </div>
+</div>
 
 
 

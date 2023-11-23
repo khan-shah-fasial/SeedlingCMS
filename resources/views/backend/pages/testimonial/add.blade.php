@@ -1,12 +1,13 @@
 <form id="add_testimonial_form" action="{{url(route('testimonial.create'))}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <div class="form-group mb-3">
                 <label>Name <span class="red">*</span></label>
                 <input type="text" class="form-control" name="name" value="" required>
             </div>
         </div>
+        {{--
         <div class="col-sm-6">
             <div class="form-group mb-3">
                 <label>Designation <span class="red">*</span></label>
@@ -31,7 +32,8 @@
                     <option value="5">5</option>
                   </select>
             </div>
-        </div> 
+        </div>
+        --}} 
         <div class="col-sm-12">
             <div class="form-group mb-3">
                 <label>Comment <span class="red">*</span></label>

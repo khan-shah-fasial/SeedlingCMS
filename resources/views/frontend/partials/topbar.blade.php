@@ -1,6 +1,6 @@
 <div class="nav_bar ">
     <div>
-        <a href="index.php">
+        <a href="{{ url(route('index')) }}">
             <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo" />
         </a>
     </div>

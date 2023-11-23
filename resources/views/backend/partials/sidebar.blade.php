@@ -68,48 +68,51 @@
                             </a>
                         </li>
 
-                        
+                        {{--
                         <li class="side-nav-item">
                             <a href="{{ route('mediacoverage.index') }}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
                                 <i class="ri-clapperboard-line"></i> 
                                 <span> Media Coverage </span>
                             </a>
-                        </li>
+                        </li> --}}
 
+                        {{--
                         <li class="side-nav-item">
                             <a href="{{ route('publication.index') }}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
                                 <i class="ri-quill-pen-line"></i> 
                                 <span> Publication </span>
                             </a>
-                        </li>
+                        </li> --}}
                         
+                        {{--
                         <li class="side-nav-item">
                             <a href="{{ route('faq.index') }}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
                                 <i class="ri-questionnaire-line"></i> 
                                 <span> FAQs </span>
                             </a>
-                        </li>
+                        </li> --}}
 
-                        {{--<li class="side-nav-item">
+                        <li class="side-nav-item">
                             <a href="{{ route('testimonial.index') }}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
                                 <i class="ri-discuss-line"></i>                                
                                 <span> Testimonials </span>
                             </a>
-                        </li>--}}
-
+                        </li>
+                        {{--
                         <li class="side-nav-item">
                             <a href="{{ route('team.index') }}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
                                 <i class="ri-group-2-line"></i>                                
                                 <span> Teams </span>
                             </a>
-                        </li>
+                        </li> --}}
 
+                        {{--
                         <li class="side-nav-item">
                             <a href="{{ route('award.index') }}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
                                 <i class="ri-award-fill"></i>                                
                                 <span> Awards </span>
                             </a>
-                        </li>
+                        </li> --}}
 
                         <li class="side-nav-item">
                             <a data-bs-toggle="collapse" href="{{ url('#sidebarEcommerce') }}" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">

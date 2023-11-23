@@ -641,7 +641,8 @@
                                 <label>Alt Thumnail Image</label>
                                 <input type="text" class="form-control" name="alt_thumnail_image" value="{{ $practicearea->alt_thumnail_image }}">
                             </div>
-                        </div>						
+                        </div>
+						{{--						
 						<div class="col-sm-9">
 							<div class="form-group mb-3">
 								<label>Section Image <span class="font-size11">(Max file size 80kb - 1125*460)</span></label>
@@ -661,7 +662,7 @@
                                 <label>Alt Section Image</label>
                                 <input type="text" class="form-control" name="alt_section_image" value="{{ $practicearea->alt_section_image }}">
                             </div>
-                        </div>					
+                        </div> --}}					
 					</div>
 				</div>
 			</div>

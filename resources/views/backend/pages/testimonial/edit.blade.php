@@ -3,12 +3,13 @@
 
     <div class="row">
         <input type="hidden" name="id" value="{{ $testimonial->id }}">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <div class="form-group mb-3">
                 <label>Name <span class="red">*</span></label>
                 <input type="text" class="form-control" name="name" value="{{ $testimonial->name }}" required>
             </div>
         </div>
+        {{--
         <div class="col-sm-6">
             <div class="form-group mb-3">
                 <label>Designation <span class="red">*</span></label>
@@ -33,6 +34,7 @@
                 </select>
             </div>
         </div>
+        --}}
         <div class="col-sm-12">
             <div class="form-group mb-3">
                 <label>Comment <span class="red">*</span></label>
