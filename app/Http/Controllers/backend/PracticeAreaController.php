@@ -27,7 +27,6 @@ class PracticeAreaController extends Controller
             'title' => 'required|max:191',
             'slug' => 'required|unique:practice_areas',
             'short_description' => 'required',
-            'content' => 'required',
             'thumnail_image' => 'image',
             'section_image' => 'image',
             'meta_title' => 'required|max:255',
@@ -53,6 +52,43 @@ class PracticeAreaController extends Controller
         } else {
             $imagePath2 = null;
         }
+
+        // Extract and handle progress bar data
+        $progress_bar = $request->input('progress_bar');
+        $progress_bar_description = $request->input('progress_bar_description');
+    
+        if (!empty($progress_bar[0])) {
+            $progress_bars = [];
+            for ($j = 0; $j < count($progress_bar); $j++) {
+                $progress_bars[] = [
+                    $progress_bar[$j] => $progress_bar_description[$j],
+                ];
+            }
+            $data['progress_bar'] = json_encode($progress_bars);
+        } else {
+            $data['progress_bar'] = '[]';
+        }
+
+        unset($data['progress_bar_description']);
+
+        // Extract and handle compliances data
+        $compliances = $request->input('compliances');
+        $compliances_description = $request->input('compliances_description');
+    
+        if (!empty($compliances[0])) {
+            $compliancess = [];
+            for ($j = 0; $j < count($compliances); $j++) {
+                $compliancess[] = [
+                    $compliances[$j] => $compliances_description[$j],
+                ];
+            }
+            $data['compliances'] = json_encode($compliancess);
+        } else {
+            $data['compliances'] = '[]';
+        }
+
+        // Remove the 'faq_description' key as it's not needed anymore
+        unset($data['compliances_description']);
 
         // Extract and handle FAQ data
         $faq = $request->input('faq');
@@ -96,6 +132,35 @@ class PracticeAreaController extends Controller
             'breadcrumb_title' => $request->input('breadcrumb_title'),
             'breadcrumb_subtitle' => $request->input('breadcrumb_subtitle'),
             'breadcrumb_image' => $imagePath1,
+            'indian_price' => $request->input('indian_price'),
+            'foreign_price' => $request->input('foreign_price'),
+            'progress_bar_title' => $request->input('progress_bar_title'),
+            'progress_bar' => $data['progress_bar'],
+            'Content_title' => $request->input('Content_title'),
+            'Content_list_title' => $request->input('Content_list_title'),
+            'Content_list' => json_encode($request->input('Content_list')),
+            'other_content' => $request->input('other_content'),
+            'Section_title_el' => $request->input('Section_title_el'),
+            'eligibility_title' => $request->input('eligibility_title'),
+            'eligibility_sub_title' => $request->input('eligibility_sub_title'),
+            'eligibility_list' => json_encode($request->input('eligibility_list')),
+            'eligibility_content' => $request->input('eligibility_content'),
+            'Section_title_doc' => $request->input('Section_title_doc'),
+            'doc_title' => $request->input('doc_title'),
+            'doc_list' => json_encode($request->input('doc_list')),
+            'doc_content' => $request->input('doc_content'),
+            'Section_title_pro' => $request->input('Section_title_pro'),
+            'process_content' => $request->input('process_content'),
+            'process_list_title' => $request->input('process_list_title'),
+            'process_list' => json_encode($request->input('process_list')),
+            'other_content_pro' => $request->input('other_content_pro'),
+            'Section_title_comp' => $request->input('Section_title_comp'),
+            'compliances_content' => $request->input('compliances_content'),
+            'compliances' => $data['compliances'],
+            'other_content_comp' => $request->input('other_content_comp'),
+            'Section_title_asst' => $request->input('Section_title_asst'),
+            'assistance_content' => $request->input('assistance_content'),
+
         ]);
     
         $response = [
@@ -144,7 +209,6 @@ class PracticeAreaController extends Controller
             'title' => 'required|max:191',
             'slug' => 'required|unique:practice_areas,slug,'. $request->input('id'),
             'short_description' => 'required',
-            'content' => 'required',
             'thumnail_image' => 'image',
             'section_image' => 'image',
             'meta_title' => 'required|max:255',
@@ -197,6 +261,43 @@ class PracticeAreaController extends Controller
             }
         }
 
+        // Extract and handle progress bar data
+        $progress_bar = $request->input('progress_bar');
+        $progress_bar_description = $request->input('progress_bar_description');
+    
+        if (!empty($progress_bar[0])) {
+            $progress_bars = [];
+            for ($j = 0; $j < count($progress_bar); $j++) {
+                $progress_bars[] = [
+                    $progress_bar[$j] => $progress_bar_description[$j],
+                ];
+            }
+            $data['progress_bar'] = json_encode($progress_bars);
+        } else {
+            $data['progress_bar'] = '[]';
+        }
+
+        unset($data['progress_bar_description']);
+
+        // Extract and handle compliances data
+        $compliances = $request->input('compliances');
+        $compliances_description = $request->input('compliances_description');
+    
+        if (!empty($compliances[0])) {
+            $compliancess = [];
+            for ($j = 0; $j < count($compliances); $j++) {
+                $compliancess[] = [
+                    $compliances[$j] => $compliances_description[$j],
+                ];
+            }
+            $data['compliances'] = json_encode($compliancess);
+        } else {
+            $data['compliances'] = '[]';
+        }
+
+        // Remove the 'faq_description' key as it's not needed anymore
+        unset($data['compliances_description']);
+
         // Extract and handle FAQ data
         $faq = $request->input('faq');
         $faq_description = $request->input('faq_description');
@@ -232,6 +333,35 @@ class PracticeAreaController extends Controller
         $practicearea->meta_description = $request->input('meta_description');
         $practicearea->breadcrumb_title = $request->input('breadcrumb_title');
         $practicearea->breadcrumb_subtitle = $request->input('breadcrumb_subtitle');
+        
+        $practicearea->indian_price = $request->input('indian_price');
+        $practicearea->foreign_price = $request->input('foreign_price');
+        $practicearea->progress_bar_title = $request->input('progress_bar_title');
+        $practicearea->progress_bar = $data['progress_bar'];
+        $practicearea->Content_title = $request->input('Content_title');
+        $practicearea->Content_list_title = $request->input('Content_list_title');
+        $practicearea->Content_list = json_encode($request->input('Content_list'));
+        $practicearea->other_content = $request->input('other_content');
+        $practicearea->Section_title_el = $request->input('Section_title_el');
+        $practicearea->eligibility_title = $request->input('eligibility_title');
+        $practicearea->eligibility_sub_title = $request->input('eligibility_sub_title');
+        $practicearea->eligibility_list = json_encode($request->input('eligibility_list'));
+        $practicearea->eligibility_content = $request->input('eligibility_content');
+        $practicearea->Section_title_doc = $request->input('Section_title_doc');
+        $practicearea->doc_title = $request->input('doc_title');
+        $practicearea->doc_list = json_encode($request->input('doc_list'));
+        $practicearea->doc_content = $request->input('doc_content');
+        $practicearea->Section_title_pro = $request->input('Section_title_pro');
+        $practicearea->process_content = $request->input('process_content');
+        $practicearea->process_list_title = $request->input('process_list_title');
+        $practicearea->process_list = json_encode($request->input('process_list'));
+        $practicearea->other_content_pro = $request->input('other_content_pro');
+        $practicearea->Section_title_comp = $request->input('Section_title_comp');
+        $practicearea->compliances_content = $request->input('compliances_content');
+        $practicearea->compliances = $data['compliances'];
+        $practicearea->other_content_comp = $request->input('other_content_comp');
+        $practicearea->Section_title_asst = $request->input('Section_title_asst');
+        $practicearea->assistance_content = $request->input('assistance_content');
     
         $practicearea->save();
 

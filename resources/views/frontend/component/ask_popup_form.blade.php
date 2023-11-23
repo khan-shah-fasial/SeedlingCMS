@@ -37,7 +37,9 @@ aria-hidden="true"
           <p class="mb-3">
             There are many variations of passages of lorem available..
           </p>
-          <div class="mb-3" >
+          <input type="hidden" name="section" value="Popup Form" data-aos-once="true" data-aos="fade-up" />
+          <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
+          <div class="mb-3">
             <input type="text" name="name" placeholder="Name" class="form-control" required/>
           </div>
           <div
@@ -54,11 +56,11 @@ aria-hidden="true"
           </div>
 
           <select class="form-select mb-3" aria-label="Default select example">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
          
           <button type="submit" class="contact_form_button">Send</button>
         </form>
