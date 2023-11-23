@@ -298,7 +298,7 @@
 						</div> 
 						<div class="col-md-12">
 							<div class="form-group mb-3">
-								<label>Eligibility Title</label>
+								<label>Documents Title</label>
 								<input type="text" class="form-control" name="doc_title" value="{{ $practicearea->doc_title }}">
 							</div>
 						</div> 

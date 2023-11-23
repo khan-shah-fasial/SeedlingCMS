@@ -255,3 +255,19 @@ $(document).ready(function() {
     }
 });
 
+//Area practice form
+$(document).ready(function() {
+    initValidate('#area_practice_form');
+    $("#area_practice_form").submit(function(e) {
+        var form = $(this);
+        ajaxSubmit(e, form, responseHandler);
+    });
+
+    var responseHandler = function(response) {
+        $('input, textarea').val('');
+        $("select option:first").prop('selected', true);
+        setTimeout(function() {
+            window.location.href = $('#baseUrl').attr('href') + '/thank-you';
+        }, 2000);
+    }
+});
