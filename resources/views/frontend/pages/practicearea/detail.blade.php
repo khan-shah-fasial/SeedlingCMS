@@ -127,7 +127,7 @@
 
               @if(!empty($detail->Content_title))
               <div>
-                <h1 class="service_last_logo" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h1>
+                <h1 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h1>
                 <div class="service_content"data-aos="fade-up"data-aos-once="true" >
                     @php echo html_entity_decode($detail->content) @endphp
                 </div>
@@ -173,7 +173,7 @@
 
               <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
                 @if(!empty($detail->Section_title_el))
-                  <h2 class="logo" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
+                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
                 @endif
 
                 @if(!empty($detail->eligibility_title))
@@ -218,7 +218,7 @@
 
               @if(count($doc_list) > 0)
                 <div class="service_last_documents">
-                  <h1 class="logo" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h1>
+                  <h1 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h1>
                   <h2 class="heading mb-5" data-aos="fade-up"data-aos-once="true">
                     {{ $detail->doc_title }}
                   </h2>
@@ -248,7 +248,7 @@
   
               <div class="service_last_process">
                 @if(!empty($detail->Section_title_pro))
-                  <h1 class="logo" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_pro }}</h1>
+                  <h1 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_pro }}</h1>
                 @endif
 
                 @if(!empty($detail->process_content))
@@ -287,7 +287,7 @@
               <!-- -------------service last Compliances start -------------- -->
   
               <div class="service_last_compliances">
-                <h1 class="logo mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_comp }}</h1>
+                <h1 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_comp }}</h1>
                 
                 @if(!empty($detail->compliances_content))
                   <div class="service_content" data-aos="fade-up"data-aos-once="true">
@@ -299,7 +299,7 @@
                   $compliances = json_decode($detail->compliances, true);
                   $a = 1; 
                 @endphp
-                ((
+              
                 @if(count($compliances) > 0)
                   <div class="row">
                     <div class="col-12">
@@ -364,7 +364,7 @@
               @if(!empty($detail->assistance_content))
                 <div class="service_last_assistance">
                   @if(!empty($detail->Section_title_asst))
-                    <h2 class="logo mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}/h2>
+                    <h2 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}/h2>
                   @endif
 
                   <div class="service_content" data-aos="fade-up"data-aos-once="true">

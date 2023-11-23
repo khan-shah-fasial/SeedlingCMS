@@ -6,9 +6,15 @@
     </h1>
     <input type="hidden" name="section" value="Area of Practice Form" data-aos-once="true" data-aos="fade-up" />
     <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
-    <input type="text" name="name" placeholder="Name" required/>
-    <input type="email" name="email" placeholder="Email" required/>
-    <input type="tel" name="phone" placeholder="Phone" required/>
+    <div class="mb-3" >
+      <input type="text" name="name" placeholder="Name" required/>
+    </div>
+    <div class="mb-3" >
+      <input type="email" name="email" placeholder="Email" required/>
+    </div>
+    <div class="mb-3" >
+      <input type="tel" name="phone" placeholder="Phone" required/>
+    </div>
     <textarea name="description" placeholder="How we can help"> </textarea>
     <button type="submit" >SEND</button>
 </form>

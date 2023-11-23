@@ -1560,6 +1560,10 @@ footer .footer_desc {
     background: #8c8c8c;
 }
 
+.conference_timeline_content {
+    padding-left: 150px;
+}
+
 .timeline_article {
     width: 20%;
     position: relative;
@@ -1619,7 +1623,7 @@ footer .footer_desc {
     padding: 45px 0;
 }
 
-.service_last .service_last_logo {
+.service_last .color_heading {
     font-family: "Libre Baskerville", serif;
     font-size: 32px;
     font-weight: 700;
@@ -1660,12 +1664,14 @@ footer .footer_desc {
 
 .service_last .service_last_form_container {
     width: 100%;
-    background-image: url("/assets/frontend/images/contact_bg.png");
+    background-image: url("/assets/frontend/images/contact_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px 0 50px 0;
     padding: 32px 32px;
+    box-shadow: 1000px 1000px 1000px 1000px inset #000000b3;
+    color: white;
 }
 
 .service_last .service_last_form_container .service_last_form_heading {
@@ -1681,7 +1687,6 @@ footer .footer_desc {
     width: 100%;
     padding: 11px 15px;
     border-radius: 20px 0 20px 0;
-    margin-bottom: 12px;
     background: transparent;
     border: 1px solid #535151;
     outline: none;
@@ -1712,7 +1717,7 @@ footer .footer_desc {
 }
 
 .service_last_benefit .benefit_box {
-    padding: 16px 40px;
+    padding: 16px 30px;
     background: #eeeeee;
     text-align: center;
     font-family: "Libre Baskerville", serif;
@@ -1819,7 +1824,6 @@ footer .footer_desc {
     line-height: 19px;
     color: #505050;
     font-family: "Libre Baskerville", serif;
-    width: 50%;
 }
 
 .service_last_documents .desc {
@@ -1916,6 +1920,20 @@ footer .footer_desc {
     line-height: 30px;
     font-family: "Libre Baskerville", serif;
     margin-bottom: 11px;
+}
+.service_last_compliances table {
+    border-collapse: separate;
+}
+.service_last_compliances table tr td {
+    padding: 25px 30px;
+    background: #d3d3d361;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: "Libre Baskerville", serif;
+}
+.service_last_compliances table tr td.thead {
+    background: lightgray;
 }
 
 .service_last_compliances ul {
