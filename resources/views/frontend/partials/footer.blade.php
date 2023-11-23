@@ -114,7 +114,7 @@
  
  <!--Popup End-->
 @include('frontend.component.ask_popup_form')
- <div
+ <!-- <div
        class="modal fade"
        id="pay-modal"
        tabindex="-1"
@@ -139,7 +139,7 @@
              >
                <form>
                  <p class="contact_form_logo fs-6 fw-bolder mb-3">
-                   HAVE ANY QUESTION ?
+                   HAVE ANY QUESTION suhail
                  </p>
                  <h4 class="contact_form_heading fs-2 fw-bolder mb-1">
                    Make A Payment
@@ -166,7 +166,7 @@
            </div>
          </div>
        </div>
-     </div>
+     </div> -->
 
 
 

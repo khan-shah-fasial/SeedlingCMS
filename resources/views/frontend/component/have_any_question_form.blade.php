@@ -13,8 +13,9 @@
 
     <input type="text" placeholder="Name" name="name" class="form-control" data-aos="fade-up" data-aos-once="true" required/>
     <div
-       class="contact_email_phone d-flex align-items-center gap-3"
+       class="contact_email_phone d-flex align-items-center gap-3 my-4"
        >
+       <div>
        <input
           type="email"
           name="email"
@@ -24,7 +25,9 @@
           data-aos-once="true"
           required
           />
-       <input
+       </div>
+     <div>
+     <input
           type="number"
           name="phone"
           placeholder="Phone"
@@ -33,8 +36,10 @@
           data-aos-once="true"
           required
           />
+     </div>
+      
     </div>
-    <select name="services" class="contact_form_select form-select"data-aos="fade-up" data-aos-once="true">
+    <select name="services" class="contact_form_select form-select mb-4"data-aos="fade-up" data-aos-once="true">
        <option value="">Services</option>
        <option value="">Option !</option>
        <option value="">Option !</option>
