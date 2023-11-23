@@ -19,7 +19,7 @@
             <div class="col-md-12">
                 <div class="container_404 d-flex align-items-center justify-content-center flex-column">
                     <h2>404</h2>
-                    <h4>Something’s missing.</h4>
+                    <h4>Something’s missing?..</h4>
                     <p>This page is missing or you assembled the link incorrectly.</p>
                     <button>Go to Website</button>
                 </div>
