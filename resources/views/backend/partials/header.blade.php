@@ -344,6 +344,10 @@
                         </li>
                     --}}
 
+                        <li class="d-sm-inline-block">
+                            <a href="{{ url(route('clear-cache')) }}" class="btn btn-success">Clear Cache</a>
+                        </li>
+
                         <li class="d-none d-sm-inline-block">
                             <div class="nav-link" id="light-dark-mode" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Theme Mode" data-bs-original-title="Theme Mode">
                                 <i class="ri-moon-line font-22"></i>

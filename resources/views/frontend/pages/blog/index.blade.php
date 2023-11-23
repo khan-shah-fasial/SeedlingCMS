@@ -34,55 +34,56 @@
     <!--blog banner end -->
 
     <!--blog image start -->
+    @if(count($blog) > 0)
+        <section class="blog_image">
+            <div class="container">
+                <div class="row" id="blog_data">
 
-    <section class="blog_image">
-        <div class="container">
-            <div class="row" id="blog_data">
-
-                @include('frontend.component.blog_list_card')
+                    @include('frontend.component.blog_list_card')
 
 
 
-                {{--
-            <div class="col-md-12 ">
-              <div
-                class="pagination d-flex align-items-center justify-content-center"
-              >
-            
-                <ul
-                  class="d-flex align-items-center justify-content-center gap-3 list-unstyled"
+                    {{--
+                <div class="col-md-12 ">
+                <div
+                    class="pagination d-flex align-items-center justify-content-center"
                 >
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                  <li><img src="assets/frontend/images/pagination.png" alt="" /></li>
-                </ul> 
-
-                @if (count($blog) > '5')
                 
-                    <button class="footer_btn" id="load-more">View More</button>
-
-                @endif
-                
-              </div>
-            </div> --}}
-
-
-            </div>
-
-            <div class="col-md-12 ">
-                <div class="pagination d-flex align-items-center justify-content-center">
+                    <ul
+                    class="d-flex align-items-center justify-content-center gap-3 list-unstyled"
+                    >
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li><img src="assets/frontend/images/pagination.png" alt="" /></li>
+                    </ul> 
 
                     @if (count($blog) > '5')
+                    
                         <button class="footer_btn" id="load-more">View More</button>
+
                     @endif
+                    
+                </div>
+                </div> --}}
+
 
                 </div>
-            </div>
 
-        </div>
-    </section>
+                <div class="col-md-12 ">
+                    <div class="pagination d-flex align-items-center justify-content-center">
+
+                        @if (count($blog) > '5')
+                            <button class="footer_btn" id="load-more">View More</button>
+                        @endif
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    @endif
 
 
 

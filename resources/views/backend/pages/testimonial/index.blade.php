@@ -22,10 +22,10 @@
             <tr>
                 <th>#</th>
                 <th>Name</th>
-                <th>Profile Image</th>
+                {{--<th>Profile Image</th>
                 <th>Designation</th>
                 <th>Comment</th>
-                <th>Rating</th>
+                <th>Rating</th>--}}
                 <th>Status</th>
                 <th>Date</th>
                 <th>Action</th>
@@ -37,6 +37,7 @@
             <tr>
                 <td>{{$i++}}</td>
                 <td>{{$row->name}}</td>
+                {{--
                 <td>
                 <a target="_blank" href="{{ asset('storage/' . $row->image) }}">
                     View
@@ -44,6 +45,7 @@
                 <td>{{$row->designation}}</td>
                 <td>{{$row->comment}}</td>
                 <td>{{(int) $row->rating}}</td>
+                --}}
                 <td>
                     @if($row->status)
                     <span class="badge bg-success" title="Inactive">Active</span>

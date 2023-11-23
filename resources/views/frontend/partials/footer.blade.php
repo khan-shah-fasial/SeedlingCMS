@@ -1,5 +1,5 @@
 @php
-//$practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(8)->orderBy('series', 'asc')->get();
+$practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)->orderBy('id', 'asc')->get();
 @endphp
 <!--------------------footer start----------------------------->
 <!------------------ Contact Start -------------------------->
@@ -7,74 +7,22 @@
 <section class="links">
     <div class="container">
        <div class="row">
-          <div class="col-md-3 first_links">
-             <ul class="links_url"data-aos="fade-up" data-aos-once="true">
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> Start Up India Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true">
-                   <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-                </li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Legal Entity Identifier Registration </a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">IEC Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ESI&PF Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISO Registration (Non-Audit)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"></a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISBN Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">GST Registration</a></li>
-             </ul>
-          </div>
-          <div class="col-md-3 first_links">
-            <ul class="links_url"data-aos="fade-up" data-aos-once="true">
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> Start Up India Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true">
-                   <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-                </li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Legal Entity Identifier Registration </a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">IEC Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ESI&PF Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISO Registration (Non-Audit)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"></a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISBN Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">GST Registration</a></li>
-             </ul>
-          </div>
-          <div class="col-md-3 first_links">
-              <ul class="links_url"data-aos="fade-up" data-aos-once="true">
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> Start Up India Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true">
-                   <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-                </li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Legal Entity Identifier Registration </a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">IEC Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ESI&PF Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISO Registration (Non-Audit)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"></a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISBN Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">GST Registration</a></li>
-             </ul>
-          </div>
-          <div class="col-md-3">
-             <ul class="links_url"data-aos="fade-up" data-aos-once="true">
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> Start Up India Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true">
-                   <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-                </li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">Legal Entity Identifier Registration </a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">IEC Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ESI&PF Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISO Registration (Non-Audit)</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"></a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#"> ISBN Registration</a></li>
-                <li data-aos="fade-up" data-aos-once="true"><a href="#">GST Registration</a></li>
-             </ul>
-          </div>
+         @foreach ($practice_Area as $row)
+            @php
+               $sub_cate = DB::table('practice_areas')->where('parent_id', $row->id)->limit('10')->get();
+            @endphp
+
+            @if(count($sub_cate) > 0)
+                  <div class="col-md-3 first_links">
+                     <ul class="links_url"data-aos="fade-up" data-aos-once="true">
+                        @foreach ($sub_cate as $item)
+                           <li data-aos="fade-up" data-aos-once="true"><a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">{{ $item->title }}</a></li>
+                        @endforeach
+                     </ul>
+                  </div>
+            @endif
+         @endforeach
+
        </div>
     </div>
  </section>

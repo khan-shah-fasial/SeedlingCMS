@@ -197,6 +197,7 @@ Route::get('/clear-cache', function () {
     $exitCode = Artisan::call('cache:clear');
     $exitCode = Artisan::call('config:clear');
     $exitCode = Artisan::call('view:clear');
-    //$exitCode = Artisan::call('route:cache');
-    //$exitCode = Artisan::call('key:generate');
-});
+
+    // Redirect back to the previous page
+    return back()->with('status', 'Cache cleared successfully!');
+})->name('clear-cache');

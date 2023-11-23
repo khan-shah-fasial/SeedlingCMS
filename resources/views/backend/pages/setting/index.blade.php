@@ -44,27 +44,62 @@
                                 <div class="col-md-12">
                                     <h4 class="header-title">Address</h4>
                                     <hr>
-                                </div> 
+                                </div>
+                                {{-- 
                                 <div class="col-sm-12">
                                     <div class="form-group mb-3">
                                         <label>Delhi (Head Office)</label>
                                         <textarea class="form-control" name="delhi_address" rows="3">{{ get_settings('delhi_address') }}</textarea>
                                     </div>
-                                </div> 
+                                </div> --}} 
                                 <div class="col-sm-12">
                                     <div class="form-group mb-3">
-                                        <label>Mumbai</label>
+                                        {{--<label>Mumbai</label> --}}
                                         <textarea class="form-control" name="mumbai_address" rows="3">{{ get_settings('mumbai_address') }}</textarea>
                                     </div>
                                 </div> 
+                                {{--
                                 <div class="col-sm-12">
                                     <div class="form-group mb-3">
                                         <label>Chandigarh</label>
                                         <textarea class="form-control" name="chandigarh_address" rows="3">{{ get_settings('mumbai_address') }}</textarea>
                                     </div>
-                                </div>                    
+                                </div> --}}                   
                             </div>
-                        </div>                
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-12">
+                                    <h4 class="header-title">Home Page Banner</h4>
+                                    <hr>
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Banner 1</label>
+                                        <input class="form-control" type="file" id="image" name="Banner_1">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Banner 2</label>
+                                        <input class="form-control" type="file" id="image" name="Banner_2">
+                                    </div>
+                                </div> 
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Banner 3</label>
+                                        <input class="form-control" type="file" id="image" name="Banner_3">
+                                    </div>
+                                </div>                 
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Banner 4</label>
+                                        <input class="form-control" type="file" id="image" name="Banner_4">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
