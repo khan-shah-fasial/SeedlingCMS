@@ -1,5 +1,5 @@
 @php
-//$practice_Area = DB::table('practice_areas')->where('parent_id', null)->orderBy('series', 'asc')->get();
+$practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
 @endphp
 <!--------=============== Ask Popup Form start ==============------------------>
 <div
@@ -55,11 +55,11 @@ aria-hidden="true"
           </div>
           </div>
 
-          <select class="form-select mb-3" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+          <select class="form-select mb-3" name="services" aria-label="Default select example" required/>
+            <option value="">Select the Service</option>
+            @foreach ($practice_Area as $row)
+                <option value="{{ $row->title }}">{{ $row->title }}</option>
+            @endforeach
           </select>
          
           <button type="submit" class="contact_form_button">Send</button>
