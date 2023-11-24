@@ -1,3 +1,6 @@
+@php
+$practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
+@endphp
 <!----------------- Have any Question --------------------->
 <form id="have_any_question_form" action="{{url(route('contact.create'))}}" method="post" enctype="multipart/form-data" data-aos="fade-up" data-aos-once="true" >
     @csrf
@@ -39,11 +42,11 @@
      </div>
       
     </div>
-    <select name="services" class="contact_form_select form-select mb-4"data-aos="fade-up" data-aos-once="true">
-       <option value="">Services</option>
-       <option value="">Option !</option>
-       <option value="">Option !</option>
-       <option value="">Option !</option>
+    <select name="services" name="services" class="contact_form_select form-select mb-4"data-aos="fade-up" data-aos-once="true" required>
+      <option value="">Select the Service</option>
+      @foreach ($practice_Area as $row)
+          <option value="{{ $row->title }}">{{ $row->title }}</option>
+      @endforeach
     </select>
     <button type="submit" class="contact_form_button"data-aos="fade-up" data-aos-once="true">Send</button>
  </form>
