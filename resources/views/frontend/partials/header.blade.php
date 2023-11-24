@@ -1,7 +1,3 @@
-@php
-$practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)->orderBy('id', 'asc')->get();
-
-@endphp
 
 <!--------------Header start----------------->
 <header>
@@ -13,432 +9,187 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                 @include('frontend.partials.topbar')
 
                 <!----=========End topbar=========----->
-                <!-- <div class="bottom_nav_links d-flex align-items-center gap-4">
+
+                <div class="bottom_nav_links d-flex align-items-center gap-4">
                     <ul class="nav_links d-flex align-items-center gap-4 list-unstyled mb-0">
-                        @foreach ($practice_Area as $row)
+                        <li>
+                            @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 1)
+                                    ->get();
+                            @endphp
+                            <a href="">
+                                <span> Start a Business</span>
 
-                            <li>
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
-                                    <span>{{ $row->title }}</span>
-                                    @php
-                                        $sub_cate = DB::table('practice_areas')->where('parent_id', $row->id)->get();
-                                    @endphp
-
-                                    @if(count($sub_cate) > 0)
-                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                                    @endif
-
-                                </a>
-                                @if(count($sub_cate) > 0)
-                                    <ul class="dropdown">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <ul>
-                                                    @foreach ($sub_cate as $item)
-                                                        <li>
-                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
-                                                                {{ $item->title }}
-                                                            </a>
-                                                        </li>
-                                                    @endforeach
-
-                                                </ul>
-                                            </div>
-                                            {{--
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                            Sole Proprietorship
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                            Partnership Firm
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                            Liability Partnership
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div> --}}
-                                        </div>
-                                    </ul>
+                                @if(count($subcate) > 0)
+                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
                                 @endif
 
-                            </li>
+                            </a>
 
-                        @endforeach
+                            <ul class="dropdown">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            @foreach ($subcate as $iteams)
+                                                <li>
+                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                                        {{ $iteams->title }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
 
-                    </ul>
-                    <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
-                        <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
-                        <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" />
-                        <span>Ask an Expert</span>
-                    </button>
-                </div> -->
-                 <div class="bottom_nav_links d-flex align-items-center gap-4">
-                    <ul class="nav_links d-flex align-items-center gap-4 list-unstyled mb-0">
-                 
+
+                                </div>
+                            </ul>
+
+                        </li>
+                        <li>
+                            @php
+                            $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 2)
+                                    ->get();
+                            @endphp
+                            <a href="">
+                                <span>License & Registration</span>
+
+                                @if(count($subcate) > 0)        
+                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                @endif
+
+                            </a>
+
+                            <ul class="dropdown">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        
+                                        <ul>
+
+                                            @foreach ($subcate as $iteams)
+                                                <li>
+                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                                        {{ $iteams->title }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+
+                                        
+                                    </div>
 
 
+                                </div>
+                            </ul>
+
+                        </li>
+                        <li>
+                            @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 3)
+                                    ->get();
+                            @endphp
+                            <a href="">
+                                <span>Taxation</span>
+
+                                @if(count($subcate) > 0)
+                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                @endif
 
 
-                       
-                            <li>
-                                <a href="">
-                                    <span> Start a Business</span>
-                                 
-                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                                   
+                            </a>
 
-                                </a>
-                              
-                                    <ul class="dropdown">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <ul>
-                                                  
-                                                        <li>
-                                                            <a href="">
-                                                            Private Limited Company
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                        <a href="practice-area.php">
-                                                        Public Limited Company
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        One Person Company
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Producer Company Limited
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Nidhi Company
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Sole Proprietorship
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Partnership Firm
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Liability Partnership
-                                                        </a>
-                                                    </li>
-                                                   
+                            <ul class="dropdown">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul>
 
-                                                </ul>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                    </ul>
+                                            @foreach ($subcate as $iteams)
+                                                <li>
+                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                                        {{ $iteams->title }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
 
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>License & Registration</span>
-                                 
-                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                                   
 
-                                </a>
-                              
-                                    <ul class="dropdown">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <ul>
-                                                  
-                                                        <li>
-                                                            <a href="">
-                                                            Start Up India Registration
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                        <a href="practice-area.php">
-                                                        Angel Tax Excemption (Section 56, IT Act)
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Angel Tax Excemption (Section 56, IT Act)
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        IEC Registration
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        FSSAI License
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        ISP License
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        OSP License
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        MSME/UDHYOG Aadhar Registration
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        ESI&amp;PF Registration
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        ISO Registration (Non-Audit)
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Legal Entity Identifier Registration
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        ISBN Registration
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Digital Signatures
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Embassy Attestations
-                                                        </a>
-                                                    </li>
-                                                   
+                                </div>
+                            </ul>
 
-                                                </ul>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                    </ul>
+                        </li>
+                        <li>
+                            @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 4)
+                                    ->get();
+                            @endphp
+                            <a href="">
+                                <span>IPR & Gaming Services </span>
 
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Taxation</span>
-                                 
-                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                                   
+                                @if(count($subcate) > 0)
+                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                @endif
 
-                                </a>
-                              
-                                    <ul class="dropdown">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <ul>
-                                                  
-                                                        <li>
-                                                            <a href="">
-                                                            GST Registration
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                        <a href="practice-area.php">
-                                                        GST Return Filing
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        GST Cancellation
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Income Tax Return
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        15 CA/CB Certifications
-                                                        </a>
-                                                    </li>
-                                                   
-                                                   
 
-                                                </ul>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                    </ul>
+                            </a>
 
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>IPR & Gaming Services </span>
-                                 
-                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                                   
+                            <ul class="dropdown">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            @foreach ($subcate as $iteams)
+                                                <li>
+                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                                        {{ $iteams->title }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
 
-                                </a>
-                              
-                                    <ul class="dropdown">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <ul>
-                                                  
-                                                        <li>
-                                                            <a href="">
-                                                            Online real money gaming licenses
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                        <a href="practice-area.php">
-                                                        Gambling Licenses
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Copyright searches
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Copyright enforcement
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Design searches
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Design filings
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Design enforcement
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Design litigation
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark searches
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark filing
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark responses
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark hearings
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark assignments
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark oppositions
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark enforcement
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Trademark litigation
-                                                        </a>
-                                                    </li>
-                                                                                                     
 
-                                                </ul>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                    </ul>
+                                </div>
+                            </ul>
 
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>NGO Compliances</span>
-                                 
-                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                                   
+                        </li>
+                        <li>
+                            @php
+                            $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 5)
+                                    ->get();
+                            @endphp
+                            <a href="">
+                                <span>NGO Compliances</span>
 
-                                </a>
-                              
-                                    <ul class="dropdown">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <ul>
-                                                  
-                                                        <li>
-                                                            <a href="">
-                                                            Section 8 Company (NGO)
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                        <a href="practice-area.php">
-                                                        FCRA Registration
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="practice-area.php">
-                                                        Niti Aayog/NGO Darpan Registration
-                                                        </a>
-                                                    </li>
-                                                   
-                                                   
+                                @if(count($subcate) > 0)
+                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                @endif
 
-                                                </ul>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                    </ul>
+                            </a>
 
-                            </li>
+                            <ul class="dropdown">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul>
+
+                                            @foreach ($subcate as $iteams)
+                                                <li>
+                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                                        {{ $iteams->title }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </ul>
+
+                        </li>
 
 
                     </ul>
@@ -449,7 +200,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                     </button>
                 </div>
 
-               
+
             </div>
         </div>
 
@@ -462,8 +213,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                 </div>
                 <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox" />
                 <label class="m-menu__toggle" for="menu">
-                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                        stroke-linecap="butt" stroke-linejoin="arcs">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000"
+                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -504,8 +255,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                             <div class="m-menu">
                                 <div class="m-menu__header">
                                     <label class="m-menu__toggle" for="item-1">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                            stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
+                                            stroke-linejoin="arcs">
                                             <path d="M19 12H6M12 5l-7 7 7 7" />
                                         </svg>
                                     </label>
@@ -513,36 +265,36 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Private Limited Company
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Public Limited Company
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">One Person Company</a>
+                                        <a href="">One Person Company</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Producer Company Limited
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Nidhi Company</a>
+                                        <a href="">Nidhi Company</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Sole Proprietorship
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Partnership Firm</a>
+                                        <a href="">Partnership Firm</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Liability Partnership
                                         </a>
                                     </li>
@@ -557,8 +309,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                             <div class="m-menu">
                                 <div class="m-menu__header">
                                     <label class="m-menu__toggle" for="item-2">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                            stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
+                                            stroke-linejoin="arcs">
                                             <path d="M19 12H6M12 5l-7 7 7 7" />
                                         </svg>
                                     </label>
@@ -566,60 +319,60 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Start Up India Registration
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Angel Tax Excemption (Section 56, IT Act)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Start-up tax Excemption (Sec 80-IAC)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">IEC Registration</a>
+                                        <a href="">IEC Registration</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">FSSAI License</a>
+                                        <a href="">FSSAI License</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">ISP License</a>
+                                        <a href="">ISP License</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">OSP License</a>
+                                        <a href="">OSP License</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             MSME/UDHYOG Aadhar Registration
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             ESI&amp;PF Registration
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             ISO Registration (Non-Audit)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Legal Entity Identifier Registration
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">ISBN Registration</a>
+                                        <a href="">ISBN Registration</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Digital Signatures</a>
+                                        <a href="">Digital Signatures</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Embassy Attestations
                                         </a>
                                     </li>
@@ -634,8 +387,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                             <div class="m-menu">
                                 <div class="m-menu__header">
                                     <label class="m-menu__toggle" for="item-3">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                            stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
+                                            stroke-linejoin="arcs">
                                             <path d="M19 12H6M12 5l-7 7 7 7" />
                                         </svg>
                                     </label>
@@ -643,22 +397,22 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="practice-area.php">GST Registration</a>
+                                        <a href="">GST Registration</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">GST Return Filing</a>
+                                        <a href="">GST Return Filing</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">GST Cancellation</a>
+                                        <a href="">GST Cancellation</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Income Tax Return</a>
+                                        <a href="">Income Tax Return</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">TDS Returns</a>
+                                        <a href="">TDS Returns</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             15 CA/CB Certifications
                                         </a>
                                     </li>
@@ -673,8 +427,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                             <div class="m-menu">
                                 <div class="m-menu__header">
                                     <label class="m-menu__toggle" for="item-4">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                            stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
+                                            stroke-linejoin="arcs">
                                             <path d="M19 12H6M12 5l-7 7 7 7" />
                                         </svg>
                                     </label>
@@ -682,67 +437,67 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Online real money gaming licenses
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Gambling Licenses</a>
+                                        <a href="">Gambling Licenses</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Copyright searches</a>
+                                        <a href="">Copyright searches</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Copyright filing</a>
+                                        <a href="">Copyright filing</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Copyright enforcement
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Design searches</a>
+                                        <a href="">Design searches</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Design filings</a>
+                                        <a href="">Design filings</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Design enforcement</a>
+                                        <a href="">Design enforcement</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Design litigation</a>
+                                        <a href="">Design litigation</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Trademark searches</a>
+                                        <a href="">Trademark searches</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Trademark filing</a>
+                                        <a href="">Trademark filing</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Trademark responses
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">Trademark hearings</a>
+                                        <a href="">Trademark hearings</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Trademark assignments
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Trademark oppositions
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Trademark enforcement
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Trademark litigation
                                         </a>
                                     </li>
@@ -757,8 +512,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                             <div class="m-menu">
                                 <div class="m-menu__header">
                                     <label class="m-menu__toggle" for="item-5">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                            stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
+                                            stroke-linejoin="arcs">
                                             <path d="M19 12H6M12 5l-7 7 7 7" />
                                         </svg>
                                     </label>
@@ -766,15 +522,15 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Section 8 Company (NGO)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">FCRA Registration</a>
+                                        <a href="">FCRA Registration</a>
                                     </li>
                                     <li>
-                                        <a href="practice-area.php">
+                                        <a href="">
                                             Niti Aayog/NGO Darpan Registration
                                         </a>
                                     </li>
