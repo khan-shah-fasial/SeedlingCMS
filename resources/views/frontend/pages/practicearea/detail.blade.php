@@ -364,7 +364,7 @@
               @if(!empty($detail->assistance_content))
                 <div class="service_last_assistance">
                   @if(!empty($detail->Section_title_asst))
-                    <h2 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}/h2>
+                    <h2 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}</h2>
                   @endif
 
                   <div class="service_content" data-aos="fade-up"data-aos-once="true">
