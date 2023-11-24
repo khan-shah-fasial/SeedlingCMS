@@ -13,7 +13,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                 @include('frontend.partials.topbar')
 
                 <!----=========End topbar=========----->
-                <div class="bottom_nav_links d-flex align-items-center gap-4">
+                <!-- <div class="bottom_nav_links d-flex align-items-center gap-4">
                     <ul class="nav_links d-flex align-items-center gap-4 list-unstyled mb-0">
                         @foreach ($practice_Area as $row)
 
@@ -32,7 +32,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                 @if(count($sub_cate) > 0)
                                     <ul class="dropdown">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <ul>
                                                     @foreach ($sub_cate as $item)
                                                         <li>
@@ -78,7 +78,378 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                         <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" />
                         <span>Ask an Expert</span>
                     </button>
+                </div> -->
+                 <div class="bottom_nav_links d-flex align-items-center gap-4">
+                    <ul class="nav_links d-flex align-items-center gap-4 list-unstyled mb-0">
+                 
+
+
+
+
+                       
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span> Start a Business</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            Private Limited Company
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                        Public Limited Company
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        One Person Company
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Producer Company Limited
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Nidhi Company
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Sole Proprietorship
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Partnership Firm
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Liability Partnership
+                                                        </a>
+                                                    </li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>License & Registration</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            Start Up India Registration
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                        Angel Tax Excemption (Section 56, IT Act)
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Angel Tax Excemption (Section 56, IT Act)
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        IEC Registration
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        FSSAI License
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        ISP License
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        OSP License
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        MSME/UDHYOG Aadhar Registration
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        ESI&amp;PF Registration
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        ISO Registration (Non-Audit)
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Legal Entity Identifier Registration
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        ISBN Registration
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Digital Signatures
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Embassy Attestations
+                                                        </a>
+                                                    </li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>Taxation</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            GST Registration
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                        GST Return Filing
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        GST Cancellation
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Income Tax Return
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        15 CA/CB Certifications
+                                                        </a>
+                                                    </li>
+                                                   
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>IPR & Gaming Services </span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            Online real money gaming licenses
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                        Gambling Licenses
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Copyright searches
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Copyright enforcement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Design searches
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Design filings
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Design enforcement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Design litigation
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark searches
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark filing
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark responses
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark hearings
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark assignments
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark oppositions
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark enforcement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Trademark litigation
+                                                        </a>
+                                                    </li>
+                                                                                                     
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>NGO Compliances</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            Section 8 Company (NGO)
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                        FCRA Registration
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                        Niti Aayog/NGO Darpan Registration
+                                                        </a>
+                                                    </li>
+                                                   
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+
+
+                    </ul>
+                    <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
+                        <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
+                        <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" />
+                        <span>Ask an Expert</span>
+                    </button>
                 </div>
+
+               
             </div>
         </div>
 
