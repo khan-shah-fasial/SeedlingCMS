@@ -88,7 +88,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
 
                        
                             <li>
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                <a href="">
                                     <span> Start a Business</span>
                                  
                                     <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -102,7 +102,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                                 <ul>
                                                   
                                                         <li>
-                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            <a href="">
                                                             Private Limited Company
                                                             </a>
                                                         </li>
@@ -152,7 +152,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
 
                             </li>
                             <li>
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                <a href="">
                                     <span>License & Registration</span>
                                  
                                     <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -166,7 +166,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                                 <ul>
                                                   
                                                         <li>
-                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            <a href="">
                                                             Start Up India Registration
                                                             </a>
                                                         </li>
@@ -246,7 +246,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
 
                             </li>
                             <li>
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                <a href="">
                                     <span>Taxation</span>
                                  
                                     <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -260,7 +260,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                                 <ul>
                                                   
                                                         <li>
-                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            <a href="">
                                                             GST Registration
                                                             </a>
                                                         </li>
@@ -296,7 +296,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
 
                             </li>
                             <li>
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                <a href="">
                                     <span>IPR & Gaming Services </span>
                                  
                                     <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -310,7 +310,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                                 <ul>
                                                   
                                                         <li>
-                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            <a href="">
                                                             Online real money gaming licenses
                                                             </a>
                                                         </li>
@@ -400,7 +400,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
 
                             </li>
                             <li>
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                <a href="">
                                     <span>NGO Compliances</span>
                                  
                                     <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -414,7 +414,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                                 <ul>
                                                   
                                                         <li>
-                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                            <a href="">
                                                             Section 8 Company (NGO)
                                                             </a>
                                                         </li>

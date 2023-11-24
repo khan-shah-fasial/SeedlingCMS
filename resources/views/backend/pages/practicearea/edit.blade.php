@@ -65,13 +65,26 @@
 								<input type="text" class="form-control" name="slug" value="{{ $practicearea->slug }}" required>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						{{--<div class="col-sm-6">
 							<div class="form-group mb-3">
 								<label>Dropdown Practice Area</label>
 								<select class="form-select select2" name="parent_id">
 									<option value="">--Select--</option> 
 									@foreach($allpracticearea as $row)
 									<option value="{{ $row->id }}" @if( $row->id == $practicearea->parent_id ) selected @endif>{{ $row->title }}</option> @endforeach </select>
+								</select> 
+							</div>
+						</div> ---}}
+						<div class="col-sm-6">
+							<div class="form-group mb-3">
+								<label>Dropdown Practice Area</label>
+								<select class="form-select select2" name="parent_id">
+									<option value="0" @if($practicearea->parent_id == 0 ) selected @endif>--Select--</option>
+									<option value="1" @if($practicearea->parent_id == 1 ) selected @endif>Start a Business</option>
+									<option value="2" @if($practicearea->parent_id == 2 ) selected @endif>License & Registration</option>
+									<option value="3" @if($practicearea->parent_id == 3 ) selected @endif>Taxation</option>
+									<option value="4" @if($practicearea->parent_id == 4 ) selected @endif>IPR & Gaming Services</option>
+									<option value="5" @if($practicearea->parent_id == 5 ) selected @endif>NGO Compliances </option>
 								</select> 
 							</div>
 						</div>

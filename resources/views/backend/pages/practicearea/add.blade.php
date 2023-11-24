@@ -66,7 +66,7 @@
                                     <input type="text" class="form-control" name="slug" value="" required>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            {{--<div class="col-sm-6">
                                 <div class="form-group mb-3">
                                     <label>Dropdown Practice Area</label>
                                     <select class="form-select select2" name="parent_id">
@@ -74,6 +74,19 @@
                                         @foreach($practicearea as $row)
                                             <option value="{{ $row->id }}">{{ $row->title }}</option>
                                         @endforeach
+                                    </select> 
+                                </div>
+                            </div> --}}
+                            <div class="col-sm-6">
+                                <div class="form-group mb-3">
+                                    <label>Dropdown Practice Area</label>
+                                    <select class="form-select select2" name="parent_id">
+                                        <option value="">--Select--</option>
+                                        <option value="1">Start a Business</option>
+                                        <option value="2">License & Registration</option>
+                                        <option value="3">Taxation</option>
+                                        <option value="4">IPR & Gaming Services</option>
+                                        <option value="5">NGO Compliances </option>
                                     </select> 
                                 </div>
                             </div>
