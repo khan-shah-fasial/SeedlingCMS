@@ -114,7 +114,7 @@ assistance for startups, FDI, Property law, IP, and more')
                  <a href="#">
                     <div class="slider_banner_box">
                        <img src="{{ asset('/assets/frontend/images/banner_slider_1.png') }}" alt="" />
-                       <img src="{{ asset('/assets/frontend/images/banner_slider_1_white.png') }}"/>
+                       <!-- <img src="{{ asset('/assets/frontend/images/banner_slider_1_white.png') }}"/> -->
                        <span>Start Up India Registration</span>
                     </div>
                  </a>
@@ -123,7 +123,7 @@ assistance for startups, FDI, Property law, IP, and more')
                  <a href="#">
                     <div class="slider_banner_box">
                        <img src="{{ asset('/assets/frontend/images/banner_slider_2.png') }}" alt="" />
-                       <img src="{{ asset('/assets/frontend/images/banner_slider_4_white.png') }}"/>
+                       <!-- <img src="{{ asset('/assets/frontend/images/banner_slider_4_white.png') }}"/> -->
                        <span>Trademark Filing</span>
                     </div>
                   </a>
@@ -132,7 +132,7 @@ assistance for startups, FDI, Property law, IP, and more')
                  <a href="#">
                     <div class="slider_banner_box">
                        <img src="{{ asset('/assets/frontend/images/banner_slider_3.png') }}" alt="" />
-                       <img src="{{ asset('/assets/frontend/images/banner_slider_3_white.png') }}"/>
+                       <!-- <img src="{{ asset('/assets/frontend/images/banner_slider_3_white.png') }}"/> -->
                        <span>Gaming Licenses</span>
                     </div>
                 </a>
@@ -141,7 +141,7 @@ assistance for startups, FDI, Property law, IP, and more')
                  <a href="#">
                     <div class="slider_banner_box">
                        <img src="{{ asset('/assets/frontend/images/banner_slider_4.png') }}" alt="" />
-                       <img src="{{ asset('/assets/frontend/images/banner_slider_2_white.png') }}"/>
+                       <!-- <img src="{{ asset('/assets/frontend/images/banner_slider_2_white.png') }}"/> -->
                        <span>Gambling License</span>
                     </div>
                  </a>

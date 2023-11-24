@@ -181,6 +181,7 @@ header .gap_seven {
 }
 header ul.dropdown ul {
     padding-left: 0;
+    column-count: 2;
 }
 
 /* ---------------------header End ---------------------- */
@@ -828,17 +829,10 @@ section.banner_slider .item a {
 .owl-theme .owl-nav {
     margin-top: -40px !important;
 }
-.slider_banner_box img:nth-child(2) {
-    display: none !important;
+.slider_banner_box:hover img {
+    filter: grayscale(100%) brightness(0) invert(100%);
 }
 
-.slider_banner_box:hover img:nth-child(2) {
-    display: block !important;
-}
-
-.slider_banner_box:hover img:nth-child(1) {
-    display: none !important;
-}
 /* ---------------------Banner Slider End ---------------------- */
 
 /* ---------------------About Start ---------------------- */

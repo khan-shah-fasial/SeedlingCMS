@@ -12,7 +12,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                 @include('frontend.partials.topbar')
 
                 <!----=========End topbar=========----->
-                <div class="bottom_nav_links d-flex align-items-center gap-4">
+                <!-- <div class="bottom_nav_links d-flex align-items-center gap-4">
                     <ul class="nav_links d-flex align-items-center gap-4 list-unstyled mb-0">
                         @foreach ($practice_Area as $row)
 
@@ -31,7 +31,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                                 @if(count($sub_cate) > 0)
                                     <ul class="dropdown">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <ul>
                                                     @foreach ($sub_cate as $item)
                                                         <li>
@@ -70,6 +70,194 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)
                             </li>
 
                         @endforeach
+
+                    </ul>
+                    <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
+                        <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
+                        <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" />
+                        <span>Ask an Expert</span>
+                    </button>
+                </div> -->
+                 <div class="bottom_nav_links d-flex align-items-center gap-4">
+                    <ul class="nav_links d-flex align-items-center gap-4 list-unstyled mb-0">
+                       
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>Title</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                               Sub Title
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                            Sole Proprietorship
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Partnership Firm
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Liability Partnership
+                                                        </a>
+                                                    </li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>Title</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                               Sub Title
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                            Sole Proprietorship
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Partnership Firm
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Liability Partnership
+                                                        </a>
+                                                    </li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>Title</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                               Sub Title
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                            Sole Proprietorship
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Partnership Firm
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Liability Partnership
+                                                        </a>
+                                                    </li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+                            <li>
+                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">
+                                    <span>Title</span>
+                                 
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                   
+
+                                </a>
+                              
+                                    <ul class="dropdown">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                  
+                                                        <li>
+                                                            <a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">
+                                                               Sub Title
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="practice-area.php">
+                                                            Sole Proprietorship
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Partnership Firm
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="practice-area.php">
+                                                            Liability Partnership
+                                                        </a>
+                                                    </li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </ul>
+
+                            </li>
+
 
                     </ul>
                     <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
