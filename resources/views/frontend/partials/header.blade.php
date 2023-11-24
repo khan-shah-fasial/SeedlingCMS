@@ -239,13 +239,13 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="index.php">Home</a>
+                            <a href="{{ url(route('index')) }}">Home</a>
                         </li>
                         <li>
-                            <a href="blog.php">Blog</a>
+                            <a href="{{ url(route('blog')) }}">Blog</a>
                         </li>
                         <li>
-                            <a href="contact-us.php">Contact Us</a>
+                            <a href="{{ url(route('contact')) }}">Contact Us</a>
                         </li>
                         <li>
                             <label class="a-label__chevron" for="item-1">
@@ -263,41 +263,19 @@
                                     </label>
                                     <span>Start a Business</span>
                                 </div>
+                                @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 1)
+                                    ->get();
+                                @endphp
                                 <ul>
+                                    @foreach ($subcate as $iteams)
                                     <li>
-                                        <a href="">
-                                            Private Limited Company
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                            {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">
-                                            Public Limited Company
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">One Person Company</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Producer Company Limited
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">Nidhi Company</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Sole Proprietorship
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">Partnership Firm</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Liability Partnership
-                                        </a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </li>
@@ -317,65 +295,20 @@
                                     </label>
                                     <span>License & Registration</span>
                                 </div>
+                                @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 2)
+                                    ->get();
+                                @endphp
                                 <ul>
+                                    
+                                    @foreach ($subcate as $iteams)
                                     <li>
-                                        <a href="">
-                                            Start Up India Registration
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                            {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">
-                                            Angel Tax Excemption (Section 56, IT Act)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Start-up tax Excemption (Sec 80-IAC)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">IEC Registration</a>
-                                    </li>
-                                    <li>
-                                        <a href="">FSSAI License</a>
-                                    </li>
-                                    <li>
-                                        <a href="">ISP License</a>
-                                    </li>
-                                    <li>
-                                        <a href="">OSP License</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            MSME/UDHYOG Aadhar Registration
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            ESI&amp;PF Registration
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            ISO Registration (Non-Audit)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Legal Entity Identifier Registration
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">ISBN Registration</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Digital Signatures</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Embassy Attestations
-                                        </a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </li>
@@ -395,27 +328,20 @@
                                     </label>
                                     <span>Taxation</span>
                                 </div>
+                                @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 3)
+                                    ->get();
+                                @endphp
                                 <ul>
+                                    
+                                    @foreach ($subcate as $iteams)
                                     <li>
-                                        <a href="">GST Registration</a>
-                                    </li>
-                                    <li>
-                                        <a href="">GST Return Filing</a>
-                                    </li>
-                                    <li>
-                                        <a href="">GST Cancellation</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Income Tax Return</a>
-                                    </li>
-                                    <li>
-                                        <a href="">TDS Returns</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            15 CA/CB Certifications
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                            {{ $iteams->title }}
                                         </a>
                                     </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </li>
@@ -435,72 +361,20 @@
                                     </label>
                                     <span>IPR &amp; Gaming Services</span>
                                 </div>
+                                @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 4)
+                                    ->get();
+                                @endphp
                                 <ul>
+                                    
+                                    @foreach ($subcate as $iteams)
                                     <li>
-                                        <a href="">
-                                            Online real money gaming licenses
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                            {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">Gambling Licenses</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Copyright searches</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Copyright filing</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Copyright enforcement
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">Design searches</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Design filings</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Design enforcement</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Design litigation</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Trademark searches</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Trademark filing</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Trademark responses
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">Trademark hearings</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Trademark assignments
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Trademark oppositions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Trademark enforcement
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Trademark litigation
-                                        </a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </li>
@@ -520,20 +394,20 @@
                                     </label>
                                     <span>NGO Compliances</span>
                                 </div>
+                                @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 5)
+                                    ->get();
+                                @endphp
                                 <ul>
+                                    
+                                    @foreach ($subcate as $iteams)
                                     <li>
-                                        <a href="">
-                                            Section 8 Company (NGO)
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                            {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">FCRA Registration</a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Niti Aayog/NGO Darpan Registration
-                                        </a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </li>
