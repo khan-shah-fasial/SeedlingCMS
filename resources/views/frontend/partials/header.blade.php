@@ -1,5 +1,6 @@
 @php
 $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(5)->orderBy('id', 'asc')->get();
+
 @endphp
 
 <!--------------Header start----------------->
