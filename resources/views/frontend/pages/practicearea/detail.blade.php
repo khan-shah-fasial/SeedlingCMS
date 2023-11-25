@@ -55,7 +55,7 @@
                 {{ $detail->breadcrumb_subtitle }}
               </p>
               <div
-                class="service_price_btn d-flex align-items-center gap-4 justify-content-center"
+                class="service_price_btn d-flex flex-md-row flex-column align-items-center gap-4 justify-content-center"
               >
                 <h2 class="mb-0">Price Start at Rs {{ $detail->indian_price }}/-</h2>
                 <button class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#ask-modal">
@@ -109,6 +109,67 @@
                   
                 </div>
               </div>
+              <!-- ------------ Mobile Menu----------------- -->
+           <div class="mobile_4_step" >
+               <div class="ms-4">
+                        <div class="main-timeline">
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <div class="timeline-icon">
+                                        <img src="assets/frontend/images/p_1.png" alt="" />
+                                    </div>
+                                    <h5 class="description">
+                                        Choose Your Legal Issue:
+                                    </h5>
+                                    <p>Start by selecting the specific legal problem you're facing.</p>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <div class="timeline-icon">
+                                        <img src="assets/frontend/images/p_2.png" alt="" />
+                                    </div>
+                                    <h5 class="description">
+                                        Pay Online:
+                                    </h5>
+                                    <p>You’ll be required to pay the consultation fee through our online portal. This fee
+                                        covers the initial consultation with a legal expert.</p>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <div class="timeline-icon">
+                                        <img src="assets/frontend/images/p_3.png" alt="" />
+                                    </div>
+                                    <h5 class="description">
+                                        Schedule Your Call:
+                                    </h5>
+                                    <p>After making the payment, you can get in touch with us. You can either call the
+                                        provided number or send an email to request a consultation. If you have a preferred
+                                        time for your consultation, please mention it. We'll do our best to accommodate your
+                                        schedule.</p>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <div class="timeline-icon">
+                                        <img src="assets/frontend/images/p_4.png" alt="" />
+                                    </div>
+                                    <h5 class="description">
+                                        Connect with a Specialized Lawyer:
+                                    </h5>
+                                    <p>
+                                        We will connect you with a lawyer who specializes in dealing with your particular
+                                        legal issue. This ensures you get advice tailored to your specific needs.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            
+
+                    <!-- ------------------- Mobile menu---------------------- -->
             </div>
           </div>
         </div>
@@ -422,7 +483,7 @@
             </div>
             <div class="col-md-4 position_sticky">
               <div
-                class="service_last_form_container d-flex align-items-center justify-content-center" data-aos="fade-up"data-aos-once="true"
+                class="service_last_form_container d-flex align-items-center justify-content-center mt-md-0 mt-3" data-aos="fade-up"data-aos-once="true"
               >
               @include('frontend.component.area_of_practice_form')
               </div>
