@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Cache;
 //use App\Models\BlogCategory;
 //use App\Models\BlogComment;
 use App\Models\BusinessSetting;
+use App\Models\ContactSetting;
 //use App\Models\Contact;
 //use App\Models\Faq;
 //use App\Models\MediaCoverage;
@@ -38,6 +39,33 @@ use Illuminate\Support\Facades\Mail;
         
             if ($businessSetting) {
                 $value = $businessSetting->value;
+        
+                // Store the value in the cache with a specific lifetime (e.g., 60 minutes)
+                Cache::put($cacheKey, $value, now()->addMinutes(60));
+        
+                return $value;
+            }
+        
+            // Handle the case where no record is found
+            return null; // or any default value or error handling you prefer
+        }
+    }
+
+    if (!function_exists('get_contactpage')) {
+        function get_contactpage($type)
+        {
+            $cacheKey = "contact_page_setting_{$type}";
+        
+            // Check if the value is already in the cache
+            if (Cache::has($cacheKey)) {
+                return Cache::get($cacheKey);
+            }
+        
+            // If not in the cache, retrieve the value from the database
+            $ContactSetting = ContactSetting::where('type', $type)->first();
+        
+            if ($ContactSetting) {
+                $value = $ContactSetting->value;
         
                 // Store the value in the cache with a specific lifetime (e.g., 60 minutes)
                 Cache::put($cacheKey, $value, now()->addMinutes(60));

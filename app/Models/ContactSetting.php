@@ -12,6 +12,7 @@ class ContactSetting extends Model
     protected $table = 'contact_settings';
 
     protected $fillable = [
-        'type', 'value',
+        'type', 
+        'value',
     ];
 }
