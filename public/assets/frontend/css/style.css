@@ -181,7 +181,9 @@ header .gap_seven {
 }
 header ul.dropdown ul {
     padding-left: 0;
-    column-count: 2;
+    /* column-count: 2; */
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ---------------------header End ---------------------- */
@@ -1480,7 +1482,6 @@ footer .footer_desc {
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
-    padding: 0 300px;
     margin-bottom: 15px;
 }
 
@@ -1536,6 +1537,10 @@ footer .footer_desc {
     font-weight: 700;
     line-height: 38px;
     margin-bottom: 25px;
+}
+
+.mobile_4_step {
+    display: none;
 }
 
 .service_steps_main_timeline {
@@ -1684,6 +1689,10 @@ footer .footer_desc {
     background: transparent;
     border: 1px solid #535151;
     outline: none;
+    color: white;
+}
+.service_last .service_last_form_container form textarea::placeholder,
+.service_last .service_last_form_container form input::placeholder {
     color: white;
 }
 
@@ -2193,7 +2202,7 @@ footer .footer_desc {
     padding-top: 15px;
     text-decoration: none;
     color: #333 !important;
-    padding-left: 31px;
+    padding-left: 20px;
     cursor: inherit;
     padding-right: 10px;
 }
@@ -2206,8 +2215,8 @@ footer .footer_desc {
     background-color: #e36d6a;
     font-size: 45px;
     line-height: 85px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 5px solid #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);

@@ -29,10 +29,10 @@
                 <!-- Logo -->
                 <div class="auth-brand text-center text-lg-start">
                     <a href="/" class="logo-dark">
-                        <span><img src="/assets/images/logo-dark.png" alt="dark logo" height="122"></span>
+                        <span><img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="dark logo" height="122"></span>
                     </a>
                     <a href="/" class="logo-light">
-                        <span><img src="/assets/images/logo.png" alt="logo" height="122"></span>
+                        <span><img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo" height="122"></span>
                     </a>
                 </div>
 

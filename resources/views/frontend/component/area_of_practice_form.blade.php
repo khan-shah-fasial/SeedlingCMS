@@ -15,6 +15,7 @@
     <div class="mb-3" >
       <input type="tel" name="phone" placeholder="Phone" required/>
     </div>
-    <textarea name="description" placeholder="How we can help"> </textarea>
+    <textarea name="description" id=""  rows="3" placeholder="How we can help"></textarea>
+   
     <button type="submit" >SEND</button>
 </form>

@@ -18,7 +18,7 @@
                                     ->where('parent_id', 1)
                                     ->get();
                             @endphp
-                            <a href="">
+                            <a >
                                 <span> Start a Business</span>
 
                                 @if(count($subcate) > 0)
@@ -53,7 +53,7 @@
                                     ->where('parent_id', 2)
                                     ->get();
                             @endphp
-                            <a href="">
+                            <a >
                                 <span>License & Registration</span>
 
                                 @if(count($subcate) > 0)        
@@ -92,7 +92,7 @@
                                     ->where('parent_id', 3)
                                     ->get();
                             @endphp
-                            <a href="">
+                            <a >
                                 <span>Taxation</span>
 
                                 @if(count($subcate) > 0)
@@ -129,7 +129,7 @@
                                     ->where('parent_id', 4)
                                     ->get();
                             @endphp
-                            <a href="">
+                            <a >
                                 <span>IPR & Gaming Services </span>
 
                                 @if(count($subcate) > 0)
@@ -165,7 +165,7 @@
                                     ->where('parent_id', 5)
                                     ->get();
                             @endphp
-                            <a href="">
+                            <a >
                                 <span>NGO Compliances</span>
 
                                 @if(count($subcate) > 0)
