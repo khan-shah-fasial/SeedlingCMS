@@ -74,29 +74,49 @@
                                     <hr>
                                 </div>
                                 
-                                <div class="col-sm-12">
+                                <div class="col-sm-9">
                                     <div class="form-group mb-3">
                                         <label>Banner 1</label>
                                         <input class="form-control" type="file" id="image" name="Banner_1">
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    @if(get_settings('Banner_1')) 
+                                        <img src="{{ asset('storage/' . get_settings('Banner_1')) }}" class="img-thumbnail"> 
+                                    @endif
+                                </div>
+                                <div class="col-sm-9">
                                     <div class="form-group mb-3">
                                         <label>Banner 2</label>
                                         <input class="form-control" type="file" id="image" name="Banner_2">
                                     </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    @if(get_settings('Banner_2')) 
+                                        <img src="{{ asset('storage/' . get_settings('Banner_2')) }}" class="img-thumbnail"> 
+                                    @endif
                                 </div> 
-                                <div class="col-sm-12">
+                                <div class="col-sm-9">
                                     <div class="form-group mb-3">
                                         <label>Banner 3</label>
                                         <input class="form-control" type="file" id="image" name="Banner_3">
                                     </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    @if(get_settings('Banner_3')) 
+                                        <img src="{{ asset('storage/' . get_settings('Banner_3')) }}" class="img-thumbnail"> 
+                                    @endif
                                 </div>                 
-                                <div class="col-sm-12">
+                                <div class="col-sm-9">
                                     <div class="form-group mb-3">
                                         <label>Banner 4</label>
                                         <input class="form-control" type="file" id="image" name="Banner_4">
                                     </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    @if(get_settings('Banner_4')) 
+                                        <img src="{{ asset('storage/' . get_settings('Banner_4')) }}" class="img-thumbnail"> 
+                                    @endif
                                 </div> 
                             </div>
                         </div>
