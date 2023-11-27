@@ -57,7 +57,7 @@
                                     <div class="timeline">
                                         <a href="#" class="timeline-content">
                                             <div class="timeline-icon">
-                                                <img src="assets/frontend/images/p_{{$i++}}.png" alt="" />
+                                                <img src="{{ asset('assets/frontend/images/p_' . $i++ . '.png') }}" alt="" />
                                             </div>
                                             <h5 class="description">
                                                 {{ $title }}
