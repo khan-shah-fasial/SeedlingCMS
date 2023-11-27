@@ -150,6 +150,10 @@
         display: none;
     }
 
+    .service_last_documents .first_list {
+        padding-left: 0;
+    }
+
     .mobile_4_step {
         display: block;
     }

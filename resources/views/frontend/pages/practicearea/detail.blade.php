@@ -183,7 +183,7 @@
       <div class="service_last">
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8">
               <!-- -------------service last header start -------------- -->
 
               @if(!empty($detail->Content_title))
@@ -482,7 +482,7 @@
   
               <!-- -------------service last  Assistance  End -------------- -->
             </div>
-            <div class="col-md-4 position_sticky">
+            <div class="col-lg-4 position_sticky">
               <div
                 class="service_last_form_container d-flex align-items-center justify-content-center mt-md-0 mt-3" data-aos="fade-up"data-aos-once="true"
               >
