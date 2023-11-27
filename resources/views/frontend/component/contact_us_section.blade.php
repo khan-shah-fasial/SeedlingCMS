@@ -22,7 +22,7 @@
 
                                 <p class="contact_title" data-aos="fade-up" data-aos-once="true">Location</p>
                                 <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
-                                    Kohinoor Mall City Premier Road Kurla Mumbai 400070
+                                    {{ get_settings('mumbai_address') }}
                                 </p>
                             </div>
                         </div>

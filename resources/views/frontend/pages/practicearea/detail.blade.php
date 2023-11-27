@@ -113,57 +113,25 @@
            <div class="mobile_4_step" >
                <div class="ms-4">
                         <div class="main-timeline">
-                            <div class="timeline">
-                                <a href="#" class="timeline-content">
-                                    <div class="timeline-icon">
-                                        <img src="assets/frontend/images/p_1.png" alt="" />
-                                    </div>
-                                    <h5 class="description">
-                                        Choose Your Legal Issue:
-                                    </h5>
-                                    <p>Start by selecting the specific legal problem you're facing.</p>
-                                </a>
-                            </div>
-                            <div class="timeline">
-                                <a href="#" class="timeline-content">
-                                    <div class="timeline-icon">
-                                        <img src="assets/frontend/images/p_2.png" alt="" />
-                                    </div>
-                                    <h5 class="description">
-                                        Pay Online:
-                                    </h5>
-                                    <p>You’ll be required to pay the consultation fee through our online portal. This fee
-                                        covers the initial consultation with a legal expert.</p>
-                                </a>
-                            </div>
-                            <div class="timeline">
-                                <a href="#" class="timeline-content">
-                                    <div class="timeline-icon">
-                                        <img src="assets/frontend/images/p_3.png" alt="" />
-                                    </div>
-                                    <h5 class="description">
-                                        Schedule Your Call:
-                                    </h5>
-                                    <p>After making the payment, you can get in touch with us. You can either call the
-                                        provided number or send an email to request a consultation. If you have a preferred
-                                        time for your consultation, please mention it. We'll do our best to accommodate your
-                                        schedule.</p>
-                                </a>
-                            </div>
-                            <div class="timeline">
-                                <a href="#" class="timeline-content">
-                                    <div class="timeline-icon">
-                                        <img src="assets/frontend/images/p_4.png" alt="" />
-                                    </div>
-                                    <h5 class="description">
-                                        Connect with a Specialized Lawyer:
-                                    </h5>
-                                    <p>
-                                        We will connect you with a lawyer who specializes in dealing with your particular
-                                        legal issue. This ensures you get advice tailored to your specific needs.
-                                    </p>
-                                </a>
-                            </div>
+
+                          @php $j = 1; @endphp
+
+                          @foreach ($progress_bar as $innerArray)
+                            @foreach ($innerArray as $title => $description)
+                              <div class="timeline">
+                                  <a href="#" class="timeline-content">
+                                      <div class="timeline-icon">
+                                          <span>{{ $j++ }}<span>
+                                      </div>
+                                      <h5 class="description">
+                                          {{ $title }}
+                                      </h5>
+                                      <p>{{ $description }}</p>
+                                  </a>
+                              </div>
+                            @endforeach
+                          @endforeach
+
                         </div>
                     </div>
              </div>
