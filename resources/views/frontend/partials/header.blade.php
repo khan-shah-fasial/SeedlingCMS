@@ -26,7 +26,7 @@
                                 @endif
 
                             </a>
-
+                            @if(count($subcate) > 0)
                             <ul class="dropdown">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -44,6 +44,7 @@
 
                                 </div>
                             </ul>
+                            @endif
 
                         </li>
                         <li>
@@ -60,7 +61,7 @@
                                 @endif
 
                             </a>
-
+                            @if(count($subcate) > 0)
                             <ul class="dropdown">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -82,6 +83,7 @@
 
                                 </div>
                             </ul>
+                            @endif
 
                         </li>
                         <li>
@@ -99,7 +101,7 @@
 
 
                             </a>
-
+                            @if(count($subcate) > 0)
                             <ul class="dropdown">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -118,6 +120,7 @@
 
                                 </div>
                             </ul>
+                            @endif
 
                         </li>
                         <li>
@@ -135,7 +138,7 @@
 
 
                             </a>
-
+                            @if(count($subcate) > 0)
                             <ul class="dropdown">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -153,6 +156,7 @@
 
                                 </div>
                             </ul>
+                            @endif
 
                         </li>
                         <li>
@@ -169,7 +173,7 @@
                                 @endif
 
                             </a>
-
+                            @if(count($subcate) > 0)
                             <ul class="dropdown">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -188,6 +192,7 @@
 
                                 </div>
                             </ul>
+                            @endif
 
                         </li>
 

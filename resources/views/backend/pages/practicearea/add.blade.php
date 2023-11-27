@@ -45,7 +45,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <h4 class="header-title"><b>Overview</b></h4>
+                                <h4 class="header-title"><b>Page</b></h4>
                                 <hr>
                             </div>
                             <div class="col-sm-6">
@@ -149,7 +149,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group mb-3">
-                                    <label>Content Title</label>
+                                    <label>Section Title</label>
                                     <input type="text" class="form-control" name="Content_title" value="">
                                 </div>
                             </div> 
@@ -271,7 +271,7 @@
                             </div> 
                             <div class="col-md-12">
                                 <div class="form-group mb-3">
-                                    <label>Eligibility Title</label>
+                                    <label>Documents Title</label>
                                     <input type="text" class="form-control" name="doc_title" value="">
                                 </div>
                             </div> 

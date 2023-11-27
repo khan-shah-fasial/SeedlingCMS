@@ -200,8 +200,8 @@
               @php  
                   $Content_list = json_decode($detail->Content_list);
               @endphp
-
-              @if(count($Content_list) > 0)
+              
+              @if(count($Content_list) > 1)
               <div class="service_last_benefit">
                 <h1 class="benefits_heading text-center" data-aos="fade-up"data-aos-once="true">
                   {{ $detail->Content_list_title }}
@@ -253,7 +253,7 @@
                   $eligibility_list = json_decode($detail->eligibility_list);
                 @endphp
 
-                @if(count($eligibility_list) > 0)
+                @if(count($eligibility_list) > 1)
                 <ul class="first_list" data-aos="fade-up"data-aos-once="true">
 
                   @foreach ($eligibility_list as $row)
@@ -277,7 +277,7 @@
                 $doc_list = json_decode($detail->doc_list);
               @endphp
 
-              @if(count($doc_list) > 0)
+              @if(count($doc_list) > 1)
                 <div class="service_last_documents">
                   <h1 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h1>
                   <h2 class="heading mb-5" data-aos="fade-up"data-aos-once="true">
@@ -328,7 +328,7 @@
                   $process_list = json_decode($detail->process_list); 
                 @endphp
 
-                @if(count($process_list) > 0)
+                @if(count($process_list) > 1)
                 <ul class="first_list" data-aos="fade-up"data-aos-once="true">
                   @foreach ($process_list as $row)
                     <li>{{ $row }}</li>
@@ -392,7 +392,8 @@
                           </ul>
                         </div>
                       </div> --}}
-                      <table>
+                      <table style="
+                      width: 100%;">
                         <tbody>
                           @foreach ($compliances as $innerArray)
                             @foreach ($innerArray as $f1 => $v1)
