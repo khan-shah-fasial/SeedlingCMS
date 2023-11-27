@@ -100,8 +100,70 @@
                                 </div> 
                             </div>
                         </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-12">
+                                    <h4 class="header-title">Home Who We Are Section</h4>
+                                    <hr>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Title</label>
+                                        <input type="text" class="form-control" name="h_title" value="{{ get_settings('h_title') }}">
+                                    </div>
+                                </div>  
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Description</label>
+                                        <textarea class="form-control" name="h_description" rows="3">{{ get_settings('h_description') }}</textarea>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Vision</label>
+                                        <textarea class="form-control" name="h_vision" rows="3">{{ get_settings('h_vision') }}</textarea>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Mission</label>
+                                        <textarea class="form-control" name="h_mission" rows="3">{{ get_settings('h_mission') }}</textarea>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-md-4">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-12">
+                                    <h4 class="header-title"><b>Home Page Counter</b></h4>
+                                    <hr>
+                                </div>                    
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Years of Experience</label>
+                                        <input type="text" class="form-control" name="c_exp" value="{{ get_settings('c_exp') }}" >
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label>Satisfied Clients</label>
+                                        <input type="text" class="form-control" name="c_client" value="{{ get_settings('c_client') }}" >
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label>Licenses & Registration Done</label>
+                                        <input type="text" class="form-control" name="c_lic" value="{{ get_settings('c_lic') }}" >
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label>Team of Experts</label>
+                                        <input type="text" class="form-control" name="c_team" value="{{ get_settings('c_team') }}" >
+                                    </div>
+                                </div>                                        
+                            </div>
+
                         <div class="card">
                             <div class="card-body">
                                 <div class="col-md-12">

@@ -160,24 +160,38 @@ assistance for startups, FDI, Property law, IP, and more')
        <div class="col-lg-6">
           <h6 class="color_heading  mb-3" data-aos="fade-up" data-aos-once="true" >Who We Are</h6>
           <h2 class="main_heading mb-4" data-aos="fade-up" data-aos-once="true">
-             We are professionals to safeguard your business
+            {{ get_settings('h_title') }}
           </h2>
           
+   @php 
+      // Get the full description from the settings
+      $fullDescription = get_settings('h_description');
 
+      // Split the description into words
+      $words = str_word_count($fullDescription, 1);
+
+      // Define the number of words for the first part
+      $numberOfWordsForFirstPart = 45;
+
+      // Slice the array to get the first part
+      $firstPartArray = array_slice($words, 0, $numberOfWordsForFirstPart);
+
+      // Join the words to form the first part
+      $firstPart = implode(' ', $firstPartArray);
+
+      // The second part is everything after the first part
+      $secondPartArray = array_slice($words, $numberOfWordsForFirstPart);
+      $secondPart = implode(' ', $secondPartArray);
+   @endphp
   <article class="main">
    <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
-             The Seedling Associates is a New Delhi-based business setup consultancy offering full-service
-legal, tax, and corporate advisory services. A team of highly experienced professionals ensures
-that we offer comprehensive solutions to businesses of all sizes, from large corporations to mid-
-sized businesses and new startups.
-          </p>
+         {{ $firstPart }}.
+   </p>
           
     <input id="read-more-check-1" type="checkbox" class="read-more-check" />
    
     <p class="read-more">
-      Our services include business incorporation, Start-up India
-registrations, trademark and copyright filings, Audit and assurance services, Taxation
-consultancy, and financial advisory services.
+      {{ $secondPart }}.
     </p>
      <label for="read-more-check-1" class="read-more-label"></label>
   </article>
@@ -191,9 +205,7 @@ consultancy, and financial advisory services.
              <div>
                 <h5 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Vision</h5>
                 <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
-                   We aim to be the leading provider of corporate legal services, delivering exceptional accuracy
-and service to customers. In everything we do, we are committed to meet the highest standards of
-corporate compliance.
+                  {{ get_settings('h_vision') }}
                 </p>
              </div>
           </div>
@@ -207,8 +219,7 @@ corporate compliance.
              <div>
                 <h5 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Mission</h5>
                 <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
-                   We offer the best services to our clients while ensuring compliance with the law. In order to
-increase awareness of governance principles in business, we work with clients.
+                  {{ get_settings('h_mission') }}
                 </p>
              </div>
           </div>
@@ -227,7 +238,7 @@ increase awareness of governance principles in business, we work with clients.
                       </div>
                       <div class="about_counter">
                          <p class="about_counter_number">
-                            <span class="counter-value" data-count="40">0</span>+
+                            <span class="counter-value" data-count="{{ get_settings('c_exp') }}">0</span>+
                          </p>
                          <p class="about_counter_para">years of experience</p>
                       </div>
@@ -245,7 +256,7 @@ increase awareness of governance principles in business, we work with clients.
                       </div>
                       <div class="about_counter">
                          <p class="about_counter_number">
-                            <span class="counter-value" data-count="10">0</span>k
+                            <span class="counter-value" data-count="{{ get_settings('c_client') }}">0</span>k
                          </p>
                          <p class="about_counter_para">Satisfied Clients</p>
                       </div>
@@ -263,7 +274,7 @@ increase awareness of governance principles in business, we work with clients.
                       </div>
                       <div class="about_counter w149">
                          <p class="about_counter_number">
-                            <span class="counter-value" data-count="700">0</span>+
+                            <span class="counter-value" data-count="{{ get_settings('c_lic') }}">0</span>+
                          </p>
                          <p class="about_counter_para">Licenses &amp; Registration Done.</p>
                       </div>
@@ -281,7 +292,7 @@ increase awareness of governance principles in business, we work with clients.
                       </div>
                       <div class="about_counter">
                          <p class="about_counter_number">
-                            <span class="counter-value" data-count="50">0</span>+
+                            <span class="counter-value" data-count="{{ get_settings('c_team') }}">0</span>+
                          </p>
                          <p class="about_counter_para">Team of Experts</p>
                       </div>
