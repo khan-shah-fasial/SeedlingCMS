@@ -51,13 +51,17 @@
                             $i = 1; 
                             $step_bar = json_decode(get_contactpage('steps'), true);
                             @endphp
-
+                    
                             @foreach ($step_bar as $innerArray)
                                 @foreach ($innerArray as $title => $description)    
                                     <div class="timeline">
                                         <a href="#" class="timeline-content">
                                             <div class="timeline-icon">
-                                                <img src="{{ asset('assets/frontend/images/p_' . $i++ . '.png') }}" alt="" />
+                                                @if($i != '2' && $i != '4') <!-- Use && instead of || -->
+                                                    <img src="{{ asset('assets/frontend/images/p_' . $i . '.png') }}" alt="" />
+                                                @else
+                                                    <img src="{{ asset('assets/frontend/images/a_' . $i . '.png') }}" alt="" />
+                                                @endif
                                             </div>
                                             <h5 class="description">
                                                 {{ $title }}
@@ -65,10 +69,9 @@
                                             <p>{{ $description }}</p>
                                         </a>
                                     </div>
+                                    @php $i++; @endphp 
                                 @endforeach
                             @endforeach
-
-
                         </div>
                     </div>
 
