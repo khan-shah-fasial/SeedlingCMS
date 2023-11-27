@@ -181,9 +181,7 @@ header .gap_seven {
 }
 header ul.dropdown ul {
     padding-left: 0;
-    /* column-count: 2; */
-    display: flex;
-    justify-content: space-between;
+    column-count: 2;
 }
 
 /* ---------------------header End ---------------------- */
@@ -1127,30 +1125,16 @@ div#counter {
 }
 
 .contact .contact_logo {
-    /* font-size: 20px;
-  font-weight: 700;
-  line-height: 25px;
-  margin-bottom: 12px; */
     color: #e36d6a;
     font-family: "Libre Baskerville", serif;
 }
 
 .contact .contact_heading {
-    /* font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 26px; */
     font-family: "Libre Baskerville", serif;
 }
 
 .contact .contact_icon_container {
     border: 1px solid #e36d6a;
-    /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center; */
     padding: 37px 20px;
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
@@ -1191,10 +1175,6 @@ div#counter {
 }
 
 .contact .contact_rating_container {
-    /* display: flex;
-  align-items: center;
-  margin-top: 32px;
-  gap: 11px; */
     padding: 22px 14px;
     background: rgba(128, 128, 128, 0.322);
 }
@@ -1206,9 +1186,6 @@ div#counter {
 }
 
 .contact .contact_form_container {
-    /* display: flex;
-  align-items: center;
-  justify-content: center; */
     padding: 0 30px;
 }
 
@@ -1220,18 +1197,10 @@ div#counter {
 }
 
 .contact .contact_form_container form .contact_form_logo {
-    /* font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-bottom: 18px; */
     color: #e36d6a;
 }
 
 .contact .contact_form_container form .contact_form_heading {
-    /* font-size: 36px;
-  font-weight: 700;
-  line-height: 45px;
-  margin-bottom: 30px; */
     font-family: "Libre Baskerville", serif;
 }
 .contact .contact_form_container .form-select,
