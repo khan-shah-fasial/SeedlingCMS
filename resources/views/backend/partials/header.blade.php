@@ -9,20 +9,20 @@
                             <!-- Logo light -->
                             <a href="#" class="logo-light">
                                 <span class="logo-lg">
-                                    <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo">
+                                    <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo" style="width:200px; height:50px;" >
                                 </span>
                                 <span class="logo-sm">
-                                    <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="small logo">
+                                    <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="small logo" style="width:200px; height:50px;" >
                                 </span>
                             </a>
 
                             <!-- Logo Dark -->
                             <a href="#" class="logo-dark">
                                 <span class="logo-lg">
-                                    <img src="/assets/images/logo-dark.png" alt="dark logo">
+                                    <img src="/assets/images/logo-dark.png" alt="dark logo" style="width:200px; height:50px;" >
                                 </span>
                                 <span class="logo-sm">
-                                    <img src="/assets/images/logo-dark-sm.png" alt="small logo">
+                                    <img src="/assets/images/logo-dark-sm.png" alt="small logo"  style="width:200px; height:50px;" > 
                                 </span>
                             </a>
                         </div>

@@ -42,6 +42,12 @@
 
 <!-------===========practicearea start===================------------>
 
+<!-- start.jpeg
+licences.jpeg
+taxation.jpeg
+Intellectual.jpeg
+NGO.jpeg -->
+
 
     <!-- -------------------------- Service banner Start ---------------- -->
     <section class="service_banner"style="background-image:url('/assets/frontend/images/payment_bg.png')" >

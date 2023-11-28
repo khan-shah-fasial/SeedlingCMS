@@ -76,7 +76,7 @@
                                 <div class="row">
                                     <div class="col-sm-9">
                                         <div class="form-group mb-3">
-                                            <label>Banner 1</label>
+                                        <label>Banner 1 <span class="red">*</span> <span class="font-size11">(Max file size 80kb - 1125*196)</span></label>
                                             <input class="form-control" type="file" id="image" name="Banner_1">
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@
                                 <div class="row">
                                     <div class="col-sm-9">
                                         <div class="form-group mb-3">
-                                            <label>Banner 2</label>
+                                            <label>Banner 2 <span class="red">*</span> <span class="font-size11">(Max file size 80kb - 1125*196)</span></label>
                                             <input class="form-control" type="file" id="image" name="Banner_2">
                                         </div>
                                     </div>
@@ -104,7 +104,7 @@
                                 <div class="row">
                                     <div class="col-sm-9">
                                         <div class="form-group mb-3">
-                                            <label>Banner 3</label>
+                                            <label>Banner 3 <span class="red">*</span> <span class="font-size11">(Max file size 80kb - 1125*196)</span></label>
                                             <input class="form-control" type="file" id="image" name="Banner_3">
                                         </div>
                                     </div>
@@ -118,7 +118,7 @@
                                 <div class="row">
                                     <div class="col-sm-9">
                                         <div class="form-group mb-3">
-                                            <label>Banner 4</label>
+                                            <label>Banner 4 <span class="red">*</span> <span class="font-size11">(Max file size 80kb - 1125*196)</span></label>
                                             <input class="form-control" type="file" id="image" name="Banner_4">
                                         </div>
                                     </div>
