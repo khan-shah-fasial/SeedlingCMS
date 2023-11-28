@@ -24,8 +24,7 @@ class IndexController extends Controller
     }
 //--------------=============================== practice area =====================---------------------------
     public function practice_area(){
-        $practiceAreas = PracticeArea::whereIn('id', ['7', '9', '8', '38', '14', '17', '12', '31', '39', '19', '11', '35', '36', '13', '10', '33'])
-        ->orderByRaw("FIELD(id, '7', '9', '8', '38', '14', '17', '12', '31', '39', '19', '11', '35', '36', '13', '10', '33')")->get();
+        $practiceAreas = PracticeArea::where('status', 1)->orderBy('updated_at', 'desc')->get();
 
         //return $practiceAreas;
         return view('frontend.pages.practicearea.index', compact('practiceAreas'));
@@ -201,7 +200,7 @@ class IndexController extends Controller
 
         // Send email if $cvPath is not null
 
-        $recipient = 'khanfaisal.makent@gmail.com'; // Replace with the actual recipient email
+        $recipient = 'admin@seedlingassociates.com'; // Replace with the actual recipient email
         $subject = 'Lead Enquiry';
 
         // Format $contactData into an HTML table
