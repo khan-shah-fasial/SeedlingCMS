@@ -380,4 +380,11 @@ class IndexController extends Controller
         return response()->json($response);
     }
 
+// =====================--------------- Privacy Policy -------------====================
+
+    public function terms_page(){
+        return view('frontend.pages.terms.index');
+    }
+
+
 }
