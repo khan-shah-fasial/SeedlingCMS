@@ -33,7 +33,7 @@ class PracticeAreaController extends Controller
             'meta_description' => 'required',
             'breadcrumb_title' => 'required|max:191',
             'breadcrumb_subtitle' => 'required|max:191',
-            'breadcrumb_image' => 'required|image', 
+            //'breadcrumb_image' => 'required|image', 
         ]);
 
         if ($validator->fails()) {
@@ -215,7 +215,7 @@ class PracticeAreaController extends Controller
             'meta_description' => 'required',
             'breadcrumb_title' => 'required|max:191',
             'breadcrumb_subtitle' => 'required|max:191',
-            'breadcrumb_image' => 'image', 
+            //'breadcrumb_image' => 'image', 
         ]);
 
         if ($validator->fails()) {

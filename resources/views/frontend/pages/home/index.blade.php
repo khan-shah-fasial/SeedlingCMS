@@ -23,11 +23,10 @@ assistance for startups, FDI, Property law, IP, and more')
              </div>
              <div class="titleGroup">
                  <div class="title">
-                     Our mission is to facilitate the path to business success and legal compliance.
+                     {{ get_settings('b_title1') }}
                  </div>
                  <div class="desc">
-                     Our experts will assist you in unlocking the power of intellectual property, safeguarding your
-                     innovation and creativity.
+                     {{ get_settings('b_desc1') }}
                  </div>
              </div>
              <div class="contentGroup">
@@ -45,11 +44,11 @@ assistance for startups, FDI, Property law, IP, and more')
              </div>
              <div class="contentGroup">
                  <div class="teaser">
-                     Your gateway to hassle-free licenses and registrations
+                     {{ get_settings('b_title2') }}
                  </div>
                  <div class="content">
                      <p>
-                         Make the most of your business potential with our simplified licensing and registration services.
+                        {{ get_settings('b_desc2') }}
                      </p>
                  </div>
              </div>
@@ -64,11 +63,10 @@ assistance for startups, FDI, Property law, IP, and more')
              </div>
              <div class="titleGroup">
                  <div class="title">
-                     Our mission is to facilitate the path to business success and legal compliance.
+                     {{ get_settings('b_title1') }}
                  </div>
                  <div class="desc">
-                     Our experts will assist you in unlocking the power of intellectual property, safeguarding your
-                     innovation and creativity.
+                     {{ get_settings('b_desc1') }}
                  </div>
              </div>
              <div class="contentGroup">
@@ -86,11 +84,11 @@ assistance for startups, FDI, Property law, IP, and more')
              </div>
              <div class="contentGroup">
                  <div class="teaser">
-                     Your gateway to hassle-free licenses and registrations
+                     {{ get_settings('b_title2') }}
                  </div>
                  <div class="content">
                      <p>
-                         Make the most of your business potential with our simplified licensing and registration services.
+                        {{ get_settings('b_desc2') }}
                      </p>
                  </div>
              </div>

@@ -134,6 +134,56 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="col-md-12">
+                                    <h4 class="header-title">Banner Content First Slide</h4>
+                                    <hr>
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Title</label>
+                                        <input type="text" class="form-control" name="b_title1" value="{{ get_settings('b_title1') }}">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Description</label>
+                                        <input type="text" class="form-control" name="b_desc1" value="{{ get_settings('b_desc1') }}">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-12">
+                                    <h4 class="header-title">Banner Content Second Slide</h4>
+                                    <hr>
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Title</label>
+                                        <input type="text" class="form-control" name="b_title2" value="{{ get_settings('b_title2') }}">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>Description</label>
+                                        <input type="text" class="form-control" name="b_desc2" value="{{ get_settings('b_desc2') }}">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-12">
                                     <h4 class="header-title">Home Who We Are Section</h4>
                                     <hr>
                                 </div>

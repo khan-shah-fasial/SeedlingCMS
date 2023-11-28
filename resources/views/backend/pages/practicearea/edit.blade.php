@@ -582,16 +582,6 @@
 									</div> @php } @endphp </div>
 							</div>
 						</div>
-						<div class="col-sm-6">
-							<div class="form-group mb-3">
-								<label>Breadcrumb Title <span class="red">*</span></label>
-								<input type="text" class="form-control" name="breadcrumb_title" value="{{ $practicearea->breadcrumb_title }}" required> </div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-group mb-3">
-								<label>Breadcrumb Subtitle <span class="red">*</span></label>
-								<input type="text" class="form-control" name="breadcrumb_subtitle" value="{{ $practicearea->breadcrumb_subtitle }}" required> </div>
-						</div>
 					</div>
 				</div>
 			</div>
