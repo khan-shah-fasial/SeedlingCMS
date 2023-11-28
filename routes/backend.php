@@ -189,6 +189,8 @@ Route::group(['prefix' => 'contact'], function () {
 //setting
 Route::group(['prefix' => 'setting'], function () {
     Route::get('/index', [BusinessSettingController::class, 'index'])->name('setting.index');
+    Route::get('/privacy-policy', [BusinessSettingController::class, 'privacy_policy'])->name('setting.privacy');
+    Route::get('/terms', [BusinessSettingController::class, 'terms'])->name('setting.terms');
     Route::post('/update', [BusinessSettingController::class, 'update'])->name('setting.update');
 });
 
@@ -197,7 +199,6 @@ Route::group(['prefix' => 'contact/page'], function () {
     Route::get('/index', [ContactSettingController::class, 'index'])->name('contactpage.index');
     Route::post('/update', [ContactSettingController::class, 'update'])->name('contactpage.update');
 });
-
 
 //clear cache
 Route::get('/clear-cache', function () {

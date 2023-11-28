@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('page.name', 'Contact Page Setting')
+@section('page.name', 'Contact Page Content Setting')
 
 @section('page.content')
 <div class="card">

@@ -138,13 +138,19 @@
                         <li class="side-nav-item">
                             <a data-bs-toggle="collapse" href="{{ url('#sidebarEmail') }}" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
                                 <i class="ri-article-line"></i>
-                                <span> Contact Page </span>
+                                <span> Page </span>
                                 <span class="menu-arrow"></span>
                             </a>
                             <div class="collapse" id="sidebarEmail">
                                 <ul class="side-nav-second-level">
                                     <li>
-                                        <a href="{{ route('contactpage.index') }}">Page content</a>
+                                        <a href="{{ route('contactpage.index') }}">Contact Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('setting.privacy') }}">Privacy Policy Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('setting.terms') }}">Terms & Conditions Page</a>
                                     </li>
                                 </ul>
                             </div>
