@@ -42,15 +42,19 @@
 
 <!-------===========practicearea start===================------------>
 
-<!-- start.jpeg
-licences.jpeg
-taxation.jpeg
-Intellectual.jpeg
-NGO.jpeg -->
-
-
     <!-- -------------------------- Service banner Start ---------------- -->
-    <section class="service_banner"style="background-image:url('/assets/frontend/images/payment_bg.png')" >
+    @if($detail->parent_id == 1)
+    <section class="service_banner"style="background-image:url('/assets/frontend/images/start.jpeg')" >
+    @elseif($detail->parent_id == 2)
+    <section class="service_banner"style="background-image:url('/assets/frontend/images/licences.jpeg')" >
+    @elseif($detail->parent_id == 3)
+    <section class="service_banner"style="background-image:url('/assets/frontend/images/taxation.jpeg')" >
+    @elseif($detail->parent_id == 4)
+    <section class="service_banner"style="background-image:url('/assets/frontend/images/Intellectual.jpeg')" >
+    @else
+    <section class="service_banner"style="background-image:url('/assets/frontend/images/NGO.jpeg')" >
+    @endif
+
         <div class="container">
           <div class="row">
             <div class="col-md-12">
