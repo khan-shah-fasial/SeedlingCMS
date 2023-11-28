@@ -2080,13 +2080,11 @@ footer .footer_desc {
 }
 .practice_listing_content {
     background: #e36f6d;
-    padding: 12px 35px;
+    padding: 12px 20px;
     text-align: center;
-    border-radius: 41px 0px;
+    border-radius: 35px 0px;
     margin-top: -48px;
-    margin-right: 16px;
     position: relative;
-    margin-bottom: 30px;
     font-family: "Libre Baskerville", serif;
     width: 100%;
 }
@@ -2094,8 +2092,9 @@ footer .footer_desc {
 .practice_listing_content h4 {
     color: #fff;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 20px;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .practice_listing_content a {
