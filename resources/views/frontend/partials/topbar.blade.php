@@ -1,7 +1,7 @@
 <div class="nav_bar ">
     <div>
         <a href="{{ url(route('index')) }}">
-            <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo" />
+            <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo" style="width: 160px;" />
         </a>
     </div>
     <div>
