@@ -48,10 +48,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 <li><a href="#"data-aos="fade-up" data-aos-once="true"> SITE BY NEXGENO</a></li>
              </ul>
              <p class="footer_desc mb-0">
-                The choice of a lawyer is an important decision and should not
-                be based solely on advertisements. <br />
-                Past results do not guarantee future results. Every case is
-                different and must be judged on its own merits.
+             SEEDLING ASSOCIATES PRIVATE LIMITED | CIN U69100DL2022PTC403662 | Registered Office : Plot No. 66, First Floor, #TheHub Okhla Phase III,Okhla Industrial, Estate, South Delhi 110020,India | Phone Number : 7428899959 Email Address: admin@seedlingassociates.com
              </p>
           </div>
        </div>

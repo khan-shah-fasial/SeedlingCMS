@@ -14,14 +14,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
-                        <h1 class="heading">Privacy Policy</h1>
+                        <h1 class="heading">Terms Of Use</h1>
                         <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item home">
                                     <a href="#" data-aos="fade-up" data-aos-once="true">Home</a>
                                 </li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    Privacy Policy
+                                Terms Of Use
                                 </li>
                             </ol>
                         </nav>
@@ -39,98 +39,119 @@
             <div class="row">
                 <div class="col-md-12 padd00mb">
                     <p class="desc mb-3 mt-5">
-                    At Seedling Associates Private Limited (“Seedling”), we prioritize the privacy of all users
-who visit and use our website (www.register-india.com). Our Privacy Policy outlines how we
-handle personal data and other relevant information. Whenever we use words such as “we,”
-“us,” and “our,” it refers to Seedling Associates Private Limited. Any changes made to the
-Privacy Policy will become effective on the day and date they are published on the website,
-unless stated otherwise.
+                    By accessing and using our website www.register-india.com (Website), users have consented
+to comply with these Terms of Use (Terms), Privacy Policy and the Refund Policy. The usage
+of the Website also means that users have read and understood these Terms, Privacy Policy
+and the Refund Policy, and have agreed to be bound by them. Additionally, users expressly
+agree that they will not infringe or violate any of Seedling’s rights, including intellectual
+property rights such as copyright or trademark.
+The Terms, read together with the Privacy Policy, constitute a legal and binding agreement
+between the user and Seedling and is enforceable under the laws of India. By accepting the
+Terms, the user represents and warrants that they are at least 18 years of age and have the
+right, authority, and legal capacity to enter into this agreement.
                     </p>
 
                     <ul class="privacy_roman_list" >
                         <li>
-                            <h3 >APPLICABILITY OF THE POLICY</h3>
-                            <p>Seedling’s Privacy Policy is relevant to anyone who uses the website or provides personal
-data relating to a natural person who can be identified. We collect personal data with your
-consent, usually when you fill out forms on the website. This information may include your
-basic details such as your name, contact number, email address, or any other information you
-choose to provide.</p>
-                            <p>By accessing or using the website, users agree to and are legally bound by the Privacy Policy.
-These policies may be modified and updated at our discretion or to reflect changes in the law.
-We encourage users to read the Privacy Policy in conjunction with the terms and conditions
-of the website.</p>
+                            <h3 >General Information</h3>
+                            <p>Seedling reserves the right to change the information, material and content provided on the
+Website without prior notice..</p>
+                            <p>Seedling is not responsible for any loss or damage due to errors or omissions in the
+information provided on the Website, even if they result from negligence, accident or any
+other cause. Furthermore, Seedling holds no liability for the interpretation and/or use of the
+information contained on this Website, nor does it offer a warranty of any kind, either
+expressly or impliedly.</p>
+                            <p>Third-party hyperlinks and information on the Seedling are provided to facilitate any
+ancillary services offered by such third-parties (such as payment gateways). Furthermore,
+Seedling undertakes no responsibility and makes no representations or warranties with regard
+to the content of the Websites to which links may be provided on the Website.</p>
+                            <p>Seedling prohibits the modification, editing, and out-of-context use of the material on the
+Website in any manner.</p>
+                            <p>Seedling holds the right to add, modify, change or vary all or any of these Terms without
+prior notice.</p>
+                            
                         </li>
                         <li>
-                            <h3>TYPES OF INFORMATION COLLECTED</h3>
-                            <p>We collect the following types of information from you:</p>
-                            <p> <strong>User Data:</strong> When using our website, you may provide us with certain information, including
-your name, email address, mobile number, organization’s name, and job title. This
-information is collectively referred to as ‘user information’..</p>
-                            <p> <strong>Technical Data:</strong> During your visit to our website, we may gather information about your
-browsing behaviour, the type of device you are using (such as a laptop, tablet, or mobile
-phone), the operating system on your device, and other details such as your IP address and
-which parts of the website you accessed. Seedling uses various types of cookies to collect
-data about your use of the website and the resources you access. We use necessary cookies to
-allow you to use the website’s features, as well as functional cookies to remember your
-preferences and tailor the site to your needs. This information is typically anonymized and
-used for statistical purposes only. We also use analytic services and performance cookies to
-help us understand how effective our content is and how many users access our website, but
-we do not use this information to personally identify any user.</p>
+                            <h3>Intellectual Property</h3>
+                            <p>All content on the Website is protected by copyright. Certain content on the Website may also
+be protected as trademarks, trade secrets or other intellectual property or proprietary rights.
+Users shall abide by all copyright notices, trademark rules, and restrictions contained on the
+Website. You may not modify, publish, transmit, participate in the transfer or sale of,
+reproduce, create derivative works based on, distribute, perform, display, or in any way
+exploit, any of the content on the Website, in whole or in part, except that you may download
+or copy the content for your personal non-commercial use only, provided that you maintain
+all copyright and other notices contained in such content</p>
+                            <p>By accessing the Website, the users agree that they will not scrape or attempt to scrape or
+extract any data. The user also agrees that they shall not use the Website for any monitoring,
+benchmarking or throttling or any other purposes that may impair the performance or 
+functionality of the Website. The user agrees not to access or attempt to access any content
+available on the Website by any means other than through the interface that is provided by
+Seedling.p>
+                         
                         </li>
                         <li>
-                            <h3>PURPOSE OF COLLECTION OF INFORMATION</h3>
-                            <p>We collect your data for the following purposes:</p>
-                           <ul>
-                            <li>To enhance the functionality of our website and provide a better user experience.</li>
-                            <li>To provide our services to you.</li>
-                            <li>To analyse data, create databases, and build algorithms for rating systems and
-recommendation engines, ensuring that our content is relevant and accessible to our
-users.</li>
-                            <li>To conduct research for internal purposes.  </li>
-                            <li>To monitor resource usage and troubleshoot issues related to the website.</li>
-                           </ul>
-                           <p>Additionally, we may use your personal information for record keeping, sharing knowledge
-updates and recent developments at Seedling and seeking your feedback on your engagement
-with us.</p>
+                            <h3>Exclusion Of Warranty</h3>
+                            <p>Members, affiliates, employees and authorised representatives for Seedling offer the Website
+and the information on an “as is” basis. They do not make any implied warranties,
+representations, endorsements or conditions with respect to the Website or the information.</p>
+                           <p>Seedling does not warrant the availability of Website or addressal of user(s)’ requirements, or
+uninterrupted access. Similarly, it does not warrant that there will be no delays, failures,
+errors or omissions or loss of transmitted information, or transmission of viruses to the User’s
+computer system. The responsibility for adequate protection and data backup solely lies with
+the user.</p>
                         </li>
                         <li>
-                            <h3>SHARING OF INFORMATION</h3>
-                            <p>We may share your limited information with third-party service providers, agents, or
-contractors who handle or will handle your information on our behalf. This includes those
-who provide us with administrative or other services.</p>
-                            <p>In cases where it is legally required, we may disclose your information in response to an
-order from a governmental entity or to comply with legal requirements and processes. We
-may also share your information to safeguard our rights or properties, prevent a crime, protect
-national security, or ensure the personal safety of our users or the public.</p>
+                            <h3>No Liability</h3>
+                            <p>Seedling is not responsible or liable to the user for any damages or other harm whatsoever
+arising out of or in connection with the user’s use of or inability to utilise the Website or the
+information contained in it and the Website is provided on an “as is” available basis..</p>
+                            
                         </li>
                         <li>
-                            <h3>SAFEGUARDS FOR SECURING YOUR INFORMATION</h3>
-                            <p>At Seedling, protecting your privacy is of utmost importance to us. We maintain the security
-of your personal information by monitoring and reviewing our information collection,
-storage, and processing practices to prevent unauthorized access to our systems.</p>
-                            <p>Only authorized personnel, such as our employees, agents, and service providers, are
-permitted to access your personal information to process it on our behalf. They are bound by
-contractual confidentiality obligations and failure to comply may result in termination of their
-relationship with us.</p>
-<p>However, we cannot be held liable for any breach of security or actions of third parties
-beyond our control. This includes events such as government actions, computer hacking, and
-security breaches.</p>
+                            <h3>Termination Of Access</h3>
+                            <p>Seedling reserves the right to immediately block any IP address from accessing the Website,
+with or without any reason and prior notice. Seedling can make this decision at its sole
+discretion and shall not be liable in any manner whatsoever to any user or third party.
+Without prejudice to Seedling’s general right to terminate access to the Website, termination
+can also be carried out if –.</p>
+                            <ul>
+                                <li>
+                                The user breaches or deviates from these Terms.
+                                </li>
+                                <li>Law enforcement or other government agencies make a request.</li>
+                                <li>In case unexpected technical issues or problems occur.</li>
+                            </ul>
                         </li>
                         <li>
-                            <h3>CHANGES TO INFORMATION</h3>
+                            <h3>Jurisdiction</h3>
                             <p>
-                            If you need to correct, update, or review your personal information, please send an email to
-contact@ register-india.com. You may also request that we delete your personal information,
-unless we are required by law to retain it.
+                            These Terms are governed by the laws of India without giving effect to any principles of
+conflicts of laws. For the purpose of these Terms, the courts of New Delhi shall have
+exclusive jurisdiction.
                             </p>
-                            <p>Please be aware that we reserve the right to deny or limit any requests mentioned above if it
-infringes on someone else’s rights or is against applicable laws.</p>
+                            
                         </li>
                         <li>
-                            <h3>CONTACT DETAILS</h3>
-                            <p>In case of any doubts, queries or grievances pertaining to the contents of the Privacy Policy,
-please write to us at – contact@register-india.com.</p>
+                            <h3>Indemnity</h3>
+                            <p>To the fullest extent allowed by law, the user will indemnify and hold Seedling harmless from
+all damages, liabilities, settlements, expenses, fines, penalties, expenses, costs and attorneys’
+fees arising from or related to any claim or demand made by any third party due to or arising
+out of the user’s access to or use of the Website, user’s access to, creation of, or transmittal of
+any of the content, user’s violation of these Terms, or the infringement by you of any
+intellectual property or other right of any person or entity</p>
                         </li>
+                        <li>
+                            <h3>Reservation Of Legal Rights</h3>
+                            <p>Seedling holds the right to access all remedies available at law and in equity in case a user
+violates any of these Terms.</p>
+                        </li>
+                        <li>
+                        Revisions To The Terms
+                        </li>
+                        <p>The Terms are subject to revisions at any time by Seedling, and all changes are effective
+immediately upon being posted on the Website. It is your responsibility to review these Terms
+periodically for updates/changes. Any use of the Website after such notice will be deemed an
+acceptance of these changes by you.</p>
                     </ul>
 
                 </div>
