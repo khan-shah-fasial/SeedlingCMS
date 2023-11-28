@@ -1430,7 +1430,7 @@ footer .footer_desc {
 
 .service_banner {
     padding: 40px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    /* background-image: url("/assets/frontend/images/payment_bg.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2710,4 +2710,14 @@ body .backhomebutton {
     color: #f1f3f5;
     font-weight: 900;
     transition: 0.3s;
+}
+
+/* ---------------privacy police--------------- */
+
+.privacy_content p {
+    font-size: 14px;
+}
+
+.privacy_roman_list {
+    list-style-type: upper-roman;
 }

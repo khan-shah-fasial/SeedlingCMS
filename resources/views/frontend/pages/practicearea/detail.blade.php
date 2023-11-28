@@ -44,7 +44,7 @@
 
 
     <!-- -------------------------- Service banner Start ---------------- -->
-    <section class="service_banner">
+    <section class="service_banner"style="background-image:url('/assets/frontend/images/payment_bg.png')" >
         <div class="container">
           <div class="row">
             <div class="col-md-12">
