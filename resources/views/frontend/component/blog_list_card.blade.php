@@ -9,20 +9,22 @@
                     <span><img src="assets/frontend/images/author.png" alt="" /></span>
 
                     @php
-                    $author = json_decode($row->user_id, true);
-                    $count = count($author);
+                    //$author = json_decode($row->user_id, true);
+                    //$count = count($author);
                     @endphp
 
                     <span>
 
-                        @php $i = 1; @endphp
-                        @foreach ($author as $details)
-                        @php $author_name = DB::table('users')->where('id', $details)->first();
+                        {{--@php $i = 1; @endphp
+                        @foreach ($author as $details)--}}
+                        @php 
+                        //$author_name = DB::table('users')->where('id', $details)->first();
+                        $author_name = DB::table('users')->where('id', $row->user_id)->first();
                         @endphp
                         {{ $author_name->name }}
-                        @if($count > $i), @endif
+                        {{--@if($count > $i), @endif
                         @php $i++; @endphp
-                        @endforeach
+                        @endforeach--}}
 
                     </span>
                 </p>
