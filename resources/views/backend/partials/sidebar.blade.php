@@ -131,6 +131,9 @@
                                     <li>
                                         <a href="{{ route('blogcomment.index') }}">Comment</a>
                                     </li>
+                                    <li>
+                                        <a href="{{ route('author.index') }}">Author</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -151,6 +154,9 @@
                                     </li>
                                     <li>
                                         <a href="{{ route('setting.terms') }}">Terms & Conditions Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('setting.refund_policy') }}">Refund Policy</a>
                                     </li>
                                 </ul>
                             </div>
