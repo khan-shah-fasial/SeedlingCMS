@@ -385,5 +385,10 @@ class IndexController extends Controller
         return view('frontend.pages.terms.index');
     }
 
+    public function refund_policy(){
+        return view('frontend.pages.refund_policy.index');
+    }
+
+
 
 }

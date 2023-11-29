@@ -51,6 +51,7 @@ Route::get('/career', [IndexController::class, 'career'])->name('career');
 Route::get('/privacy-policy', [IndexController::class, 'privacy_policy'])->name('privacy-policy');
 
 Route::get('/terms', [IndexController::class, 'terms_page'])->name('terms');
+Route::get('/refund-policy', [IndexController::class, 'refund_policy'])->name('refund-policy');
 
 Route::get('/404', [IndexController::class, 'not_found'])->name('error_page');
 Route::get('/thank-you', [IndexController::class, 'thank_you'])->name('thank_you');
