@@ -43,6 +43,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 <li>|</li>
                 <li><a href="{{ url(route('privacy-policy')) }}" data-aos="fade-up" data-aos-once="true">PRIVACY</a></li>
                 <li>|</li>
+                <li><a href="{{ url(route('refund-policy')) }}" data-aos="fade-up" data-aos-once="true">Refund Policy</a></li>
+                <li>|</li>
                 <li><a href="#"data-aos="fade-up" data-aos-once="true">SITE MAP</a></li>
                 <li>|</li>
                 <li><a href="#"data-aos="fade-up" data-aos-once="true"> SITE BY NEXGENO</a></li>
