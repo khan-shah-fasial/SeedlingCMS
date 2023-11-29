@@ -19,6 +19,8 @@ use App\Http\Controllers\backend\PublicationController;
 use App\Http\Controllers\backend\ContactController;
 use App\Http\Controllers\backend\BusinessSettingController;
 use App\Http\Controllers\backend\ContactSettingController;
+use App\Http\Controllers\backend\AuthorController;
+use App\Http\Controllers\backend\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -189,8 +191,11 @@ Route::group(['prefix' => 'contact'], function () {
 //setting
 Route::group(['prefix' => 'setting'], function () {
     Route::get('/index', [BusinessSettingController::class, 'index'])->name('setting.index');
+    
     Route::get('/privacy-policy', [BusinessSettingController::class, 'privacy_policy'])->name('setting.privacy');
     Route::get('/terms', [BusinessSettingController::class, 'terms'])->name('setting.terms');
+    Route::get('/refund-policy', [BusinessSettingController::class, 'refund_policy'])->name('setting.refund_policy');
+
     Route::post('/update', [BusinessSettingController::class, 'update'])->name('setting.update');
 });
 
@@ -209,3 +214,23 @@ Route::get('/clear-cache', function () {
     // Redirect back to the previous page
     return back()->with('status', 'Cache cleared successfully!');
 })->name('clear-cache');
+
+
+//Author
+Route::group(['prefix' => 'author'], function () {
+    Route::get('/index', [AuthorController::class, 'index'])->name('author.index');
+    Route::get('/add', [AuthorController::class, 'add'])->name('author.add');
+    Route::get('/edit/{id}', [AuthorController::class, 'edit'])->name('author.edit');
+    Route::post('/create', [AuthorController::class, 'create'])->name('author.create');
+    Route::post('/update', [AuthorController::class, 'update'])->name('author.update');
+    Route::post('/delete/{id}', [AuthorController::class, 'delete'])->name('author.delete');
+    //Route::get('/status/{id}/{status}', [AuthorController::class, 'status'])->name('author.status');
+});
+
+//User
+Route::group(['prefix' => 'profile'], function () {
+    Route::get('/edit/{id}', [UserController::class, 'edit'])->name('user.edit');
+    Route::get('/reset/{id}', [UserController::class, 'password'])->name('user.password');
+    Route::post('/update', [UserController::class, 'update'])->name('user.update');
+    Route::post('/reset', [UserController::class, 'reset'])->name('user.reset');    
+});

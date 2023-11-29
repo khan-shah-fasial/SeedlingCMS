@@ -20,6 +20,10 @@ class BusinessSettingController extends Controller
     public function terms() {
         return view('backend.pages.terms.index');
     }
+
+    public function refund_policy() {
+        return view('backend.pages.refund_policy.index');
+    }
       
     public function update(Request $request) {
         // Assuming the request data is in key-value pairs
