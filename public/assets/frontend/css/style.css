@@ -830,10 +830,6 @@ section.banner_slider .item a {
     margin-top: -40px !important;
 }
 
-.slider_banner_box img {
-    filter: hue-rotate(20deg);
-}
-
 .slider_banner_box:hover img {
     filter: grayscale(100%) brightness(0) invert(100%);
 }
