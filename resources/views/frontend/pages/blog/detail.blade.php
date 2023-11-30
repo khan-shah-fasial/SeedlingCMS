@@ -5,7 +5,7 @@ $url = request()->segment('1');
 $page = DB::table('blog_categories')
 ->where('slug', $url)
 ->first();
-$count = count($author);
+//$count = count($author);
 $i = 1;
 @endphp
 
@@ -58,10 +58,9 @@ $i = 1;
     "author": {
         "@type": "Person",
         "name": [
-            @foreach($author as $row)
-            @php $author_name = DB::table('users')-> where('id', $row)->
+            
+            @php $author_name = DB::table('users')-> where('id', $author)->
             first();@endphp "{{ $author_name->name }}",
-            @endforeach
         ],
         "url": "{{ url('') }}/"
     },
@@ -126,17 +125,14 @@ $i = 1;
                 <div>
                     <img src="assets/frontend/images/icon-author.png" alt="" class="me-2" />
                     <span class="">
-                        @foreach ($author as $row)
+                        
                         @php
                         $author_name = DB::table('users')
-                        ->where('id', $row)
+                        ->where('id', $author)
                         ->first();
                         @endphp
-                        {{ $author_name->name }} @if ($count > $i)
-                        ,
-                        @endif
-                        @php $i++ @endphp
-                        @endforeach
+                        {{ $author_name->name }} 
+
                     </span>
                 </div>
                 <div>
