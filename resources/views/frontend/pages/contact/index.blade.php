@@ -86,24 +86,30 @@
                     <div class="contact_icon_box">
                         <div class="row">
                             <div class="col-md-6 mb-md-0 mb-4">
-                                <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-4 text-center"
+                                <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-4 text-center"
                                     data-aos="fade-up" data-aos-once="true">
                                     <img src="assets/frontend/images/loaction.png" class="contact_icon" alt="Contact Icon" />
                                     <p class="contact_title">Location</p>
                                     <p class="desc mb-0">
                                         {{ get_contactpage('location') }}
                                     </p>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-md-6">
                                 <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-4 text-center"
                                     data-aos="fade-up" data-aos-once="true">
                                     <img src="assets/frontend/images/call_big.png" class="contact_icon" alt="Contact Icon" />
                                     <p class="contact_title">24/7 Support</p>
-                                    <p class="desc mb-0">
-                                        +{{ get_contactpage('number') }} <br />
-                                        {{ get_contactpage('email') }}
-                                    </p>
+                                    <div>
+                                    <a  class="desc mb-0" href="tel:+91-74288 99959">
+                                    +{{ get_contactpage('number') }}
+                                    </a>
+                                    <a class="desc mb-0" href="mailto:admin@seedlingassociates.com">
+                                    {{ get_contactpage('email') }}
+                                    </a>
+                                   
+                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

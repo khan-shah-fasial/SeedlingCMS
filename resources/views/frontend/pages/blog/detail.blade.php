@@ -135,10 +135,10 @@ $i = 1;
 
                     </span>
                 </div>
-                <div>
+                <!-- <div>
                     <img src="assets/frontend/images/dot.png" alt="" class="me-2" />
                     <span>{{ $author_name->designation }}</span>
-                </div>
+                </div> -->
             </div>
             <hr />
             <div>

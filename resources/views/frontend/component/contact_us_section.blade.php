@@ -10,7 +10,7 @@
                 <div class="contact_icon_box">
                     <div class="row">
                         <div class="col-md-6 mb-md-0 mb-4">
-                            <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column text-center"
+                            <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column text-center"
                                 data-aos="fade-up" data-aos-once="true">
                                 <div class="contact_icon_box" data-aos="fade-up" data-aos-once="true">
                                     <img src="{{ asset('/assets/frontend/images/loaction.png') }}" class="contact_icon"
@@ -24,7 +24,7 @@
                                 <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
                                     {{ get_settings('mumbai_address') }}
                                 </p>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-6 mb-md-0 mb-4">
                             <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column text-center"
@@ -36,14 +36,12 @@
                                         class="contact_icon" alt="Contact Icon" />
                                 </div>
                                 <p class="contact_title" data-aos="fade-up" data-aos-once="true">24/7 Support</p>
-                                <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
+                                <a href="tel:+91-74288 99959" class="desc mb-0" data-aos="fade-up" data-aos-once="true">
                                     +{{ get_settings('mobile') }}
-                                </p>
-                                <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
+                                </a>
+                                <a href="mailto:admin@seedlingassociates.com" class="desc mb-0" data-aos="fade-up" data-aos-once="true">
                                     {{ get_settings('email') }}
-                                    <!-- contact@ahlawat <br> associates.in -->
-
-                                </p>
+                                </a>
                             </div>
                         </div>
                     </div>

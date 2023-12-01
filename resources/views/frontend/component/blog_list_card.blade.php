@@ -1,7 +1,7 @@
 @foreach ($blog as $row)
 
 <div class="col-lg-4 col-md-6">
-    <div class="blog_image_card" data-aos="fade-up" data-aos-once="true">
+    <a href="{{ url(route('blog.detail', ['category' =>'blog','slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}" class="blog_image_card" data-aos="fade-up" data-aos-once="true">
         <img src="{{ asset('storage/' . $row->main_image) }}" alt="{{ $row->alt_main_image }}" class="blog_img" />
         <div class="d-flex align-items-center justify-content-center">
             <button>
@@ -42,18 +42,14 @@
             </p>
             <hr />
             <div class="blog_link_icon d-flex align-items-center justify-content-between">
-                <a
-                    href="{{ url(route('blog.detail', ['category' =>'blog','slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}">Learn
+                <span
+                    >Learn
                     More <img src="assets/frontend/images/right.png" alt="" />
-                </a>
-                <div class="social_icons d-flex align-items-center gap-2">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </div>
+                </span>
+              
             </div>
         </div>
-    </div>
+    </a>
 </div>
 
 @endforeach

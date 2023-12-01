@@ -133,14 +133,46 @@
     transform: translate3d(0, 0, 0);
 }
 
+.fix_footer {
+    background: white;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d3d3d394;
+}
+
+.fix_footer a {
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 14px;
+}
+.fix_footer a i {
+    font-size: 20px;
+}
+
 @media (min-width: 992px) {
     .wrapper {
+        display: none;
+    }
+    .fix_footer {
         display: none;
     }
 }
 
 @media (max-width: 991px) {
     .nav_bar {
+        display: none !important;
+    }
+    .wcs_fixed_right {
         display: none !important;
     }
 }
@@ -272,7 +304,6 @@
     }
 
     .about .about_counter_container {
-        margin-top: 21px;
         padding-bottom: 20px;
         height: auto;
     }
@@ -302,8 +333,8 @@
         padding: 20px 0;
     }
     .payment .payment_heading {
-        font-size: 21px;
-        line-height: 31px;
+        font-size: 17px;
+        line-height: 28px;
     }
     .payment .payment_para {
         line-height: 23px;
@@ -320,6 +351,7 @@
         background: #e36d6a;
         transition: all 0.5s;
         font-size: 18px !important;
+        margin-bottom: 16px;
     }
     .blogs {
         padding: 35px 0;
@@ -360,7 +392,8 @@
     }
 
     .contact .contact_form_container form input {
-        padding: 12px 20px;
+        padding: 10px 20px;
+        border-radius: 20px 0 20px 0;
     }
 
     .contact .contact_form_container form .contact_form_button {
@@ -421,7 +454,7 @@
 
     .contact .contact_icon_container {
         border: 1px solid #e36d6a;
-        padding: 25px 8px;
+        padding: 14px 8px;
         border-radius: 40px 0 40px 0;
     }
 
@@ -516,6 +549,11 @@
     #banner.noBannerImage {
         /*height: auto;*/
         min-height: 220px;
+    }
+
+    .wcs_fixed_right {
+        bottom: 85px !important;
+        left: 12px !important;
     }
 
     #homeAnimation .results_list > div {

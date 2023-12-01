@@ -212,7 +212,8 @@ header ul.dropdown ul {
     margin-bottom: 5px;
 }
 .popup .contact_form_container .form-select,
-.popup .contact_form_container form input {
+.popup .contact_form_container form input,
+.popup .contact_form_container form textarea {
     width: 100% !important;
     padding: 17px 22px;
     background: transparent;
@@ -313,7 +314,6 @@ body#index #mainContent {
 #homeAnimation .titleGroup {
     position: absolute;
     color: #fff;
-    text-transform: capitalize;
     font-weight: 700;
     height: 100%;
     text-align: center;
@@ -625,7 +625,6 @@ body#index #mainContent {
     line-height: 2.6rem;
     color: #e13333;
     font-weight: 700;
-    text-transform: capitalize;
 }
 
 #homeAnimation .results_list > div:nth-child(2) .content,
@@ -1139,6 +1138,7 @@ div#counter {
     padding: 37px 20px;
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
+    text-decoration: none;
 }
 
 .contact .contact_icon_container .contact_icon_box {
@@ -1173,6 +1173,13 @@ div#counter {
     font-family: "Libre Baskerville", serif;
     padding-top: 35px;
     padding-bottom: 10px;
+    color: white;
+}
+.contact .contact_icon_container .desc {
+    color: white;
+}
+.contact .contact_icon_container a {
+    text-decoration: none;
 }
 
 .contact .contact_rating_container {
@@ -1205,7 +1212,8 @@ div#counter {
     font-family: "Libre Baskerville", serif;
 }
 .contact .contact_form_container .form-select,
-.contact .contact_form_container form input {
+.contact .contact_form_container form input,
+.contact .contact_form_container form textarea {
     width: 100%;
     padding: 17px 22px;
     background: transparent;
@@ -2000,6 +2008,7 @@ footer .footer_desc {
     border: 1px solid #00000030;
     padding-bottom: 20px;
     margin-bottom: 25px;
+    text-decoration: none;
 }
 
 .blog_image .blog_image_card .blog_img {
@@ -2035,6 +2044,7 @@ footer .footer_desc {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: black;
 }
 
 .blog_image .blog_image_card p {
@@ -2045,6 +2055,13 @@ footer .footer_desc {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.blog_card_content p {
+    color: #212529;
+}
+.blog_card_content .blog_link_icon {
+    color: #e13333;
 }
 
 .blog_card_content {
@@ -2286,6 +2303,7 @@ footer .footer_desc {
     padding: 25px 20px;
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
+    text-decoration: none;
 }
 
 .contact_process .contact_icon_container:hover {
@@ -2298,6 +2316,11 @@ footer .footer_desc {
     line-height: 25px;
     margin-bottom: 0;
     font-family: "Libre Baskerville", serif;
+    color: black;
+}
+.contact_process .contact_icon_container .desc {
+    color: #212529;
+    text-decoration: none;
 }
 
 .contact_process .contact_rating_container {
@@ -2459,14 +2482,14 @@ input[name="price"]:checked ~ .price_list {
 }
 
 .form-comments textarea {
-    padding: 40px 0 0 37px;
+    padding: 20px 0 0 20px;
     margin: 25px 0;
     border-radius: 36px 0px 36px 0px;
 }
 
 .form-comments input {
-    padding: 30px;
-    border-radius: 36px 0px 36px 0px;
+    padding: 15px;
+    border-radius: 20px 0px 20px 0px;
 }
 
 .form-comments input::placeholder {
@@ -2487,7 +2510,7 @@ input[name="price"]:checked ~ .price_list {
 
 .comments .content_btn-4 {
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     border-radius: 20px 0 20px 0;
     border: none;
     background: rgba(227, 111, 109, 1);
@@ -2495,7 +2518,7 @@ input[name="price"]:checked ~ .price_list {
     font-size: 24px;
     font-weight: 700;
     line-height: 26px;
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
 .comments .content_btn {
@@ -2721,4 +2744,47 @@ body .backhomebutton {
 
 .privacy_roman_list {
     list-style-type: upper-roman;
+}
+
+.sidebar_item .sub-menu {
+    display: none;
+}
+
+.whatsapp_blink .btn-whatsapp-pulse {
+    background: #25d366;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 27px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+}
+
+.wcs_button_circle {
+    width: auto !important;
+    height: auto !important;
+}
+
+.wcs_fixed_right {
+    z-index: 999 !important;
+    position: fixed !important;
+    bottom: 25px !important;
+    left: 25px !important;
 }

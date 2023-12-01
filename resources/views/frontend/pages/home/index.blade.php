@@ -262,7 +262,7 @@ assistance for startups, FDI, Property law, IP, and more')
                 </div>
              </div>
              <div class="col-md-6 col-6 third_counter">
-                <div class="about_counter_container">
+                <div class="about_counter_container mt-md-0 mt-2">
                    <div class="about_right_counter"data-aos="fade-up" data-aos-once="true">
                       <div class="about_counter_icon">
                          <div class="about_counter_img">
@@ -280,7 +280,7 @@ assistance for startups, FDI, Property law, IP, and more')
                 </div>
              </div>
              <div class="col-md-6 col-6">
-                <div class="about_counter_container">
+                <div class="about_counter_container mt-md-0 mt-2">
                    <div class="about_right_counter"data-aos="fade-up" data-aos-once="true">
                       <div class="about_counter_icon">
                          <div class="about_counter_img">

@@ -48,6 +48,7 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
           <option value="{{ $row->title }}">{{ $row->title }}</option>
       @endforeach
     </select>
+    <textarea name="description" placeholder="Description" class="mb-3" rows="2"></textarea>
     <button type="submit" class="contact_form_button"data-aos="fade-up" data-aos-once="true">Send</button>
  </form>
  <!----------------- Have any Question --------------------->
