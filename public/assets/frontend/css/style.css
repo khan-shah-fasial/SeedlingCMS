@@ -840,7 +840,7 @@ section.banner_slider .item a {
 
 .about {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1007,7 +1007,7 @@ div#counter {
 
 .payment {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1048,7 +1048,7 @@ div#counter {
 
 .blogs {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1118,7 +1118,7 @@ div#counter {
 
 .contact {
     padding: 45px 0 90px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1344,7 +1344,7 @@ div#counter {
 
 .links {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1371,7 +1371,7 @@ div#counter {
 
 footer {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1431,7 +1431,7 @@ footer .footer_desc {
 
 .service_banner {
     padding: 40px 0;
-    /* background-image: url("/assets/frontend/images/payment_bg.png"); */
+    /* background-image: url("/assets/frontend/images/payment_bg.webp"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1496,7 +1496,7 @@ footer .footer_desc {
 
 .service_steps {
     padding: 40px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1971,7 +1971,7 @@ footer .footer_desc {
 
 .blog_banner {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2120,7 +2120,7 @@ footer .footer_desc {
 
 .contact_banner {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2378,7 +2378,7 @@ input[name="price"]:checked ~ .price_list {
 
 .blog_d_banner {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
