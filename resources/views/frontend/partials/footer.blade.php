@@ -3,7 +3,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
 @endphp
 <!--------------------footer start----------------------------->
 <!------------------ Contact Start -------------------------->
-
+@if(count($practice_Area) > 1)
 <section class="links">
     <div class="container">
        <div class="row">
@@ -26,6 +26,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
        </div>
     </div>
  </section>
+ @endif
  <!--links End-->
  
  <!--Footer Start-->
