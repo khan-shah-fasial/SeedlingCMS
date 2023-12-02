@@ -14,7 +14,7 @@ body {
 }
 
 .breadcrumb_heading {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .breadcrumb {
@@ -1202,7 +1202,7 @@ div#counter {
     background: rgba(41, 41, 41, 0.74);
     width: 100%;
     margin-top: 0px;
-    padding: 37px 53px;
+    padding: 25px 40px;
 }
 
 .contact .contact_form_container form .contact_form_logo {
@@ -1415,7 +1415,7 @@ footer .footer_links {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     font-family: "Libre Baskerville", serif;
     list-style-type: none;
     margin-bottom: 20px;
@@ -1608,7 +1608,7 @@ footer .footer_desc {
     font-weight: 700;
     line-height: 38px;
     color: #e13333;
-    margin-bottom: 19px;
+    margin-bottom: 15px;
 }
 
 .service_last .service_last_heading {
@@ -1696,7 +1696,7 @@ footer .footer_desc {
     font-weight: 700;
     line-height: 25px;
     font-family: "Libre Baskerville", serif;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
 }
 
 .service_last_benefit .benefit_box {
@@ -2346,7 +2346,7 @@ footer .footer_desc {
 
 .payment_box {
     background: #f2f2f2;
-    padding: 40px 60px;
+    padding: 25px 60px;
     margin-top: 30px;
     border-radius: 50px 0px 50px 0px;
     display: flex;
@@ -2603,7 +2603,7 @@ section.my-box-1 {
     font-weight: 900;
 }
 body .backhomebutton {
-    padding: 20px 55px;
+    padding: 15px 43px;
     border-radius: 30px 0px 30px 0px;
     border: none;
     background: #e13333;
@@ -2725,7 +2725,7 @@ body .backhomebutton {
 
 .radio_container label {
     background: #ccc;
-    padding: 20px 30px;
+    padding: 5px 50px;
     margin-bottom: 20px;
     border-radius: 40px 0px 40px 0px;
     text-align: center;
@@ -2746,6 +2746,26 @@ body .backhomebutton {
 /* ---------------privacy police--------------- */
 
 .privacy_content p {
+    font-size: 14px;
+}
+.privacy_content ul li ul {
+    margin-bottom: 12px;
+}
+.privacy_content ul li ul li {
+    font-size: 14px;
+}
+.privacy_content ol li ul li {
+    font-size: 14px;
+}
+.privacy_content ul li::marker {
+    font-size: 25px;
+    color: #212529;
+}
+.privacy_content ol li::marker {
+    font-size: 25px;
+    color: #212529;
+}
+.privacy_content ul li ul li::marker {
     font-size: 14px;
 }
 
@@ -2806,9 +2826,10 @@ body .backhomebutton {
 .wcs_popup_person_img img {
     border: none !important;
     border-radius: 0% !important;
-    margin-left: 5px !important;
-    width: 50px !important;
-    height: 50px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 40px !important;
+    height: 40px !important;
 }
 
 .select_drp_image {
@@ -2822,4 +2843,17 @@ body .backhomebutton {
 .payment_call {
     text-decoration: none;
     color: white;
+}
+
+.service_content ul li {
+    margin-bottom: 10px;
+}
+.service_content ol li {
+    margin-bottom: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }

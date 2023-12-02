@@ -45,7 +45,7 @@
                     <h4 class="main_heading">{{ get_contactpage('p_title') }}</h4>
                     <p class="desc">{{ get_contactpage('p_description') }}</p>
 
-                    <div class="ms-5 mt-5">
+                    <div class="ms-4 mt-5">
                         <div class="main-timeline">
                             @php 
                             $i = 1; 
@@ -86,7 +86,7 @@
                     <div class="contact_icon_box">
                         <div class="row">
                             <div class="col-md-6 mb-md-0 mb-4">
-                                <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-4 text-center"
+                                <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-md-4 gap-2 text-center"
                                     data-aos="fade-up" data-aos-once="true">
                                     <img src="assets/frontend/images/loaction.png" class="contact_icon" alt="Contact Icon" />
                                     <p class="contact_title">Location</p>
@@ -96,7 +96,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6">
-                                <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-4 text-center"
+                                <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-md-4 gap-2 text-center"
                                     data-aos="fade-up" data-aos-once="true">
                                     <img src="assets/frontend/images/call_big.png" class="contact_icon" alt="Contact Icon" />
                                     <p class="contact_title">24/7 Support</p>

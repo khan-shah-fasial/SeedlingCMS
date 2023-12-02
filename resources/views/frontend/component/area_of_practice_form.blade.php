@@ -17,5 +17,5 @@
     </div>
     <textarea name="description" id=""  rows="3" placeholder="How we can help"></textarea>
    
-    <button type="submit" >SEND</button>
+    <button type="submit" class="mt-2" >SEND</button>
 </form>

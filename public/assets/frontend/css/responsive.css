@@ -178,7 +178,79 @@
 }
 
 @media (max-width: 767px) {
-    .owl-carousel .owl-item img {
+    .contact_process .contact_icon_container {
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .contact_icon_box .contact_icon {
+        width: 70px;
+    }
+
+    .radio_container label {
+        padding: 3px 50px;
+    }
+
+    .radio_container .price {
+        font-size: 24px;
+    }
+
+    .main-timeline .timeline-icon {
+        width: 75px;
+        height: 75px;
+    }
+    .social .social_icons {
+        margin-top: -29px;
+    }
+
+    .main-timeline:before {
+        left: 10px;
+    }
+
+    .main-timeline .timeline .timeline-icon {
+        left: -70px;
+    }
+
+    .main-timeline .timeline {
+        padding: 0 0 0 30px;
+    }
+
+    .main-timeline .timeline-icon {
+        line-height: 60px;
+    }
+
+    .main-timeline .timeline {
+        margin: 0 0 0px 10px;
+    }
+
+    .social .social_icons .icon {
+        width: 55px;
+        height: 55px;
+    }
+    .social .social_icons .icon i {
+        font-size: 26px;
+    }
+    .social .social_icons {
+        gap: 15px;
+    }
+    .popup .contact_form_container .form-select,
+    .popup .contact_form_container form input,
+    .popup .contact_form_container form textarea {
+        padding: 10px 20px;
+    }
+
+    .popup .contact_form_container form .contact_form_button {
+        padding: 12px 0px 12px 0px;
+    }
+
+    .footer_desc span {
+        display: block;
+    }
+    .banner_slider .owl-theme .owl-nav {
+        display: none;
+    }
+
+    .banner_slider .owl-carousel .owl-item img {
         width: 32px !important;
     }
     .slider_banner_box {
@@ -199,11 +271,48 @@
     .get_in_touch {
         padding: 20px;
         border-radius: 40px 0 40px 0;
-        margin: 25px 0;
+        margin: 0px 0 25px 0;
+
         text-align: center;
     }
     .breadcrumb_heading {
+        font-size: 22px;
+    }
+
+    .service_banner .service_banner_para {
+        margin-bottom: 10px;
+    }
+
+    .service_banner {
+        padding: 20px 0;
+    }
+
+    .service_last .color_heading {
+        font-size: 28px;
+    }
+
+    .service_last_benefit .benefit_box {
+        margin-bottom: 10px;
+    }
+
+    .service_last_eligibility .first_list li {
+        margin-bottom: 10px;
+    }
+
+    .service_last_documents .heading {
         font-size: 20px;
+    }
+
+    .service_last_documents .first_list li {
+        margin-bottom: 10px;
+    }
+
+    .service_last_process .first_list li {
+        margin-bottom: 10px;
+    }
+
+    .service_last {
+        padding: 30px 0;
     }
 
     .breadcrumb {
@@ -287,13 +396,13 @@
 
     .slider_banner_box {
         padding: 10px 0px 12px 10px;
-        height: 72px;
+        height: 54px;
         font-size: 12px;
         margin-right: 10px;
     }
 
     .banner_slider {
-        margin-top: -72px;
+        margin-top: -54px;
     }
 
     .about_counter_img {
@@ -463,6 +572,7 @@
         border: 1px solid #e36d6a;
         padding: 14px 8px;
         border-radius: 40px 0 40px 0;
+        height: auto;
     }
 
     .contact .contact_icon_container .contact_icon_box {
@@ -539,20 +649,42 @@
     }
 
     .form-comments textarea {
-        padding: 20px 0 0 20px;
+        padding: 15px 0 0 15px;
         margin: 0px 0;
+        margin-bottom: 15px;
     }
 
     .form-comments input {
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .number {
+        padding: 10px 20px;
+    }
+
+    .comments .content_btn-4 {
+        padding: 11px 0;
+        font-size: 20px;
+        margin-top: -75px;
     }
 
     .form-check {
         padding-left: 13px !important;
     }
+
+    #add_comment_form input::placeholder,
+    #add_comment_form textarea::placeholder {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .about .about_counter_container {
+        height: 140px;
+    }
+    .banner_slider .owl-theme .owl-nav {
+        display: none;
+    }
     #banner.noBannerImage {
         /*height: auto;*/
         min-height: 220px;
@@ -615,7 +747,7 @@
     }
 
     footer .footer_links li a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .color_heading {
@@ -632,8 +764,8 @@
     }
 
     .payment .payment_heading {
-        font-size: 26px;
-        line-height: 35px;
+        font-size: 20px;
+        line-height: 31px;
     }
 
     .w149 {
@@ -641,7 +773,13 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+    .service_last .service_last_form_container {
+        padding: 32px 20px;
+    }
+    .contact_icon_box .desc {
+        font-size: 14px;
+    }
     footer .footer_links li a {
         font-size: 14px;
     }

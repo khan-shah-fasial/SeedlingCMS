@@ -9,18 +9,18 @@
 @section('page.content')
     <!-- -------------------- blog banner start ---------------- -->
 
-    <section class="blog_page_banner breadcrumes_padd">
+    <section class="blog_banner breadcrumes_padd">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
-                        <h1 class="heading">Refund and Cancellation Policy</h1>
+                        <h1 class="breadcrumb_heading">Refund and Cancellation Policy</h1>
                         <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item home">
+                                <li class="breadcrumb-item">
                                     <a href="{{ url(route('index')) }}" data-aos="fade-up" data-aos-once="true">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">
+                                <li class="breadcrumb-item home" aria-current="page">
                                     Refund and Cancellation Policy
                                 </li>
                             </ol>
@@ -34,7 +34,7 @@
     <!-- -------------------- blog banner end   ---------------- -->
     <!-- -------------------- privacy content  start ---------------- -->
 
-    <section class="privacy_content mb-3 mt-5">
+    <section class="privacy_content mb-md-3 mb-2 mt-md-5 mt-3">
         <div class="container">
             <div class="row">
                 @php echo html_entity_decode(get_settings('refund_policy_content')) @endphp
