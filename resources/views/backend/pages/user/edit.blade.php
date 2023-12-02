@@ -1,4 +1,4 @@
-<form id="edit_author_form" action="{{url(route('author.update'))}}" method="post" enctype="multipart/form-data">
+<form id="edit_author_form" action="{{url(route('user.update'))}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="row">
     <div class="col-sm-12">
