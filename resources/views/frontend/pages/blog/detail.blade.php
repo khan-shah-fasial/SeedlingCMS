@@ -121,7 +121,7 @@ $i = 1;
                     {{ $detail->updated_at->format('F j, Y') }}
                 </button>
             </div>
-            <div class="d-flex align-item-center gap-5 pb-md-3">
+            <div class="d-flex align-item-center gap-5 pb-md-3 pb-2" >
                 <div>
                     <img src="assets/frontend/images/icon-author.png" alt="" class="me-2" />
                     <span class="">
@@ -253,12 +253,12 @@ $i = 1;
 
             <div class="row align-items-center">
 
-                <div class="col-md-1">
+                <div class="col-lg-1 col-md-2">
                     <div class="col-space-1">
                         <img src="/assets/frontend/images/Ellipse26.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-9 px-md-5">
+                <div class="col-lg-9 col-md-8 px-md-5">
                     <div class="heading-4">
                         <span class="font-size-20">
                             <b>{{ $row->name }}</b>
@@ -277,7 +277,7 @@ $i = 1;
 
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-lg-1 col-md-2">
                     {{-- <button class="content_btn">Reply</button> - --}}
                 </div>
             </div>

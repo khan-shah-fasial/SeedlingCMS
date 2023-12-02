@@ -58,14 +58,14 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="service_banner_heading mb-3">
+              <h1 class="breadcrumb_heading mb-md-3 mb-2">
                 {{ $detail->breadcrumb_title }}
               </h1>
               <p class="service_banner_para">
                 {{ $detail->breadcrumb_subtitle }}
               </p>
               <div
-                class="service_price_btn d-flex flex-md-row flex-column align-items-center gap-4 justify-content-center"
+                class="service_price_btn d-flex flex-md-row flex-column align-items-center gap-md-4 gap-1 justify-content-center"
               >
               @php
                 $session_data = json_decode(session('user_ip'), true);
@@ -104,9 +104,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="service_steps_heading text-center">
+              <h2 class="service_steps_heading text-center">
                 {{ $detail->progress_bar_title }}
-              </h1>
+              </h2>
               <div class="service_steps_main_timeline">
                 <div class="conference_center_line"></div>
                 <div class="conference_timeline_content">
@@ -179,7 +179,7 @@
 
               @if(!empty($detail->Content_title))
               <div>
-                <h1 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h1>
+                <h2 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h2>
                 <div class="service_content"data-aos="fade-up"data-aos-once="true" >
                     @php echo html_entity_decode($detail->content) @endphp
                 </div>
@@ -194,9 +194,9 @@
               
               @if(count($Content_list) > 1)
               <div class="service_last_benefit">
-                <h1 class="benefits_heading text-center" data-aos="fade-up"data-aos-once="true">
+                <h2 class="benefits_heading text-center" data-aos="fade-up"data-aos-once="true">
                   {{ $detail->Content_list_title }}
-                </h1>
+                </h2>
                 <div class="row">
 
                   @foreach ($Content_list as $row)
@@ -270,12 +270,12 @@
 
               @if(count($doc_list) > 1)
                 <div class="service_last_documents">
-                  <h1 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h1>
-                  <h2 class="heading mb-5" data-aos="fade-up"data-aos-once="true">
+                  <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h3>
+                  <h2 class="heading mb-4" data-aos="fade-up"data-aos-once="true">
                     {{ $detail->doc_title }}
                   </h2>
     
-                  <h4 class="list_heading" data-aos="fade-up"data-aos-once="true">Documents Required</h4>
+                  <!-- <h4 class="list_heading" data-aos="fade-up"data-aos-once="true">Documents Required</h4> -->
                   <ul class="first_list" data-aos="fade-up"data-aos-once="true">
                     @foreach ($doc_list as $row)
                       <li>
@@ -300,7 +300,7 @@
   
               <div class="service_last_process">
                 @if(!empty($detail->Section_title_pro))
-                  <h1 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_pro }}</h1>
+                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_pro }}</h2>
                 @endif
 
                 @if(!empty($detail->process_content))
@@ -337,9 +337,14 @@
   
               <!-- -------------service last Process  End -------------- -->
               <!-- -------------service last Compliances start -------------- -->
-  
+              @php 
+                  $compliances = json_decode($detail->compliances, true);
+                  $a = 1; 
+              @endphp
+
+              @if(!empty($detail->compliances_content) || count($compliances) > 1 || !empty($detail->other_content_comp))
               <div class="service_last_compliances">
-                <h1 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_comp }}</h1>
+                <h2 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_comp }}</h2>
                 
                 @if(!empty($detail->compliances_content))
                   <div class="service_content" data-aos="fade-up"data-aos-once="true">
@@ -347,10 +352,7 @@
                   </div>
                 @endif
 
-                @php 
-                  $compliances = json_decode($detail->compliances, true);
-                  $a = 1; 
-                @endphp
+
               
                 @if(count($compliances) > 0)
                   <div class="row">
@@ -410,6 +412,7 @@
                   </div>
                 @endif
               </div>
+              @endif
   
               <!-- -------------service last Compliances  End -------------- -->
               <!-- -------------service last  Assistance  start -------------- -->
@@ -417,7 +420,7 @@
               @if(!empty($detail->assistance_content))
                 <div class="service_last_assistance">
                   @if(!empty($detail->Section_title_asst))
-                    <h2 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}</h2>
+                    <h2 class="color_heading " data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}</h2>
                   @endif
 
                   <div class="service_content" data-aos="fade-up"data-aos-once="true">
@@ -433,7 +436,7 @@
               @endphp
               @if(count($faq) > 0)
                 <div class="service_last_faq">
-                  <h2 class="heading" data-aos="fade-up"data-aos-once="true">Most common question about our services</h2>
+                  <h2 class="heading mb-4" data-aos="fade-up"data-aos-once="true">Most common question about our services</h2>
   
                   <div class="accordion" id="accordionExample">
 

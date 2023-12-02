@@ -9,18 +9,18 @@
 @section('page.content')
     <!-- -------------------- blog banner start ---------------- -->
 
-    <section class="blog_page_banner breadcrumes_padd">
+    <section class="blog_banner breadcrumes_padd">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
-                        <h1 class="heading">Terms Of Use</h1>
+                        <h1 class="breadcrumb_heading">Terms Of Use</h1>
                         <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item home">
+                                <li class="breadcrumb-item ">
                                     <a href="{{ url(route('index')) }}" data-aos="fade-up" data-aos-once="true">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">
+                                <li class="breadcrumb-item home" aria-current="page">
                                 Terms Of Use
                                 </li>
                             </ol>

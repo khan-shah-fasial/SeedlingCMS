@@ -17,7 +17,7 @@
         <div class="col-md-4 mb-3 form-check">
             <input type="tel" name="phone" class="form-control" placeholder="Phone No.*" required>
         </div>
-        <div class="col-md-3 mt-5">
+        <div class="col-lg-3 col-md-5 mt-5">
             <button type="submit" class="btn content_btn-4">Post Comment</button>
         </div>
     </div>
