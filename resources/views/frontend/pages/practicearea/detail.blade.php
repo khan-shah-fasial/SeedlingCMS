@@ -73,7 +73,8 @@
                     $session_data['country'] = 'IN';
                 }
               @endphp
-                <h2 class="mb-0">Price Start at 
+                <h2 class="mb-0">Price Start at
+                  {{ $session_data['country'] }} 
                   @if($session_data['country'] == 'IN')
                       Rs {{ number_format($detail->indian_price) }}
                   @else
