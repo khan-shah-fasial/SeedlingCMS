@@ -91,6 +91,7 @@
           </div>
         </div>
       </section>
+      {{ session('user_ip') }}
       <!-- -------------------------- Service banner End ---------------- -->
   
 @php 
