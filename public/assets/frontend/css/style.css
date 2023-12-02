@@ -1139,6 +1139,7 @@ div#counter {
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
     text-decoration: none;
+    height: 300px;
 }
 
 .contact .contact_icon_container .contact_icon_box {
@@ -2003,12 +2004,17 @@ footer .footer_desc {
 .blog_image {
     padding: 45px 0;
 }
+.blog_image_card_wrapper {
+    text-decoration: none;
+}
+.blog_image_card_wrapper hr {
+    color: #00000030 !important;
+}
 
 .blog_image_card {
     border: 1px solid #00000030;
     padding-bottom: 20px;
     margin-bottom: 25px;
-    text-decoration: none;
 }
 
 .blog_image .blog_image_card .blog_img {
@@ -2304,6 +2310,7 @@ footer .footer_desc {
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
     text-decoration: none;
+    height: 308px;
 }
 
 .contact_process .contact_icon_container:hover {
@@ -2432,7 +2439,7 @@ input[name="price"]:checked ~ .price_list {
     padding: 8px 41px;
     border-radius: 20px 0 20px 0;
     border: none;
-    background: rgba(227, 111, 109, 1);
+    background: #e13333;
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -2787,4 +2794,32 @@ body .backhomebutton {
     position: fixed !important;
     bottom: 25px !important;
     left: 25px !important;
+}
+
+.wcs_popup_person_img {
+    border: 2px solid #26c281 !important;
+    border-radius: 50% !important;
+    width: 65px !important;
+    height: 65px !important;
+}
+
+.wcs_popup_person_img img {
+    border: none !important;
+    border-radius: 0% !important;
+    margin-left: 5px !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.select_drp_image {
+    background-image: url(/assets/frontend/images/down.png) !important;
+    background-position: calc(100% - 19px) calc(1em + 10px),
+        calc(100% - 15px) calc(1em + 2px), 100% 0 !important;
+    background-repeat: no-repeat !important;
+    -webkit-appearance: none !important;
+}
+
+.payment_call {
+    text-decoration: none;
+    color: white;
 }

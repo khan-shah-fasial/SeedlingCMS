@@ -16,7 +16,7 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
 
     <input type="text" placeholder="Name" name="name" class="form-control" data-aos="fade-up" data-aos-once="true" required/>
     <div
-       class="contact_email_phone d-flex align-items-center gap-3 my-4"
+       class="contact_email_phone d-flex align-items-center justify-content-between gap-3 my-4"
        >
        <div>
        <input
@@ -27,6 +27,7 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
           data-aos="fade-up"
           data-aos-once="true"
           required
+          class="w-100"
           />
        </div>
      <div>
@@ -38,11 +39,12 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
           data-aos="fade-up"
           data-aos-once="true"
           required
+          class="w-100"
           />
      </div>
       
     </div>
-    <select name="services" name="services" class="contact_form_select form-select mb-4"data-aos="fade-up" data-aos-once="true" required>
+    <select name="services" name="services" class="contact_form_select form-select mb-4 select_drp_image"data-aos="fade-up" data-aos-once="true" required>
       <option value="">Select the Service</option>
       @foreach ($practice_Area as $row)
           <option value="{{ $row->title }}">{{ $row->title }}</option>

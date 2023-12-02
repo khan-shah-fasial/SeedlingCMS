@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contact_rating_container d-flex align-items-center gap-2 mt-4" data-aos="fade-up"
+                        <div class="contact_rating_container d-flex align-items-center flex-md-row flex-column gap-2 mt-4" data-aos="fade-up"
                             data-aos-once="true">
                             <div class="title">
                                 Our Best Skilled Attorneys, Trust Score 5.0

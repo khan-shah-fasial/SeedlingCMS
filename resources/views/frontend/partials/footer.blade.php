@@ -50,7 +50,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 <li>|</li>
                 <li><a href="#"data-aos="fade-up" data-aos-once="true"> SITE BY NEXGENO</a></li>
              </ul>
-             <p class="footer_desc mb-0">
+             <p class="footer_desc mb-md-0 mb-5">
              SEEDLING ASSOCIATES PRIVATE LIMITED | CIN U69100DL2022PTC403662 | Registered Office : Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla Phase III, New Delhi 110020, India | Phone Number : 7428899959 | Email Address: admin@seedlingassociates.com
              </p>
           </div>
@@ -84,7 +84,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
         <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
                         <!-- <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
                         <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" /> -->
-                        <span>Call To Action</span>
+                        <span>Request Of Call</span>
                     </button>
 
     </div>
@@ -119,7 +119,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                         </div>
                         <div class="wcs_popup_person_container">
                             <div class="wcs_popup_person" data-number="+{{ get_settings('whatsapp') }}">
-                                <div class="wcs_popup_person_img"><img src="/assets/frontend/images/favicon.png"
+                                <div class="wcs_popup_person_img"><img src="/assets/frontend/images/wh.png"
                                         alt="" /></div>
                                 <div class="wcs_popup_person_content">
                                     <div class="wcs_popup_person_name">Seedling</div>

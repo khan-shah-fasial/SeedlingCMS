@@ -19,7 +19,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span> Start a Business</span>
+                                <span style="color:#e13333;" > Start a Business</span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -54,7 +54,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>License & Registration</span>
+                                <span style="color:#e13333;">License & Registration</span>
 
                                 @if(count($subcate) > 0)        
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -93,7 +93,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>Taxation</span>
+                                <span style="color:#e13333;">Taxation</span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -130,7 +130,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>IPR & Gaming Services </span>
+                                <span style="color:#e13333;">IPR & Gaming Services </span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -166,7 +166,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>NGO Compliances</span>
+                                <span style="color:#e13333;">NGO Compliances</span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -256,8 +256,9 @@
 
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn">Start a Business 
-                    </a>
+                            
+                    <a class="sub-btn d-flex align-items-center justify-content-between">Start a Business 
+                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" /></a>
                     
                     <div class="sub-menu">
                             @php
@@ -276,8 +277,8 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn">
-                        License & Registration 
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
+                        License & Registration <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
                     </a>
                     
                     <div class="sub-menu">
@@ -297,9 +298,9 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn">
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
 
-                    Taxation
+                    Taxation <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
                     </a>
                     
                     <div class="sub-menu">
@@ -319,9 +320,9 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn">
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
 
-                    IPR & Gaming Services
+                    IPR & Gaming Services <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
                     </a>
                     
                     <div class="sub-menu">
@@ -341,9 +342,9 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn">
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
 
-                    NGO Compliances
+                    NGO Compliances <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
                     </a>
                     
                     <div class="sub-menu">

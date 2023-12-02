@@ -71,7 +71,7 @@
                 <button class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#ask-modal">
                   <img src="assets/frontend/images/nav_btn_icon.png" alt="" />
                   <img src="assets/frontend/images/ask_hover_btn.png" alt="" />
-                  <span>Ask an Expert</span>
+                  <span>Request a Consultation</span>
                 </button>
               </div>
             </div>

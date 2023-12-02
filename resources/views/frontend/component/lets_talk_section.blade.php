@@ -29,13 +29,14 @@
                         Let&#39;s Talk Now
                      </button>
                   </a>
-                   <p
+                   <a
+                   href="tel:+91-7428899959"
                       class="payment_call d-flex align-items-center justify-content-center gap-2 mb-0" data-aos="fade-up" data-aos-once="true"
                       >
                       <img src="{{ asset('/assets/frontend/images/call_white.png') }}" alt="" /><span class="fs-5"
                          >+{{ get_settings('mobile') }}</span
                          >
-                   </p>
+                   </a>
                 </div>
              </div>
           </div>
