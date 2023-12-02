@@ -69,12 +69,11 @@
               >
               @php
                 $session_data = json_decode(session('user_ip'), true);
-                if (!isset($sessionData['country'])) {
+                if (!isset($session_data['country'])) {
                     $session_data['country'] = 'IN';
                 }
               @endphp
-                <h2 class="mb-0">Price Start at
-                  {{ $session_data['country'] }} 
+                <h2 class="mb-0">Price Start at 
                   @if($session_data['country'] == 'IN')
                       Rs {{ number_format($detail->indian_price) }}
                   @else
@@ -92,7 +91,7 @@
           </div>
         </div>
       </section>
-      {{ session('user_ip') }}
+      
       <!-- -------------------------- Service banner End ---------------- -->
   
 @php 
