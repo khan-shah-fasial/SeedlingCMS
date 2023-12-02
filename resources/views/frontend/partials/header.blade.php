@@ -300,7 +300,7 @@
                         <div class="sidebar_item">
                     <a class="sub-btn d-flex align-items-center justify-content-between">
 
-                    Taxation <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                    Taxation
                     </a>
                     
                     <div class="sub-menu">
@@ -322,7 +322,7 @@
                         <div class="sidebar_item">
                     <a class="sub-btn d-flex align-items-center justify-content-between">
 
-                    IPR & Gaming Services <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                    IPR & Gaming Services 
                     </a>
                     
                     <div class="sub-menu">

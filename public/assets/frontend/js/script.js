@@ -112,14 +112,14 @@ $(window).scroll(function () {
 $(document).ready(function () {
     var owl = $(".owl-carousel");
     owl.owlCarousel({
-        margin: 30,
+        margin: 15,
         nav: true,
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
         responsive: {
             0: {
-                items: 1,
+                items: 1.1,
             },
             600: {
                 items: 2,
