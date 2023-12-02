@@ -19,7 +19,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span> Start a Business</span>
+                                <span style="color:#e13333;" > Start a Business</span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -54,7 +54,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>License & Registration</span>
+                                <span style="color:#e13333;">License & Registration</span>
 
                                 @if(count($subcate) > 0)        
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -93,7 +93,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>Taxation</span>
+                                <span style="color:#e13333;">Taxation</span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -130,7 +130,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>IPR & Gaming Services </span>
+                                <span style="color:#e13333;">IPR & Gaming Services </span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -166,7 +166,7 @@
                                     ->get();
                             @endphp
                             <a >
-                                <span>NGO Compliances</span>
+                                <span style="color:#e13333;">NGO Compliances</span>
 
                                 @if(count($subcate) > 0)
                                 <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
@@ -201,7 +201,7 @@
                     <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
                         <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
                         <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" />
-                        <span>Ask an Expert</span>
+                        <span>Request a Consultation</span>
                     </button>
                 </div>
 
@@ -252,7 +252,116 @@
                         <li>
                             <a href="{{ url(route('contact')) }}">Contact Us</a>
                         </li>
+
+
                         <li>
+                        <div class="sidebar_item">
+                            
+                    <a class="sub-btn d-flex align-items-center justify-content-between">Start a Business 
+                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" /></a>
+                    
+                    <div class="sub-menu">
+                            @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 1)
+                                    ->get();
+                                @endphp
+                                @foreach ($subcate as $iteams)
+                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                      {{ $iteams->title }}
+                                  </a>
+                                @endforeach
+                        
+                    </div>
+                </div>
+                        </li>
+                        <li>
+                        <div class="sidebar_item">
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
+                        License & Registration <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                    </a>
+                    
+                    <div class="sub-menu">
+                    @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 2)
+                                    ->get();
+                                @endphp
+                                @foreach ($subcate as $iteams)
+                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                      {{ $iteams->title }}
+                                  </a>
+                                @endforeach
+                    </div>
+                </div>
+                        </li>
+                        </li>
+                        <li>
+                        <div class="sidebar_item">
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
+
+                    Taxation <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                    </a>
+                    
+                    <div class="sub-menu">
+                    @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 3)
+                                    ->get();
+                                @endphp
+                                @foreach ($subcate as $iteams)
+                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                      {{ $iteams->title }}
+                                  </a>
+                                @endforeach
+                    </div>
+                </div>
+                        </li>
+                        </li>
+                        <li>
+                        <div class="sidebar_item">
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
+
+                    IPR & Gaming Services <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                    </a>
+                    
+                    <div class="sub-menu">
+                    @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 4)
+                                    ->get();
+                                @endphp
+                                @foreach ($subcate as $iteams)
+                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                      {{ $iteams->title }}
+                                  </a>
+                                @endforeach
+                    </div>
+                </div>
+                        </li>
+                        </li>
+                        <li>
+                        <div class="sidebar_item">
+                    <a class="sub-btn d-flex align-items-center justify-content-between">
+
+                    NGO Compliances <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                    </a>
+                    
+                    <div class="sub-menu">
+                    @php
+                                $subcate = DB::table('practice_areas')
+                                    ->where('parent_id', 5)
+                                    ->get();
+                                @endphp
+                                @foreach ($subcate as $iteams)
+                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+                                      {{ $iteams->title }}
+                                  </a>
+                                @endforeach
+                    </div>
+                </div>
+                        </li>
+                        <!-- <li>
                             <label class="a-label__chevron" for="item-1">
                                 Start a Business
                             </label>
@@ -415,7 +524,7 @@
                                     @endforeach
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>

@@ -32,7 +32,7 @@ aria-hidden="true"
             HAVE ANY QUESTION ?
           </p>
           <h4 class="contact_form_heading fs-2 fw-bolder mb-1">
-            Ask an Expert
+          Request a Consultation
           </h4>
           <p class="mb-3">
             There are many variations of passages of lorem available..
@@ -61,6 +61,8 @@ aria-hidden="true"
                 <option value="{{ $row->title }}">{{ $row->title }}</option>
             @endforeach
           </select>
+
+          <textarea name="description" id=""  rows="2"  class="mb-3" placeholder="Description"></textarea>
          
           <button type="submit" class="contact_form_button">Send</button>
         </form>

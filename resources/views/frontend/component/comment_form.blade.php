@@ -3,8 +3,8 @@
     @csrf
     <div class="row">
 
-        <div class="col-md-12 mb-3">
-            <textarea name="comment" rows="7" name="message" class="form-control" placeholder="Your Comment"></textarea>
+        <div class="col-md-12">
+            <textarea name="comment" rows="4" name="message" class="form-control" placeholder="Your Comment"></textarea>
         </div>
         <input type="hidden" name="blog_id" value="{{ $detail->id }}"/>
         <input type="hidden" name="status" value="0"/>

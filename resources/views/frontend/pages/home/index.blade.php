@@ -58,7 +58,7 @@ assistance for startups, FDI, Property law, IP, and more')
              <div class="image">
                  <picture>
                      <source srcset="{{ asset('storage/' . get_settings('Banner_3')) }}" type="image/webp" sizes="100vw" />
-                     <img alt="See Things in a New Way" src="{{ asset('storage/' . get_settings('Banner_3')) }}" srcset="{{ asset('storage/' . get_settings('Banner_3')) }} 2400w" sizes="100vw" />
+                     <img loading="lazy" alt="See Things in a New Way" src="{{ asset('storage/' . get_settings('Banner_3')) }}" srcset="{{ asset('storage/' . get_settings('Banner_3')) }} 2400w" sizes="100vw" />
                  </picture>
              </div>
              <div class="titleGroup">
@@ -79,7 +79,7 @@ assistance for startups, FDI, Property law, IP, and more')
              <div class="image">
                  <picture>
                      <source srcset="{{ asset('storage/' . get_settings('Banner_4')) }}" type="image/webp" sizes="100vw" />
-                     <img alt="Effective Partnership" src="{{ asset('storage/' . get_settings('Banner_4')) }}" srcset="{{ asset('storage/' . get_settings('Banner_4')) }} 2400w" sizes="100vw" />
+                     <img loading="lazy" alt="Effective Partnership" src="{{ asset('storage/' . get_settings('Banner_4')) }}" srcset="{{ asset('storage/' . get_settings('Banner_4')) }} 2400w" sizes="100vw" />
                  </picture>
              </div>
              <div class="contentGroup">
@@ -196,8 +196,8 @@ assistance for startups, FDI, Property law, IP, and more')
           <div class="about_points first">
              <div class="icon_container"data-aos="fade-up"data-aos-once="true">
                 <div class="img_container">
-                   <img src="{{ asset('/assets/frontend/images/check.png') }}" alt="Check Icon" />
-                   <img src="{{ asset('/assets/frontend/images/white_check.png') }}" alt="Check Icon" />
+                   <img loading="lazy" src="{{ asset('/assets/frontend/images/check.png') }}" alt="Check Icon" />
+                   <img loading="lazy" src="{{ asset('/assets/frontend/images/white_check.png') }}" alt="Check Icon" />
                 </div>
              </div>
              <div>
@@ -210,8 +210,8 @@ assistance for startups, FDI, Property law, IP, and more')
           <div class="about_points">
              <div class="icon_container">
                 <div class="img_container"data-aos="fade-up" data-aos-once="true">
-                   <img src="{{ asset('/assets/frontend/images/check.png') }}" alt="Check Icon" />
-                   <img src="{{ asset('/assets/frontend/images/white_check.png') }}" alt="Check Icon" />
+                   <img loading="lazy" src="{{ asset('/assets/frontend/images/check.png') }}" alt="Check Icon" />
+                   <img loading="lazy" src="{{ asset('/assets/frontend/images/white_check.png') }}" alt="Check Icon" />
                 </div>
              </div>
              <div>
@@ -229,8 +229,8 @@ assistance for startups, FDI, Property law, IP, and more')
                    <div class="about_right_counter"data-aos="fade-up" data-aos-once="true">
                       <div class="about_counter_icon">
                          <div class="about_counter_img">
-                            <img src="{{ asset('/assets/frontend/images/counter_medal.png') }}" alt="counter 1" class="mb-4" />
-                            <img src="{{ asset('/assets/frontend/images/counter_medal_1.png') }}" alt="counter 1" class="mb-4"  />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal.png') }}" alt="counter 1" class="mb-4" />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal_1.png') }}" alt="counter 1" class="mb-4"  />
                             
                          </div>
                       </div>
@@ -248,8 +248,8 @@ assistance for startups, FDI, Property law, IP, and more')
                    <div class="about_right_counter"data-aos="fade-up" data-aos-once="true">
                       <div class="about_counter_icon">
                          <div class="about_counter_img">
-                            <img src="{{ asset('/assets/frontend/images/counter_hand.png') }}" alt="counter 2" />
-                            <img src="{{ asset('/assets/frontend/images/counter_hand_1.png') }}" alt="counter 1" />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand.png') }}" alt="counter 2" />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand_1.png') }}" alt="counter 1" />
                          </div>
                       </div>
                       <div class="about_counter">
@@ -262,12 +262,12 @@ assistance for startups, FDI, Property law, IP, and more')
                 </div>
              </div>
              <div class="col-md-6 col-6 third_counter">
-                <div class="about_counter_container">
+                <div class="about_counter_container mt-md-0 mt-2">
                    <div class="about_right_counter"data-aos="fade-up" data-aos-once="true">
                       <div class="about_counter_icon">
                          <div class="about_counter_img">
-                            <img src="{{ asset('/assets/frontend/images/counter_doc.png') }}" alt="counter 3" />
-                            <img src="{{ asset('/assets/frontend/images/counter_doc_1.png') }}" alt="counter 1" />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc.png') }}" alt="counter 3" />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc_1.png') }}" alt="counter 1" />
                          </div> 
                       </div>
                       <div class="about_counter w149">
@@ -280,12 +280,12 @@ assistance for startups, FDI, Property law, IP, and more')
                 </div>
              </div>
              <div class="col-md-6 col-6">
-                <div class="about_counter_container">
+                <div class="about_counter_container mt-md-0 mt-2">
                    <div class="about_right_counter"data-aos="fade-up" data-aos-once="true">
                       <div class="about_counter_icon">
                          <div class="about_counter_img">
-                            <img src="{{ asset('/assets/frontend/images/counter_man.png') }}" alt="counter 4" />
-                            <img src="{{ asset('/assets/frontend/images/counter_man_1.png') }}" alt="counter 1" />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man.png') }}" alt="counter 4" />
+                            <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man_1.png') }}" alt="counter 1" />
                          </div>
                       </div>
                       <div class="about_counter">

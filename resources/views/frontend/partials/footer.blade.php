@@ -44,20 +44,94 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 <li>|</li>
                 <li><a href="{{ url(route('privacy-policy')) }}" data-aos="fade-up" data-aos-once="true">PRIVACY</a></li>
                 <li>|</li>
-                <li><a href="{{ url(route('refund-policy')) }}" data-aos="fade-up" data-aos-once="true">Refund Policy</a></li>
+                <li><a href="{{ url(route('refund-policy')) }}" data-aos="fade-up" data-aos-once="true">REFUND POLICY</a></li>
                 <li>|</li>
                 <li><a href="#"data-aos="fade-up" data-aos-once="true">SITE MAP</a></li>
                 <li>|</li>
                 <li><a href="#"data-aos="fade-up" data-aos-once="true"> SITE BY NEXGENO</a></li>
              </ul>
-             <p class="footer_desc mb-0">
+             <p class="footer_desc mb-md-0 mb-5">
              SEEDLING ASSOCIATES PRIVATE LIMITED | CIN U69100DL2022PTC403662 | Registered Office : Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla Phase III, New Delhi 110020, India | Phone Number : 7428899959 | Email Address: admin@seedlingassociates.com
              </p>
           </div>
        </div>
     </div>
+    <div class="fix_footer">
+        <a href="https://api.whatsapp.com/send?phone={{ get_settings('whatsapp') }}">
+            <span>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </span>
+            <span>
+                Whatsapp
+            </span>
+        </a>
+        <a href="tel:+{{ get_settings('mobile') }}">
+            <span>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </span>
+            <span>
+                Call
+            </span>
+        </a>
+        <a href="mailto:{{ get_settings('email') }}">
+            <span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </span>
+            <span>
+                Mail
+            </span>
+        </a>
+        <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
+                        <!-- <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
+                        <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" /> -->
+                        <span>Request Of Call</span>
+                    </button>
+
+    </div>
  </footer>
+
+
  <!--Footer Ends-->
+
+ <!-- whatsapp -->
+ <div class="">
+                <div class="whatsapp_chat_support wcs_fixed_right" id="example_1">
+
+                    <div class="wcs_button wcs_button_circle">
+                        <div class="whatsapp_blink">
+                            <span href="" class="btn-whatsapp-pulse">
+                                <span class="fa fa-whatsapp"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wcs_button_label">
+                        Need Help? Chat with us
+                    </div>
+
+                    <div class="wcs_popup">
+                        <div class="wcs_popup_close">
+                            <span class="fa fa-close"></span>
+                        </div>
+                        <div class="wcs_popup_header">
+                            <strong>Need Help? Chat with us</strong>
+                            <br>
+                            <div class="wcs_popup_header_description">Click one of our representatives below</div>
+                        </div>
+                        <div class="wcs_popup_person_container">
+                            <div class="wcs_popup_person" data-number="+{{ get_settings('whatsapp') }}">
+                                <div class="wcs_popup_person_img"><img src="/assets/frontend/images/wh.png"
+                                        alt="" /></div>
+                                <div class="wcs_popup_person_content">
+                                    <div class="wcs_popup_person_name">Seedling</div>
+                                    <div class="wcs_popup_person_description">Seedling & Associates</div>
+                                    <div class="wcs_popup_person_status">I'm Online</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <!-- whatsapp -->
  
  
  <!--Popup End-->

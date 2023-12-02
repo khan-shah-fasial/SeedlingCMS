@@ -135,10 +135,10 @@ $i = 1;
 
                     </span>
                 </div>
-                <div>
+                <!-- <div>
                     <img src="assets/frontend/images/dot.png" alt="" class="me-2" />
                     <span>{{ $author_name->designation }}</span>
-                </div>
+                </div> -->
             </div>
             <hr />
             <div>
@@ -188,8 +188,9 @@ $i = 1;
     <div class="container bg-grey py-md-2">
         <div class="row">
             <div class="col-md-12">
-                <div class="d-flex justify-content-between">
-                    @if ($previous_slug != null)
+                <div class="row">
+                   <div class="col-md-6">
+                   @if ($previous_slug != null)
                     <a
                         href="{{ url(route('blog.detail', ['category' => $url, 'slug' => strtolower(str_replace(' ', '-', $previous_slug))])) }}">
                         <div class="arrow-icons">
@@ -197,8 +198,9 @@ $i = 1;
                         </div>
                     </a>
                     @endif
-
-                    @if ($next_slug != null)
+                   </div>
+                   <div class="col-md-6 d-flex justify-content-end">
+                   @if ($next_slug != null)
                     <a
                         href="{{ url(route('blog.detail', ['category' => $url, 'slug' => strtolower(str_replace(' ', '-', $next_slug))])) }}">
                         <div class="arrow-icons">
@@ -206,8 +208,9 @@ $i = 1;
                         </div>
                     </a>
                     @endif
-                </div>
+                   </div>
 
+                </div>
             </div>
             <div class="col-6">
                 @if ($previous_slug != null)

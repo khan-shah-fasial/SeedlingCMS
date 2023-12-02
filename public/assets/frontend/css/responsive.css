@@ -133,8 +133,37 @@
     transform: translate3d(0, 0, 0);
 }
 
+.fix_footer {
+    background: white;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d3d3d394;
+}
+
+.fix_footer a {
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 14px;
+}
+.fix_footer a i {
+    font-size: 20px;
+}
+
 @media (min-width: 992px) {
     .wrapper {
+        display: none;
+    }
+    .fix_footer {
         display: none;
     }
 }
@@ -143,9 +172,19 @@
     .nav_bar {
         display: none !important;
     }
+    .wcs_fixed_right {
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
+    .owl-carousel .owl-item img {
+        width: 32px !important;
+    }
+    .slider_banner_box {
+        gap: 7px;
+        line-height: 16px;
+    }
     .service_steps_main_timeline {
         display: none;
     }
@@ -249,7 +288,7 @@
     .slider_banner_box {
         padding: 10px 0px 12px 10px;
         height: 72px;
-        font-size: 14px;
+        font-size: 12px;
         margin-right: 10px;
     }
 
@@ -272,7 +311,6 @@
     }
 
     .about .about_counter_container {
-        margin-top: 21px;
         padding-bottom: 20px;
         height: auto;
     }
@@ -302,8 +340,8 @@
         padding: 20px 0;
     }
     .payment .payment_heading {
-        font-size: 21px;
-        line-height: 31px;
+        font-size: 17px;
+        line-height: 28px;
     }
     .payment .payment_para {
         line-height: 23px;
@@ -317,9 +355,9 @@
         padding: 9px 20px 9px 20px;
         border-radius: 30px 0 30px 0;
         color: white;
-        background: #e36d6a;
         transition: all 0.5s;
         font-size: 18px !important;
+        margin-bottom: 16px;
     }
     .blogs {
         padding: 35px 0;
@@ -360,7 +398,8 @@
     }
 
     .contact .contact_form_container form input {
-        padding: 12px 20px;
+        padding: 10px 20px;
+        border-radius: 20px 0 20px 0;
     }
 
     .contact .contact_form_container form .contact_form_button {
@@ -396,6 +435,7 @@
     .contact_process .contact_rating_container .title {
         font-size: 14px;
         line-height: 21px;
+        text-align: center;
     }
 
     .price_list {
@@ -421,7 +461,7 @@
 
     .contact .contact_icon_container {
         border: 1px solid #e36d6a;
-        padding: 25px 8px;
+        padding: 14px 8px;
         border-radius: 40px 0 40px 0;
     }
 
@@ -518,6 +558,11 @@
         min-height: 220px;
     }
 
+    .wcs_fixed_right {
+        bottom: 85px !important;
+        left: 12px !important;
+    }
+
     #homeAnimation .results_list > div {
         height: auto;
     }
@@ -597,6 +642,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
+    footer .footer_links li a {
+        font-size: 14px;
+    }
     #banner.noBannerImage {
         /*height: auto;*/
         min-height: 220px;

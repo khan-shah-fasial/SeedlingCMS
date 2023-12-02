@@ -7,25 +7,25 @@ AOS.init({
 $(document).ready(function () {
     var owl = $("#banner_slider_carousel");
     owl.owlCarousel({
-      margin: 0,
-      nav: true,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      responsive: {
-        0: {
-          items: 1,
+        margin: 0,
+        nav: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 4,
+            },
         },
-        600: {
-          items: 3,
-        },
-        1000: {
-          items: 4,
-        },
-      },
     });
-  });
-  
+});
+
 $(document).ready(function () {
     var owl = $("#media_slider_carousel");
     owl.owlCarousel({
@@ -112,25 +112,24 @@ $(window).scroll(function () {
 $(document).ready(function () {
     var owl = $(".owl-carousel");
     owl.owlCarousel({
-      margin: 30,
-      nav: true,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      responsive: {
-        0: {
-          items: 1,
+        margin: 30,
+        nav: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 2,
+            },
         },
-        600: {
-          items: 2,
-        },
-        1000: {
-          items: 2,
-        },
-      },
     });
-  });
-  
+});
 
 // popup
 
@@ -170,33 +169,51 @@ $(document).ready(function () {
     });
 });
 
-
-
 /*-- cookies code open--*/
 
 // ---- ---- Const ---- ---- //
-const cookiesBox = document.querySelector('.cookies_section'),
-  buttons = document.querySelectorAll('.cookies_button');
+const cookiesBox = document.querySelector(".cookies_section"),
+    buttons = document.querySelectorAll(".cookies_button");
 
 // ---- ---- Show ---- ---- //
 const executeCodes = () => {
-  if (document.cookie.includes('Ahlawat')) return;
-  cookiesBox.classList.add('show');
+    if (document.cookie.includes("Ahlawat")) return;
+    cookiesBox.classList.add("show");
 
-  // ---- ---- Button ---- ---- //
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      cookiesBox.classList.remove('show');
+    // ---- ---- Button ---- ---- //
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            cookiesBox.classList.remove("show");
 
-      // ---- ---- Time ---- ---- //
-      if (button.id == 'cookieAccept') {
-        document.cookie =
-          'cookieBy= Ahlawat; max-age=' + 60 * 60 * 24 * 30;
-      }
+            // ---- ---- Time ---- ---- //
+            if (button.id == "cookieAccept") {
+                document.cookie =
+                    "cookieBy= Ahlawat; max-age=" + 60 * 60 * 24 * 30;
+            }
+        });
     });
-  });
 };
 
-window.addEventListener('load', executeCodes);
+window.addEventListener("load", executeCodes);
 
 /*-- cookies code close--*/
+
+// toggle sidebar dropdown menu
+$(document).ready(function () {
+    //jquery for toggle sub menus
+    $(".sub-btn").click(function () {
+        $(this).next(".sub-menu").slideToggle();
+        $(this).find(".dropdown").toggleClass("rotate");
+    });
+
+    //jquery for expand and collapse the sidebar
+    $(".menu-btn").click(function () {
+        $(".side-bar").addClass("active");
+        $(".menu-btn").css("visibility", "hidden");
+    });
+
+    $(".close-btn").click(function () {
+        $(".side-bar").removeClass("active");
+        $(".menu-btn").css("visibility", "visible");
+    });
+});

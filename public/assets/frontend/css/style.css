@@ -212,7 +212,8 @@ header ul.dropdown ul {
     margin-bottom: 5px;
 }
 .popup .contact_form_container .form-select,
-.popup .contact_form_container form input {
+.popup .contact_form_container form input,
+.popup .contact_form_container form textarea {
     width: 100% !important;
     padding: 17px 22px;
     background: transparent;
@@ -313,7 +314,6 @@ body#index #mainContent {
 #homeAnimation .titleGroup {
     position: absolute;
     color: #fff;
-    text-transform: capitalize;
     font-weight: 700;
     height: 100%;
     text-align: center;
@@ -625,7 +625,6 @@ body#index #mainContent {
     line-height: 2.6rem;
     color: #e13333;
     font-weight: 700;
-    text-transform: capitalize;
 }
 
 #homeAnimation .results_list > div:nth-child(2) .content,
@@ -840,7 +839,7 @@ section.banner_slider .item a {
 
 .about {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1007,7 +1006,7 @@ div#counter {
 
 .payment {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1048,7 +1047,7 @@ div#counter {
 
 .blogs {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1118,7 +1117,7 @@ div#counter {
 
 .contact {
     padding: 45px 0 90px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1139,6 +1138,8 @@ div#counter {
     padding: 37px 20px;
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
+    text-decoration: none;
+    height: 300px;
 }
 
 .contact .contact_icon_container .contact_icon_box {
@@ -1173,6 +1174,13 @@ div#counter {
     font-family: "Libre Baskerville", serif;
     padding-top: 35px;
     padding-bottom: 10px;
+    color: white;
+}
+.contact .contact_icon_container .desc {
+    color: white;
+}
+.contact .contact_icon_container a {
+    text-decoration: none;
 }
 
 .contact .contact_rating_container {
@@ -1205,7 +1213,8 @@ div#counter {
     font-family: "Libre Baskerville", serif;
 }
 .contact .contact_form_container .form-select,
-.contact .contact_form_container form input {
+.contact .contact_form_container form input,
+.contact .contact_form_container form textarea {
     width: 100%;
     padding: 17px 22px;
     background: transparent;
@@ -1344,7 +1353,7 @@ div#counter {
 
 .links {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1371,7 +1380,7 @@ div#counter {
 
 footer {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1431,7 +1440,7 @@ footer .footer_desc {
 
 .service_banner {
     padding: 40px 0;
-    /* background-image: url("/assets/frontend/images/payment_bg.png"); */
+    /* background-image: url("/assets/frontend/images/payment_bg.webp"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1496,7 +1505,7 @@ footer .footer_desc {
 
 .service_steps {
     padding: 40px 0;
-    background-image: url("/assets/frontend/images/about_bg.png");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1971,7 +1980,7 @@ footer .footer_desc {
 
 .blog_banner {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1994,6 +2003,12 @@ footer .footer_desc {
 
 .blog_image {
     padding: 45px 0;
+}
+.blog_image_card_wrapper {
+    text-decoration: none;
+}
+.blog_image_card_wrapper hr {
+    color: #00000030 !important;
 }
 
 .blog_image_card {
@@ -2035,6 +2050,7 @@ footer .footer_desc {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: black;
 }
 
 .blog_image .blog_image_card p {
@@ -2045,6 +2061,13 @@ footer .footer_desc {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.blog_card_content p {
+    color: #212529;
+}
+.blog_card_content .blog_link_icon {
+    color: #e13333;
 }
 
 .blog_card_content {
@@ -2120,7 +2143,7 @@ footer .footer_desc {
 
 .contact_banner {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2286,6 +2309,8 @@ footer .footer_desc {
     padding: 25px 20px;
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
+    text-decoration: none;
+    height: 308px;
 }
 
 .contact_process .contact_icon_container:hover {
@@ -2298,6 +2323,11 @@ footer .footer_desc {
     line-height: 25px;
     margin-bottom: 0;
     font-family: "Libre Baskerville", serif;
+    color: black;
+}
+.contact_process .contact_icon_container .desc {
+    color: #212529;
+    text-decoration: none;
 }
 
 .contact_process .contact_rating_container {
@@ -2378,7 +2408,7 @@ input[name="price"]:checked ~ .price_list {
 
 .blog_d_banner {
     padding: 45px 0;
-    background-image: url("/assets/frontend/images/payment_bg.png");
+    background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2409,7 +2439,7 @@ input[name="price"]:checked ~ .price_list {
     padding: 8px 41px;
     border-radius: 20px 0 20px 0;
     border: none;
-    background: rgba(227, 111, 109, 1);
+    background: #e13333;
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -2459,14 +2489,14 @@ input[name="price"]:checked ~ .price_list {
 }
 
 .form-comments textarea {
-    padding: 40px 0 0 37px;
+    padding: 20px 0 0 20px;
     margin: 25px 0;
     border-radius: 36px 0px 36px 0px;
 }
 
 .form-comments input {
-    padding: 30px;
-    border-radius: 36px 0px 36px 0px;
+    padding: 15px;
+    border-radius: 20px 0px 20px 0px;
 }
 
 .form-comments input::placeholder {
@@ -2487,7 +2517,7 @@ input[name="price"]:checked ~ .price_list {
 
 .comments .content_btn-4 {
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     border-radius: 20px 0 20px 0;
     border: none;
     background: rgba(227, 111, 109, 1);
@@ -2495,7 +2525,7 @@ input[name="price"]:checked ~ .price_list {
     font-size: 24px;
     font-weight: 700;
     line-height: 26px;
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
 .comments .content_btn {
@@ -2721,4 +2751,75 @@ body .backhomebutton {
 
 .privacy_roman_list {
     list-style-type: upper-roman;
+}
+
+.sidebar_item .sub-menu {
+    display: none;
+}
+
+.whatsapp_blink .btn-whatsapp-pulse {
+    background: #25d366;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 27px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+}
+
+.wcs_button_circle {
+    width: auto !important;
+    height: auto !important;
+}
+
+.wcs_fixed_right {
+    z-index: 999 !important;
+    position: fixed !important;
+    bottom: 25px !important;
+    left: 25px !important;
+}
+
+.wcs_popup_person_img {
+    border: 2px solid #26c281 !important;
+    border-radius: 50% !important;
+    width: 65px !important;
+    height: 65px !important;
+}
+
+.wcs_popup_person_img img {
+    border: none !important;
+    border-radius: 0% !important;
+    margin-left: 5px !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.select_drp_image {
+    background-image: url(/assets/frontend/images/down.png) !important;
+    background-position: calc(100% - 19px) calc(1em + 10px),
+        calc(100% - 15px) calc(1em + 2px), 100% 0 !important;
+    background-repeat: no-repeat !important;
+    -webkit-appearance: none !important;
+}
+
+.payment_call {
+    text-decoration: none;
+    color: white;
 }
