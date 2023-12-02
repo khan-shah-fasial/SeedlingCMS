@@ -67,7 +67,20 @@
               <div
                 class="service_price_btn d-flex flex-md-row flex-column align-items-center gap-4 justify-content-center"
               >
-                <h2 class="mb-0">Price Start at Rs {{ $detail->indian_price }}/-</h2>
+              @php
+                $session_data = json_decode(session('user_ip'), true);
+                if (!isset($sessionData['country'])) {
+                    $session_data['country'] = 'IN';
+                }
+              @endphp
+                <h2 class="mb-0">Price Start at 
+                  @if($session_data['country'] == 'IN')
+                      Rs {{ number_format($detail->indian_price) }}
+                  @else
+                      $ {{ number_format($detail->foreign_price) }}
+                  @endif
+                  /-
+              </h2>
                 <button class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#ask-modal">
                   <img src="assets/frontend/images/nav_btn_icon.png" alt="" />
                   <img src="assets/frontend/images/ask_hover_btn.png" alt="" />
