@@ -17,7 +17,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="d-flex justify-content-md-end justify-content-center mt-md-4 mt-2" >
-                    <a class="number"> <img src="assets/frontend/images/call_white.png" alt=""> +(528) 456-7592</a>
+                    <a class="number"> <img src="assets/frontend/images/call_white.png" alt="">+91-7428899959</a>
                     </div>
                     
                   </div>
