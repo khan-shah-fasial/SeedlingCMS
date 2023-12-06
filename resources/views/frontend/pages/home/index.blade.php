@@ -201,7 +201,7 @@ assistance for startups, FDI, Property law, IP, and more')
                 </div>
              </div>
              <div>
-                <h5 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Vision</h5>
+                <h4 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Vision</h4>
                 <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
                   {{ get_settings('h_vision') }}
                 </p>
@@ -215,7 +215,7 @@ assistance for startups, FDI, Property law, IP, and more')
                 </div>
              </div>
              <div>
-                <h5 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Mission</h5>
+                <h4 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Mission</h4>
                 <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
                   {{ get_settings('h_mission') }}
                 </p>
