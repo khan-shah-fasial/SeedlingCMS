@@ -1,4 +1,4 @@
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" defer></script>
 
 <!------------------- seedling ---------------->
 <link rel="shortcut icon" href="{{ asset('/assets/frontend/images/favicon.png') }}">

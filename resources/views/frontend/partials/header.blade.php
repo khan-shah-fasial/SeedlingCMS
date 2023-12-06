@@ -18,7 +18,7 @@
                                     ->where('parent_id', 1)
                                     ->get();
                             @endphp
-                            <a >
+                            <a href=#>
                                 <span style="color:#e13333;" > Start a Business</span>
 
                                 @if(count($subcate) > 0)
@@ -53,7 +53,7 @@
                                     ->where('parent_id', 2)
                                     ->get();
                             @endphp
-                            <a >
+                            <a href=#>
                                 <span style="color:#e13333;">License & Registration</span>
 
                                 @if(count($subcate) > 0)        
@@ -92,7 +92,7 @@
                                     ->where('parent_id', 3)
                                     ->get();
                             @endphp
-                            <a >
+                            <a href=#>
                                 <span style="color:#e13333;">Taxation</span>
 
                                 @if(count($subcate) > 0)
@@ -129,7 +129,7 @@
                                     ->where('parent_id', 4)
                                     ->get();
                             @endphp
-                            <a >
+                            <a href=#>
                                 <span style="color:#e13333;">IPR & Gaming Services </span>
 
                                 @if(count($subcate) > 0)
@@ -165,7 +165,7 @@
                                     ->where('parent_id', 5)
                                     ->get();
                             @endphp
-                            <a >
+                            <a href=#>
                                 <span style="color:#e13333;">NGO Compliances</span>
 
                                 @if(count($subcate) > 0)
@@ -257,7 +257,7 @@
                         <li>
                         <div class="sidebar_item">
                             
-                    <a class="sub-btn d-flex align-items-center justify-content-between">Start a Business 
+                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">Start a Business 
                     <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" /></a>
                     
                     <div class="sub-menu">
@@ -277,7 +277,7 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn d-flex align-items-center justify-content-between">
+                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
                         License & Registration <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
                     </a>
                     
@@ -298,7 +298,7 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn d-flex align-items-center justify-content-between">
+                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
 
                     Taxation
                     </a>
@@ -320,7 +320,7 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn d-flex align-items-center justify-content-between">
+                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
 
                     IPR & Gaming Services 
                     </a>
@@ -342,7 +342,7 @@
                         </li>
                         <li>
                         <div class="sidebar_item">
-                    <a class="sub-btn d-flex align-items-center justify-content-between">
+                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
 
                     NGO Compliances <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
                     </a>

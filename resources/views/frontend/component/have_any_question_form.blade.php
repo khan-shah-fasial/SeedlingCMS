@@ -7,9 +7,9 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
     <p class="contact_form_logo fs-6 fw-bolder mb-md-2 mb-1"data-aos="fade-up" data-aos-once="true">
        HAVE ANY QUESTION ?
     </p>
-    <h4 class="contact_form_heading fs-2 fw-bolder mb-md-4 mb-2"data-aos="fade-up" data-aos-once="true">
+    <h5 class="contact_form_heading fs-2 fw-bolder mb-md-4 mb-2"data-aos="fade-up" data-aos-once="true">
        Drop Us a Line
-    </h4>
+    </h5>
 
     <input type="hidden" name="section" value="Have any Question Form" data-aos-once="true" data-aos="fade-up" />
     <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
@@ -44,7 +44,7 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
      </div>
       
     </div>
-    <select name="services" name="services" class="contact_form_select form-select mb-4 select_drp_image"data-aos="fade-up" data-aos-once="true" required>
+    <select aria-label="Select a service" name="services" class="contact_form_select form-select mb-4 select_drp_image"data-aos="fade-up" data-aos-once="true" required>
       <option value="">Select the Service</option>
       @foreach ($practice_Area as $row)
           <option value="{{ $row->title }}">{{ $row->title }}</option>

@@ -172,29 +172,29 @@ $(document).ready(function () {
 /*-- cookies code open--*/
 
 // ---- ---- Const ---- ---- //
-const cookiesBox = document.querySelector(".cookies_section"),
-    buttons = document.querySelectorAll(".cookies_button");
+// const cookiesBox = document.querySelector(".cookies_section"),
+//     buttons = document.querySelectorAll(".cookies_button");
 
 // ---- ---- Show ---- ---- //
-const executeCodes = () => {
-    if (document.cookie.includes("Ahlawat")) return;
-    cookiesBox.classList.add("show");
+// const executeCodes = () => {
+//     if (document.cookie.includes("Ahlawat")) return;
+//     cookiesBox.classList.add("show");
 
-    // ---- ---- Button ---- ---- //
-    buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            cookiesBox.classList.remove("show");
+//     // ---- ---- Button ---- ---- //
+//     buttons.forEach((button) => {
+//         button.addEventListener("click", () => {
+//             cookiesBox.classList.remove("show");
 
-            // ---- ---- Time ---- ---- //
-            if (button.id == "cookieAccept") {
-                document.cookie =
-                    "cookieBy= Ahlawat; max-age=" + 60 * 60 * 24 * 30;
-            }
-        });
-    });
-};
+//             // ---- ---- Time ---- ---- //
+//             if (button.id == "cookieAccept") {
+//                 document.cookie =
+//                     "cookieBy= Ahlawat; max-age=" + 60 * 60 * 24 * 30;
+//             }
+//         });
+//     });
+// };
 
-window.addEventListener("load", executeCodes);
+// window.addEventListener("load", executeCodes);
 
 /*-- cookies code close--*/
 

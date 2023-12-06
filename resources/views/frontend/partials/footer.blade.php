@@ -38,7 +38,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 <a href="{{ url(route('contact')) }}" class="footer_btn" data-aos="fade-up" data-aos-once="true">Online Payment</a>
              </div>
              <ul class="footer_links">
-                <li><a href="#"data-aos="fade-up" data-aos-once="true">© 2023 SEEDLING</a></li>
+                <li><span data-aos="fade-up" data-aos-once="true">© 2023 SEEDLING</span></li>
                 <li>|</li>
                 <li><a href="{{ url(route('terms')) }}"data-aos="fade-up" data-aos-once="true"> TERMS OF USE </a></li>
                 <li>|</li>
@@ -48,7 +48,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 <li>|</li>
                 <li><a href="#"data-aos="fade-up" data-aos-once="true">SITE MAP</a></li>
                 <li>|</li>
-                <li><a href="#"data-aos="fade-up" data-aos-once="true"> SITE BY NEXGENO</a></li>
+                <li><a href="https://nexgeno.in/"data-aos="fade-up" data-aos-once="true"> SITE BY NEXGENO</a></li>
              </ul>
              <p class="footer_desc mb-lg-0 mb-5 pb-lg-0 pb-2">
              SEEDLING ASSOCIATES PRIVATE LIMITED | CIN U69100DL2022PTC403662 | <span> Registered Office : Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla Phase III, New Delhi 110020, India  | </span> Phone Number : +91 7428899959 | <span> Email Address: admin@seedlingassociates.com </span>
