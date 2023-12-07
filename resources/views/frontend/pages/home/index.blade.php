@@ -17,7 +17,7 @@ assistance for startups, FDI, Property law, IP, and more')
          <div class="current">
             <div class="image">
                <picture>
-                  <!-- <source media="(max-width:540px)" srcset="img_white_flower.jpg"> -->
+                  <source media="(max-width:540px)" srcset="{{ asset('storage/' . get_settings('Banner_1')) }}">
                   <source srcset="{{ asset('storage/' . get_settings('Banner_1')) }}" type="image/webp" sizes="100vw" />
                   <img alt="See Things in a New Way" src="{{ asset('storage/' . get_settings('Banner_1')) }}"
                      srcset="{{ asset('storage/' . get_settings('Banner_1')) }} 2400w" sizes="100vw" />
@@ -40,7 +40,7 @@ assistance for startups, FDI, Property law, IP, and more')
          <div>
             <div class="image">
                <picture>
-                  <!-- <source media="(max-width:540px)" srcset="img_white_flower.jpg"> -->
+                  <source media="(max-width:540px)" srcset="{{ asset('storage/' . get_settings('Banner_2')) }}">
                   <source srcset="{{ asset('storage/' . get_settings('Banner_2')) }}" type="image/webp" sizes="100vw" />
                   <img alt="Effective Partnership" src="{{ asset('storage/' . get_settings('Banner_2')) }}"
                      srcset="{{ asset('storage/' . get_settings('Banner_2')) }} 2400w" sizes="100vw" />
@@ -61,7 +61,7 @@ assistance for startups, FDI, Property law, IP, and more')
          <div>
             <div class="image">
                <picture>
-                  <!-- <source media="(max-width:540px)" srcset="img_white_flower.jpg"> -->
+                  <source media="(max-width:540px)" srcset="{{ asset('storage/' . get_settings('Banner_3')) }}">
                   <source srcset="{{ asset('storage/' . get_settings('Banner_3')) }}" type="image/webp" sizes="100vw" />
                   <img loading="lazy" alt="See Things in a New Way"
                      src="{{ asset('storage/' . get_settings('Banner_3')) }}"
@@ -85,7 +85,7 @@ assistance for startups, FDI, Property law, IP, and more')
          <div>
             <div class="image">
                <picture>
-                  <!-- <source media="(max-width:540px)" srcset="img_white_flower.jpg"> -->
+                  <source media="(max-width:540px)" srcset="{{ asset('storage/' . get_settings('Banner_4')) }}">
                   <source srcset="{{ asset('storage/' . get_settings('Banner_4')) }}" type="image/webp" sizes="100vw" />
                   <img loading="lazy" alt="Effective Partnership"
                      src="{{ asset('storage/' . get_settings('Banner_4')) }}"
