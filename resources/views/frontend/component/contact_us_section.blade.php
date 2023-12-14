@@ -10,7 +10,7 @@
                 <div class="contact_icon_box">
                     <div class="row">
                         <div class="col-md-6 mb-md-0 mb-4">
-                            <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column text-center"
+                            <a href="https://www.google.com/maps/place/%23TheHub/@28.5495094,77.2674398,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce362dba5bca1:0x191c6dd29ebbec30!8m2!3d28.5495094!4d77.2674398!16s%2Fg%2F11h18n3l7n?entry=ttu" class="contact_icon_container d-flex align-items-center justify-content-center flex-column text-center"
                                 data-aos="fade-up" data-aos-once="true">
                                 <div class="contact_icon_box" data-aos="fade-up" data-aos-once="true">
                                     <img src="{{ asset('/assets/frontend/images/loaction.png') }}" class="contact_icon"

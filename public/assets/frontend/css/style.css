@@ -813,20 +813,28 @@ section.banner_slider .item a {
     display: none;
 }
 
-#banner_slider_carousel .owl-nav .owl-prev {
-    display: none;
+#banner_slider_carousel .owl-nav {
+    display: block !important;
+    margin-top: 0 !important;
 }
 
-#banner_slider_carousel .owl-nav .owl-next span {
-    font-size: 50px;
-    display: block;
+#banner_slider_carousel button i {
+    font-size: 30px;
+}
+#banner_slider_carousel button.owl-prev {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, color 0.3s;
+    left: 0;
 }
 
-.owl-theme .owl-nav {
-    margin-top: -40px !important;
+#banner_slider_carousel button.owl-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, color 0.3s;
+    right: 0;
 }
 
 .slider_banner_box:hover img {
@@ -2520,7 +2528,7 @@ input[name="price"]:checked ~ .price_list {
     padding: 15px 0;
     border-radius: 20px 0 20px 0;
     border: none;
-    background: rgba(227, 111, 109, 1);
+    background: #e13333;
     color: white;
     font-size: 24px;
     font-weight: 700;
