@@ -2,7 +2,7 @@
       enctype="multipart/form-data">
     @csrf
     <h1 class="service_last_form_heading text-center">
-      Want to Know More
+      Get Consult Today 
     </h1>
     <input type="hidden" name="section" value="Area of Practice Form" data-aos-once="true" data-aos="fade-up" />
     <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />

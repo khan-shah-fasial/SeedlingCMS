@@ -13,6 +13,21 @@ body {
     overflow-x: hidden;
 }
 
+.accordion_heading {
+    background: #e13333;
+    border-radius: 20px 0;
+    font-size: 30px !important;
+    padding: 10px 0;
+    color: white;
+}
+
+.service_list_box {
+    border: 1px solid red;
+    padding: 20px 10px 0 0;
+    border-radius: 50px 0;
+    background: white;
+}
+
 .text_justify {
     text-align: justify;
 }
@@ -2010,7 +2025,11 @@ footer .footer_desc {
 .service_last .position_sticky {
     position: sticky;
     top: 108px;
-    height: 100%;
+    z-index: -1;
+}
+
+.price_heading {
+    color: #e13333;
 }
 .mt92 {
     margin-top: 92px;
@@ -2936,4 +2955,8 @@ body .backhomebutton {
 .error {
     color: red !important;
     font-size: 12px !important;
+}
+
+.service_last_faq h6 {
+    font-size: 18px;
 }

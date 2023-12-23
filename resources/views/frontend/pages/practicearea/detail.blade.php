@@ -61,10 +61,10 @@
               <h1 class="breadcrumb_heading mb-md-3 mb-2">
                 {{ $detail->breadcrumb_title }}
               </h1>
-              <p class="service_banner_para">
+              <!-- <p class="service_banner_para">
                 {{ $detail->breadcrumb_subtitle }}
-              </p>
-              <div
+              </p> -->
+              <!-- <div
                 class="service_price_btn d-flex flex-md-row flex-column align-items-center gap-md-4 gap-1 justify-content-center"
               >
               @php
@@ -80,12 +80,18 @@
                       $ {{ number_format($detail->foreign_price) }}
                   @endif
                   /-
-              </h2>
-                <button class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#ask-modal">
+              </h2> -->
+                <!-- <button class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#ask-modal">
                   <img src="assets/frontend/images/nav_btn_icon.png" alt="" />
                   <img src="assets/frontend/images/ask_hover_btn.png" alt="" />
                   <span>Request a Consultation</span>
-                </button>
+                </button> -->
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item " aria-current="page">Library</li>
+  </ol>
+</nav>
               </div>
             </div>
           </div>
@@ -175,12 +181,14 @@
       <div class="service_last">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
               <!-- -------------service last header start -------------- -->
 
               @if(!empty($detail->Content_title))
               <div>
-                <h2 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h2>
+                <h1 class="mb-0" >Register a Private Limited Company. </h1>
+                <h3 class="price_heading mb-4" data-aos="fade-up"data-aos-once="true" >(Price Start at Rs 7,499 /-)</h3>
+                <!-- <h3 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h3>   -->
                 <div class="service_content"data-aos="fade-up"data-aos-once="true" >
                     @php echo html_entity_decode($detail->content) @endphp
                 </div>
@@ -226,7 +234,7 @@
 
               <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
                 @if(!empty($detail->Section_title_el))
-                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
+                  <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h3>
                 @endif
 
                 @if(!empty($detail->eligibility_title))
@@ -301,7 +309,7 @@
   
               <div class="service_last_process">
                 @if(!empty($detail->Section_title_pro))
-                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_pro }}</h2>
+                  <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_pro }}</h3>
                 @endif
 
                 @if(!empty($detail->process_content))
@@ -421,7 +429,7 @@
               @if(!empty($detail->assistance_content))
                 <div class="service_last_assistance">
                   @if(!empty($detail->Section_title_asst))
-                    <h2 class="color_heading " data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}</h2>
+                    <h3 class="color_heading " data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}</h3>
                   @endif
 
                   <div class="service_content" data-aos="fade-up"data-aos-once="true">
@@ -437,51 +445,89 @@
               @endphp
               @if(count($faq) > 0)
                 <div class="service_last_faq">
-                  <h2 class="heading mb-4" data-aos="fade-up"data-aos-once="true">Most common question about our services</h2>
+                  <h3 class="accordion_heading  text-center mb-4 " data-aos="fade-up"data-aos-once="true">Most common question about our services</h3>
   
-                  <div class="accordion" id="accordionExample">
 
                     @foreach ($faq as $innerArray)
                       @foreach ($innerArray as $question => $answer)
-                        <div class="accordion-item" data-aos="fade-up"data-aos-once="true">
-                          <h2 class="accordion-header" id="heading{{$f}}">
-                            <button
-                              class="accordion-button"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapse{{$f}}"
-                              aria-expanded="@if($f == 1) true @lse false @endif"
-                              aria-controls="collapse{{$f}}"
-                            >
-                              {{ $question }}
-                            </button>
-                          </h2>
-                          <div
-                            id="collapse{{$f}}"
-                            class="accordion-collapse collapse @if($f == 1) show @endif"
-                            aria-labelledby="heading{{$f}}"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              @php echo html_entity_decode($answer) @endphp
-                            </div>
-                          </div>
-                        </div>
+                    <div class="pt-2" >
+                    <h6>
+                      {{ $question }}
+                      </h6>
+
+                      <p class="mb-0" >
+                          @php echo html_entity_decode($answer) @endphp
+                      </p>
+                       
+                    </div>
+                    <hr>
+
+                      
+                             
+                            
+                              
+                           
                         @php $f++; @endphp
                       @endforeach
                     @endforeach
 
-                  </div>
+                    <div class="d-flex align-items-center justify-content-between mt-5" >
+                       <div class="d-flex align-items-center gap-2" >
+                        <img src="assets/frontend/images/left_p.png" alt="">
+                        IEC Registration
+                       </div>
+                       <div class="d-flex align-items-center gap-2" >
+                       ESI&PF Registration
+                        <img src="assets/frontend/images/right_p.png" alt="">
+                       
+                       </div>
+                    </div>
+
                 </div>
               @endif
   
               <!-- -------------service last  Assistance  End -------------- -->
             </div>
-            <div class="col-lg-4 position_sticky">
+            <div class="col-lg-3">
               <div
-                class="service_last_form_container d-flex align-items-center justify-content-center mt-md-0 mt-3" data-aos="fade-up"data-aos-once="true"
+                class="service_last_form_container d-flex align-items-center justify-content-center mt-md-0 mt-3 position_sticky" data-aos="fade-up"data-aos-once="true"
               >
               @include('frontend.component.area_of_practice_form')
+              </div>
+              <div class="service_list_box mt-4" >
+                 <h5 class="text-center " >Our Registration Services</h5>
+                 <ul>
+                  <li>
+                   Start Up India Registration 
+                  </li>
+                  <li>
+                   Angel Tax Excemption (Section 56, IT Act) 
+                  </li>
+                  <li>
+                  Start-up tax excemption (Sec 80-IAC) 
+                  </li>
+                  <li>
+                   Legal Entity Identifier Registration 
+                  </li>
+                  <li>
+                  MSME/UDHYOG Aadhar Registration 
+                  </li>
+                  <li>
+                   IEC Registration 
+                  </li>
+                  <li>
+                   ESI&PF Registration 
+                  </li>
+                  <li>
+                  ISO Registration (Non-Audit) 
+                  </li>
+                  <li>
+                  ISBN Registration 
+                  </li>
+                  <li>
+                   GST Registration
+                  </li>
+                 </ul>
               </div>
             </div>
           </div>
