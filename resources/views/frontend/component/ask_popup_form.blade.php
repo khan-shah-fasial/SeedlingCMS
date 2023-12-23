@@ -28,15 +28,12 @@ aria-hidden="true"
       <form id="ask_popup_form" action="{{url(route('contact.create'))}}" method="post"
       enctype="multipart/form-data">
       @csrf
-          <p class="contact_form_logo fs-6 fw-bolder mb-3">
+          <p class="contact_form_logo fs-6 fw-bolder mb-2">
             HAVE ANY QUESTION ?
           </p>
-          <h4 class="contact_form_heading fs-2 fw-bolder mb-1">
+          <h4 class="contact_form_heading fs-2 fw-bolder mb-3">
           Request a Consultation
           </h4>
-          <p class="mb-3">
-            There are many variations of passages of lorem available..
-          </p>
           <input type="hidden" name="section" value="Popup Form" data-aos-once="true" data-aos="fade-up" />
           <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
           <div class="mb-3">
@@ -55,7 +52,7 @@ aria-hidden="true"
           </div>
           </div>
 
-          <select class="form-select mb-3" name="services" aria-label="Default select example" required/>
+          <select class="form-select mb-3 select_drp_image" name="services" aria-label="Default select example" required/>
             <option value="">Select the Service</option>
             @foreach ($practice_Area as $row)
                 <option value="{{ $row->title }}">{{ $row->title }}</option>

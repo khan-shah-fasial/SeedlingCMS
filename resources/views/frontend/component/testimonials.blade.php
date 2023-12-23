@@ -43,7 +43,7 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
                                  class="test_quote"
                                  />
                            </div>
-                           <p class="desc"data-aos="fade-up" data-aos-once="true">
+                           <p class="desc text_justify"data-aos="fade-up" data-aos-once="true">
                               {{ $row->comment }}
                            </p>
                            <h4 class="test_name"data-aos="fade-up" data-aos-once="true">{{ $row->name }}</h4>

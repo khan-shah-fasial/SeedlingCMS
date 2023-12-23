@@ -41,9 +41,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7">
-                    <h2 class="color_heading">PROCESS</h2>
+                    <h2 class="color_heading">Payment Process</h2>
                     <h4 class="main_heading">{{ get_contactpage('p_title') }}</h4>
-                    <p class="desc">{{ get_contactpage('p_description') }}</p>
+                    <p class="desc text_justify">{{ get_contactpage('p_description') }}</p>
 
                     <div class="ms-4 mt-5">
                         <div class="main-timeline">
@@ -66,7 +66,7 @@
                                             <h5 class="description">
                                                 {{ $title }}
                                             </h5>
-                                            <p>{{ $description }}</p>
+                                            <p class="text_justify" >{{ $description }}</p>
                                         </a>
                                     </div>
                                     @php $i++; @endphp 

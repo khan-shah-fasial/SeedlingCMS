@@ -22,7 +22,7 @@
                                 <span style="color:#e13333;" > Start a Business</span>
 
                                 @if(count($subcate) > 0)
-                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
                             </a>
@@ -57,7 +57,7 @@
                                 <span style="color:#e13333;">License & Registration</span>
 
                                 @if(count($subcate) > 0)        
-                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
                             </a>
@@ -96,7 +96,7 @@
                                 <span style="color:#e13333;">Taxation</span>
 
                                 @if(count($subcate) > 0)
-                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
 
@@ -133,7 +133,7 @@
                                 <span style="color:#e13333;">IPR & Gaming Services </span>
 
                                 @if(count($subcate) > 0)
-                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
 
@@ -169,7 +169,7 @@
                                 <span style="color:#e13333;">NGO Compliances</span>
 
                                 @if(count($subcate) > 0)
-                                <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
                             </a>

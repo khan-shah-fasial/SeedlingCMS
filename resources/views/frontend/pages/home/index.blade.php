@@ -192,13 +192,13 @@ assistance for startups, FDI, Property law, IP, and more')
             $secondPart = implode(' ', $secondPartArray);
             @endphp
             <article class="main">
-               <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
+               <p class="desc mb-0 text_justify" data-aos="fade-up" data-aos-once="true">
                   {{ $firstPart }}.
                </p>
 
                <input id="read-more-check-1" type="checkbox" class="read-more-check" />
 
-               <p class="read-more">
+               <p class="read-more text_justify">
                   {{ $secondPart }}.
                </p>
                <label for="read-more-check-1" class="read-more-label"></label>
@@ -213,7 +213,7 @@ assistance for startups, FDI, Property law, IP, and more')
                </div>
                <div>
                   <h4 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Vision</h4>
-                  <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
+                  <p class="desc mb-0 text_justify" data-aos="fade-up" data-aos-once="true">
                      {{ get_settings('h_vision') }}
                   </p>
                </div>
@@ -228,7 +228,7 @@ assistance for startups, FDI, Property law, IP, and more')
                </div>
                <div>
                   <h4 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Mission</h4>
-                  <p class="desc mb-0" data-aos="fade-up" data-aos-once="true">
+                  <p class="desc mb-0 text_justify" data-aos="fade-up" data-aos-once="true">
                      {{ get_settings('h_mission') }}
                   </p>
                </div>
@@ -252,7 +252,7 @@ assistance for startups, FDI, Property law, IP, and more')
                            <p class="about_counter_number">
                               <span class="counter-value" data-count="{{ get_settings('c_exp') }}">0</span>+
                            </p>
-                           <p class="about_counter_para">years of experience</p>
+                           <p class="about_counter_para">Years of Professional Experience</p>
                         </div>
                      </div>
                   </div>
@@ -272,7 +272,7 @@ assistance for startups, FDI, Property law, IP, and more')
                            <p class="about_counter_number">
                               <span class="counter-value" data-count="{{ get_settings('c_client') }}">0</span>k
                            </p>
-                           <p class="about_counter_para">Satisfied Clients</p>
+                           <p class="about_counter_para">Clients Served</p>
                         </div>
                      </div>
                   </div>
@@ -312,7 +312,7 @@ assistance for startups, FDI, Property law, IP, and more')
                            <p class="about_counter_number">
                               <span class="counter-value" data-count="{{ get_settings('c_team') }}">0</span>+
                            </p>
-                           <p class="about_counter_para">Team of Experts</p>
+                           <p class="about_counter_para">Team of Professional Experts.</p>
                         </div>
                      </div>
                   </div>

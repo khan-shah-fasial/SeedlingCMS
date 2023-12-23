@@ -113,7 +113,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                             <span class="fa fa-close"></span>
                         </div>
                         <div class="wcs_popup_header">
-                            <strong>Need Help? Chat with us</strong>
+                            <strong>Hi, I am interested in consulting with you regarding this service</strong>
                             <br>
                             <div class="wcs_popup_header_description">Click one of our representatives below</div>
                         </div>

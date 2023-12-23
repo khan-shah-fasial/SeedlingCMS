@@ -13,7 +13,7 @@
 		<div class="col-sm-6">
             <div class="form-group mb-3">
                 <label>Image <span class="red">*</span> <span class="font-size11">(Max file size 100kb - 1120*630)</span></label>
-                <input accept="image/*" class="form-control" type="file" id="image" name="image">
+                <input accept="image/*" class="form-control" type="file" id="image" name="image" required>
             </div>
         </div>
 		

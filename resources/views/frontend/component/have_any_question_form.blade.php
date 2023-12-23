@@ -7,7 +7,7 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
     <p class="contact_form_logo fs-6 fw-bolder mb-md-2 mb-1"data-aos="fade-up" data-aos-once="true">
        HAVE ANY QUESTION ?
     </p>
-    <h5 class="contact_form_heading fs-2 fw-bolder mb-md-4 mb-2"data-aos="fade-up" data-aos-once="true">
+    <h5 class="contact_form_heading  fw-bolder mb-md-2 mb-2"data-aos="fade-up" data-aos-once="true">
        Drop Us a Line
     </h5>
 
@@ -50,7 +50,7 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
           <option value="{{ $row->title }}">{{ $row->title }}</option>
       @endforeach
     </select>
-    <textarea name="description" placeholder="Description" class="mb-3" rows="2"></textarea>
+    <textarea name="description" placeholder="Description" class="mb-3" rows="1"></textarea>
     <button type="submit" class="contact_form_button"data-aos="fade-up" data-aos-once="true">Send</button>
  </form>
  <!----------------- Have any Question --------------------->
