@@ -1640,6 +1640,10 @@ footer .footer_desc {
     line-height: 28px !important;
     text-align: justify !important;
 }
+.service_last h1 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+}
 .service_last h2 {
     font-size: 18px !important;
     line-height: 36px !important;
@@ -1662,9 +1666,9 @@ footer .footer_desc {
 
 .service_last .color_heading {
     font-family: "Libre Baskerville", serif;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
-    line-height: 38px;
+    line-height: 18px;
     color: #e13333;
     margin-bottom: 15px;
 }
@@ -2025,11 +2029,11 @@ footer .footer_desc {
 .service_last .position_sticky {
     position: sticky;
     top: 108px;
-    z-index: -1;
 }
 
 .price_heading {
     color: #e13333;
+    font-size: 24px;
 }
 .mt92 {
     margin-top: 92px;

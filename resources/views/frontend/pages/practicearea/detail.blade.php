@@ -182,7 +182,7 @@
 
               @if(!empty($detail->Content_title))
               <div>
-                <h1 class="mb-0">{{ ucwords($detail->breadcrumb_title) }}</h1>
+                <h1  class="mb-0 main_heading_pa">{{ ucwords($detail->breadcrumb_title) }}</h1>
                 <h3 class="price_heading mb-4" data-aos="fade-up"data-aos-once="true">
                   @if($session_data['country'] == 'IN')
                     (Price Start at Rs {{ $detail->indian_price }} /-)
