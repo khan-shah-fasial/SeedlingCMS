@@ -23,11 +23,6 @@
       },{
         "@type": "ListItem", 
         "position": 2, 
-        "name": "Practice Areas",
-        "item": "{{ url(route('practicearea')) }}"  
-      },{
-        "@type": "ListItem", 
-        "position": 3, 
         "name": "@php echo str_replace('&nbsp;',' ',htmlspecialchars_decode ($detail->title)); @endphp",
         "item": "{{ url()->current() }}"  
       }]
@@ -59,7 +54,7 @@
           <div class="row">
             <div class="col-md-12">
               <h1 class="breadcrumb_heading mb-md-3 mb-2">
-                {{ $detail->breadcrumb_title }}
+                {{ $detail->title }}
               </h1>
               <!-- <p class="service_banner_para">
                 {{ $detail->breadcrumb_subtitle }}
@@ -73,6 +68,7 @@
                     $session_data['country'] = 'IN';
                 }
               @endphp
+                {{---
                 <h2 class="mb-0">Price Start at 
                   @if($session_data['country'] == 'IN')
                       Rs {{ number_format($detail->indian_price) }}
@@ -80,18 +76,18 @@
                       $ {{ number_format($detail->foreign_price) }}
                   @endif
                   /-
-              </h2> -->
+              </h2> --}}
                 <!-- <button class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#ask-modal">
                   <img src="assets/frontend/images/nav_btn_icon.png" alt="" />
                   <img src="assets/frontend/images/ask_hover_btn.png" alt="" />
                   <span>Request a Consultation</span>
                 </button> -->
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item " aria-current="page">Library</li>
-  </ol>
-</nav>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url(route('index')) }}">Home</a></li>
+                    <li class="breadcrumb-item " aria-current="page">{{ $detail->title }}</li>
+                  </ol>
+                </nav>
               </div>
             </div>
           </div>
@@ -106,7 +102,7 @@
 
 @if(count($progress_bar) > 0)
 <!-- -------------------------- Service steps Start ---------------- -->
-  
+{{--  
       <div class="service_steps">
         <div class="container">
           <div class="row">
@@ -172,7 +168,7 @@
           </div>
         </div>
       </div>
-  
+--}}  
 <!-- -------------------------- Service steps End ---------------- -->
 @endif  
 
@@ -186,9 +182,15 @@
 
               @if(!empty($detail->Content_title))
               <div>
-                <h1 class="mb-0" >Register a Private Limited Company. </h1>
-                <h3 class="price_heading mb-4" data-aos="fade-up"data-aos-once="true" >(Price Start at Rs 7,499 /-)</h3>
-                <!-- <h3 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h3>   -->
+                <h1 class="mb-0">{{ ucwords($detail->breadcrumb_title) }}</h1>
+                <h3 class="price_heading mb-4" data-aos="fade-up"data-aos-once="true">
+                  @if($session_data['country'] == 'IN')
+                    (Price Start at Rs {{ $detail->indian_price }} /-)
+                  @else
+                    (Price Start at $ {{ $detail->foreign_price }} /-)
+                  @endif
+                </h3>
+                {{-- <h3 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h3>   --}}
                 <div class="service_content"data-aos="fade-up"data-aos-once="true" >
                     @php echo html_entity_decode($detail->content) @endphp
                 </div>

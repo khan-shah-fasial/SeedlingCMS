@@ -13,7 +13,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group mb-3">
-                                    <label>Breadcrumb Title <span class="red">*</span></label>
+                                    <label>Main Title <span class="red">*</span></label>
                                     <input type="text" class="form-control" name="breadcrumb_title" value="" required>
                                 </div>
                             </div>        
