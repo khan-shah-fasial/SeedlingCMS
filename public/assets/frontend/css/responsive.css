@@ -183,6 +183,11 @@
 }
 
 @media (max-width: 767px) {
+    .service_last .position_sticky {
+        position: relative;
+        top: 0;
+    }
+
     .main-timeline .timeline .timeline-icon img {
         width: 28px;
     }
