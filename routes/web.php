@@ -19,7 +19,11 @@ use Illuminate\Support\Facades\Mail;
 // Home START
 Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::get('/area-of-practices', [IndexController::class, 'practice_area'])->name('practicearea');
-Route::get('/{slug}', [IndexController::class, 'practice_area_detail'])->name('practicearea-detail');
+
+$service = DB::table('practice_areas')->pluck('slug')->toArray();
+Route::get('/{slug}', [IndexController::class, 'practice_area_detail'])
+->where('slug', implode('|', $service))
+->name('practicearea-detail');
 
 Route::get('/blog', [IndexController::class, 'blog'])->name('blog');
 Route::get('/blogs-data', [IndexController::class, 'blog_data'])->name('blog-data');
