@@ -25,6 +25,17 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
                      <div class="item">
                         <div class="test_box"data-aos="fade-up" data-aos-once="true">
                            <div class="test_quote_box"data-aos="fade-up" data-aos-once="true">
+
+                           <div class="d-flex align-items-center gap-2" >
+                              <div  class="avatar" >
+                                k
+                                 
+                              </div>
+                              <span>Karla Clinton</span>
+                           </div>
+
+
+
                               <img
                                  src="{{ asset('/assets/frontend/images/qoute.png') }}"
                                  alt="testimonial quote"
@@ -34,7 +45,15 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
                            <p class="desc text_justify"data-aos="fade-up" data-aos-once="true">
                               {{ $row->comment }}
                            </p>
-                           <h4 class="test_name"data-aos="fade-up" data-aos-once="true">{{ $row->name }}</h4>
+                           <div class="d-flex align-items-center  gap-2 rating_icon" >
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                           <span>5.0</span>
+                           </div>
+                           <!-- <h4 class="test_name"data-aos="fade-up" data-aos-once="true">{{ $row->name }}</h4> -->
                         </div>
                      </div>
 

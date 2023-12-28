@@ -332,6 +332,112 @@ assistance for startups, FDI, Property law, IP, and more')
 <!--Contact Start-->
 @include('frontend.component.contact_us_section')
 <!--Contact End-->
+
+
+<!-- home blog -->
+
+<div class="home_blog">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+         <h4 class="color_heading text-center" data-aos="fade-up" data-aos-once="true">Our Blog</h4>
+         <h2 class="main_heading text-center mb-3" data-aos="fade-up" data-aos-once="true">Latest Posts</h2>
+         </div>
+         <div class="col-md-4 mt-3">
+            <div class="box" >
+               <img src="{{ asset('/assets/frontend/images/blog.png') }}" class="img" alt="">
+               <div class="content" >
+               <h4>
+               A World Class Packaging Team, 
+Built For You
+               </h4>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy..</p>
+               <div class="text-end" >
+                  <img src="{{ asset('/assets/frontend/images/circle_arrow.png') }}" alt="">
+               </div>
+               </div>
+              
+            </div>
+         </div>
+         <div class="col-md-4 mt-3">
+            <div class="box" >
+               <img src="{{ asset('/assets/frontend/images/blog.png') }}" class="img" alt="">
+               <div class="content" >
+               <h4>
+               A World Class Packaging Team, 
+Built For You
+               </h4>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy..</p>
+               <div class="text-end" >
+                  <img src="{{ asset('/assets/frontend/images/circle_arrow.png') }}" alt="">
+               </div>
+               </div>
+              
+            </div>
+         </div>
+         <div class="col-md-4 mt-3">
+            <div class="box" >
+               <img src="{{ asset('/assets/frontend/images/blog.png') }}" class="img" alt="">
+               <div class="content" >
+               <h4>
+               A World Class Packaging Team, 
+Built For You
+               </h4>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy..</p>
+               <div class="text-end" >
+                  <img src="{{ asset('/assets/frontend/images/circle_arrow.png') }}" alt="">
+               </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<!-- home blog -->
+
+
+
+
+
+
+
+<!-- Seo Section -->
+
+<section class="seo">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6">
+            <h2>We’re Advocates for
+Justice and Right</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+</p>
+<p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+         <div class="col-md-6">
+            <h2>We’re Advocates for
+Justice and Right</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+</p>
+<p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Seo Section -->
+
+
+
+
 <!--Social Icons Start-->
 @include('frontend.component.testimonials')
 <!--Testimonials End-->

@@ -180,7 +180,7 @@
             <div class="col-lg-9">
               <!-- -------------service last header start -------------- -->
 
-              @if(!empty($detail->Content_title))
+              
               <div>
                 <h1  class="mb-0 main_heading_pa">{{ ucwords($detail->breadcrumb_title) }}</h1>
                 <h3 class="price_heading mb-4" data-aos="fade-up"data-aos-once="true">
@@ -195,7 +195,6 @@
                     @php echo html_entity_decode($detail->content) @endphp
                 </div>
               </div>
-              @endif
 
               <!-- -------------service last header End -------------- -->
               <!-- -------------service last Benefit Start -------------- -->
@@ -431,7 +430,7 @@
               @if(!empty($detail->assistance_content))
                 <div class="service_last_assistance">
                   @if(!empty($detail->Section_title_asst))
-                    <h2 class="color_heading " data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}</h2>
+                    <h3 class="color_heading " data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_asst }}</h3>
                   @endif
 
                   <div class="service_content" data-aos="fade-up"data-aos-once="true">

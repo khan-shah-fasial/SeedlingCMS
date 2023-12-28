@@ -1056,7 +1056,7 @@ div#counter {
     font-size: 32px;
 }
 
-.payment .payment_right_container .payment_btn_call .payment_btn {
+.payment_btn {
     margin-top: 10px;
     padding: 19px 43px;
     border: none;
@@ -1070,7 +1070,7 @@ div#counter {
     transition: all 0.5s;
 }
 
-.payment .payment_right_container .payment_btn_call .payment_btn:hover {
+.payment_btn:hover {
     background: lightgray;
     color: #333;
 }
@@ -1286,7 +1286,7 @@ div#counter {
 /* ---------------------Social Icons  Start ---------------------- */
 
 .social {
-    background: rgba(249, 247, 245, 1);
+    background: #f9f7f5;
 }
 .social .social_icons {
     display: flex;
@@ -1355,11 +1355,23 @@ div#counter {
 .testimonial .test_box .test_quote_box {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
 }
 .testimonial .test_box .test_quote_box .test_quote {
     margin-right: 30px;
     margin-bottom: 15px;
+}
+.testimonial .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e13333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .testimonial .test_box .test_desc {
@@ -1374,6 +1386,10 @@ div#counter {
     font-weight: 700;
     line-height: 30px;
     font-family: "Libre Baskerville", serif;
+}
+
+.testimonial .rating_icon i {
+    color: #e13333;
 }
 
 .testimonial .owl-nav,
@@ -2988,4 +3004,26 @@ body .backhomebutton {
 }
 .address .heading {
     color: #e13333;
+}
+
+/* -----------seo---------- */
+
+.seo {
+    padding: 45px 0;
+    background: #f5f5f5;
+}
+
+/* ---------- home blog----------- */
+
+.home_blog {
+    padding: 45px 0;
+}
+.home_blog .box {
+    border: 1px solid lightgray;
+}
+.home_blog .box .img {
+    width: 100%;
+}
+.home_blog .box .content {
+    padding: 23px;
 }
