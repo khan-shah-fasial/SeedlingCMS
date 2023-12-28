@@ -110,13 +110,13 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
           <div class="col-md-12 mb-4">
             <div class="d-flex align-items-center justify-content-between">
               <h3 class="text-white">
-                Lorem Ipsum Doler Elit Lopa Lorem Ipsum Doler
+                Book an online consultation Now
               </h3>
               <button>Online Payment</button>
             </div>
           </div>
           <hr />
-          <div class="col-md-3 mt-5">
+          <div class="col-md-4 mt-5">
             <div>
               <img src="/assets/frontend/images/logo.png" alt="" />
               <p class="mt-3">
@@ -127,7 +127,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
               </p>
             </div>
           </div>
-          <div class="col-md-3 mt-5">
+          <div class="col-md-4 mt-5">
             <a href="#">
               <h3 class="heading">New Delhi</h3>
               <p class="mt-3">
@@ -138,20 +138,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             <a href="#">+91 074288 99959 </a>
             <a href="#"> seedlingassociates@gmail.com </a>
           </div>
-          <div class="col-md-3 mt-5">
+          <div class="col-md-4 mt-5">
             <a href="#">
               <h3 class="heading">Mumbai</h3>
-              <p class="mt-3">
-                Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla
-                Phase III New Delhi India.
-              </p>
-            </a>
-            <a href="#">+91 074288 99959 </a>
-            <a href="#"> seedlingassociates@gmail.com </a>
-          </div>
-          <div class="col-md-3 mt-5">
-            <a href="#">
-              <h3 class="heading">Chandigarh</h3>
               <p class="mt-3">
                 Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla
                 Phase III New Delhi India.
