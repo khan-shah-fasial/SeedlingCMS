@@ -3,19 +3,7 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
 @endphp
 
 <!------------========== Testimonials ===============-------------->
-<section class="social">
-    <div class="container">
-       <div class="row">
-          <div class="col-md-12">
-             <div class="social_icons"data-aos="fade-up" data-aos-once="true">
-                <a href="{{ get_settings('twitter') }}"  aria-label="Twitter" class="icon" ><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="{{ get_settings('linkedin') }}" aria-label="LinkedIn" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="{{ get_settings('facebook') }}" aria-label="Facebook" class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-             </div>
-          </div>
-       </div>
-    </div>
-   </section>
+
    <!--Social Icons End-->
    <!--Testimonials Start-->
 

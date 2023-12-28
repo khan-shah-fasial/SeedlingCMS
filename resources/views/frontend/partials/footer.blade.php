@@ -30,7 +30,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
  <!--links End-->
  
  <!--Footer Start-->
- <footer>
+ <!-- <footer>
     <div class="container">
        <div class="row">
           <div class="col-md-12">
@@ -80,13 +80,207 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             </span>
         </a>
         <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
-                        <!-- <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
-                        <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" /> -->
+                   
                         <span>Request a Consultation</span>
                     </button>
 
     </div>
- </footer>
+ </footer> -->
+
+
+    <!-- -------------------- address Start --------------- -->
+
+    <section class="social">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="social_icons"data-aos="fade-up" data-aos-once="true">
+                <a href="{{ get_settings('twitter') }}"  aria-label="Twitter" class="icon" ><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="{{ get_settings('linkedin') }}" aria-label="LinkedIn" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="{{ get_settings('facebook') }}" aria-label="Facebook" class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+             </div>
+          </div>
+       </div>
+    </div>
+</section>
+
+    <section class="address">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="text-white">
+                Lorem Ipsum Doler Elit Lopa Lorem Ipsum Doler
+              </h3>
+              <button>Online Payment</button>
+            </div>
+          </div>
+          <hr />
+          <div class="col-md-3 mt-5">
+            <div>
+              <img src="/assets/frontend/images/logo.png" alt="" />
+              <p class="mt-3">
+                The choice of a lawyer is an important decision and should not
+                be based solely on advertisements. Past results do not guarantee
+                future results. Every case is different and must be judged on
+                its own merits.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <a href="#">
+              <h3 class="heading">New Delhi</h3>
+              <p class="mt-3">
+                Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla
+                Phase III New Delhi India.
+              </p>
+            </a>
+            <a href="#">+91 074288 99959 </a>
+            <a href="#"> seedlingassociates@gmail.com </a>
+          </div>
+          <div class="col-md-3 mt-5">
+            <a href="#">
+              <h3 class="heading">Mumbai</h3>
+              <p class="mt-3">
+                Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla
+                Phase III New Delhi India.
+              </p>
+            </a>
+            <a href="#">+91 074288 99959 </a>
+            <a href="#"> seedlingassociates@gmail.com </a>
+          </div>
+          <div class="col-md-3 mt-5">
+            <a href="#">
+              <h3 class="heading">Chandigarh</h3>
+              <p class="mt-3">
+                Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla
+                Phase III New Delhi India.
+              </p>
+            </a>
+            <a href="#">+91 074288 99959 </a>
+            <a href="#"> seedlingassociates@gmail.com </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- address End --------------- -->
+    <!-- -------------------- links Start --------------- -->
+
+    <section class="links">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-3 first_links"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <ul class="links_url">
+              <li><a href="#"> Start Up India Registration</a></li>
+              <li>
+                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
+              </li>
+              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
+              <li><a href="#">Legal Entity Identifier Registration </a></li>
+              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
+              <li><a href="#">IEC Registration</a></li>
+              <li><a href="#"> ESI&PF Registration</a></li>
+              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"> ISBN Registration</a></li>
+              <li><a href="#">GST Registration</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-md-3 first_links"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <ul class="links_url">
+              <li><a href="#"> Start Up India Registration</a></li>
+              <li>
+                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
+              </li>
+              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
+              <li><a href="#">Legal Entity Identifier Registration </a></li>
+              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
+              <li><a href="#">IEC Registration</a></li>
+              <li><a href="#"> ESI&PF Registration</a></li>
+              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"> ISBN Registration</a></li>
+              <li><a href="#">GST Registration</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-md-3 first_links"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <ul class="links_url">
+              <li><a href="#"> Start Up India Registration</a></li>
+              <li>
+                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
+              </li>
+              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
+              <li><a href="#">Legal Entity Identifier Registration </a></li>
+              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
+              <li><a href="#">IEC Registration</a></li>
+              <li><a href="#"> ESI&PF Registration</a></li>
+              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"> ISBN Registration</a></li>
+              <li><a href="#">GST Registration</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-once="true">
+            <ul class="links_url">
+              <li><a href="#"> Start Up India Registration</a></li>
+              <li>
+                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
+              </li>
+              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
+              <li><a href="#">Legal Entity Identifier Registration </a></li>
+              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
+              <li><a href="#">IEC Registration</a></li>
+              <li><a href="#"> ESI&PF Registration</a></li>
+              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"> ISBN Registration</a></li>
+              <li><a href="#">GST Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- links End --------------- -->
+
+    <!-- -------------------- Footer Start --------------- -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul
+              class="footer_links mb-0"
+              data-aos="fade-up"
+              data-aos-once="true"
+            >
+              <li><a href="#">© 2023 SEEDLING</a></li>
+              <li><a href="#"> TERMS OF USE </a></li>
+              <li><a href="#">PRIVACY</a></li>
+              <li><a href="#">SITE MAP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- -------------------- Footer Ends --------------- -->
+
+
+
+
+
 
 
  <!--Footer Ends-->
