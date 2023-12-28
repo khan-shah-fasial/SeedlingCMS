@@ -53,9 +53,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="breadcrumb_heading mb-md-3 mb-2">
+              <span class="breadcrumb_heading mb-md-3 mb-2">
                 {{ $detail->title }}
-              </h1>
+              </span>
               <!-- <p class="service_banner_para">
                 {{ $detail->breadcrumb_subtitle }}
               </p> -->
@@ -235,7 +235,7 @@
 
               <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
                 @if(!empty($detail->Section_title_el))
-                  <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h3>
+                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
                 @endif
 
                 @if(!empty($detail->eligibility_title))
