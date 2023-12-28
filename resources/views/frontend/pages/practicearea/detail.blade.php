@@ -278,7 +278,7 @@
                 $doc_list = json_decode($detail->doc_list);
               @endphp
 
-              @if(count($doc_list) > 1)
+              
                 <div class="service_last_documents">
                   <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h3>
                   <h2 class="heading mb-4" data-aos="fade-up"data-aos-once="true">
@@ -286,6 +286,7 @@
                   </h2>
     
                   <!-- <h4 class="list_heading" data-aos="fade-up"data-aos-once="true">Documents Required</h4> -->
+                  @if(count($doc_list) > 1)
                   <ul class="first_list" data-aos="fade-up"data-aos-once="true">
                     @foreach ($doc_list as $row)
                       <li>
@@ -294,6 +295,7 @@
                     @endforeach
                     
                   </ul>
+                  @endif
                   
                   @if(!empty($detail->doc_content))
                     <div class="service_content" data-aos="fade-up"data-aos-once="true">
@@ -302,7 +304,7 @@
                   @endif
 
                 </div>
-                @endif
+                
   
               <!-- -------------service last Documents  End -------------- -->
   
