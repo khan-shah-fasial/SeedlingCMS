@@ -236,7 +236,7 @@
 
               <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
                 @if(!empty($detail->Section_title_el))
-                  <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h3>
+                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
                 @endif
 
                 @if(!empty($detail->eligibility_title))
