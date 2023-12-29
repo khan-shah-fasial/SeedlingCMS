@@ -1286,7 +1286,7 @@ div#counter {
 /* ---------------------Social Icons  Start ---------------------- */
 
 .social {
-    background: #f9f7f5;
+    background: transparent;
 }
 .social .social_icons {
     display: flex;
@@ -1717,7 +1717,7 @@ footer .footer_desc {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px 0 50px 0;
-    padding: 32px 32px;
+    padding: 32px 25px;
     box-shadow: 1000px 1000px 1000px 1000px inset #000000d6;
     color: white;
 }
@@ -1733,9 +1733,10 @@ footer .footer_desc {
 .service_last .service_last_form_container form textarea,
 .service_last .service_last_form_container form input {
     width: 100%;
-    padding: 11px 15px;
+    padding: 7px 15px;
     border-radius: 20px 0 20px 0;
     background: transparent;
+    font-size: 14px;
     border: 1px solid #535151;
     outline: none;
     color: white;
@@ -2038,9 +2039,9 @@ footer .footer_desc {
     top: 108px;
 }
 
-.price_heading {
+.service_last h1 span.price_heading {
     color: #e13333;
-    font-size: 24px;
+    font-size: 24px !important;
 }
 .mt92 {
     margin-top: 92px;

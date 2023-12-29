@@ -183,6 +183,15 @@
 }
 
 @media (max-width: 767px) {
+    .arrow_img {
+        width: 30px;
+    }
+
+    .service_last h1 {
+        font-size: 22px !important;
+        line-height: 26px !important;
+    }
+
     .service_last .position_sticky {
         position: relative;
         top: 0;

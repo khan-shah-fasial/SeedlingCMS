@@ -182,14 +182,15 @@
 
               
               <div>
-                <h1  class="mb-0 main_heading_pa">{{ ucwords($detail->breadcrumb_title) }}</h1>
-                <h3 class="price_heading mb-4" data-aos="fade-up"data-aos-once="true">
+                <h1  class="mb-3 main_heading_pa">{{ ucwords($detail->breadcrumb_title) }} <br>
+                <span class="price_heading mb-4" data-aos="fade-up"data-aos-once="true">
                   @if($session_data['country'] == 'IN')
                     (Price Start at Rs {{ $detail->indian_price }} /-)
                   @else
                     (Price Start at $ {{ $detail->foreign_price }} /-)
                   @endif
-                </h3>
+                </span>
+                </h1>
                 {{-- <h3 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h3>   --}}
                 <div class="service_content"data-aos="fade-up"data-aos-once="true" >
                     @php echo html_entity_decode($detail->content) @endphp
@@ -235,7 +236,7 @@
 
               <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
                 @if(!empty($detail->Section_title_el))
-                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
+                  <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h3>
                 @endif
 
                 @if(!empty($detail->eligibility_title))
@@ -281,9 +282,9 @@
               
                 <div class="service_last_documents">
                   <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h3>
-                  <h2 class="heading mb-4" data-aos="fade-up"data-aos-once="true">
+                  <h3 class="heading mb-4" data-aos="fade-up"data-aos-once="true">
                     {{ $detail->doc_title }}
-                  </h2>
+                  </h3>
     
                   <!-- <h4 class="list_heading" data-aos="fade-up"data-aos-once="true">Documents Required</h4> -->
                   @if(count($doc_list) > 1)
@@ -474,14 +475,18 @@
                       @endforeach
                     @endforeach
 
-                    <div class="d-flex align-items-center justify-content-between mt-5" >
-                       <div class="d-flex align-items-center gap-2" >
-                        <img src="assets/frontend/images/left_p.png" alt="">
-                        IEC Registration
+                    <div class="d-flex align-items-center justify-content-between my-5" >
+                       <div class="d-flex align-items-md-center flex-md-row flex-column gap-2" >
+                        <img src="assets/frontend/images/left_p.png" class="arrow_img" alt="">
+                        <span>
+                          IEC Registration
+                        </span>
                        </div>
-                       <div class="d-flex align-items-center gap-2" >
-                       ESI&PF Registration
-                        <img src="assets/frontend/images/right_p.png" alt="">
+                       <div class="d-flex align-items-md-center align-items-end flex-md-row  flex-column-reverse gap-2" >
+                        <span>
+                          ESI&PF Registration
+                        </span>
+                        <img src="assets/frontend/images/right_p.png" class="arrow_img" alt="">
                        
                        </div>
                     </div>
