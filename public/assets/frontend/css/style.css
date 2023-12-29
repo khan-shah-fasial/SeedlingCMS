@@ -1290,7 +1290,7 @@ div#counter {
 }
 .social .social_icons {
     display: flex;
-    margin-bottom: -30px;
+    margin-top: -80px;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -1323,7 +1323,7 @@ div#counter {
 /* ---------------------Testimonial Start ---------------------- */
 
 .testimonial {
-    padding: 47px 0 56px 0;
+    padding: 47px 0 80px 0;
     background: rgba(249, 247, 245, 1);
 }
 
@@ -1675,7 +1675,7 @@ footer .footer_desc {
     font-family: "Libre Baskerville", serif;
     font-size: 22px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 32px;
     color: #e13333;
     margin-bottom: 15px;
 }
@@ -3005,6 +3005,12 @@ body .backhomebutton {
 }
 .address .heading {
     color: #e13333;
+}
+
+.address .right_arrow i {
+    font-size: 30px;
+    color: #e13333;
+    margin-top: 13px;
 }
 
 /* -----------seo---------- */

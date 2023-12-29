@@ -90,7 +90,13 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
 
     <!-- -------------------- address Start --------------- -->
 
-    <section class="social">
+
+
+    <section class="address">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          <section class="social">
     <div class="container">
        <div class="row">
           <div class="col-md-12">
@@ -103,14 +109,14 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
        </div>
     </div>
 </section>
-
-    <section class="address">
-      <div class="container">
-        <div class="row">
+          </div>
           <div class="col-md-12 mb-4">
             <div class="d-flex align-items-center justify-content-between">
-              <h3 class="text-white">
-                Book an online consultation Now
+              <h3 class="text-white d-flex align-items-center gap-3">
+
+                Book an online consultation Now <span class="right_arrow" >
+                <i class="fa fa-long-arrow-right"  aria-hidden="true"></i>
+                </span> 
               </h3>
               <button>Online Payment</button>
             </div>
