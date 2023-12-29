@@ -31,7 +31,7 @@
                    </a>
                 </div>
            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mt-md-0 mt-5">
                 <div class="contact_form_container d-flex align-items-center justify-content-center">
                     @include('frontend.component.have_any_question_form')
                 </div>

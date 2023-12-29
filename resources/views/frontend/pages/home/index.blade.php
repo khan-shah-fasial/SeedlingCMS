@@ -323,11 +323,106 @@ assistance for startups, FDI, Property law, IP, and more')
    </div>
 </section>
 <!--About End-->
+
+
+<!-- flip Cart section -->
+
+<section class="home_service">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <h4 class="color_heading text-center" data-aos="fade-up" data-aos-once="true">Our Services</h4>
+            <h2 class="main_heading text-center mb-3" data-aos="fade-up" data-aos-once="true">Lorem Ipsum Doler Site Emit.</h2>
+         </div>
+         <div class="col-md-3 mt-4">
+            <div class="flip_card">
+               <div class="flip_card_front">
+                  <div class="inner">
+                     <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5 class="py-3" >Register a Private Limited Company front </h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+               <div class="flip_card_back">
+                  <div class="inner">
+                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5>Register a Private Limited Company back</h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 mt-4">
+            <div class="flip_card">
+               <div class="flip_card_front">
+                  <div class="inner">
+                     <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5 class="py-3" >Register a Private Limited Company front </h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+               <div class="flip_card_back">
+                  <div class="inner">
+                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5>Register a Private Limited Company back</h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 mt-4">
+            <div class="flip_card">
+               <div class="flip_card_front">
+                  <div class="inner">
+                     <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5 class="py-3" >Register a Private Limited Company front </h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+               <div class="flip_card_back">
+                  <div class="inner">
+                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5>Register a Private Limited Company back</h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 mt-4">
+            <div class="flip_card">
+               <div class="flip_card_front">
+                  <div class="inner">
+                     <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5 class="py-3" >Register a Private Limited Company front </h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+               <div class="flip_card_back">
+                  <div class="inner">
+                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5>Register a Private Limited Company back</h5>
+                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+<!-- flip Cart section -->
+
+
+
+
+
 <!--Payment Start-->
-@include('frontend.component.lets_talk_section')
+{{-- @include('frontend.component.lets_talk_section')--}}
 <!--Payment End-->
 <!--Blog Start-->
-@include('frontend.component.blog')
+{{--@include('frontend.component.blog')--}}
 <!--Blog End-->
 <!--Contact Start-->
 @include('frontend.component.contact_us_section')
@@ -336,64 +431,49 @@ assistance for startups, FDI, Property law, IP, and more')
 
 <!-- home blog -->
 
-<div class="home_blog">
+@php
+$blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category_ids','3')->limit(4)->orderBy('created_at', 'desc')->get();
+//->toArray();
+//$right_news = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category_ids','4')->limit(4)->orderBy('created_at', 'desc')->get();
+@endphp
+@if(count($blog) > 1)
+
+<section class="home_blog">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
          <h4 class="color_heading text-center" data-aos="fade-up" data-aos-once="true">Our Blog</h4>
          <h2 class="main_heading text-center mb-3" data-aos="fade-up" data-aos-once="true">Latest Posts</h2>
          </div>
+
+         @foreach ($blog as $row)
+
+
+
          <div class="col-md-4 mt-3">
             <div class="box" >
-               <img src="{{ asset('/assets/frontend/images/blog.png') }}" class="img" alt="">
+               <img src="{{ asset('storage/' .$row->main_image) }}" class="img" alt="">
                <div class="content" >
                <h4>
-               A World Class Packaging Team, 
-Built For You
+               {{ $row->title }}
                </h4>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy..</p>
+               <p> {{ $row->short_description }}</p>
                <div class="text-end" >
-                  <img src="{{ asset('/assets/frontend/images/circle_arrow.png') }}" alt="">
+                  <a href="{{ url(route('blog.detail', ['category' =>'blog', 'slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}">
+                     <img src="{{ asset('/assets/frontend/images/circle_arrow.png') }}" alt="">
+                  </a>
                </div>
                </div>
               
             </div>
          </div>
-         <div class="col-md-4 mt-3">
-            <div class="box" >
-               <img src="{{ asset('/assets/frontend/images/blog.png') }}" class="img" alt="">
-               <div class="content" >
-               <h4>
-               A World Class Packaging Team, 
-Built For You
-               </h4>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy..</p>
-               <div class="text-end" >
-                  <img src="{{ asset('/assets/frontend/images/circle_arrow.png') }}" alt="">
-               </div>
-               </div>
-              
-            </div>
-         </div>
-         <div class="col-md-4 mt-3">
-            <div class="box" >
-               <img src="{{ asset('/assets/frontend/images/blog.png') }}" class="img" alt="">
-               <div class="content" >
-               <h4>
-               A World Class Packaging Team, 
-Built For You
-               </h4>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy..</p>
-               <div class="text-end" >
-                  <img src="{{ asset('/assets/frontend/images/circle_arrow.png') }}" alt="">
-               </div>
-               </div>
-              
-            </div>
-         </div>
+
+         @endforeach
       </div>
    </div>
-</div>
+</section>
+
+@endif
 
 
 <!-- home blog -->
@@ -410,16 +490,9 @@ Built For You
    <div class="container">
       <div class="row">
          <div class="col-md-6">
-            <h2>We’re Advocates for
-Justice and Right</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-</p>
-<p>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           <img src="{{ asset('/assets/frontend/images/seo.jpg') }}" alt="">
          </div>
-         <div class="col-md-6">
+         <div class="col-md-6 mt-md-0 mt-5">
             <h2>We’re Advocates for
 Justice and Right</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
