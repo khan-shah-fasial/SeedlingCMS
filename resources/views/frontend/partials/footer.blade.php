@@ -135,7 +135,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 Phase III New Delhi India.
               </p>
             </a>
+            <div>
             <a href="#">+91 074288 99959 </a>
+            </div>
             <a href="#"> seedlingassociates@gmail.com </a>
           </div>
           <div class="col-md-4 mt-5">
@@ -146,7 +148,10 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 Phase III New Delhi India.
               </p>
             </a>
-            <a href="#">+91 074288 99959 </a>
+            <div>
+
+              <a href="#">+91 074288 99959 </a>
+            </div>
             <a href="#"> seedlingassociates@gmail.com </a>
           </div>
         </div>

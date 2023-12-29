@@ -1150,7 +1150,7 @@ div#counter {
 /* ---------------------Contact start ---------------------- */
 
 .contact {
-    padding: 45px 0 90px 0;
+    padding: 45px 0 45px 0;
     background-image: url("/assets/frontend/images/payment_bg.webp");
     background-position: center;
     background-repeat: no-repeat;

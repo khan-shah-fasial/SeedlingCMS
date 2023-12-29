@@ -290,7 +290,7 @@
               @if (
                   !empty($detail->Section_title_doc) ||
                   !empty($detail->doc_title) ||
-                  !empty($detail->doc_content) ||
+                  !empty($detail->doc_content)
               )
                 <div class="service_last_documents">
                   <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h3>
