@@ -233,53 +233,65 @@
   
               <!--------------- service last Eligibility start ---------------->
 
-              
-              <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
-                @if(!empty($detail->Section_title_el))
-                  <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
-                @endif
+              @if (
+                  !empty($detail->Section_title_el) ||
+                  !empty($detail->eligibility_title) ||
+                  !empty($detail->eligibility_sub_title) ||
+                  !empty($detail->eligibility_content)
+              )
+                <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
+                  @if(!empty($detail->Section_title_el))
+                    <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_el }}</h2>
+                  @endif
 
-                @if(!empty($detail->eligibility_title))
-                  <h3 class="heading" data-aos="fade-up"data-aos-once="true">
-                    {{ $detail->eligibility_title }}
-                  </h3>
-                @endif
-                
-                @if(!empty($detail->eligibility_sub_title))
-                  <p class="desc" data-aos="fade-up"data-aos-once="true">
-                    {{ $detail->eligibility_sub_title }}
-                  </p>
-                @endif
-                
-                @php  
-                  $eligibility_list = json_decode($detail->eligibility_list);
-                @endphp
+                  @if(!empty($detail->eligibility_title))
+                    <h3 class="heading" data-aos="fade-up"data-aos-once="true">
+                      {{ $detail->eligibility_title }}
+                    </h3>
+                  @endif
+                  
+                  @if(!empty($detail->eligibility_sub_title))
+                    <p class="desc" data-aos="fade-up"data-aos-once="true">
+                      {{ $detail->eligibility_sub_title }}
+                    </p>
+                  @endif
+                  
+                  @php  
+                    $eligibility_list = json_decode($detail->eligibility_list);
+                  @endphp
 
-                @if(count($eligibility_list) > 1)
-                <ul class="first_list" data-aos="fade-up"data-aos-once="true">
+                  @if(count($eligibility_list) > 1)
+                  <ul class="first_list" data-aos="fade-up"data-aos-once="true">
 
-                  @foreach ($eligibility_list as $row)
-                    <li>{{ $row }}</li>
-                  @endforeach
+                    @foreach ($eligibility_list as $row)
+                      <li>{{ $row }}</li>
+                    @endforeach
 
-                </ul>
-                @endif
+                  </ul>
+                  @endif
 
-                @if(!empty($detail->eligibility_content))
-                <div class="service_content" data-aos="fade-up"data-aos-once="true">
-                  @php echo html_entity_decode($detail->eligibility_content) @endphp
+                  @if(!empty($detail->eligibility_content))
+                  <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                    @php echo html_entity_decode($detail->eligibility_content) @endphp
+                  </div>
+                  @endif
+
                 </div>
-                @endif
-
-              </div>
+              @endif
   
               <!-- -------------service last Eligibility End -------------- -->
+
+
               <!-- -------------service last Documents  start -------------- -->
               @php  
                 $doc_list = json_decode($detail->doc_list);
               @endphp
 
-              
+              @if (
+                  !empty($detail->Section_title_doc) ||
+                  !empty($detail->doc_title) ||
+                  !empty($detail->doc_content) ||
+              )
                 <div class="service_last_documents">
                   <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">{{ $detail->Section_title_doc }}</h3>
                   <h3 class="heading mb-4" data-aos="fade-up"data-aos-once="true">
@@ -305,7 +317,7 @@
                   @endif
 
                 </div>
-                
+              @endif  
   
               <!-- -------------service last Documents  End -------------- -->
   
