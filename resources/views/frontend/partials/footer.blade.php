@@ -111,7 +111,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
 </section>
           </div>
           <div class="col-md-12 mb-4">
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center flex-md-row flex-column mt-md-0 mt-2 justify-content-between">
               <h3 class="text-white d-flex align-items-center gap-3">
 
                 Book an online consultation Now <span class="right_arrow" >

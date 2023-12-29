@@ -327,7 +327,7 @@ assistance for startups, FDI, Property law, IP, and more')
 
 <!-- flip Cart section -->
 
-<section class="home_service">
+<!-- <section class="home_service">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -408,7 +408,7 @@ assistance for startups, FDI, Property law, IP, and more')
          </div>
       </div>
    </div>
-</section>
+</section> -->
 
 
 
@@ -431,7 +431,7 @@ assistance for startups, FDI, Property law, IP, and more')
 
 <!-- home blog -->
 
-@php
+<!-- @php
 $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category_ids','3')->limit(4)->orderBy('created_at', 'desc')->get();
 //->toArray();
 //$right_news = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category_ids','4')->limit(4)->orderBy('created_at', 'desc')->get();
@@ -473,7 +473,7 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
    </div>
 </section>
 
-@endif
+@endif -->
 
 
 <!-- home blog -->
@@ -486,7 +486,7 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
 
 <!-- Seo Section -->
 
-<section class="seo">
+<!-- <section class="seo">
    <div class="container">
       <div class="row">
          <div class="col-md-6">
@@ -504,7 +504,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
          </div>
       </div>
    </div>
-</section>
+</section> -->
 
 <!-- Seo Section -->
 
