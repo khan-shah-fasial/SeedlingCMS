@@ -113,7 +113,7 @@ assistance for startups, FDI, Property law, IP, and more')
 
 <!--Hero End-->
 <!--Banner Slider Start-->
-<section class="banner_slider">
+<!-- <section class="banner_slider">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -159,10 +159,10 @@ assistance for startups, FDI, Property law, IP, and more')
          </div>
       </div>
    </div>
-</section>
+</section> -->
 <!--Banner Slider End-->
 <!--About Start-->
-<section class="about">
+<!-- <section class="about">
    <div class="container">
       <div class="row">
          <div class="col-lg-6">
@@ -321,98 +321,356 @@ assistance for startups, FDI, Property law, IP, and more')
          </div>
       </div>
    </div>
+</section> -->
+
+<section class="about">
+   <div class="container">
+      <div class="row" id="counter" >
+               <div class="col-lg-3 col-6 first_counter">
+                  <div class="about_counter_container">
+                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                        <div class="about_counter_icon">
+                           <div class="about_counter_img">
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal.png') }}"
+                                 alt="counter 1" class="mb-4" />
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal_1.png') }}"
+                                 alt="counter 1" class="mb-4" />
+
+                           </div>
+                        </div>
+                        <div class="about_counter">
+                           <p class="about_counter_number">
+                              <span class="counter-value" data-count="{{ get_settings('c_exp') }}">0</span>+
+                           </p>
+                           <p class="about_counter_para">Years of Professional Experience</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-6 second_counter">
+                  <div class="about_counter_container">
+                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                        <div class="about_counter_icon">
+                           <div class="about_counter_img">
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand.png') }}"
+                                 alt="counter 2" />
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand_1.png') }}"
+                                 alt="counter 1" />
+                           </div>
+                        </div>
+                        <div class="about_counter">
+                           <p class="about_counter_number">
+                              <span class="counter-value" data-count="{{ get_settings('c_client') }}">0</span>k
+                           </p>
+                           <p class="about_counter_para">Clients Served</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-6 third_counter">
+                  <div class="about_counter_container mt-md-0 mt-2">
+                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                        <div class="about_counter_icon">
+                           <div class="about_counter_img">
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc.png') }}"
+                                 alt="counter 3" />
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc_1.png') }}"
+                                 alt="counter 1" />
+                           </div>
+                        </div>
+                        <div class="about_counter w149">
+                           <p class="about_counter_number">
+                              <span class="counter-value" data-count="{{ get_settings('c_lic') }}">0</span>+
+                           </p>
+                           <p class="about_counter_para">Licenses &amp; Registration Done.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-6">
+                  <div class="about_counter_container mt-md-0 mt-2">
+                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                        <div class="about_counter_icon">
+                           <div class="about_counter_img">
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man.png') }}"
+                                 alt="counter 4" />
+                              <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man_1.png') }}"
+                                 alt="counter 1" />
+                           </div>
+                        </div>
+                        <div class="about_counter">
+                           <p class="about_counter_number">
+                              <span class="counter-value" data-count="{{ get_settings('c_team') }}">0</span>+
+                           </p>
+                           <p class="about_counter_para">Team of Professional Experts.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      </div>
+   </div>
 </section>
+
+
+
+
 <!--About End-->
+
+
+
+
+
+
 
 
 <!-- flip Cart section -->
 
-<!-- <section class="home_service">
+<section class="home_service">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
             <h4 class="color_heading text-center" data-aos="fade-up" data-aos-once="true">Our Services</h4>
             <h2 class="main_heading text-center mb-3" data-aos="fade-up" data-aos-once="true">Lorem Ipsum Doler Site Emit.</h2>
          </div>
-         <div class="col-md-3 mt-4">
+         <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
             <div class="flip_card">
                <div class="flip_card_front">
                   <div class="inner">
                      <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5 class="py-3" >Register a Private Limited Company front </h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                     <h5 class="py-3" >Start a Business</h5>
+                     <p>A private limited company is  India's </p>
                   </div>
                </div>
                <div class="flip_card_back">
                   <div class="inner">
-                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5>Register a Private Limited Company back</h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                     <ul>
+                        <li><a href="https://register-india.com/limited-liability-partnership-firm-registration-in-india">Liability Partnership</a></li>
+                        <li><a href="https://register-india.com/partnership-firm-registration-india">Partnership Firm registration</a></li>
+                        <li><a href="https://register-india.com/producer-company-registration-india">Producer Company Limited</a></li>
+                        <li><a href="https://register-india.com/nidhi-company-registration-india">Nidhi Company</a></li>
+                        <li><a href="https://register-india.com/public-limited-company">Public Limited Company</a></li>
+                        <li><a href="https://register-india.com/sole-proprietorship-registration-india">Sole Proprietorship Registration</a></li>
+                        <li><a href="https://register-india.com/private-limited-company-registration-india">Private Limited Company</a></li>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
-         <div class="col-md-3 mt-4">
+         <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
             <div class="flip_card">
                <div class="flip_card_front">
                   <div class="inner">
                      <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5 class="py-3" >Register a Private Limited Company front </h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                     <h5 class="py-3" >License & Registration </h5>
+                     <p>A private limited company is  India's </p>
                   </div>
                </div>
                <div class="flip_card_back">
-                  <div class="inner">
-                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5>Register a Private Limited Company back</h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+               <div class="inner">
+                     <ul>
+                        <li><a href="https://register-india.com/esi-and-pf-registration-india">IEC Registration</a></li>
+                        <li><a href="https://register-india.com/start-up-india-registration">Start Up India Registration</a></li>
+                        <li><a href="https://register-india.com/isbn-registration-india">ISBN Registration</a></li>
+                        <li><a href="https://register-india.com/angel-tax-exemption-india">Angel Tax Exemption</a></li>
+                        <li><a href="https://register-india.com/startup-tax-exemption-india">Startup Tax Exemption</a></li>
+                        <li><a href="https://register-india.com/import-export-code-registration-in-india">IEC Import Export Code</a></li>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
-         <div class="col-md-3 mt-4">
+         <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
             <div class="flip_card">
                <div class="flip_card_front">
                   <div class="inner">
                      <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5 class="py-3" >Register a Private Limited Company front </h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                     <h5 class="py-3" >Taxation</h5>
+                     <p>A private limited company is  India's </p>
                   </div>
                </div>
                <div class="flip_card_back">
-                  <div class="inner">
-                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5>Register a Private Limited Company back</h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+               <div class="inner">
+                     <ul>
+                        <li><a href="https://register-india.com/gst-return-filing-india">GST Return Filing</a></li>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
-         <div class="col-md-3 mt-4">
+         <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
             <div class="flip_card">
                <div class="flip_card_front">
                   <div class="inner">
                      <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5 class="py-3" >Register a Private Limited Company front </h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                     <h5 class="py-3" >IPR & Gaming Services</h5>
+                     <p>A private limited company is  India's </p>
                   </div>
                </div>
                <div class="flip_card_back">
                   <div class="inner">
-                     <img src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
-                     <h5>Register a Private Limited Company back</h5>
-                     <p>A private limited company is  India's most prominent  form of business entity.</p>
+                      <ul>
+                        <li><a href="https://register-india.com/trademark-enforcement-india">Trademark Enforcement</a></li>
+                        <li><a href="https://register-india.com/trademark-objection-india">Trademark Objection</a></li>
+                        <li><a href="https://register-india.com/trademark-registration-india">Trademark Registration</a></li>
+                        <li><a href="https://register-india.com/trademark-hearing-india">Trademark hearing</a></li>
+                        <li><a href="https://register-india.com/trademark-assignment-india">Trademark assignment</a></li>
+                        <li><a href="https://register-india.com/trademark-litigation-india">Trademark Litigation</a></li>
+                     </ul>
                   </div>
                </div>
+            </div>
+         </div>
+         <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
+            <div class="flip_card">
+               <div class="flip_card_front">
+                  <div class="inner">
+                     <img  src="{{ asset('/assets/frontend/images/flip.png') }}" alt="">
+                     <h5 class="py-3" >NGO Compliances</h5>
+                     <p>A private limited company is  India's </p>
+                  </div>
+               </div>
+               <div class="flip_card_back">
+                  <div class="inner">
+                      <ul>
+                        <li><a href="https://register-india.com/section-8-company-registration-india">Section 8 Company (NGO)</a></li>
+                        <li><a href="https://register-india.com/fcra-registration-india">FCRA Registration</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-12">
+            <div class="text-center pt-5 " >
+               <a class="text-decoration-none link" href="#">View All Services</a>
             </div>
          </div>
       </div>
    </div>
-</section> -->
+</section>
 
 
 
 <!-- flip Cart section -->
+
+
+<!-- progress section -->
+
+<div class="service_steps">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+               <!-- <h2 class="service_steps_heading text-center">
+                  progress bar
+               </h2> -->
+              <div class="service_steps_main_timeline">
+                <div class="conference_center_line"></div>
+                <div class="conference_timeline_content">
+                  
+                            <div class="timeline_article timeline_article_top">
+                              <div class="number_timline"><p>4</p></div>
+                                <div class="meta_date">
+                                 <img src="assets/frontend/images/p_4.png" alt="">
+                                </div>
+                                <div class="content_box">
+                                    <!-- <h3>Title</h3> -->
+                                    <p>DISCUSS WITH EXPERT <br> PROFESSIONAL</p>
+                                </div>
+                            </div>
+                            <div class="timeline_article timeline_article_bottom">
+                            <div class="number_timline"><p>3</p></div>
+                                <div class="meta_date">
+                                 <img src="/assets/frontend/images/p_3.png" alt="">
+                                </div>
+                                <div class="content_box">
+                                    <!-- <h3>Title</h3> -->
+                                    <p>THE TEAM WILL <br> CALL YOU</p>
+                                </div>
+                            </div>
+                            <div class="timeline_article timeline_article_top">
+                            <div class="number_timline"><p>2</p></div>
+                                <div class="meta_date">
+                                <img src="/assets/frontend/images/p_2.png" alt="">
+
+                                </div>
+                                <div class="content_box">
+                                    <!-- <h3>Title</h3> -->
+                                    <p>FILL <br> THE FORM</p>
+                                </div>
+                            </div>
+                            <div class="timeline_article timeline_article_bottom">
+                            <div class="number_timline first"><p>1</p></div>
+                                <div class="meta_date">
+                                <img src="/assets/frontend/images/p_1.png" alt="">
+
+                                </div>
+                                <div class="content_box">
+                                    <!-- <h3>Title</h3> -->
+                                    <p>PAY <br> THE  FEE</p>
+                                </div>
+                            </div>
+                       
+                  
+                </div>
+              </div>
+              <!-- ------------ Mobile Menu----------------- -->
+         <div class="mobile_4_step" >
+               <div class="ms-4">
+                        <div class="main-timeline">
+
+                         
+                              <div class="timeline">
+                                  <a href="#" class="timeline-content">
+                                      <div class="timeline-icon">
+                                          <span>1<span>
+                                      </div>
+                                      <!-- <h5 class="description">
+                                         Title
+                                      </h5> -->
+                                      <p>PAY <br> THE  FEE</p>
+                                  </a>
+                              </div>
+                              <div class="timeline">
+                                  <a href="#" class="timeline-content">
+                                      <div class="timeline-icon">
+                                          <span>2<span>
+                                      </div>
+                                      
+                                      <p>FILL <br> THE FORM</p>
+                                  </a>
+                              </div>
+                              <div class="timeline">
+                                  <a href="#" class="timeline-content">
+                                      <div class="timeline-icon">
+                                          <span>3<span>
+                                      </div>
+                                      
+                                      <p>THE TEAM WILL <br> CALL YOU</p>
+                                  </a>
+                              </div>
+                              <div class="timeline">
+                                  <a href="#" class="timeline-content">
+                                      <div class="timeline-icon">
+                                          <span>4<span>
+                                      </div>
+                                     
+                                      <p>DISCUSS WITH EXPERT <br> PROFESSIONAL</p>
+                                  </a>
+                              </div>
+                          
+
+                        </div>
+                    </div>
+             </div> 
+            
+
+                    <!-- ------------------- Mobile menu---------------------- -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- progress section -->
 
 
 
@@ -431,7 +689,7 @@ assistance for startups, FDI, Property law, IP, and more')
 
 <!-- home blog -->
 
-<!-- @php
+@php
 $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category_ids','3')->limit(4)->orderBy('created_at', 'desc')->get();
 //->toArray();
 //$right_news = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category_ids','4')->limit(4)->orderBy('created_at', 'desc')->get();
@@ -473,7 +731,7 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
    </div>
 </section>
 
-@endif -->
+@endif
 
 
 <!-- home blog -->
@@ -486,7 +744,7 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
 
 <!-- Seo Section -->
 
-<!-- <section class="seo">
+<section class="seo">
    <div class="container">
       <div class="row">
          <div class="col-md-6">
@@ -504,7 +762,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
          </div>
       </div>
    </div>
-</section> -->
+</section>
 
 <!-- Seo Section -->
 

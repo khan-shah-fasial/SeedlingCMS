@@ -461,7 +461,7 @@ body#index #mainContent {
     transform-origin: 0 0;
     transform: skew(40deg);
     border-left: 10vw solid rgba(227, 109, 106, 1);
-    z-index: 0;
+    z-index: -1;
 }
 
 #homeAnimation .results_list > div.current:nth-child(1) .animatingSlash,
@@ -597,7 +597,7 @@ body#index #mainContent {
     transform: skew(40deg);
     border-right: 10vw solid rgba(227, 109, 106, 1);
     opacity: 1;
-    z-index: 0;
+    z-index: -1;
 }
 
 #homeAnimation .results_list > div.previous:nth-child(4) .animatingSlash,
@@ -639,6 +639,7 @@ body#index #mainContent {
     background-position: -2px 0;
     box-sizing: border-box;
     text-align: center;
+    z-index: -2;
 }
 
 #homeAnimation .results_list > div:nth-child(2) .teaser,
@@ -872,11 +873,18 @@ section.banner_slider .item a {
 /* ---------------------About Start ---------------------- */
 
 .about {
-    padding: 45px 0;
-    background-image: url("/assets/frontend/images/about_bg.webp");
+    /* padding: 45px 0; */
+    /* background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+}
+
+#counter {
+    background: #f5f5f5;
+    padding: 45px;
+    border-radius: 50px 0;
+    margin-top: -82px;
 }
 
 .about .about_logo {
@@ -952,7 +960,7 @@ section.banner_slider .item a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 210px;
+    /* height: 210px; */
 }
 
 .about .about_right_counter {
@@ -975,10 +983,6 @@ section.banner_slider .item a {
     .about_counter_img
     img {
     width: 100%;
-}
-
-div#counter {
-    margin-top: 15px;
 }
 
 .about
@@ -1023,16 +1027,16 @@ div#counter {
     margin-bottom: 0;
 }
 
-.about .first_counter {
+/* .about .first_counter {
     border-right: 1px solid #33333321;
     border-bottom: 1px solid #33333321;
-}
-.about .second_counter {
+} */
+/* .about .second_counter {
     border-bottom: 1px solid #33333321;
 }
 .about .third_counter {
     border-right: 1px solid #33333321;
-}
+} */
 
 /* ---------------------About  End ---------------------- */
 
@@ -1173,7 +1177,6 @@ div#counter {
     border-radius: 65px 0 65px 0;
     transition: all 0.5s;
     text-decoration: none;
-    height: 260px;
 }
 
 .contact .contact_icon_container .contact_icon_box {
@@ -1188,7 +1191,7 @@ div#counter {
     border: 1px solid white;
 }
 
-.contact .contact_icon_container img:nth-child(2) {
+/* .contact .contact_icon_container img:nth-child(2) {
     display: none;
 }
 
@@ -1198,7 +1201,7 @@ div#counter {
 
 .contact .contact_icon_container:hover img:nth-child(2) {
     display: block;
-}
+} */
 
 .contact .contact_icon_container .contact_title {
     font-size: 20px;
@@ -1206,7 +1209,7 @@ div#counter {
     line-height: 25px;
     margin-bottom: 0;
     font-family: "Libre Baskerville", serif;
-    padding-top: 35px;
+    padding-top: 0px;
     padding-bottom: 10px;
     color: white;
 }
@@ -1546,10 +1549,11 @@ footer .footer_desc {
 
 .service_steps {
     padding: 40px 0;
-    background-image: url("/assets/frontend/images/about_bg.webp");
+    /* background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background: #f5f5f5f5;
 }
 
 .service_steps .service_steps_heading {
@@ -1571,6 +1575,25 @@ footer .footer_desc {
     height: 222px;
 }
 
+.number_timline {
+    position: absolute;
+    top: 41%;
+    left: 0;
+    margin-left: -121px;
+}
+.number_timline.first {
+    margin-left: -151px;
+}
+
+.number_timline p {
+    background: #f5f5f5;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+}
+
 .service_steps_main_timeline .conference_center_line {
     position: absolute;
     width: 100%;
@@ -1585,7 +1608,7 @@ footer .footer_desc {
 }
 
 .timeline_article {
-    width: 20%;
+    width: 25%;
     position: relative;
     min-height: 220px;
     float: right;
@@ -1596,25 +1619,25 @@ footer .footer_desc {
     top: 50%;
     left: 0px;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     border-radius: 100%;
     background: #e13333;
     border: 3px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
     box-shadow: 0px 4px 11px -3px #000;
+}
+.timeline_article .meta_date img {
+    width: 43px;
 }
 
 .timeline_article .content_box {
     width: 200px;
     position: absolute;
-    top: 67%;
-    left: -80px;
+    top: 78%;
+    left: -60px;
     text-align: center;
 }
 
@@ -1989,10 +2012,10 @@ footer .footer_desc {
     background: lightgray;
 }
 
-.service_last_compliances ul {
+/* .service_last_compliances ul {
     list-style: none;
     padding-left: 0;
-}
+} */
 
 .service_last_compliances .list_box {
     padding: 25px 30px;
@@ -2259,7 +2282,7 @@ footer .footer_desc {
 }
 
 .main-timeline .timeline-content {
-    background: #fff;
+    background: transparent;
     text-align: left;
     min-height: 125px;
     padding: 0 0 20px;
@@ -3061,6 +3084,14 @@ body .backhomebutton {
     background-size: cover; */
 }
 
+.home_service .col-xl-3 {
+    width: 20%;
+}
+
+.home_service .link {
+    color: #e13333;
+}
+
 .flip_card {
     position: relative;
     transform-style: preserve-3d;
@@ -3071,12 +3102,21 @@ body .backhomebutton {
     height: 350px;
     border-radius: 50px 0;
     background: #efefef;
-    text-align: center;
-    padding: 30px 20px;
+    padding: 30px 0px;
     width: 100%;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.flip_card_front {
+    text-align: center;
+}
+.flip_card_back ul {
+    padding-left: 0;
+}
+.flip_card_back ul li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .flip_card_front {
@@ -3087,6 +3127,18 @@ body .backhomebutton {
     top: 0;
     left: 0;
     transform: rotateY(180deg);
+}
+.flip_card_back button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px 0;
+    background: #e13333;
+    color: #fff;
+    transition: all 0.3s;
+}
+.flip_card_back button:hover {
+    background: #fff;
+    color: #e13333;
 }
 
 .flip_card_back::after,
