@@ -100,7 +100,7 @@
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/Start_a_Business.png') }}" alt="">
                             <h5 class="py-3">Start a Business</h5>
-                            <p>A private limited company is India's </p>
+                            <!-- <p>A private limited company is India's </p> -->
                         </div>
                     </div>
 
@@ -135,7 +135,7 @@
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/License_Registration.png') }}" alt="">
                             <h5 class="py-3">License & Registration </h5>
-                            <p>A private limited company is India's </p>
+                            <!-- <p>A private limited company is India's </p> -->
                         </div>
                     </div>
                     @php
@@ -167,7 +167,7 @@
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/taxation.png') }}" alt="">
                             <h5 class="py-3">Taxation</h5>
-                            <p>A private limited company is India's </p>
+                            <!-- <p>A private limited company is India's </p> -->
                         </div>
                     </div>
                     @php
@@ -198,7 +198,7 @@
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/IPR_Gaming_Services.png') }}" alt="">
                             <h5 class="py-3">IPR & Gaming Services</h5>
-                            <p>A private limited company is India's </p>
+                            <!-- <p>A private limited company is India's </p> -->
                         </div>
                     </div>
                     @php
