@@ -441,6 +441,7 @@ body#index #mainContent {
 
 #homeAnimation .results_list > div:nth-child(1) .image {
     background: #000;
+    z-index: -33;
 }
 
 #homeAnimation .results_list > div:not(.current) .animatingSlash {
@@ -581,6 +582,7 @@ body#index #mainContent {
 
 #homeAnimation .results_list > div:nth-child(n + 2) .image {
     background: #000;
+    z-index: -33;
 }
 
 #homeAnimation .results_list > div:nth-child(2) .animatingSlash,
