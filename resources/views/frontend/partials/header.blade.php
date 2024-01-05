@@ -1,4 +1,3 @@
-
 <!--------------Header start----------------->
 <header>
     <div class="container">
@@ -16,73 +15,77 @@
                             @php
                                 $subcate = DB::table('practice_areas')
                                     ->where('parent_id', 1)
-                                    ->get();
+                                    ->where('status', 1)
+                                    ->get(['title', 'slug', 'status']);
                             @endphp
                             <a href=#>
-                                <span style="color:#e13333;" > Start a Business</span>
+                                <span style="color:#e13333;"> Start a Business</span>
 
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                @if (count($subcate) > 0)
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
                             </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
+                            @if (count($subcate) > 0)
+                                <ul class="dropdown">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul>
+                                                @foreach ($subcate as $iteams)
+                                                    <li>
+                                                        <a
+                                                            href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                                            {{ $iteams->title }}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                            </ul>
+                                </ul>
                             @endif
 
                         </li>
                         <li>
                             @php
-                            $subcate = DB::table('practice_areas')
+                                $subcate = DB::table('practice_areas')
                                     ->where('parent_id', 2)
-                                    ->get();
+                                    ->where('status', 1)
+                                    ->get(['title', 'slug', 'status']);
                             @endphp
                             <a href=#>
                                 <span style="color:#e13333;">License & Registration</span>
 
-                                @if(count($subcate) > 0)        
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                @if (count($subcate) > 0)
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
                             </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        
-                                        <ul>
+                            @if (count($subcate) > 0)
+                                <ul class="dropdown">
+                                    <div class="row">
+                                        <div class="col-md-12">
 
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
+                                            <ul>
 
-                                        
+                                                @foreach ($subcate as $iteams)
+                                                    <li>
+                                                        <a
+                                                            href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                                            {{ $iteams->title }}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+
+
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                            </ul>
+                                </ul>
                             @endif
 
                         </li>
@@ -90,36 +93,38 @@
                             @php
                                 $subcate = DB::table('practice_areas')
                                     ->where('parent_id', 3)
-                                    ->get();
+                                    ->where('status', 1)
+                                    ->get(['title', 'slug', 'status']);
                             @endphp
                             <a href=#>
                                 <span style="color:#e13333;">Taxation</span>
 
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                @if (count($subcate) > 0)
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
 
                             </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
+                            @if (count($subcate) > 0)
+                                <ul class="dropdown">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul>
 
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
+                                                @foreach ($subcate as $iteams)
+                                                    <li>
+                                                        <a
+                                                            href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                                            {{ $iteams->title }}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                            </ul>
+                                </ul>
                             @endif
 
                         </li>
@@ -127,71 +132,75 @@
                             @php
                                 $subcate = DB::table('practice_areas')
                                     ->where('parent_id', 4)
-                                    ->get();
+                                    ->where('status', 1)
+                                    ->get(['title', 'slug', 'status']);
                             @endphp
                             <a href=#>
                                 <span style="color:#e13333;">IPR & Gaming Services </span>
 
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                @if (count($subcate) > 0)
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
 
                             </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
+                            @if (count($subcate) > 0)
+                                <ul class="dropdown">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul>
+                                                @foreach ($subcate as $iteams)
+                                                    <li>
+                                                        <a
+                                                            href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                                            {{ $iteams->title }}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                            </ul>
+                                </ul>
                             @endif
 
                         </li>
                         <li>
                             @php
-                            $subcate = DB::table('practice_areas')
+                                $subcate = DB::table('practice_areas')
                                     ->where('parent_id', 5)
-                                    ->get();
+                                    ->where('status', 1)
+                                    ->get(['title', 'slug', 'status']);
                             @endphp
                             <a href=#>
                                 <span style="color:#e13333;">NGO Compliances</span>
 
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                @if (count($subcate) > 0)
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 @endif
 
                             </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
+                            @if (count($subcate) > 0)
+                                <ul class="dropdown">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul>
 
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
+                                                @foreach ($subcate as $iteams)
+                                                    <li>
+                                                        <a
+                                                            href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                                            {{ $iteams->title }}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                            </ul>
+                                </ul>
                             @endif
 
                         </li>
@@ -255,111 +264,124 @@
 
 
                         <li>
-                        <div class="sidebar_item">
-                            
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">Start a Business 
-                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" /></a>
-                    
-                    <div class="sub-menu">
-                            @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 1)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                        
-                    </div>
-                </div>
-                        </li>
-                        <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
-                        License & Registration <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 2)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
-                        </li>
-                        </li>
-                        <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
+                            <div class="sidebar_item">
 
-                    Taxation
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 3)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
+                                <a href=# class="sub-btn d-flex align-items-center justify-content-between">Start a
+                                    Business
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}"
+                                        alt="down Arrow" /></a>
+
+                                <div class="sub-menu">
+                                    @php
+                                        $subcate = DB::table('practice_areas')
+                                            ->where('parent_id', 1)
+                                            ->where('status', 1)
+                                            ->get(['title', 'slug', 'status']);
+                                    @endphp
+                                    @foreach ($subcate as $iteams)
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                            {{ $iteams->title }}
+                                        </a>
+                                    @endforeach
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar_item">
+                                <a href=# class="sub-btn d-flex align-items-center justify-content-between">
+                                    License & Registration <img src="{{ asset('/assets/frontend/images/down.png') }}"
+                                        alt="down Arrow" />
+                                </a>
+
+                                <div class="sub-menu">
+                                    @php
+                                        $subcate = DB::table('practice_areas')
+                                            ->where('parent_id', 2)
+                                            ->where('status', 1)
+                                            ->get(['title', 'slug', 'status']);
+                                    @endphp
+                                    @foreach ($subcate as $iteams)
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                            {{ $iteams->title }}
+                                        </a>
+                                    @endforeach
+                                </div>
+                            </div>
                         </li>
                         </li>
                         <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
+                            <div class="sidebar_item">
+                                <a href=# class="sub-btn d-flex align-items-center justify-content-between">
 
-                    IPR & Gaming Services 
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 4)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
+                                    Taxation
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}"
+                                        alt="down Arrow" />
+                                </a>
+
+                                <div class="sub-menu">
+                                    @php
+                                        $subcate = DB::table('practice_areas')
+                                            ->where('parent_id', 3)
+                                            ->where('status', 1)
+                                            ->get(['title', 'slug', 'status']);
+                                    @endphp
+                                    @foreach ($subcate as $iteams)
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                            {{ $iteams->title }}
+                                        </a>
+                                    @endforeach
+                                </div>
+                            </div>
                         </li>
                         </li>
                         <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
+                            <div class="sidebar_item">
+                                <a href=# class="sub-btn d-flex align-items-center justify-content-between">
 
-                    NGO Compliances <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 5)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
+                                    IPR & Gaming Services
+                                    <img src="{{ asset('/assets/frontend/images/down.png') }}"
+                                        alt="down Arrow" />
+                                </a>
+
+                                <div class="sub-menu">
+                                    @php
+                                        $subcate = DB::table('practice_areas')
+                                            ->where('parent_id', 4)
+                                            ->where('status', 1)
+                                            ->get(['title', 'slug', 'status']);
+                                    @endphp
+                                    @foreach ($subcate as $iteams)
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                            {{ $iteams->title }}
+                                        </a>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </li>
+                        </li>
+                        <li>
+                            <div class="sidebar_item">
+                                <a href=# class="sub-btn d-flex align-items-center justify-content-between">
+
+                                    NGO Compliances <img src="{{ asset('/assets/frontend/images/down.png') }}"
+                                        alt="down Arrow" />
+                                </a>
+
+                                <div class="sub-menu">
+                                    @php
+                                        $subcate = DB::table('practice_areas')
+                                            ->where('parent_id', 5)
+                                            ->where('status', 1)
+                                            ->get(['title', 'slug', 'status']);
+                                    @endphp
+                                    @foreach ($subcate as $iteams)
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                                            {{ $iteams->title }}
+                                        </a>
+                                    @endforeach
+                                </div>
+                            </div>
                         </li>
                         <!-- <li>
                             <label class="a-label__chevron" for="item-1">
@@ -378,18 +400,19 @@
                                     <span>Start a Business</span>
                                 </div>
                                 @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 1)
-                                    ->get();
+                                    $subcate = DB::table('practice_areas')
+                                        ->where('parent_id', 1)
+                                        ->where('status', 1)
+                                        ->get(['title', 'slug', 'status']);
                                 @endphp
                                 <ul>
                                     @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+<li>
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
                                             {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    @endforeach
+@endforeach
                                 </ul>
                             </div>
                         </li>
@@ -410,19 +433,20 @@
                                     <span>License & Registration</span>
                                 </div>
                                 @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 2)
-                                    ->get();
+                                    $subcate = DB::table('practice_areas')
+                                        ->where('parent_id', 2)
+                                        ->where('status', 1)
+                                        ->get(['title', 'slug', 'status']);
                                 @endphp
                                 <ul>
                                     
                                     @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+<li>
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
                                             {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    @endforeach
+@endforeach
                                 </ul>
                             </div>
                         </li>
@@ -443,19 +467,20 @@
                                     <span>Taxation</span>
                                 </div>
                                 @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 3)
-                                    ->get();
+                                    $subcate = DB::table('practice_areas')
+                                        ->where('parent_id', 3)
+                                        ->where('status', 1)
+                                        ->get(['title', 'slug', 'status']);
                                 @endphp
                                 <ul>
                                     
                                     @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+<li>
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
                                             {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    @endforeach
+@endforeach
                                 </ul>
                             </div>
                         </li>
@@ -476,19 +501,20 @@
                                     <span>IPR &amp; Gaming Services</span>
                                 </div>
                                 @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 4)
-                                    ->get();
+                                    $subcate = DB::table('practice_areas')
+                                        ->where('parent_id', 4)
+                                        ->where('status', 1)
+                                        ->get(['title', 'slug', 'status']);
                                 @endphp
                                 <ul>
                                     
                                     @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+<li>
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
                                             {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    @endforeach
+@endforeach
                                 </ul>
                             </div>
                         </li>
@@ -509,19 +535,20 @@
                                     <span>NGO Compliances</span>
                                 </div>
                                 @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 5)
-                                    ->get();
+                                    $subcate = DB::table('practice_areas')
+                                        ->where('parent_id', 5)
+                                        ->where('status', 1)
+                                        ->get(['title', 'slug', 'status']);
                                 @endphp
                                 <ul>
                                     
                                     @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
+<li>
+                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
                                             {{ $iteams->title }}
                                         </a>
                                     </li>
-                                    @endforeach
+@endforeach
                                 </ul>
                             </div>
                         </li> -->

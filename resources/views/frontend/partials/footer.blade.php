@@ -175,19 +175,22 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             data-aos-once="true"
           >
             <ul class="links_url">
-              <li><a href="#"> Start Up India Registration</a></li>
-              <li>
-                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-              </li>
-              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-              <li><a href="#">Legal Entity Identifier Registration </a></li>
-              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-              <li><a href="#">IEC Registration</a></li>
-              <li><a href="#"> ESI&PF Registration</a></li>
-              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"> ISBN Registration</a></li>
-              <li><a href="#">GST Registration</a></li>
+              @php
+                $subcate = DB::table('practice_areas')
+                    ->where('parent_id', 1)
+                    ->where('status', 1)
+                    ->get(['title', 'slug', 'status']);
+            @endphp
+            @foreach ($subcate as $iteams)
+                <li>
+                    <a
+                        href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                        {{ $iteams->title }}
+                    </a>
+                </li>
+            @endforeach
+              
+              
             </ul>
           </div>
           <div
@@ -196,19 +199,20 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             data-aos-once="true"
           >
             <ul class="links_url">
-              <li><a href="#"> Start Up India Registration</a></li>
-              <li>
-                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-              </li>
-              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-              <li><a href="#">Legal Entity Identifier Registration </a></li>
-              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-              <li><a href="#">IEC Registration</a></li>
-              <li><a href="#"> ESI&PF Registration</a></li>
-              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"> ISBN Registration</a></li>
-              <li><a href="#">GST Registration</a></li>
+              @php
+                  $subcate = DB::table('practice_areas')
+                      ->where('parent_id', 2)
+                      ->where('status', 1)
+                      ->get(['title', 'slug', 'status']);
+              @endphp
+              @foreach ($subcate as $iteams)
+                  <li>
+                      <a
+                          href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                          {{ $iteams->title }}
+                      </a>
+                  </li>
+              @endforeach
             </ul>
           </div>
           <div
@@ -217,36 +221,38 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             data-aos-once="true"
           >
             <ul class="links_url">
-              <li><a href="#"> Start Up India Registration</a></li>
-              <li>
-                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-              </li>
-              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-              <li><a href="#">Legal Entity Identifier Registration </a></li>
-              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-              <li><a href="#">IEC Registration</a></li>
-              <li><a href="#"> ESI&PF Registration</a></li>
-              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"> ISBN Registration</a></li>
-              <li><a href="#">GST Registration</a></li>
+              @php
+                  $subcate = DB::table('practice_areas')
+                      ->where('parent_id', 3)
+                      ->where('status', 1)
+                      ->get(['title', 'slug', 'status']);
+              @endphp
+              @foreach ($subcate as $iteams)
+                  <li>
+                      <a
+                          href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                          {{ $iteams->title }}
+                      </a>
+                  </li>
+              @endforeach
             </ul>
           </div>
           <div class="col-md-3" data-aos="fade-up" data-aos-once="true">
             <ul class="links_url">
-              <li><a href="#"> Start Up India Registration</a></li>
-              <li>
-                <a href="#">Angel Tax Excemption (Section 56, IT Act)</a>
-              </li>
-              <li><a href="#">Start-up tax excemption (Sec 80-IAC)</a></li>
-              <li><a href="#">Legal Entity Identifier Registration </a></li>
-              <li><a href="#"> MSME/UDHYOG Aadhar Registration</a></li>
-              <li><a href="#">IEC Registration</a></li>
-              <li><a href="#"> ESI&PF Registration</a></li>
-              <li><a href="#"> ISO Registration (Non-Audit)</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"> ISBN Registration</a></li>
-              <li><a href="#">GST Registration</a></li>
+              @php
+                  $subcate = DB::table('practice_areas')
+                      ->where('parent_id', 4)
+                      ->where('status', 1)
+                      ->get(['title', 'slug', 'status']);
+              @endphp
+              @foreach ($subcate as $iteams)
+                  <li>
+                      <a
+                          href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                          {{ $iteams->title }}
+                      </a>
+                  </li>
+              @endforeach
             </ul>
           </div>
         </div>
