@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 mb-lg-0 mb-5">
-                <h3 class="mb-3" data-aos="fade-up" data-aos-once="true">
+                <h3  class="mb-3 connect_heading" data-aos="fade-up" data-aos-once="true">
                     Connect with our
                     <span style="color: #E13333">legal experts</span> at
                 </h3>
@@ -13,14 +13,14 @@
                     <br>
                     <span style="color: #E13333">INR 899/-</span>
                 </h2>
-                <h4 class="">
+                <h4 class="connect_heading">
                     and embark on the journey to swiftly resolve <br> your legal matters
                 </h4>
 
                 <div class="contact_icon_box">
                     <div class="row">
                         <div class="col-md-6 mt-3">
-                            <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-4 text-center"
+                            <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-3 text-center"
                                 data-aos="fade-up" data-aos-once="true">
                                 <img src="assets/frontend/images/loaction.png" class="contact_icon"
                                     alt="Contact Icon" />
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 mt-3">
-                            <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-4 text-center"
+                            <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-3 text-center"
                                 data-aos="fade-up" data-aos-once="true">
                                 <img src="assets/frontend/images/loaction.png" class="contact_icon"
                                     alt="Contact Icon" />

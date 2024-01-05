@@ -327,93 +327,7 @@ assistance for startups, FDI, Property law, IP, and more')
    </div>
 </section> -->
 
-<section class="about">
-    <div class="container">
-        <div class="row" id="counter">
-            <div class="col-lg-3 col-6 first_counter">
-                <div class="about_counter_container">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
-                        <div class="about_counter_icon">
-                            <div class="about_counter_img">
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal.png') }}"
-                                    alt="counter 1" class="mb-4" />
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal_1.png') }}"
-                                    alt="counter 1" class="mb-4" />
 
-                            </div>
-                        </div>
-                        <div class="about_counter">
-                            <p class="about_counter_number">
-                                <span class="counter-value" data-count="{{ get_settings('c_exp') }}">0</span>+
-                            </p>
-                            <p class="about_counter_para">Years of Professional Experience</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-6 second_counter">
-                <div class="about_counter_container">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
-                        <div class="about_counter_icon">
-                            <div class="about_counter_img">
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand.png') }}"
-                                    alt="counter 2" />
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand_1.png') }}"
-                                    alt="counter 1" />
-                            </div>
-                        </div>
-                        <div class="about_counter">
-                            <p class="about_counter_number">
-                                <span class="counter-value" data-count="{{ get_settings('c_client') }}">0</span>k
-                            </p>
-                            <p class="about_counter_para">Clients Served</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-6 third_counter">
-                <div class="about_counter_container mt-md-0 mt-2">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
-                        <div class="about_counter_icon">
-                            <div class="about_counter_img">
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc.png') }}"
-                                    alt="counter 3" />
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc_1.png') }}"
-                                    alt="counter 1" />
-                            </div>
-                        </div>
-                        <div class="about_counter w149">
-                            <p class="about_counter_number">
-                                <span class="counter-value" data-count="{{ get_settings('c_lic') }}">0</span>+
-                            </p>
-                            <p class="about_counter_para">Licenses &amp; Registration Done.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-6">
-                <div class="about_counter_container mt-md-0 mt-2">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
-                        <div class="about_counter_icon">
-                            <div class="about_counter_img">
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man.png') }}"
-                                    alt="counter 4" />
-                                <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man_1.png') }}"
-                                    alt="counter 1" />
-                            </div>
-                        </div>
-                        <div class="about_counter">
-                            <p class="about_counter_number">
-                                <span class="counter-value" data-count="{{ get_settings('c_team') }}">0</span>+
-                            </p>
-                            <p class="about_counter_para">Team of Professional Experts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
@@ -642,24 +556,33 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
         <div class="row">
             <div class="col-md-6">
                 <img src="{{ asset('/assets/frontend/images/seo.jpg') }}" alt="">
+                <!-- <h2>Why Choose Seedling Associate for Company and Business Certification?</h2>
+                <p>At Seedling Associate, we understand the significance of certifications in establishing trust and credibility for your business. Here's why we stand out:
+
+                </p>
+                <ul>
+                    <li><strong>Expert Guidance:</strong> Our team of experienced professionals provides expert guidance throughout the certification process, ensuring compliance with all regulatory requirements. </li>
+                    <li><strong>Tailored Solutions:</strong> Our team of experienced professionals provides expert guidance throughout the certification process, ensuring compliance with all regulatory requirements. </li>
+                    <li><strong>Timely Execution:</strong> Our team of experienced professionals provides expert guidance throughout the certification process, ensuring compliance with all regulatory requirements. </li>
+                    <li><strong>Comprehensive Support:</strong> Our team of experienced professionals provides expert guidance throughout the certification process, ensuring compliance with all regulatory requirements. </li>
+                    <li><strong>Transparent Communication:</strong> Our team of experienced professionals provides expert guidance throughout the certification process, ensuring compliance with all regulatory requirements. </li>
+                </ul> -->
+               
             </div>
             <div class="col-md-6 mt-md-0 mt-5">
-                <h2>We’re Advocates for
-                    Justice and Right</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                <h1 class="seo_title mb-3" >Seedling Associate - Your Trusted Partner for Seamless Company and Business Certification Registration in India</h1>
+                <p>Seedling Associate is your go-to business ally for seamless registration, licensing, and certification services in India. As a reliable firm, we specialize in simplifying complex processes, ensuring your business is legally compliant and ready for success. Whether it's company registration, license acquisition, certification processes, or filing requirements, we've got you covered.
+
 
                 </p>
                 <p>
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                Our expert team navigates the intricacies, offering tailored solutions to meet your unique needs. With Seedling Associate, experience a hassle-free journey to establish, grow, and thrive in the business landscape. Trust us to handle the paperwork while you focus on what matters most – building your business.
+</p>
+                <p>
+
+                Seedling Associate - Simplifying Company and Business Certification in India Are you a company looking for hassle-free certification registration services in India? Look no further than Seedling Associate, your dedicated partner in navigating the complexities of the certification process. With a commitment to excellence, we ensure a smooth and efficient journey towards obtaining the necessary certifications for your business.
+</p>
             </div>
         </div>
     </div>

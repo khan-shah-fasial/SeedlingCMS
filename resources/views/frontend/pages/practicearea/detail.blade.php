@@ -501,7 +501,7 @@
 
                                 @if($count == 2)
 
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $navPractice['0']['slug']] )) }}">
+                                <a class="pagination_link" href="{{ url(route('practicearea-detail', ['slug' => $navPractice['0']['slug']] )) }}">
                                   <div class="d-flex align-items-md-center flex-md-row flex-column gap-2">
                                     
                                       <img src="assets/frontend/images/left_p.png" class="arrow_img" alt="">
@@ -512,7 +512,7 @@
                                   </div>
                                 </a>
 
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $navPractice['1']['slug']] )) }}">
+                                <a class="pagination_link" href="{{ url(route('practicearea-detail', ['slug' => $navPractice['1']['slug']] )) }}">
                                   <div
                                    
                                       class="d-flex align-items-md-center align-items-end flex-md-row  flex-column-reverse gap-2">
@@ -526,7 +526,7 @@
                                 
                                 @else
 
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $navPractice['0']['slug']] )) }}">
+                                <a class="pagination_link" href="{{ url(route('practicearea-detail', ['slug' => $navPractice['0']['slug']] )) }}">
                                   <div
                                     
                                       class="d-flex align-items-md-center align-items-end flex-md-row  flex-column-reverse gap-2">
