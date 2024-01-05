@@ -885,6 +885,7 @@ section.banner_slider .item a {
     padding: 45px;
     border-radius: 50px 0;
     margin-top: -82px;
+    box-shadow: 0px 17px 20px -15px #1111116b;
 }
 
 .about .about_logo {
@@ -1674,10 +1675,10 @@ footer .footer_desc {
     font-size: 24px !important;
     line-height: 36px !important;
 }
-.service_last h2 {
+/* .service_last h2 {
     font-size: 18px !important;
     line-height: 36px !important;
-}
+} */
 .service_last ul li {
     font-size: 16px !important;
     line-height: 28px !important;
@@ -3078,10 +3079,10 @@ body .backhomebutton {
 
 .home_service {
     padding: 45px 0;
-    /* background-image: url("/assets/frontend/images/about_bg.webp");
+    background-image: url("/assets/frontend/images/about_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .home_service .col-xl-3 {
