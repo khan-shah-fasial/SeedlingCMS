@@ -60,6 +60,8 @@ aria-hidden="true"
           </select>
 
           <textarea name="description" id=""  rows="2"  class="mb-3" placeholder="Description"></textarea>
+
+          <input type="hidden" name="ref_url" value="{{ url()->previous() }}" data-aos-once="true" data-aos="fade-up" />
          
           <button type="submit" class="contact_form_button">Send</button>
         </form>
