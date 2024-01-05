@@ -229,7 +229,7 @@
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/NGO.png') }}" alt="">
                             <h5 class="py-3">NGO Compliances</h5>
-                            <p>A private limited company is India's </p>
+                            <!-- <p>A private limited company is India's </p> -->
                         </div>
                     </div>
                     @php

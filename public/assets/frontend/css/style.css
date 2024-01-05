@@ -3120,6 +3120,7 @@ body .backhomebutton {
 }
 .flip_card_back ul {
     padding-left: 0;
+    padding-top: 40px;
 }
 .flip_card_back ul li a {
     text-decoration: none;
@@ -3164,7 +3165,7 @@ body .backhomebutton {
 .flip_card_back .inner,
 .flip_card_front .inner {
     content: "";
-    padding: 40px;
+    padding: 25px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%) translateZ(60px) scale(0.94);
