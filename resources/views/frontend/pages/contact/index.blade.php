@@ -1,14 +1,13 @@
 @extends('frontend.layouts.app')
-
 @section('page.title', 'Seedling Associates: Top Lawyers &amp; Law Firms in Delhi, India')
-
 @section('page.description',
     'Seedling & Associates is one of the best law firms in Delhi, India. We provide legal
     assistance for startups, FDI, Property law, IP, and more')
-
 @section('page.type', 'website')
-
 @section('page.content')
+
+
+
 
     <!----------========== contact start ===============-------------------->
 
@@ -40,43 +39,7 @@
     <section class="contact_process">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7">
-                    <h2 class="color_heading">Payment Process</h2>
-                    <h4 class="main_heading">{{ get_contactpage('p_title') }}</h4>
-                    <p class="desc text_justify">{{ get_contactpage('p_description') }}</p>
-
-                    <div class="ms-4 mt-5">
-                        <div class="main-timeline">
-                            @php 
-                            $i = 1; 
-                            $step_bar = json_decode(get_contactpage('steps'), true);
-                            @endphp
-                    
-                            @foreach ($step_bar as $innerArray)
-                                @foreach ($innerArray as $title => $description)    
-                                    <div class="timeline">
-                                        <a href="#" class="timeline-content">
-                                            <div class="timeline-icon">
-                                                @if($i != '2' && $i != '4') <!-- Use && instead of || -->
-                                                    <img src="{{ asset('assets/frontend/images/p_' . $i . '.png') }}" alt="" />
-                                                @else
-                                                    <img src="{{ asset('assets/frontend/images/a_' . $i . '.png') }}" alt="" />
-                                                @endif
-                                            </div>
-                                            <h5 class="description">
-                                                {{ $title }}
-                                            </h5>
-                                            <p class="text_justify" >{{ $description }}</p>
-                                        </a>
-                                    </div>
-                                    @php $i++; @endphp 
-                                @endforeach
-                            @endforeach
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-xl-5">
+                <div class="col-xl-6">
                     <h3 class="color_heading mb-1" data-aos="fade-up" data-aos-once="true">
                         CONTACT US
                     </h3>
@@ -86,7 +49,7 @@
                     <div class="contact_icon_box">
                         <div class="row">
                             <div class="col-md-6 mb-md-0 mb-4">
-                                <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-md-4 gap-2 text-center"
+                                <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column        gap-md-4 gap-2 text-center"
                                     data-aos="fade-up" data-aos-once="true">
                                     <img src="assets/frontend/images/loaction.png" class="contact_icon" alt="Contact Icon" />
                                     <p class="contact_title">Location</p>
@@ -101,15 +64,13 @@
                                     <img src="assets/frontend/images/call_big.png" class="contact_icon" alt="Contact Icon" />
                                     <p class="contact_title">24/7 Support</p>
                                     <div>
-                                    <a  class="desc mb-0" href="tel:+91-74288 99959">
-                                    +{{ get_contactpage('number') }}
-                                    </a>
-                                    <a class="desc mb-0" href="mailto:admin@seedlingassociates.com">
-                                    {{ get_contactpage('email') }}
-                                    </a>
-                                   
+                                       <a  class="desc mb-0" href="tel:+91-74288 99959">
+                                        +{{ get_contactpage('number') }}
+                                       </a>
+                                       <a class="desc mb-0" href="mailto:admin@seedlingassociates.com">
+                                       {{ get_contactpage('email') }}
+                                       </a>
                                     </div>
-                                   
                                 </div>
                             </div>
                         </div>
@@ -122,63 +83,75 @@
                                 <img src="assets/frontend/images/stars.png" alt="" />
                             </div>
                         </div>
-
-                        <div class="payment_box">
-                            @php
-                                $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
-                            @endphp
-
-                            <form>
-                                <select class="form-select mb-3" aria-label="Default select example">
-                                    <option value="">Select the Service</option>
-                                    @foreach ($practice_Area as $row)
-                                        <option value="{{ $row->title }}">{{ $row->title }}</option>
-                                    @endforeach
-                                </select>
-
-
-                                <div class="radio_container">
-                                    <input type="radio" name="radio" id="one" checked />
-                                    <label for="one"> <span class="price" >
-                                    ₹{{ get_contactpage('p_20') }}
-                                    </span> for 20 mins</label>
-                                    <input type="radio" name="radio" id="two" />
-                                    <label for="two"> <span class="price" >
-                                    ₹{{ get_contactpage('p_40') }}
-                                    </span>  for 40 mins</label>
-                                </div>
-
-
-
-
-                            </form>
-                            <!-- <label for="699" class="price_list">
-    <h4>₹699 <span>for 20 mins</span></h4>
-</label>
-<input type="radio" id="699" name="price" hidden>
-
-<label for="999" class="price_list">
-    <h4>₹999 <span>for 40 mins</span></h4>
-</label>
-<input type="radio" id="999" name="price" hidden> -->
-                            <p class="desc">
-                                {{ get_contactpage('f_description') }}
-                            </p>
-
-                            <div class="text-center mt-4 mb-4">
-                                <a class="backhomebutton" href="#">
-                                    BOOK CONSULTATION
-                                </a>
-                            </div>
-                        </div>
+                        
                     </div>
+                </div>
+                <div class="col-xl-6 mt-xl-0 mt-4">
+
+
+                @php
+$practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
+@endphp
+
+
+
+                <form id="have_any_question_form" action="{{url(route('contact.create'))}}" method="post" enctype="multipart/form-data" data-aos="fade-up" data-aos-once="true" >
+    @csrf
+    <p class="contact_form_logo fs-6 fw-bolder mb-md-2 mb-1"data-aos="fade-up" data-aos-once="true">
+       HAVE ANY QUESTION ?
+    </p>
+    <h5 class="contact_form_heading fs-3  fw-bolder mb-md-2 mb-2"data-aos="fade-up" data-aos-once="true">
+       Drop Us a Line
+    </h5>
+
+    <input type="hidden" name="section" value="Have any Question Form" data-aos-once="true" data-aos="fade-up" />
+    <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
+
+    <input type="text" placeholder="Name" name="name" class="form-control" data-aos="fade-up" data-aos-once="true" required/>
+    <div
+       class="row "
+       >
+       <div class="col-md-6 mt-4 mb-md-4" >
+       <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          class="form-control"
+          data-aos="fade-up"
+          data-aos-once="true"
+          required
+          class="w-100"
+          />
+       </div>
+     <div class="col-md-6 mt-4 mb-4" >
+     <input
+          type="number"
+          name="phone"
+          placeholder="Phone"
+          class="form-control"
+          data-aos="fade-up"
+          data-aos-once="true"
+          required
+          class="w-100"
+          />
+     </div>
+      
+    </div>
+    <select aria-label="Select a service" name="services" class="contact_form_select form-select mb-4 select_drp_image"data-aos="fade-up" data-aos-once="true" required>
+      <option value="">Select the Service</option>
+      @foreach ($practice_Area as $row)
+          <option value="{{ $row->title }}">{{ $row->title }}</option>
+      @endforeach
+    </select>
+    <textarea name="description" placeholder="Description" class="mb-3" rows="1"></textarea>
+    <button type="submit" class="contact_form_button"data-aos="fade-up" data-aos-once="true">Send</button>
+ </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ---------------------- Contact process End ---------------- -->
 
-    <!-------------=============== contact end =============== -------------------->
+
 
 @endsection

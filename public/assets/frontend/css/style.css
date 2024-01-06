@@ -690,6 +690,7 @@ body#index #mainContent {
     font-size: 27px;
     line-height: 32px;
     padding-bottom: 10px;
+    padding-left: 40px;
     padding-top: 25px;
     font-family: "Libre Baskerville", serif;
     text-align: start;
@@ -703,6 +704,7 @@ body#index #mainContent {
     margin: 0 auto;
     font-size: 16px;
     line-height: 25px;
+    padding-left: 43px;
     text-align: start;
 }
 
@@ -810,7 +812,7 @@ body#index #mainContent {
     }
 
     #homeAnimation .results_list > div:nth-child(3) .titleGroup {
-        left: 18rem;
+        left: 20rem;
     }
 }
 
@@ -1332,7 +1334,7 @@ section.banner_slider .item a {
 /* ---------------------Testimonial Start ---------------------- */
 
 .testimonial {
-    padding: 47px 0 80px 0;
+    padding: 47px 0 60px 0;
     background: rgba(249, 247, 245, 1);
 }
 
@@ -1411,7 +1413,7 @@ section.banner_slider .item a {
 /* ---------------------Links  Start ---------------------- */
 
 .links {
-    padding: 45px 0;
+    padding: 45px 0 0 0;
     background: #000;
 }
 
@@ -1615,7 +1617,7 @@ footer .footer_desc {
 }
 
 .timeline_article {
-    width: 25%;
+    width: 24%;
     position: relative;
     min-height: 220px;
     float: right;
@@ -1656,9 +1658,9 @@ footer .footer_desc {
 
 .timeline_article .content_box p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 21px;
-    color: #7a7a7a;
+    color: black;
 }
 
 .timeline_article_bottom .content_box {
@@ -1689,6 +1691,11 @@ footer .footer_desc {
     font-size: 16px !important;
     line-height: 28px !important;
     text-align: justify !important;
+}
+.service_list_box ul li {
+    font-size: 16px !important;
+    line-height: 28px !important;
+    text-align: start !important;
 }
 .service_last ol li {
     font-size: 16px !important;
@@ -3011,7 +3018,7 @@ body .backhomebutton {
     background-size: cover;
     color: #a8a8a8;
 }
-.address button {
+.address .button {
     padding: 15px 30px;
     border: none;
     border-radius: 30px 0 30px 0;
@@ -3021,8 +3028,10 @@ body .backhomebutton {
     line-height: 25px;
     background: #e13333;
     transition: all 0.5s;
+    text-decoration: none;
+    color: white;
 }
-.address button:hover {
+.address .button:hover {
     background: lightgray;
     color: #333;
 }
@@ -3126,7 +3135,6 @@ body .backhomebutton {
 }
 .flip_card_back ul {
     padding-left: 0;
-    padding-top: 40px;
 }
 .flip_card_back ul li a {
     text-decoration: none;
@@ -3199,4 +3207,41 @@ body .backhomebutton {
 }
 .seo p {
     text-align: justify;
+}
+
+.contact_process form {
+    background: #e3e3e3bd;
+    width: 100%;
+    margin-top: 0px;
+    padding: 40px;
+    border-radius: 50px 0;
+}
+
+.contact_process .form-select,
+.contact_process form input,
+.contact_process form textarea {
+    width: 100%;
+    padding: 13px 22px;
+    background: transparent;
+    border: 1px solid #535151;
+    outline: none;
+    border-radius: 30px 0 30px 0;
+    color: #797777;
+}
+
+.contact_process form .contact_form_logo {
+    color: #e13333;
+}
+
+.contact_process form .contact_form_button {
+    width: 100%;
+    padding: 14px 0px 14px 0px;
+    border: none;
+    border-radius: 30px 0 30px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    background: #e13333;
+    transition: all 0.5s;
 }

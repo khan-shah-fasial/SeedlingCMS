@@ -36,9 +36,9 @@
                         <div class="col-md-6 mt-3">
                             <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-3 text-center"
                                 data-aos="fade-up" data-aos-once="true">
-                                <img src="assets/frontend/images/loaction.png" class="contact_icon"
+                                <img src="assets/frontend/images/call_big.png" class="contact_icon"
                                     alt="Contact Icon" />
-                                <p class="contact_title">24/7 Support</p>
+                                <p class="contact_title mb-4">24/7 Support</p>
                                 <p class="contact_address">
                                     +91 7428899959 <br />
                                     admin@seedlingassociates.com
@@ -74,7 +74,7 @@
                    </a>
                 </div> -->
             </div>
-            <div class="col-lg-6 mt-md-0 mt-5">
+            <div class="col-lg-6 ">
                 <div class="contact_form_container d-flex align-items-center justify-content-center">
                     @include('frontend.component.have_any_question_form')
                 </div>

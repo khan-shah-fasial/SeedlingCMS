@@ -462,7 +462,7 @@
                     @endphp
                     @if (count($faq) > 0)
                         <div class="service_last_faq">
-                            <h3 class="mb-4 " data-aos="fade-up"data-aos-once="true">Most common question about our
+                            <h3 class="mb-4 color_heading " data-aos="fade-up"data-aos-once="true">Most common question about our
                                 services</h3>
 
 

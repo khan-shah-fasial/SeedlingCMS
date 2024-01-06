@@ -112,17 +112,17 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
           </div>
           <div class="col-md-12 mb-4">
             <div class="d-flex align-items-center flex-md-row flex-column mt-md-0 mt-2 justify-content-between">
-              <h3 class="text-white d-flex align-items-center gap-3">
+              <h3 class="text-white book_heading d-flex align-items-center gap-3">
 
                 Book an online consultation Now <span class="right_arrow" >
-                <i class="fa fa-long-arrow-right"  aria-hidden="true"></i>
+                <i class="fa fa-long-arrow-right"   aria-hidden="true"></i>
                 </span> 
               </h3>
-              <button>Online Payment</button>
+              <a class="button" href="{{ url(route('online-payment')) }}" >Online Payment</a>
             </div>
           </div>
           <hr />
-          <div class="col-md-4 mt-5">
+          <div class="col-md-4 mt-md-5 mt-3">
             <div>
               <img src="/assets/frontend/images/logo.png" alt="" />
               <p class="mt-3">
@@ -133,7 +133,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
               </p>
             </div>
           </div>
-          <div class="col-md-4 mt-5">
+          <div class="col-md-4 mt-md-5 mt-3">
             <a href="https://www.google.com/maps/place/%23TheHub/@28.5495094,77.2674398,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce362dba5bca1:0x191c6dd29ebbec30!8m2!3d28.5495094!4d77.2674398!16s%2Fg%2F11h18n3l7n?entry=ttu" target="_blank" >
               <h3 class="heading">New Delhi</h3>
               <p class="mt-3">
@@ -146,7 +146,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             </div>
             <a href="mailto:admin@seedlingassociates.com">admin@seedlingassociates.com</a>
           </div>
-          <div class="col-md-4 mt-5">
+          <div class="col-md-4 mt-md-5 mt-3">
             <a target="_blank" href="https://www.google.com/maps/place/SpaceJam+Coworking+in+Chandigarh+-+Shared+Office+Space/@30.7227291,76.7675161,17z/data=!4m7!3m6!1s0x390fedadb971da4d:0xa82d772011e76be8!8m2!3d30.7228959!4d76.7704193!15sCj9TcGFjZWphbSwgU0NPLCA1MC01MSwgU2VjdG9yIDM0QiwgU2VjdG9yIDM0LCBDaGFuZGlnYXJoLCAxNjAwMjKSAQ9jb3dvcmtpbmdfc3BhY2XgAQA!16s%2Fg%2F11gbz9v208?entry=tts">
               <h3 class="heading">Chandigarh</h3>
               <p class="mt-3">
@@ -170,7 +170,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
       <div class="container">
         <div class="row">
           <div
-            class="col-md-3 first_links"
+            class="col-md-3 col-6 mb-md-0 mb-3 first_links"
             data-aos="fade-up"
             data-aos-once="true"
           >
@@ -194,7 +194,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             </ul>
           </div>
           <div
-            class="col-md-3 first_links"
+            class="col-md-3 col-6 mb-md-0 mb-3 first_links"
             data-aos="fade-up"
             data-aos-once="true"
           >
@@ -216,7 +216,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             </ul>
           </div>
           <div
-            class="col-md-3 first_links"
+            class="col-md-3 col-6 first_links"
             data-aos="fade-up"
             data-aos-once="true"
           >
@@ -237,7 +237,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
               @endforeach
             </ul>
           </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-once="true">
+          <div class="col-md-3 col-6" data-aos="fade-up" data-aos-once="true">
             <ul class="links_url">
               @php
                   $subcate = DB::table('practice_areas')
