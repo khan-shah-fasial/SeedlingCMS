@@ -33,7 +33,7 @@ class TestimonialController extends Controller
             'name' => $request->input('name'),
             //'designation' => $request->input('designation'),
             //'image' => $imagePath,
-            //'rating' => $request->input('rating'),
+            'rating' => $request->input('rating'),
             'comment' => $request->input('comment'),
         ]);
 
@@ -91,7 +91,7 @@ class TestimonialController extends Controller
         */
         $testimonial->name = $request->input('name');
         //$testimonial->designation = $request->input('designation');
-        //$testimonial->rating = $request->input('rating');
+        $testimonial->rating = $request->input('rating');
         $testimonial->comment = $request->input('comment');
     
         $testimonial->save();

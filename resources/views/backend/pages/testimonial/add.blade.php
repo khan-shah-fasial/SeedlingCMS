@@ -20,6 +20,15 @@
                 <input class="form-control" type="file" id="image" name="image" required>
             </div>
         </div> 
+        --}}
+
+        <div class="col-sm-12">
+            <div class="form-group mb-3">
+                <label>Comment <span class="red">*</span></label>
+                <textarea class="form-control" name="comment" rows="3" required></textarea>
+            </div>
+        </div>
+
         <div class="col-sm-6">
             <div class="form-group mb-3">
                 <label>Rating <span class="red">*</span></label>
@@ -33,13 +42,7 @@
                   </select>
             </div>
         </div>
-        --}} 
-        <div class="col-sm-12">
-            <div class="form-group mb-3">
-                <label>Comment <span class="red">*</span></label>
-                <textarea class="form-control" name="comment" rows="3" required></textarea>
-            </div>
-        </div>
+
         <div class="col-sm-12">
             <div class="form-group mb-3 text-end">
                 <button type="submit" class="btn btn-block btn-primary">Create</button>
