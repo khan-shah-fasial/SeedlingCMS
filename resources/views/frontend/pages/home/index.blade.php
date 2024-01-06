@@ -570,12 +570,12 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
                
             </div>
             <div class="col-md-6 mt-md-0 mt-5">
-                <h1 class="seo_title mb-3" >Seedling Associate - Your Trusted Partner for Seamless Company and Business Certification Registration in India</h1>
-                <p>Seedling Associate is your go-to business ally for seamless registration, licensing, and certification services in India. As a reliable firm, we specialize in simplifying complex processes, ensuring your business is legally compliant and ready for success. Whether it's company registration, license acquisition, certification processes, or filing requirements, we've got you covered.
+                <h1 class="seo_title mb-4" >Seedling Associate - Your Trusted Partner for Seamless Company and Business Certification Registration in India</h1>
+                <p class=" mb-4" >Seedling Associate is your go-to business ally for seamless registration, licensing, and certification services in India. As a reliable firm, we specialize in simplifying complex processes, ensuring your business is legally compliant and ready for success. Whether it's company registration, license acquisition, certification processes, or filing requirements, we've got you covered.
 
 
                 </p>
-                <p>
+                <p class=" mb-4" >
 
                 Our expert team navigates the intricacies, offering tailored solutions to meet your unique needs. With Seedling Associate, experience a hassle-free journey to establish, grow, and thrive in the business landscape. Trust us to handle the paperwork while you focus on what matters most – building your business.
 </p>

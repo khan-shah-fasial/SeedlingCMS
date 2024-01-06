@@ -196,7 +196,7 @@
 
     #counter {
         padding: 20px 0;
-        margin-top: 0;
+        margin-top: -42px;
     }
 
     .links .links_url {
@@ -250,7 +250,7 @@
         height: 75px;
     }
     .social .social_icons {
-        margin-top: -29px;
+        margin-top: -74px;
     }
 
     .main-timeline:before {

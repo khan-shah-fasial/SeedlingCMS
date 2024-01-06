@@ -1415,6 +1415,7 @@ section.banner_slider .item a {
 
 .links .links_url {
     list-style: none;
+    padding-left: 0;
 }
 
 .links .links_url li a {
@@ -3114,6 +3115,9 @@ body .backhomebutton {
 }
 .flip_card_front {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .flip_card_front img {
     width: 80px;
@@ -3190,4 +3194,7 @@ body .backhomebutton {
 
 .seo_title {
     font-size: 22px;
+}
+.seo p {
+    text-align: justify;
 }
