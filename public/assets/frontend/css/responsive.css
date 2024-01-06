@@ -190,6 +190,12 @@
 }
 
 @media (max-width: 767px) {
+    .address .right_arrow i {
+        margin-top: 0;
+    }
+    .book_heading {
+        font-size: 20px;
+    }
     .home_service .col-xl-3 {
         width: 100%;
     }

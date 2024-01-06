@@ -368,7 +368,7 @@ assistance for startups, FDI, Property law, IP, and more')
                                 <p>4</p>
                             </div>
                             <div class="meta_date">
-                                <img src="assets/frontend/images/p_4.png" alt="">
+                                <img src="assets/frontend/images/a_4.png" alt="">
                             </div>
                             <div class="content_box">
                                 <!-- <h3>Title</h3> -->
@@ -392,7 +392,7 @@ assistance for startups, FDI, Property law, IP, and more')
                                 <p>2</p>
                             </div>
                             <div class="meta_date">
-                                <img src="/assets/frontend/images/p_2.png" alt="">
+                                <img src="/assets/frontend/images/a_2.png" alt="">
 
                             </div>
                             <div class="content_box">
