@@ -40,8 +40,48 @@
     <section class="contact_process">
         <div class="container">
             <div class="row">
+                <div class="col-xl-5">
+                <h2 class="color_heading">Payment Process</h2>
+                    <div class="payment_box">
+                    
+                            @php
+                                $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
+                            @endphp
+
+                            <form>
+                                <select class="form-select mb-3" aria-label="Default select example">
+                                    <option value="">Select the Service</option>
+                                    @foreach ($practice_Area as $row)
+                                        <option value="{{ $row->title }}">{{ $row->title }}</option>
+                                    @endforeach
+                                </select>
+
+
+                                <div class="radio_container">
+                                    <input type="radio" name="radio" id="one" checked />
+                                    <label for="one"> <span class="price" >
+                                    ₹{{ get_contactpage('p_20') }}
+                                    </span> for 20 mins</label>
+                                    <input type="radio" name="radio" id="two" />
+                                    <label for="two"> <span class="price" >
+                                    ₹{{ get_contactpage('p_40') }}
+                                    </span>  for 40 mins</label>
+                                </div>
+                            </form>
+                            <p class="desc">
+                                {{ get_contactpage('f_description') }}
+                            </p>
+
+                            <div class="text-center mt-4 mb-4">
+                                <a class="backhomebutton" href="#">
+                                    BOOK CONSULTATION
+                                </a>
+                            </div>
+                        </div>
+                   
+                </div>
                 <div class="col-xl-7">
-                    <h2 class="color_heading">Payment Process</h2>
+                    
                     <h4 class="main_heading">{{ get_contactpage('p_title') }}</h4>
                     <p class="desc text_justify">{{ get_contactpage('p_description') }}</p>
 
@@ -75,103 +115,6 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="col-xl-5">
-                    <!-- <h3 class="color_heading mb-1" data-aos="fade-up" data-aos-once="true">
-                        CONTACT US
-                    </h3>
-                    <h2 class="main_heading mb-3" data-aos="fade-up" data-aos-once="true">
-                        Contact Information
-                    </h2>
-                    <div class="contact_icon_box">
-                        <div class="row">
-                            <div class="col-md-6 mb-md-0 mb-4">
-                                <a href="https://maps.app.goo.gl/AzUYjhttgB6Ytswf7" class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-md-4 gap-2 text-center"
-                                    data-aos="fade-up" data-aos-once="true">
-                                    <img src="assets/frontend/images/loaction.png" class="contact_icon" alt="Contact Icon" />
-                                    <p class="contact_title">Location</p>
-                                    <p class="desc mb-0">
-                                        {{ get_contactpage('location') }}
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-md-4 gap-2 text-center"
-                                    data-aos="fade-up" data-aos-once="true">
-                                    <img src="assets/frontend/images/call_big.png" class="contact_icon" alt="Contact Icon" />
-                                    <p class="contact_title">24/7 Support</p>
-                                    <div>
-                                    <a  class="desc mb-0" href="tel:+91-74288 99959">
-                                    +{{ get_contactpage('number') }}
-                                    </a>
-                                    <a class="desc mb-0" href="mailto:admin@seedlingassociates.com">
-                                    {{ get_contactpage('email') }}
-                                    </a>
-                                   
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="contact_rating_container d-flex align-items-center flex-md-row flex-column gap-2 mt-4" data-aos="fade-up"
-                            data-aos-once="true">
-                            <div class="title">
-                                Our Best Skilled Attorneys, Trust Score 5.0
-                            </div>
-                            <div class="icon">
-                                <img src="assets/frontend/images/stars.png" alt="" />
-                            </div>
-                        </div> -->
-
-                        <div class="payment_box">
-                            @php
-                                $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
-                            @endphp
-
-                            <form>
-                                <select class="form-select mb-3" aria-label="Default select example">
-                                    <option value="">Select the Service</option>
-                                    @foreach ($practice_Area as $row)
-                                        <option value="{{ $row->title }}">{{ $row->title }}</option>
-                                    @endforeach
-                                </select>
-
-
-                                <div class="radio_container">
-                                    <input type="radio" name="radio" id="one" checked />
-                                    <label for="one"> <span class="price" >
-                                    ₹{{ get_contactpage('p_20') }}
-                                    </span> for 20 mins</label>
-                                    <input type="radio" name="radio" id="two" />
-                                    <label for="two"> <span class="price" >
-                                    ₹{{ get_contactpage('p_40') }}
-                                    </span>  for 40 mins</label>
-                                </div>
-
-
-
-
-                            </form>
-                            <!-- <label for="699" class="price_list">
-    <h4>₹699 <span>for 20 mins</span></h4>
-</label>
-<input type="radio" id="699" name="price" hidden>
-
-<label for="999" class="price_list">
-    <h4>₹999 <span>for 40 mins</span></h4>
-</label>
-<input type="radio" id="999" name="price" hidden> -->
-                            <p class="desc">
-                                {{ get_contactpage('f_description') }}
-                            </p>
-
-                            <div class="text-center mt-4 mb-4">
-                                <a class="backhomebutton" href="#">
-                                    BOOK CONSULTATION
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

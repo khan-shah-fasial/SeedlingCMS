@@ -3,7 +3,7 @@
 <section class="home_service">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 about mb-5">
+            <div class="col-md-12 about mb-md-5">
             <div class="row" id="counter">
             <div class="col-lg-3 col-6 first_counter">
                 <div class="about_counter_container">

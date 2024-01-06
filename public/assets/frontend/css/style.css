@@ -1658,9 +1658,9 @@ footer .footer_desc {
 
 .timeline_article .content_box p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 21px;
-    color: #7a7a7a;
+    color: black;
 }
 
 .timeline_article_bottom .content_box {
@@ -3018,7 +3018,7 @@ body .backhomebutton {
     background-size: cover;
     color: #a8a8a8;
 }
-.address button {
+.address .button {
     padding: 15px 30px;
     border: none;
     border-radius: 30px 0 30px 0;
@@ -3028,8 +3028,10 @@ body .backhomebutton {
     line-height: 25px;
     background: #e13333;
     transition: all 0.5s;
+    text-decoration: none;
+    color: white;
 }
-.address button:hover {
+.address .button:hover {
     background: lightgray;
     color: #333;
 }
@@ -3205,4 +3207,41 @@ body .backhomebutton {
 }
 .seo p {
     text-align: justify;
+}
+
+.contact_process form {
+    background: #e3e3e3bd;
+    width: 100%;
+    margin-top: 0px;
+    padding: 40px;
+    border-radius: 50px 0;
+}
+
+.contact_process .form-select,
+.contact_process form input,
+.contact_process form textarea {
+    width: 100%;
+    padding: 13px 22px;
+    background: transparent;
+    border: 1px solid #535151;
+    outline: none;
+    border-radius: 30px 0 30px 0;
+    color: #797777;
+}
+
+.contact_process form .contact_form_logo {
+    color: #e13333;
+}
+
+.contact_process form .contact_form_button {
+    width: 100%;
+    padding: 14px 0px 14px 0px;
+    border: none;
+    border-radius: 30px 0 30px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    background: #e13333;
+    transition: all 0.5s;
 }

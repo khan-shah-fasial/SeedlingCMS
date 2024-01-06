@@ -115,10 +115,10 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
               <h3 class="text-white book_heading d-flex align-items-center gap-3">
 
                 Book an online consultation Now <span class="right_arrow" >
-                <i class="fa fa-long-arrow-right"  aria-hidden="true"></i>
+                <i class="fa fa-long-arrow-right"   aria-hidden="true"></i>
                 </span> 
               </h3>
-              <button>Online Payment</button>
+              <a class="button" href="{{ url(route('online-payment')) }}" >Online Payment</a>
             </div>
           </div>
           <hr />
@@ -170,7 +170,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
       <div class="container">
         <div class="row">
           <div
-            class="col-md-3 col-6 first_links"
+            class="col-md-3 col-6 mb-md-0 mb-3 first_links"
             data-aos="fade-up"
             data-aos-once="true"
           >
@@ -194,7 +194,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             </ul>
           </div>
           <div
-            class="col-md-3 col-6 first_links"
+            class="col-md-3 col-6 mb-md-0 mb-3 first_links"
             data-aos="fade-up"
             data-aos-once="true"
           >
