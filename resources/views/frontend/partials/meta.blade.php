@@ -11,7 +11,8 @@ $page_type = !empty(trim($__env->yieldContent('page.type'))) ? $__env->yieldCont
 $publish_time = !empty(trim($__env->yieldContent('page.publish_time'))) ? $__env->yieldContent('page.publish_time') :
 '2023-09-18T13:41:39+00:00';
 
-$url = url()->current();
+$current_url = url()->current();
+$url = str_replace('www.', '', $current_url);
 
 @endphp
 
@@ -60,7 +61,7 @@ $url = url()->current();
 
 <!----------------- canonical ------------------->
 
-<link rel="canonical" href="{{ url()->current() }}">
+<link rel="canonical" href="{{ $url }}">
 
 <!----------------- canonical ------------------->
 
