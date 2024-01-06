@@ -14,6 +14,9 @@ $publish_time = !empty(trim($__env->yieldContent('page.publish_time'))) ? $__env
 $current_url = url()->current();
 $url = str_replace('www.', '', $current_url);
 
+$base_url = url('');
+$base_url = str_replace('www.', '', $base_url);
+
 @endphp
 
 
@@ -28,7 +31,7 @@ $url = str_replace('www.', '', $current_url);
 
 <meta property="og:url" content="{{ $url }}">
 <meta property="og:type" content="{{ $page_type }}">
-<meta property="og:site_name" content="{{ url('') }}">
+<meta property="og:site_name" content="{{ $base_url }}">
 <meta property="og:locale" content="en_US">
 
 <meta property="og:title" content="@php echo htmlspecialchars_decode($title) @endphp">
@@ -72,7 +75,7 @@ $url = str_replace('www.', '', $current_url);
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Seedling Associates",
-    "url": "{{ url('') }}/",
+    "url": "{{ $base_url }}/",
     "logo": "{{ asset('/assets/frontend/images/logo.png') }}",
     "sameAs": [
       "https://www.facebook.com/ahlawatassociates/",
@@ -93,7 +96,7 @@ $url = str_replace('www.', '', $current_url);
     "name": "Seedling Associates",
     "image": "{{ asset('/assets/frontend/images/logo.png') }}",
     "@id": "",
-    "url": "{{ url('') }}/",
+    "url": "{{ $base_url }}/",
     "telephone": "011-41023400",
     "address": [
       {
