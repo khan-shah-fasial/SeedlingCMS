@@ -28,10 +28,10 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
 
                            <div class="d-flex align-items-center gap-2" >
                               <div  class="avatar" >
-                                k
+                                 {{ ucfirst(substr($row->name, 0, 1)) }}
                                  
                               </div>
-                              <span>Karla Clinton</span>
+                              <span>{{ $row->name }}</span>
                            </div>
 
 
@@ -51,7 +51,7 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
                            <i class="fa fa-star" aria-hidden="true"></i>
                            <i class="fa fa-star" aria-hidden="true"></i>
                            <i class="fa fa-star" aria-hidden="true"></i>
-                           <span>5.0</span>
+                           <span>{{ $row->rating }}.0</span>
                            </div>
                            <!-- <h4 class="test_name"data-aos="fade-up" data-aos-once="true">{{ $row->name }}</h4> -->
                         </div>
