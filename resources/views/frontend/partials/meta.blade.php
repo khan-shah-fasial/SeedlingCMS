@@ -11,7 +11,11 @@ $page_type = !empty(trim($__env->yieldContent('page.type'))) ? $__env->yieldCont
 $publish_time = !empty(trim($__env->yieldContent('page.publish_time'))) ? $__env->yieldContent('page.publish_time') :
 '2023-09-18T13:41:39+00:00';
 
-$url = url()->current();
+$current_url = url()->current();
+$url = str_replace('www.', '', $current_url);
+
+$base_url = url('');
+$base_url = str_replace('www.', '', $base_url);
 
 @endphp
 
@@ -27,7 +31,7 @@ $url = url()->current();
 
 <meta property="og:url" content="{{ $url }}">
 <meta property="og:type" content="{{ $page_type }}">
-<meta property="og:site_name" content="{{ url('') }}">
+<meta property="og:site_name" content="{{ $base_url }}">
 <meta property="og:locale" content="en_US">
 
 <meta property="og:title" content="@php echo htmlspecialchars_decode($title) @endphp">
@@ -60,7 +64,7 @@ $url = url()->current();
 
 <!----------------- canonical ------------------->
 
-<link rel="canonical" href="{{ url()->current() }}">
+<link rel="canonical" href="{{ $url }}">
 
 <!----------------- canonical ------------------->
 
@@ -71,7 +75,7 @@ $url = url()->current();
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Seedling Associates",
-    "url": "{{ url('') }}/",
+    "url": "{{ $base_url }}/",
     "logo": "{{ asset('/assets/frontend/images/logo.png') }}",
     "sameAs": [
       "https://www.facebook.com/ahlawatassociates/",
@@ -92,7 +96,7 @@ $url = url()->current();
     "name": "Seedling Associates",
     "image": "{{ asset('/assets/frontend/images/logo.png') }}",
     "@id": "",
-    "url": "{{ url('') }}/",
+    "url": "{{ $base_url }}/",
     "telephone": "011-41023400",
     "address": [
       {
