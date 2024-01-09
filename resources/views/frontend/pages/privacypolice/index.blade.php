@@ -18,7 +18,7 @@
                         <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item ">
-                                    <a href="{{ url(route('index')) }}" data-aos="fade-up" data-aos-once="true">Home</a>
+                                    <a href="{{ url(route('index')) }}"  >Home</a>
                                 </li>
                                 <li class="breadcrumb-item home" aria-current="page">
                                     Privacy Policy

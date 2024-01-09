@@ -10,7 +10,7 @@ $random_blogs = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_
             <div class="row">
                 <div class="col-md-12">
 
-                    <h2 class="blog_heading fs-2 fw-bolder lh-lg text-center mb-3" data-aos="fade-up" data-aos-once="true">
+                    <h2 class="blog_heading fs-2 fw-bolder lh-lg text-center mb-3" >
                         Most Viewed Blogs
                     </h2>
                 </div>
@@ -22,11 +22,11 @@ $random_blogs = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_
 
                 <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
                     <div class="blog_box">
-                        <div class="blog_img_container" data-aos="fade-up" data-aos-once="true">
+                        <div class="blog_img_container" >
                             <img src="{{ asset('storage/' . $row->main_image) }}" alt="{{ $row->alt_main_image }}"
                                 class="blog_img" />
                         </div>
-                        <p class="blog_title" data-aos="fade-up" data-aos-once="true">
+                        <p class="blog_title" >
                             {{ $row->title }}
                         </p>
                         <a href="{{ url(route('blog.detail', ['category' =>'blog','slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}"

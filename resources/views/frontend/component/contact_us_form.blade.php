@@ -3,32 +3,32 @@
     @csrf
     <div class="mb-3">
 
-        <input type="hidden" name="section" value="Contact us Form" data-aos-once="true" data-aos="fade-up" />
+        <input type="hidden" name="section" value="Contact us Form"   />
     </div>
     <div class="mb-3">
 
-        <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
+        <input type="hidden" name="url" value="{{ url()->current() }}"   />
     </div>
     <div class="mb-3">
 
-        <input type="text" placeholder="Name" name="name" data-aos-once="true" data-aos="fade-up" required />
+        <input type="text" placeholder="Name" name="name"   required />
     </div>
     <div class="mb-3">
 
-        <input type="email" placeholder="Email" name="email" data-aos-once="true" data-aos="fade-up" required />
+        <input type="email" placeholder="Email" name="email"   required />
     </div>
     <div class="mb-3">
 
-        <input type="number" placeholder="Phone" name="phone" data-aos-once="true" data-aos="fade-up" required />
+        <input type="number" placeholder="Phone" name="phone"   required />
     </div>
     <div class="mb-3">
 
-        <input type="text" placeholder="Other" name="other_info" data-aos-once="true" data-aos="fade-up" />
+        <input type="text" placeholder="Other" name="other_info"   />
     </div>
     <div class="mb-3">
 
-        <textarea placeholder="Brief Description of your legal issue" rows="3" name="description" data-aos-once="true"
-            data-aos="fade-up"></textarea>
+        <textarea placeholder="Brief Description of your legal issue" rows="3" name="description" 
+            ></textarea>
     </div>
 	
 	<div class="mb-3">
@@ -36,7 +36,7 @@
     </div>
 	
     <div class="">
-        <button type="submit" data-aos-once="true" data-aos="fade-up">
+        <button type="submit"  >
             SUBMIT
         </button>
     </div>

@@ -9,11 +9,11 @@
               <div class="get_in_touch">
                 <div class="row">
                   <div class="col-md-6">
-                  <h3 class="payment_para fs-5 mb-3 first text-md-start text-center"data-aos="fade-up" data-aos-once="true">
+                  <h3 class="payment_para fs-5 mb-3 first text-md-start text-center">
                 Let our team of 
                 <span style="color: #E13333">legal experts</span> 
              </h3>
-             <h2 class="payment_heading text-md-start text-center fw-bolder mb-md-3 mb-0"data-aos="fade-up" data-aos-once="true">
+             <h2 class="payment_heading text-md-start text-center fw-bolder mb-md-3 mb-0">
                  help you manage your business more 
                 <span style="color: #E13333">effectively at an affordable cost.</span>
              </h2>

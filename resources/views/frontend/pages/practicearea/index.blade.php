@@ -38,7 +38,7 @@
 
                 @foreach($practiceAreas as $row)
                     <div class="col-md-3">
-                        <div class="practice_listing_box" data-aos="fade-up"data-aos-once="true">
+                        <div class="practice_listing_box" >
                             <img src="{{ asset('storage/' . $row->thumnail_image) }}" alt="{{ $row->alt_thumnail_image }}" class="blog_img" />
                             <div class="practice_listing_content">
                                 <h4>{{ $row->title }}</h4>

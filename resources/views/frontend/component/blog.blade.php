@@ -9,10 +9,10 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
     <div class="container">
        <div class="row">
           <div class="col-md-12">
-             <h3 class="color_heading text-center mb-2"data-aos="fade-up" data-aos-once="true">
+             <h3 class="color_heading text-center mb-2" >
                 BLOGS
              </h3>
-             <h1 class="main_heading text-center mb-4"data-aos="fade-up" data-aos-once="true">
+             <h1 class="main_heading text-center mb-4" >
                 Insights from our experts on various subjects
              </h1>
           </div>
@@ -23,17 +23,17 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
 
             <div class="col-lg-3 col-6 mb-lg-0 mb-3">
                 <div class="blog_box">
-                    <div class="blog_img_container"data-aos="fade-up" data-aos-once="true">
+                    <div class="blog_img_container" >
                     <img
                         src="{{ asset('storage/' .$row->main_image) }}"
                         alt="Blog Image"
                         class="blog_img"
                         />
                     </div>
-                    <p class="blog_title"data-aos="fade-up" data-aos-once="true">
+                    <p class="blog_title" >
                         {{ $row->title }}
                     </p>
-                    <a href="{{ url(route('blog.detail', ['category' =>'blog', 'slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}" class="blog_link"data-aos="fade-up" data-aos-once="true">
+                    <a href="{{ url(route('blog.detail', ['category' =>'blog', 'slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}" class="blog_link" >
                     <span>Learn More </span>
                     <img src="{{ asset('/assets/frontend/images/right.png') }}" alt="" />
                     </a>

@@ -19,7 +19,7 @@
                     <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item home">
-                                <a href="#" data-aos="fade-up" data-aos-once="true">Home</a>
+                                <a href="#"  >Home</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 About Us
@@ -41,12 +41,12 @@
         <div class="row">
             <div class="col-md-12 padd00mb">
               
-                <p class="desc" data-aos-once="true" data-aos="fade-up">
+                <p class="desc"  >
                     Ahlawat & Associates (“A&A”) is one of the leading full-service
                     law firms in India, catering to domestic and international
                     clients.
                 </p>
-                <p class="desc mb-3" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-3"  >
                     Incorporated in 1978 as a primary litigation practice by Mrs.
                     Avnish Ahlawat, A&A gradually expanded its field of services and
                     expertise and is now one of the leading law firms in India. A&A
@@ -57,13 +57,13 @@
                     (globally), thus catering to every legal need from across the
                     globe.
                 </p>
-                <p class="desc mb-3" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-3"  >
                     Our services extend through diverse sectors of industry including
                     assistance to facilitate foreign direct investments and business
                     setup in India and our clientele include an array of domestic and
                     international individuals and companies.
                 </p>
-                <p class="desc mb-3" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-3"  >
                     A&A has been recognized for its expertise in addressing an array
                     of legal issues especially those relating to Foreign Direct
                     Investment, Joint Ventures, Corporate Compliance & Governance as
@@ -74,13 +74,13 @@
                     options to best suit their needs. A&A takes pride in being amongst
                     the most sought-after qualitative legal service provider globally.
                 </p>
-                <p class="desc mb-lg-5 mb-3" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-lg-5 mb-3"  >
                     With an aim to provide valued, practical and strategic legal
                     solutions to help clients achieve their goals, A&A combines the
                     highest global standards with local expertise.
                 </p>
-                <img src="/assets/frontend/images/aboutUs.png" alt="" class="about_content_img" data-aos-once="true"
-                    data-aos="fade-up" />
+                <img src="/assets/frontend/images/aboutUs.png" alt="" class="about_content_img" 
+                     />
             </div>
         </div>
     </div>
@@ -115,8 +115,8 @@
                     </div>
                     <div class="col-md-3 col-6 second_counter">
                         <div class="about_counter_container">
-                            <div class="about_right_counter aos-init aos-animate" data-aos="fade-up"
-                                data-aos-once="true">
+                            <div class="about_right_counter aos-init aos-animate" 
+                                >
                                 <div class="about_counter_icon">
                                     <div class="about_counter_img">
                                         <img src="/assets/frontend/images/recovered_icons.png" alt="counter 1"
@@ -134,8 +134,8 @@
                     </div>
                     <div class="col-md-3 col-6 third_counter">
                         <div class="about_counter_container">
-                            <div class="about_right_counter aos-init aos-animate" data-aos="fade-up"
-                                data-aos-once="true">
+                            <div class="about_right_counter aos-init aos-animate" 
+                                >
                                 <div class="about_counter_icon">
                                     <div class="about_counter_img">
                                         <img src="/assets/frontend/images/certified_icons.png" alt="counter 1"
@@ -153,8 +153,8 @@
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="about_counter_container">
-                            <div class="about_right_counter aos-init aos-animate" data-aos="fade-up"
-                                data-aos-once="true">
+                            <div class="about_right_counter aos-init aos-animate" 
+                                >
                                 <div class="about_counter_icon">
                                     <div class="about_counter_img">
                                         <img src="/assets/frontend/images/law_icons.png" alt="counter 1" class="mb-4" />
@@ -182,10 +182,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 padd00mb">
-                <h4 class="heading3 mb-2" data-aos-once="true" data-aos="fade-up">
+                <h4 class="heading3 mb-2"  >
                     Team Of Experts
                 </h4>
-                <p class="desc mb-4 mb-lg-5" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-4 mb-lg-5"  >
                     All our partners are recognized leaders in their respective
                     fields. They have specialized knowledge of both the legal
                     framework as well as the specific business requirements of various
@@ -200,10 +200,10 @@
                     ease and have made A&A a dependable source of seamless knowledge
                     and implementation
                 </p>
-                <h4 class="heading3 mb-2 mt-3" data-aos-once="true" data-aos="fade-up">
+                <h4 class="heading3 mb-2 mt-3"  >
                     Our Uniqueness
                 </h4>
-                <p class="desc mb-4 mb-lg-5" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-4 mb-lg-5"  >
                     A&A adopted an approach that demands the highest levels of
                     understanding in each of their practice areas, technical skill and
                     service delivery allowing us to provide accurate, reliable, timely
@@ -222,10 +222,10 @@
                     and regulatory compliances to enable smooth functionality of their
                     business’.
                 </p>
-                <h4 class="heading3 mb-2" data-aos-once="true" data-aos="fade-up">
+                <h4 class="heading3 mb-2"  >
                     Our Values
                 </h4>
-                <p class="desc mb-4 mb-lg-5" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-4 mb-lg-5"  >
                     Our most valuable asset for progress is consistent cooperation and
                     coordinated effort within and between our teams, across each
                     practice area. Each partner-led team, having specific practice

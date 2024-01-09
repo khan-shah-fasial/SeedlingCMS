@@ -21,7 +21,7 @@
                     <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item home">
-                                <a href="#" data-aos="fade-up" data-aos-once="true">Home</a>
+                                <a href="#"  >Home</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 Career
@@ -41,14 +41,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 padd00mb">
-                <p class="desc mb-4" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-4"  >
                     <strong>Lawyer/ Assessment Trainees</strong> – To apply, please
                     send us an email with your name, PQE and field of law that you
                     wish to apply for, in <br />
                     the subject line along with your CV at
                     <a href="mailto:careers@ahlawatassociates.in"><em>careers@ahlawatassociates.in</em></a>
                 </p>
-                <p class="desc mb-4" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mb-4"  >
                     <strong>
                         Internship – To apply for an internship position, please follow
                         these steps:
@@ -56,13 +56,13 @@
                 </p>
                 <ol>
                     <li>
-                        <span class="d-flex flex-column" data-aos-once="true" data-aos="fade-up">
+                        <span class="d-flex flex-column"  >
                             <span class="mb-2">Submit Your CV: Send your updated CV to
                                 <a href="mailto:careers@ahlawatassociates.in">careers@ahlawatassociates.in.</a> Make
                                 sure to
                                 highlight your academic achievements, <br />
                                 relevant skills, and any previous legal experience.</span>
-                            <span data-aos-once="true" data-aos="fade-up">
+                            <span  >
 
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                     class="career_button">Submit your CV</button>
@@ -73,37 +73,37 @@
                     </li>
                     <li>
                         <span class="d-flex flex-column">
-                            <span class="mb-3" data-aos-once="true" data-aos="fade-up">
+                            <span class="mb-3"  >
                                 <strong>
                                     Along with your CV, please provide the following
                                     information:
                                 </strong>
                             </span>
-                            <span class="mb-3" data-aos-once="true" data-aos="fade-up">
+                            <span class="mb-3"  >
                                 <strong>Educational Qualification:</strong> Specify your
                                 highest level of education completed.
                             </span>
-                            <span class="mb-3" data-aos-once="true" data-aos="fade-up">
+                            <span class="mb-3"  >
                                 <strong>Year of Completion:</strong> Mention the year in
                                 which you completed your education.
                             </span>
-                            <span class="mb-3" data-aos-once="true" data-aos="fade-up">
+                            <span class="mb-3"  >
                                 <strong>Current Year of Study:</strong> Indicate your
                                 current academic year or level of study.
                             </span>
-                            <span class="mb-3" data-aos-once="true" data-aos="fade-up">
+                            <span class="mb-3"  >
                                 <strong>Preferred Month for Internship:</strong> Let us know
                                 when you would like to start your internship with us.Note:
                                 Due to the high volume of applications we receive, only
                                 shortlisted candidates will be contacted for further
                                 evaluation.
                             </span>
-                            <span class="mb-3" data-aos-once="true" data-aos="fade-up">
+                            <span class="mb-3"  >
                                 Note: Due to the high volume of applications we receive,
                                 only shortlisted candidates will be contacted for further
                                 evaluation.
                             </span>
-                            <span class="mb-3" data-aos-once="true" data-aos="fade-up">
+                            <span class="mb-3"  >
                                 <strong>Support Staff –</strong> We value support staff and
                                 consider them an integral part of A&A. If you are interested
                                 in joining the A&A team, in whichever capacity, please email

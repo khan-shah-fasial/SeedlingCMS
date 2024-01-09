@@ -183,7 +183,7 @@
 
                     <div>
                         <h1 class="mb-3 main_heading_pa">{{ ucwords($detail->breadcrumb_title) }} <br>
-                            <span class="price_heading mb-4" data-aos="fade-up"data-aos-once="true">
+                            <span class="price_heading mb-4" >
                                 @if ($session_data['country'] == 'IN')
                                     (Price Start at Rs {{ $detail->indian_price }} /-)
                                 @else
@@ -191,8 +191,8 @@
                                 @endif
                             </span>
                         </h1>
-                        {{-- <h3 class="color_heading" data-aos="fade-up"data-aos-once="true" >{{ $detail->Content_title }}</h3>   --}}
-                        <div class="service_content"data-aos="fade-up" data-aos-once="true">
+                        {{-- <h3 class="color_heading"  >{{ $detail->Content_title }}</h3>   --}}
+                        <div class="service_content" >
                             @php echo html_entity_decode($detail->content) @endphp
                         </div>
                     </div>
@@ -205,14 +205,14 @@
 
                     @if (count($Content_list) > 1)
                         <div class="service_last_benefit">
-                            <h2 class="benefits_heading text-center" data-aos="fade-up"data-aos-once="true">
+                            <h2 class="benefits_heading text-center" >
                                 {{ $detail->Content_list_title }}
                             </h2>
                             <div class="row">
 
                                 @foreach ($Content_list as $row)
                                     <div class="col-md-4">
-                                        <div class="benefit_box" data-aos="fade-up"data-aos-once="true">
+                                        <div class="benefit_box" >
                                             {{ $row }}
                                         </div>
                                     </div>
@@ -225,7 +225,7 @@
                     <!-- -------------service last Benefit End -------------- -->
 
                     @if (!empty($detail->other_content))
-                        <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                        <div class="service_content" >
                             @php echo html_entity_decode($detail->other_content) @endphp
                         </div>
                     @endif
@@ -238,20 +238,20 @@
                             !empty($detail->eligibility_title) ||
                             !empty($detail->eligibility_sub_title) ||
                             !empty($detail->eligibility_content))
-                        <div class="service_last_eligibility" data-aos="fade-up"data-aos-once="true">
+                        <div class="service_last_eligibility" >
                             @if (!empty($detail->Section_title_el))
-                                <h2 class="color_heading" data-aos="fade-up"data-aos-once="true">
+                                <h2 class="color_heading" >
                                     {{ $detail->Section_title_el }}</h2>
                             @endif
 
                             @if (!empty($detail->eligibility_title))
-                                <h3 class="heading" data-aos="fade-up"data-aos-once="true">
+                                <h3 class="heading" >
                                     {{ $detail->eligibility_title }}
                                 </h3>
                             @endif
 
                             @if (!empty($detail->eligibility_sub_title))
-                                <p class="desc" data-aos="fade-up"data-aos-once="true">
+                                <p class="desc" >
                                     {{ $detail->eligibility_sub_title }}
                                 </p>
                             @endif
@@ -261,7 +261,7 @@
                             @endphp
 
                             @if (count($eligibility_list) > 1)
-                                <ul class="first_list" data-aos="fade-up"data-aos-once="true">
+                                <ul class="first_list" >
 
                                     @foreach ($eligibility_list as $row)
                                         <li>{{ $row }}</li>
@@ -271,7 +271,7 @@
                             @endif
 
                             @if (!empty($detail->eligibility_content))
-                                <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                                <div class="service_content" >
                                     @php echo html_entity_decode($detail->eligibility_content) @endphp
                                 </div>
                             @endif
@@ -289,15 +289,15 @@
 
                     @if (!empty($detail->Section_title_doc) || !empty($detail->doc_title) || !empty($detail->doc_content))
                         <div class="service_last_documents">
-                            <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">
+                            <h3 class="color_heading" >
                                 {{ $detail->Section_title_doc }}</h3>
-                            <h3 class="heading mb-4" data-aos="fade-up"data-aos-once="true">
+                            <h3 class="heading mb-4" >
                                 {{ $detail->doc_title }}
                             </h3>
 
-                            <!-- <h4 class="list_heading" data-aos="fade-up"data-aos-once="true">Documents Required</h4> -->
+                            <!-- <h4 class="list_heading" >Documents Required</h4> -->
                             @if (count($doc_list) > 1)
-                                <ul class="first_list" data-aos="fade-up"data-aos-once="true">
+                                <ul class="first_list" >
                                     @foreach ($doc_list as $row)
                                         <li>
                                             {{ $row }}
@@ -308,7 +308,7 @@
                             @endif
 
                             @if (!empty($detail->doc_content))
-                                <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                                <div class="service_content" >
                                     @php echo html_entity_decode($detail->doc_content) @endphp
                                 </div>
                             @endif
@@ -322,18 +322,18 @@
 
                     <div class="service_last_process">
                         @if (!empty($detail->Section_title_pro))
-                            <h3 class="color_heading" data-aos="fade-up"data-aos-once="true">
+                            <h3 class="color_heading" >
                                 {{ $detail->Section_title_pro }}</h3>
                         @endif
 
                         @if (!empty($detail->process_content))
-                            <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                            <div class="service_content" >
                                 @php echo html_entity_decode($detail->process_content) @endphp
                             </div>
                         @endif
 
                         @if (!empty($detail->process_list_title))
-                            <h3 class="list_heading mb-4" data-aos="fade-up"data-aos-once="true">
+                            <h3 class="list_heading mb-4" >
                                 {{ $detail->process_list_title }}
                             </h3>
                         @endif
@@ -343,7 +343,7 @@
                         @endphp
 
                         @if (count($process_list) > 1)
-                            <ul class="first_list" data-aos="fade-up"data-aos-once="true">
+                            <ul class="first_list" >
                                 @foreach ($process_list as $row)
                                     <li>{{ $row }}</li>
                                 @endforeach
@@ -351,7 +351,7 @@
                         @endif
 
                         @if (!empty($detail->other_content_pro))
-                            <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                            <div class="service_content" >
                                 @php echo html_entity_decode($detail->other_content_pro) @endphp
                             </div>
                         @endif
@@ -367,11 +367,11 @@
 
                     @if (!empty($detail->compliances_content) || count($compliances) > 1 || !empty($detail->other_content_comp))
                         <div class="service_last_compliances">
-                            <h3 class="color_heading mb-4" data-aos="fade-up"data-aos-once="true">
+                            <h3 class="color_heading mb-4" >
                                 {{ $detail->Section_title_comp }}</h3>
 
                             @if (!empty($detail->compliances_content))
-                                <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                                <div class="service_content" >
                                     @php echo html_entity_decode($detail->compliances_content) @endphp
                                 </div>
                             @endif
@@ -383,29 +383,29 @@
                                     <div class="col-12">
                                         {{-- <div class="row">
                         <div class="col-6">
-                          <div class="list_head" data-aos="fade-up"data-aos-once="true">Plan amount</div>
+                          <div class="list_head" >Plan amount</div>
                           <ul>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">DSC</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">DIN</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">Professional Fees</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">Stamp Duty (approx)</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">Notary Fees</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">
+                            <li class="list_box" >DSC</li>
+                            <li class="list_box" >DIN</li>
+                            <li class="list_box" >Professional Fees</li>
+                            <li class="list_box" >Stamp Duty (approx)</li>
+                            <li class="list_box" >Notary Fees</li>
+                            <li class="list_box" >
                               Government Fees (RUN, PAN, TAN)
                             </li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">Goods and Services Tax @18%</li>
+                            <li class="list_box" >Goods and Services Tax @18%</li>
                           </ul>
                         </div>
                         <div class="col-6">
-                          <div class="list_head" data-aos="fade-up"data-aos-once="true">INR</div>
+                          <div class="list_head" >INR</div>
                           <ul>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">2000</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">1000</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">3799</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">2000</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">500</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">1200</li>
-                            <li class="list_box" data-aos="fade-up"data-aos-once="true">684</li>
+                            <li class="list_box" >2000</li>
+                            <li class="list_box" >1000</li>
+                            <li class="list_box" >3799</li>
+                            <li class="list_box" >2000</li>
+                            <li class="list_box" >500</li>
+                            <li class="list_box" >1200</li>
+                            <li class="list_box" >684</li>
                           </ul>
                         </div>
                       </div> --}}
@@ -432,7 +432,7 @@
                             @endif
 
                             @if (!empty($detail->other_content_comp))
-                                <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                                <div class="service_content" >
                                     @php echo html_entity_decode($detail->other_content_comp) @endphp
                                 </div>
                             @endif
@@ -445,11 +445,11 @@
                     @if (!empty($detail->assistance_content))
                         <div class="service_last_assistance">
                             @if (!empty($detail->Section_title_asst))
-                                <h3 class="color_heading " data-aos="fade-up"data-aos-once="true">
+                                <h3 class="color_heading " >
                                     {{ $detail->Section_title_asst }}</h3>
                             @endif
 
-                            <div class="service_content" data-aos="fade-up"data-aos-once="true">
+                            <div class="service_content" >
                                 @php echo html_entity_decode($detail->assistance_content) @endphp
                             </div>
 
@@ -462,7 +462,7 @@
                     @endphp
                     @if (count($faq) > 0)
                         <div class="service_last_faq">
-                            <h3 class="mb-4 color_heading " data-aos="fade-up"data-aos-once="true">Most common question about our
+                            <h3 class="mb-4 color_heading " >Most common question about our
                                 services</h3>
 
 
@@ -551,7 +551,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="service_last_form_container d-flex align-items-center justify-content-center mt-md-0 mt-3 position_sticky"
-                        data-aos="fade-up"data-aos-once="true">
+                        >
                         @include('frontend.component.area_of_practice_form')
                     </div>
                     <div class="service_list_box mt-4">

@@ -2,7 +2,7 @@
 
 <div class="col-lg-4 col-md-6">
     <a href="{{ url(route('blog.detail', ['category' =>'blog','slug' => strtolower(str_replace(' ', '-',$row->slug))] )) }}" class="blog_image_card_wrapper" >
-    <div  class="blog_image_card" data-aos="fade-up" data-aos-once="true">
+    <div  class="blog_image_card"  >
         <img src="{{ asset('storage/' . $row->main_image) }}" alt="{{ $row->alt_main_image }}" class="blog_img" />
         <div class="d-flex align-items-center justify-content-center">
             <button>
@@ -36,7 +36,7 @@
             </button>
         </div>
 
-        <div class="blog_card_content" data-aos="fade-up" data-aos-once="true">
+        <div class="blog_card_content"  >
             <h3>{{ $row->title }}</h3>
             <p>
                 {{ $row->short_description }}

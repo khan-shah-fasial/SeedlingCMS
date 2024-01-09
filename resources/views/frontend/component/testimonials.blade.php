@@ -12,8 +12,8 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
       <div class="container">
          <div class="row">
             <div class="col-md-12">
-               <h4 class="color_heading text-center"data-aos="fade-up" data-aos-once="true">OUR TESTIMONIALS</h4>
-               <h2 class="main_heading text-center mb-3"data-aos="fade-up" data-aos-once="true">What our client says about us</h2>
+               <h4 class="color_heading text-center" >OUR TESTIMONIALS</h4>
+               <h2 class="main_heading text-center mb-3" >What our client says about us</h2>
             </div>
          </div>
          <div class="row">
@@ -23,8 +23,8 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
                   @foreach ($testimonial as $row)
                      
                      <div class="item">
-                        <div class="test_box"data-aos="fade-up" data-aos-once="true">
-                           <div class="test_quote_box"data-aos="fade-up" data-aos-once="true">
+                        <div class="test_box" >
+                           <div class="test_quote_box" >
 
                            <div class="d-flex align-items-center gap-2" >
                               <div  class="avatar" >
@@ -42,7 +42,7 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
                                  class="test_quote"
                                  />
                            </div>
-                           <p class="desc text_justify"data-aos="fade-up" data-aos-once="true">
+                           <p class="desc text_justify" >
                               {{ $row->comment }}
                            </p>
                            <div class="d-flex align-items-center  gap-2 rating_icon" >
@@ -53,7 +53,7 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
                            <i class="fa fa-star" aria-hidden="true"></i>
                            <span>{{ $row->rating }}.0</span>
                            </div>
-                           <!-- <h4 class="test_name"data-aos="fade-up" data-aos-once="true">{{ $row->name }}</h4> -->
+                           <!-- <h4 class="test_name" >{{ $row->name }}</h4> -->
                         </div>
                      </div>
 

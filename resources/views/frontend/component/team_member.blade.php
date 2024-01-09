@@ -10,16 +10,16 @@ $team = DB::table('teams')->limit(6)->orderBy('series', 'asc')->get();
         <div class="row">
             <div class="col-md-6 px0">
                 <div class="underline_heading">
-                    <h6 class="main_heading" data-aos-once="true" data-aos="fade-up">Team member</h6>
+                    <h6 class="main_heading"  >Team member</h6>
                 </div>
-                <h1 class="main_heading" data-aos-once="true" data-aos="fade-up">
+                <h1 class="main_heading"  >
                     We feel very proud <br />
                     for our
                     <span class="main_heading_color"> Experts </span>
                 </h1>
             </div>
             <div class="col-md-6 px0">
-                <p class="desc mt-md-4 mt-2" data-aos-once="true" data-aos="fade-up">
+                <p class="desc mt-md-4 mt-2"  >
                     Contact the best lawyers in India (10k-100k) Our team of Lawyers is highly skilled and confident in
                     their
                     ability to offer advice that transcends borders. They understand and align themselves with the
@@ -34,7 +34,7 @@ $team = DB::table('teams')->limit(6)->orderBy('series', 'asc')->get();
 
                     @foreach ($team as $row)
 
-                    <div class="item" data-aos-once="true" data-aos="fade-up">
+                    <div class="item"  >
                         <a href="{{ url(route('team.detail', ['slug' => strtolower(str_replace(' ', '-',$row->name))] )) }}"
                             class="text-decoration-none">
                             <div class="team_box">

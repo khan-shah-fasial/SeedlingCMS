@@ -4,8 +4,8 @@
     <h5 class="service_last_form_heading text-center">
       Get Consult Today 
     </h5>
-    <input type="hidden" name="section" value="Area of Practice Form" data-aos-once="true" data-aos="fade-up" />
-    <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
+    <input type="hidden" name="section" value="Area of Practice Form"   />
+    <input type="hidden" name="url" value="{{ url()->current() }}"   />
     <div class="mb-3" >
       <input type="text" name="name" placeholder="Name" required/>
     </div>

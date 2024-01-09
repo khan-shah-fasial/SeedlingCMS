@@ -48,17 +48,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 px0">
-                <img src="{{ asset('storage/' . $detail->image) }}" alt="" class="team_img" data-aos="fade-up"
-                    data-aos-once="true" />
+                <img src="{{ asset('storage/' . $detail->image) }}" alt="" class="team_img" 
+                     />
             </div>
             <div class="col-md-7 px0">
                 <div class="content">
-                    <h4 class="main_heading" data-aos="fade-up" data-aos-once="true">
+                    <h4 class="main_heading"  >
                         {{ ucfirst($detail->name) }}
                     </h4>
 
                     @if(!empty($detail->designation))
-                    <h2 class="role" data-aos="fade-up" data-aos-once="true">
+                    <h2 class="role"  >
                         {{ ucfirst($detail->designation) }}
                     </h2>
                     @endif
@@ -67,15 +67,15 @@
 
                         @if(!empty($detail->email))
                         <a href="mailto:{{ $detail->email }}">
-                            <img src="/assets/frontend/images/mail.png" alt="" data-aos="fade-up"
-                                data-aos-once="true" />
+                            <img src="/assets/frontend/images/mail.png" alt="" 
+                                 />
                         </a>
                         @endif
 
                         @if(!empty($detail->linkedin_link))
                         <a href="{{ $detail->linkedin_link }}">
-                            <img src="/assets/frontend/images/linked.png" alt="" data-aos="fade-up"
-                                data-aos-once="true" />
+                            <img src="/assets/frontend/images/linked.png" alt="" 
+                                 />
                         </a>
                         @endif
 
@@ -83,7 +83,7 @@
 
                     @if(!empty($detail->description))
 
-                    <h4 class="sub_heading" data-aos="fade-up" data-aos-once="true">
+                    <h4 class="sub_heading"  >
                         Practice Area
                     </h4>
 
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="col-md-12 px0">
-                <h4 class="sub_heading mt-md-5" data-aos="fade-up" data-aos-once="true">
+                <h4 class="sub_heading mt-md-5"  >
                     Professional Experience
                 </h4>
                 @php echo html_entity_decode($detail->about) @endphp
