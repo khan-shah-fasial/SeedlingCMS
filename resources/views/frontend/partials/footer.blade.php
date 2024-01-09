@@ -14,9 +14,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
 
             @if(count($sub_cate) > 0)
                   <div class="col-md-3 first_links">
-                     <ul class="links_url"data-aos="fade-up" data-aos-once="true">
+                     <ul class="links_url" >
                         @foreach ($sub_cate as $item)
-                           <li data-aos="fade-up" data-aos-once="true"><a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">{{ $item->title }}</a></li>
+                           <li  ><a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">{{ $item->title }}</a></li>
                         @endforeach
                      </ul>
                   </div>
@@ -35,18 +35,18 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
        <div class="row">
           <div class="col-md-12">
              <div class="footer_btn_container">
-                <a href="{{ url(route('contact')) }}" class="footer_btn" data-aos="fade-up" data-aos-once="true">Online Payment</a>
+                <a href="{{ url(route('contact')) }}" class="footer_btn"  >Online Payment</a>
              </div>
              <ul class="footer_links">
-                <li><span data-aos="fade-up" data-aos-once="true">© 2023 SEEDLING</span></li>
+                <li><span  >© 2023 SEEDLING</span></li>
                 <li>|</li>
-                <li><a href="{{ url(route('terms')) }}"data-aos="fade-up" data-aos-once="true"> TERMS OF USE </a></li>
+                <li><a href="{{ url(route('terms')) }}" > TERMS OF USE </a></li>
                 <li>|</li>
-                <li><a href="{{ url(route('privacy-policy')) }}" data-aos="fade-up" data-aos-once="true">PRIVACY POLICY</a></li>
+                <li><a href="{{ url(route('privacy-policy')) }}"  >PRIVACY POLICY</a></li>
                 <li>|</li>
-                <li><a href="{{ url(route('refund-policy')) }}" data-aos="fade-up" data-aos-once="true">REFUND POLICY</a></li>
+                <li><a href="{{ url(route('refund-policy')) }}"  >REFUND POLICY</a></li>
                 <li>|</li>
-                <li><a href="#"data-aos="fade-up" data-aos-once="true">SITE MAP</a></li>
+                <li><a href="#" >SITE MAP</a></li>
              </ul>
              <p class="footer_desc mb-lg-0 mb-5 pb-lg-0 pb-2">
              SEEDLING ASSOCIATES PRIVATE LIMITED | CIN U69100DL2022PTC403662 | <span> Registered Office : Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla Phase III, New Delhi 110020, India  | </span> Phone Number : +91 7428899959 | <span> Email Address: admin@seedlingassociates.com </span>
@@ -100,7 +100,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
     <div class="container">
        <div class="row">
           <div class="col-md-12">
-             <div class="social_icons"data-aos="fade-up" data-aos-once="true">
+             <div class="social_icons" >
                 <a href="{{ get_settings('twitter') }}"  aria-label="Twitter" class="icon" ><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href="{{ get_settings('linkedin') }}" aria-label="LinkedIn" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href="{{ get_settings('facebook') }}" aria-label="Facebook" class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -171,8 +171,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
         <div class="row">
           <div
             class="col-md-3 col-6 mb-md-0 mb-3 first_links"
-            data-aos="fade-up"
-            data-aos-once="true"
+            
+            
           >
             <ul class="links_url">
               @php
@@ -195,8 +195,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
           </div>
           <div
             class="col-md-3 col-6 mb-md-0 mb-3 first_links"
-            data-aos="fade-up"
-            data-aos-once="true"
+            
+            
           >
             <ul class="links_url">
               @php
@@ -217,8 +217,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
           </div>
           <div
             class="col-md-3 col-6 first_links"
-            data-aos="fade-up"
-            data-aos-once="true"
+            
+            
           >
             <ul class="links_url">
               @php
@@ -237,7 +237,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
               @endforeach
             </ul>
           </div>
-          <div class="col-md-3 col-6" data-aos="fade-up" data-aos-once="true">
+          <div class="col-md-3 col-6"  >
             <ul class="links_url">
               @php
                   $subcate = DB::table('practice_areas')
@@ -268,8 +268,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
           <div class="col-md-12">
             <ul
               class="footer_links mb-0"
-              data-aos="fade-up"
-              data-aos-once="true"
+              
+              
             >
               <li><a href="#">© 2023 SEEDLING</a></li>
               <li><a href="{{ url(route('terms')) }}"> TERMS OF USE </a></li>

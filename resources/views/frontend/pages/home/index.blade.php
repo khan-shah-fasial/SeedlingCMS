@@ -170,8 +170,8 @@ assistance for startups, FDI, Property law, IP, and more')
    <div class="container">
       <div class="row">
          <div class="col-lg-6">
-            <h6 class="color_heading  mb-3" data-aos="fade-up" data-aos-once="true">Who We Are</h6>
-            <h2 class="main_heading mb-4" data-aos="fade-up" data-aos-once="true">
+            <h6 class="color_heading  mb-3"  >Who We Are</h6>
+            <h2 class="main_heading mb-4"  >
                {{ get_settings('h_title') }}
             </h2>
 
@@ -196,7 +196,7 @@ assistance for startups, FDI, Property law, IP, and more')
             $secondPart = implode(' ', $secondPartArray);
             @endphp
             <article class="main">
-               <p class="desc mb-0 text_justify" data-aos="fade-up" data-aos-once="true">
+               <p class="desc mb-0 text_justify"  >
                   {{ $firstPart }}.
                </p>
 
@@ -208,7 +208,7 @@ assistance for startups, FDI, Property law, IP, and more')
                <label for="read-more-check-1" class="read-more-label"></label>
             </article>
             <div class="about_points first">
-               <div class="icon_container" data-aos="fade-up" data-aos-once="true">
+               <div class="icon_container"  >
                   <div class="img_container">
                      <img loading="lazy" src="{{ asset('/assets/frontend/images/check.png') }}" alt="Check Icon" />
                      <img loading="lazy" src="{{ asset('/assets/frontend/images/white_check.png') }}"
@@ -216,23 +216,23 @@ assistance for startups, FDI, Property law, IP, and more')
                   </div>
                </div>
                <div>
-                  <h4 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Vision</h4>
-                  <p class="desc mb-0 text_justify" data-aos="fade-up" data-aos-once="true">
+                  <h4 class="about_point_heading"  >Vision</h4>
+                  <p class="desc mb-0 text_justify"  >
                      {{ get_settings('h_vision') }}
                   </p>
                </div>
             </div>
             <div class="about_points">
                <div class="icon_container">
-                  <div class="img_container" data-aos="fade-up" data-aos-once="true">
+                  <div class="img_container"  >
                      <img loading="lazy" src="{{ asset('/assets/frontend/images/check.png') }}" alt="Check Icon" />
                      <img loading="lazy" src="{{ asset('/assets/frontend/images/white_check.png') }}"
                         alt="Check Icon" />
                   </div>
                </div>
                <div>
-                  <h4 class="about_point_heading" data-aos="fade-up" data-aos-once="true">Mission</h4>
-                  <p class="desc mb-0 text_justify" data-aos="fade-up" data-aos-once="true">
+                  <h4 class="about_point_heading"  >Mission</h4>
+                  <p class="desc mb-0 text_justify"  >
                      {{ get_settings('h_mission') }}
                   </p>
                </div>
@@ -242,7 +242,7 @@ assistance for startups, FDI, Property law, IP, and more')
             <div class="row">
                <div class="col-md-6 col-6 first_counter">
                   <div class="about_counter_container">
-                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                     <div class="about_right_counter"  >
                         <div class="about_counter_icon">
                            <div class="about_counter_img">
                               <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal.png') }}"
@@ -263,7 +263,7 @@ assistance for startups, FDI, Property law, IP, and more')
                </div>
                <div class="col-md-6 col-6 second_counter">
                   <div class="about_counter_container">
-                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                     <div class="about_right_counter"  >
                         <div class="about_counter_icon">
                            <div class="about_counter_img">
                               <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand.png') }}"
@@ -283,7 +283,7 @@ assistance for startups, FDI, Property law, IP, and more')
                </div>
                <div class="col-md-6 col-6 third_counter">
                   <div class="about_counter_container mt-md-0 mt-2">
-                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                     <div class="about_right_counter"  >
                         <div class="about_counter_icon">
                            <div class="about_counter_img">
                               <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc.png') }}"
@@ -303,7 +303,7 @@ assistance for startups, FDI, Property law, IP, and more')
                </div>
                <div class="col-md-6 col-6">
                   <div class="about_counter_container mt-md-0 mt-2">
-                     <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                     <div class="about_right_counter"  >
                         <div class="about_counter_icon">
                            <div class="about_counter_img">
                               <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man.png') }}"
@@ -506,8 +506,8 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="color_heading text-center" data-aos="fade-up" data-aos-once="true">Our Blog</h4>
-                <h2 class="main_heading text-center mb-3" data-aos="fade-up" data-aos-once="true">Latest Posts</h2>
+                <h4 class="color_heading text-center"  >Our Blog</h4>
+                <h2 class="main_heading text-center mb-3"  >Latest Posts</h2>
             </div>
 
             @foreach ($blog as $row)

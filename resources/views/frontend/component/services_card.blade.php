@@ -7,7 +7,7 @@
             <div class="row" id="counter">
             <div class="col-lg-3 col-6 first_counter">
                 <div class="about_counter_container">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                    <div class="about_right_counter" >
                         <div class="about_counter_icon">
                             <div class="about_counter_img">
                                 <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_medal.png') }}"
@@ -28,7 +28,7 @@
             </div>
             <div class="col-lg-3 col-6 second_counter">
                 <div class="about_counter_container">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                    <div class="about_right_counter" >
                         <div class="about_counter_icon">
                             <div class="about_counter_img">
                                 <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_hand.png') }}"
@@ -48,7 +48,7 @@
             </div>
             <div class="col-lg-3 col-6 third_counter">
                 <div class="about_counter_container mt-md-0 mt-2">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                    <div class="about_right_counter" >
                         <div class="about_counter_icon">
                             <div class="about_counter_img">
                                 <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_doc.png') }}"
@@ -68,7 +68,7 @@
             </div>
             <div class="col-lg-3 col-6">
                 <div class="about_counter_container mt-md-0 mt-2">
-                    <div class="about_right_counter" data-aos="fade-up" data-aos-once="true">
+                    <div class="about_right_counter" >
                         <div class="about_counter_icon">
                             <div class="about_counter_img">
                                 <img loading="lazy" src="{{ asset('/assets/frontend/images/counter_man.png') }}"
@@ -90,8 +90,8 @@
             </div>
 
             <div class="col-md-12">
-                <h4 class="color_heading text-center mt-5" data-aos="fade-up" data-aos-once="true">Our Services</h4>
-                <h2 class="main_heading text-center mb-3" data-aos="fade-up" data-aos-once="true">We are Professionals to your Business</h2>
+                <h4 class="color_heading text-center mt-5" >Our Services</h4>
+                <h2 class="main_heading text-center mb-3" >We are Professionals to your Business</h2>
             </div>
 
             <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
