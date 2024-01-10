@@ -49,34 +49,21 @@
                             @endphp
 
                             <form>
-                                <select class="form-select mb-3" aria-label="Default select example">
-                                    <option value="">Select the Service</option>
-                                    @foreach ($practice_Area as $row)
-                                        <option value="{{ $row->title }}">{{ $row->title }}</option>
-                                    @endforeach
-                                </select>
-
-
+                                
                                 <div class="radio_container">
                                     <input type="radio" name="radio" id="one" checked />
-                                    <label for="one"> <span class="price" >
+                                    <a target="_blank" href="https://easebuzz.in/quickpay/jolsprknwp">
+                                         <span class="price" >
                                     ₹{{ get_contactpage('p_20') }}
-                                    </span> for 20 mins</label>
+                                    </span> for 20 mins</a>
                                     <input type="radio" name="radio" id="two" />
-                                    <label for="two"> <span class="price" >
+                                    <a target="_blank" href="https://easebuzz.in/quickpay/eekdmnpvjj"> <span class="price" >
                                     ₹{{ get_contactpage('p_40') }}
-                                    </span>  for 40 mins</label>
+                                    </span>  for 40 mins</a>
                                 </div>
                             </form>
-                            <p class="desc">
-                                {{ get_contactpage('f_description') }}
-                            </p>
+                           
 
-                            <div class="text-center mt-4 mb-4">
-                                <a class="backhomebutton" href="#">
-                                    BOOK CONSULTATION
-                                </a>
-                            </div>
                         </div>
                    
                 </div>

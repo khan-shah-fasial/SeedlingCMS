@@ -3243,3 +3243,21 @@ body .backhomebutton {
     background: #e13333;
     transition: all 0.5s;
 }
+
+.payment_box a {
+    background-color: #e13333;
+    color: #f1f3f5;
+    font-weight: 900;
+    transition: 0.3s;
+    padding: 5px 50px;
+    margin-bottom: 20px;
+    border-radius: 40px 0px 40px 0px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.payment_box a:hover {
+    background: #ccc;
+    color: #333!important;
+}
