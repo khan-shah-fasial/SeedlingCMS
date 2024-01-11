@@ -2455,7 +2455,7 @@ footer .footer_desc {
 
 .payment_box {
     background: #f2f2f2;
-    padding: 25px 60px;
+    padding: 40px 55px;
     margin-top: 30px;
     border-radius: 50px 0px 50px 0px;
     display: flex;
@@ -3208,10 +3208,9 @@ body .backhomebutton {
 }
 
 .contact_process form {
-    background: #e3e3e3bd;
     width: 100%;
     margin-top: 0px;
-    padding: 40px;
+    padding: 10px 0;
     border-radius: 50px 0;
 }
 
@@ -3244,20 +3243,32 @@ body .backhomebutton {
     transition: all 0.5s;
 }
 
-.payment_box a {
+.payment_box .price_container {
     background-color: #e13333;
     color: #f1f3f5;
     font-weight: 900;
     transition: 0.3s;
-    padding: 5px 50px;
+    padding: 5px 20px;
     margin-bottom: 20px;
     border-radius: 40px 0px 40px 0px;
     text-align: center;
     cursor: pointer;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.payment_box a:hover {
+.payment_box .price_container:hover {
     background: #ccc;
-    color: #333!important;
+    color: #333 !important;
+}
+.payment_box .price_container a {
+    text-decoration: none;
+}
+.price_btn {
+    border: 1px solid white;
+    font-size: 24px;
+    padding: 0px 20px;
+    background: white;
+    color: #000;
+    border-radius: 20px 0;
+    margin-left: 20px;
 }

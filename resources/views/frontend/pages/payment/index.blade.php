@@ -40,9 +40,12 @@
     <section class="contact_process">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5">
+                <div class="col-xl-5 mb-md-0 mb-5">
                 <h2 class="color_heading">Payment Process</h2>
                     <div class="payment_box">
+
+
+                    <h3 class="text-center" >Process a payment for consulting services</h3>
                     
                             @php
                                 $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
@@ -52,16 +55,22 @@
                                 
                                 <div class="radio_container">
                                     <input type="radio" name="radio" id="one" checked />
-                                    <a target="_blank" href="https://easebuzz.in/quickpay/jolsprknwp">
+                                    <div class="price_container" >
                                          <span class="price" >
                                     ₹{{ get_contactpage('p_20') }}
-                                    </span> for 20 mins</a>
+                                    </span> for 20 mins <a target="_blank" href="https://easebuzz.in/quickpay/jolsprknwp"><span class="price_btn" >
+                                   Pay
+                                    </span></a>  </div>
                                     <input type="radio" name="radio" id="two" />
-                                    <a target="_blank" href="https://easebuzz.in/quickpay/eekdmnpvjj"> <span class="price" >
+                                    <div class="price_container" > <span class="price" >
                                     ₹{{ get_contactpage('p_40') }}
-                                    </span>  for 40 mins</a>
+                                    </span>  for 40 mins <a target="_blank" href="https://easebuzz.in/quickpay/eekdmnpvjj"><span class="price_btn" >
+                                   Pay
+                                    </span></a>   </div>
                                 </div>
                             </form>
+
+                            <p>A 20 minute consultation will be enough to identify the material facts, process and documents to be collected in your case</p>
                            
 
                         </div>
