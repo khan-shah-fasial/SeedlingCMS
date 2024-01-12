@@ -144,7 +144,6 @@
                             ->where('parent_id', 2)
                             ->where('status', 1)
                             ->orderByDesc('id')
-                            ->limit(5)
                             ->get(['title', 'slug', 'status']);
                     @endphp
                     <div class="flip_card_back">
@@ -178,7 +177,6 @@
                             ->where('parent_id', 3)
                             ->where('status', 1)
                             ->orderByDesc('id')
-                            ->limit(5)
                             ->get(['title', 'slug', 'status']);
                     @endphp
                     <div class="flip_card_back">
@@ -211,7 +209,6 @@
                             ->where('parent_id', 4)
                             ->where('status', 1)
                             ->orderByDesc('id')
-                            ->limit(5)
                             ->get(['title', 'slug', 'status']);
                     @endphp
                     <div class="flip_card_back">
@@ -244,7 +241,6 @@
                             ->where('parent_id', 5)
                             ->where('status', 1)
                             ->orderByDesc('id')
-                            ->limit(5)
                             ->get(['title', 'slug', 'status']);
                     @endphp
                     <div class="flip_card_back">
