@@ -109,7 +109,6 @@
                             ->where('parent_id', 1)
                             ->where('status', 1)
                             ->orderByDesc('id')
-                            ->limit(5)
                             ->get(['title', 'slug', 'status']);
                      @endphp
 

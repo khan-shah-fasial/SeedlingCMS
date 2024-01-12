@@ -118,7 +118,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 <i class="fa fa-long-arrow-right"   aria-hidden="true"></i>
                 </span> 
               </h3>
-              <a class="button" href="{{ url(route('online-payment')) }}" >Online Payment</a>
+              <a class="button" href="{{ url(route('quick-consultation')) }}" >Pay Now</a>
             </div>
           </div>
           <hr />
@@ -262,20 +262,18 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
     <!-- -------------------- links End --------------- -->
 
     <!-- -------------------- Footer Start --------------- -->
-    <footer>
+    <footer class="mb-md-0 mb-5" >
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <ul
               class="footer_links mb-0"
-              
-              
             >
-              <li><a href="#">© 2023 SEEDLING</a></li>
+              <li><a>© 2023 SEEDLING</a></li>
               <li><a href="{{ url(route('terms')) }}"> TERMS OF USE </a></li>
               <li><a href="{{ url(route('privacy-policy')) }}">PRIVACY</a></li>
-              <li><a href="#">SITE MAP</a></li>
-              <li><a href="#">CIN Number: U69100DL2022PTC403662</a></li>
+              <li><a >SITE MAP</a></li>
+              <li><a >CIN Number: U69100DL2022PTC403662</a></li>
               
             </ul>
           </div>
@@ -283,6 +281,25 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
       </div>
     </footer>
     <!-- -------------------- Footer Ends --------------- -->
+
+    <!-- fix footer -->
+    <section class="fix_footer" >
+        <a href="mailto:admin@seedlingassociates.com">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="tel:7428899959">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+      
+        <div>
+          <button>Book a consultation</button>
+        </div>
+        
+    </section>
+    <!-- fix footer -->
 
 
 

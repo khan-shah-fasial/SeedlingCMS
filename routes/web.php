@@ -49,7 +49,7 @@ Route::get('/publication-data', [IndexController::class, 'publication_data'])->n
 Route::any('/team-members', [IndexController::class, 'team_members'])->name('team');
 Route::get('/team-members/{slug}', [IndexController::class, 'team_detail'])->name('team.detail');
 Route::get('/contact-us', [IndexController::class, 'contact_us'])->name('contact');
-Route::get('/online-payment', [IndexController::class, 'online_payment'])->name('online-payment');
+Route::get('/quick-consultation', [IndexController::class, 'quick_consultation'])->name('quick-consultation');
 Route::any('/about-us', [IndexController::class, 'about_us'])->name('about');
 Route::get('/faq', [IndexController::class, 'faq'])->name('faq');
 Route::get('/career', [IndexController::class, 'career'])->name('career');

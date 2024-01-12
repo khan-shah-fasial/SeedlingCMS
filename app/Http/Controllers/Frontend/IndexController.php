@@ -156,7 +156,7 @@ class IndexController extends Controller
     public function contact_us(){
         return view('frontend.pages.contact.index');
     }
-    public function online_payment(){
+    public function quick_consultation(){
         return view('frontend.pages.payment.index');
     }
 

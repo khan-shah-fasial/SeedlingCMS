@@ -148,20 +148,23 @@
     border-top: 1px solid #d3d3d394;
 }
 
-.fix_footer a {
-    color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-decoration: none;
-    font-size: 14px;
-    width: 50px;
-}
-.fix_footer button {
-    width: 120px;
-}
 .fix_footer a i {
     font-size: 20px;
+    color: #333;
+}
+.fix_footer button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    background: #e13333;
+    transition: all 0.5s;
+}
+.fix_footer .social_icon {
+    gap: 38px;
 }
 
 @media (min-width: 992px) {

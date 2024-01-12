@@ -1185,6 +1185,9 @@ section.banner_slider .item a {
     transition: all 0.5s;
     text-decoration: none;
 }
+.contact .contact_icon_container .contact_address {
+    color: white;
+}
 
 .contact .contact_icon_container .contact_icon_box {
     width: 94px;
@@ -3198,6 +3201,11 @@ body .backhomebutton {
 .pagination_link {
     text-decoration: none;
     color: inherit;
+}
+.pagination_link .pagination_title {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    text-align: start !important;
 }
 
 .seo_title {

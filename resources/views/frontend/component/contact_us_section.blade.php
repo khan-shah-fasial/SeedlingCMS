@@ -11,7 +11,7 @@
                 <h2 class="mb-md-3 mb-0 "  >
                     an affordable rate of just
                     <br>
-                    <span style="color: #E13333">INR 899/-</span>
+                    <span style="color: #E13333">INR 999/-</span>
                 </h2>
                 <h4 class="connect_heading">
                     and embark on the journey to swiftly resolve <br> your legal matters
@@ -20,18 +20,19 @@
                 <div class="contact_icon_box">
                     <div class="row">
                         <div class="col-md-6 mt-3">
-                            <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-3 text-center"
+                            <a href="https://maps.app.goo.gl/wnQp84iVx9nZoDcS7" class="text-decoration-none" >
+                              <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-3 text-center"
                                  >
                                 <img src="assets/frontend/images/loaction.png" class="contact_icon"
                                     alt="Contact Icon" />
                                 <p class="contact_title">Delhi</p>
                                 <p class="contact_address">
-
                                     Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla
                                     Phase III New Delhi India.
-
                                 </p>
-                            </div>
+                              </div>
+                            </a>
+                          
                         </div>
                         <div class="col-md-6 mt-3">
                             <div class="contact_icon_container d-flex align-items-center justify-content-center flex-column gap-3 text-center"

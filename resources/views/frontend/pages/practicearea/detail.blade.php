@@ -505,7 +505,7 @@
                                   <div class="d-flex align-items-md-center flex-md-row flex-column gap-2">
                                     
                                       <img src="assets/frontend/images/left_p.png" class="arrow_img" alt="">
-                                      <span>
+                                      <span class="pagination_title" >
                                         {{ $navPractice['0']['title'] }}
                                       </span>
                                     
@@ -516,7 +516,7 @@
                                   <div
                                    
                                       class="d-flex align-items-md-center align-items-end flex-md-row  flex-column-reverse gap-2">
-                                      <span>
+                                      <span  class="pagination_title" >
                                         {{ $navPractice['1']['title'] }}
                                       </span>
                                       <img src="assets/frontend/images/right_p.png" class="arrow_img" alt="">
