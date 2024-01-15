@@ -187,7 +187,7 @@
                                 @if ($session_data['country'] == 'IN')
                                     (Price Start at Rs {{ $detail->indian_price }} /-)
                                 @else
-                                    (Price Start at Rs {{ $detail->indian_price }} /-)
+                                    (Price Start at $ {{ $detail->foreign_price }} /-)
                                 @endif
                             </span>
                         </h1>
