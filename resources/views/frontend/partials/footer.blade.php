@@ -286,14 +286,21 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
 
     <!-- fix footer -->
     <section class="fix_footer" >
-        <a href="mailto:admin@seedlingassociates.com">
+        <a href="mailto:admin@seedlingassociates.com" class="d-flex align-items-center flex-column" >
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <span>Email</span>
         </a>
-        <a href="">
+        <a href="https://wa.me/7428899959?text=I'm%20interested%20in%20your%20car%20for%20sale" class="d-flex align-items-center flex-column" >
           <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          <span>
+            Whatsapp
+          </span>
         </a>
-        <a href="tel:7428899959">
+        <a href="tel:7428899959" class="d-flex align-items-center flex-column" >
           <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call
+          </span>
         </a>
       
         <div>

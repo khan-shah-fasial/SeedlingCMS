@@ -148,6 +148,11 @@
     border-top: 1px solid #d3d3d394;
 }
 
+.fix_footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
 .fix_footer a i {
     font-size: 20px;
     color: #333;
