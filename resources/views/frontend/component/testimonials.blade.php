@@ -18,7 +18,7 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
          </div>
          <div class="row">
             <div class="col-md-12">
-               <div class="owl-carousel owl-theme">
+               <div class="owl-carousel owl-theme" id="testimonial" >
 
                   @foreach ($testimonial as $row)
                      

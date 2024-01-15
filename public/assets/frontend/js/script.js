@@ -78,6 +78,31 @@ $(document).ready(function () {
         ], // Add this line
     });
 });
+$(document).ready(function () {
+    var owl = $("#service_cards");
+    owl.owlCarousel({
+        margin: 15,
+        nav: true,
+        loop: true,
+        // autoplay: true,
+        autoplayTimeout: 5000,
+        responsive: {
+            0: {
+                items: 1.2,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 4,
+            },
+        },
+        // navText: [
+        //     '<i class="fa fa-angle-left"></i>',
+        //     '<i class="fa fa-angle-right"></i>',
+        // ], // Add this line
+    });
+});
 
 // Counter | About
 // var a = 0;
@@ -156,7 +181,7 @@ function startCounter() {
 
 // Slider | Testimonial
 $(document).ready(function () {
-    var owl = $(".owl-carousel");
+    var owl = $("#testimonial");
     owl.owlCarousel({
         margin: 15,
         nav: true,

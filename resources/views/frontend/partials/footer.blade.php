@@ -122,7 +122,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             </div>
           </div>
           <hr />
-          <div class="col-md-4 mt-md-5 mt-3">
+          <!-- <div class="col-md-4 mt-md-5 mt-3">
             <div>
               <img src="/assets/frontend/images/logo.png" alt="" />
               <p class="mt-3">
@@ -132,7 +132,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                 its own merits.
               </p>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-4 mt-md-5 mt-3">
             <a href="https://www.google.com/maps/place/%23TheHub/@28.5495094,77.2674398,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce362dba5bca1:0x191c6dd29ebbec30!8m2!3d28.5495094!4d77.2674398!16s%2Fg%2F11h18n3l7n?entry=ttu" target="_blank" >
               <h3 class="heading">New Delhi</h3>
@@ -166,7 +166,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
     <!-- -------------------- address End --------------- -->
     <!-- -------------------- links Start --------------- -->
 
-    <section class="links">
+  {{--  <section class="links">
       <div class="container">
         <div class="row">
           <div
@@ -258,6 +258,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
         </div>
       </div>
     </section>
+
+    --}} 
 
     <!-- -------------------- links End --------------- -->
 

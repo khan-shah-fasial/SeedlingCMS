@@ -94,8 +94,10 @@
                 <h2 class="main_heading text-center mb-3" >We are Professionals to your Business</h2>
             </div>
 
-            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
-                <div class="flip_card">
+
+            <div class="owl-carousel owl-theme" id="service_cards" >
+    <div class="item">
+    <div class="flip_card">
                     <div class="flip_card_front">
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/Start_a_Business.png') }}" alt="">
@@ -128,10 +130,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
-                <div class="flip_card">
+    </div>
+    <div class="item">
+    <div class="flip_card">
                     <div class="flip_card_front">
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/License_Registration.png') }}" alt="">
@@ -161,10 +163,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
-                <div class="flip_card">
+    </div>
+
+    <div class="item">
+    <div class="flip_card">
                     <div class="flip_card_front">
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/taxation.png') }}" alt="">
@@ -194,9 +196,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
-                <div class="flip_card">
+    </div>
+
+    <div class="item">
+    <div class="flip_card">
                     <div class="flip_card_front">
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/IPR_Gaming_Services.png') }}" alt="">
@@ -226,9 +229,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
-                <div class="flip_card">
+    </div>
+    <div class="item">
+    <div class="flip_card">
                     <div class="flip_card_front">
                         <div class="inner">
                             <img src="{{ asset('/assets/frontend/images/NGO.png') }}" alt="">
@@ -258,7 +261,31 @@
                         </div>
                     </div>
                 </div>
+    </div>
+  
+</div>
+
+
+
+
+
+            <!-- <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
+              
             </div>
+
+            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
+               
+            </div>
+            
+            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
+               
+            </div>
+            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
+               
+            </div>
+            <div class="col-xl-3  col-lg-4 col-md-6 mt-4">
+               
+            </div> -->
             <!-- <div class="col-md-12">
                 <div class="text-center pt-5 ">
                     <a class="text-decoration-none link" href="#">View All Services</a>
