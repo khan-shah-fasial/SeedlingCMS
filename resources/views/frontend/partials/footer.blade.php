@@ -318,6 +318,14 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
 
  <!--Footer Ends-->
 
+
+ <a href="https://t.me/+917428899959"  target="_blank" class="telegram" >
+ <i class="fa fa-telegram" aria-hidden="true"></i>
+ </a>
+
+
+
+
  <!-- whatsapp -->
  <div class="">
                 <div class="whatsapp_chat_support wcs_fixed_right" id="example_1">

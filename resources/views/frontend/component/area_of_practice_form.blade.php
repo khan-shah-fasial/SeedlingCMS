@@ -1,9 +1,9 @@
 <form id="area_practice_form" action="{{url(route('contact.create'))}}" method="post"
       enctype="multipart/form-data">
     @csrf
-    <h5 class="service_last_form_heading text-center">
-      Get Consult Today 
-    </h5>
+    <h6 class="service_last_form_heading text-center">
+     Get Consultation Today
+    </h6>
     <input type="hidden" name="section" value="Area of Practice Form"   />
     <input type="hidden" name="url" value="{{ url()->current() }}"   />
     <div class="mb-3" >

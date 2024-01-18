@@ -41,8 +41,11 @@
                                     alt="Contact Icon" />
                                 <p class="contact_title mb-4">24/7 Support</p>
                                 <p class="contact_address">
-                                    +91 7428899959 <br />
-                                    admin@seedlingassociates.com
+                                    <a href="tel:7428899959">+91 7428899959</a>
+                                     <br />
+                                     <a href="mailto:admin@seedlingassociates.com">
+                                     admin@seedlingassociates.com
+                                     </a>
                                 </p>
                             </div>
                         </div>
