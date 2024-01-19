@@ -61,13 +61,14 @@ Route::get('/refund-policy', [IndexController::class, 'refund_policy'])->name('r
 
 Route::get('/404', [IndexController::class, 'not_found'])->name('error_page');
 Route::get('/thank-you', [IndexController::class, 'thank_you'])->name('thank_you');
+Route::get('/sitemap', [IndexController::class, 'sitemap'])->name('sitemap');
 Route::get('/cookie-policy', [IndexController::class, 'cookie_policy'])->name('cookie-policy');
 Route::post('/contact-save', [IndexController::class, 'contact_save'])->name('contact.create');
 Route::post('/comment-save', [IndexController::class, 'comment_save'])->name('comment.create');
 
 Route::get('/search', [IndexController::class, 'search'])->name('search');
 
-Route::get('/sitemap', [SitemapController::class, 'newSitemap'])->name('sitemap');
+Route::get('/generate-sitemap', [SitemapController::class, 'newSitemap'])->name('sitemap');
 // Home END
 
 

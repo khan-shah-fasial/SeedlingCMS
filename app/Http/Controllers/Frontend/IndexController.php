@@ -143,6 +143,10 @@ class IndexController extends Controller
 
         return view('frontend.pages.thankyou.index');
     }
+    public function sitemap(){
+
+        return view('frontend.pages.sitemap.index');
+    }
 
     public function cookie_policy(){
 
