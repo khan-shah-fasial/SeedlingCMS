@@ -288,3 +288,40 @@ $(document).ready(function () {
         $(".menu-btn").css("visibility", "visible");
     });
 });
+
+// form
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     var stickyBox = document.getElementById("stickyBox");
+
+//     window.addEventListener("scroll", function () {
+//         var scrollPosition = window.scrollY;
+
+//         if (scrollPosition >= 210 && scrollPosition < 1000) {
+//             stickyBox.style.opacity = 0;
+//             stickyBox.style.transform = "scale(0)";
+//         } else if (scrollPosition >= 500) {
+//             stickyBox.style.opacity = 1;
+//             stickyBox.style.transform = "scale(1)";
+//         } else {
+//             stickyBox.style.opacity = 1;
+//             stickyBox.style.transform = "scale(1)";
+//         }
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var stickyBox = document.getElementById("stickyBox");
+
+    window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 210 && scrollPosition < 1000) {
+            stickyBox.classList.add("hidden");
+        } else if (scrollPosition >= 500) {
+            stickyBox.classList.remove("hidden");
+        } else {
+            stickyBox.classList.remove("hidden");
+        }
+    });
+});

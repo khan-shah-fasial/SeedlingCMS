@@ -550,7 +550,7 @@
                     <!-- -------------service last  Assistance  End -------------- -->
                 </div>
                 <div class="col-lg-3">
-                    <div class="service_last_form_container d-flex align-items-center justify-content-center mt-md-0 mt-3 position_sticky"
+                    <div id="stickyBox" class="service_last_form_container d-flex align-items-center justify-content-center mt-md-0 mt-3 position_sticky"
                         >
                         @include('frontend.component.area_of_practice_form')
                     </div>

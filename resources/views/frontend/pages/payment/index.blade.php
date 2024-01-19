@@ -19,12 +19,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div>
-                        <h1 class="breadcrumb_heading text-center">Online Payment</h1>
+                        <h1 class="breadcrumb_heading text-center">Quick Consultation</h1>
                         <nav aria-label="breadcrumb" class="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a href="{{ url(route('index')) }}">Home</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
-                                   Online Payment
+                                Quick Consultation
                                 </li>
                             </ol>
                         </nav>

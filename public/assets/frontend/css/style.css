@@ -1684,6 +1684,7 @@ footer .footer_desc {
 
 .service_last {
     padding: 45px 0;
+    transition: all 0.5s;
 }
 .service_last p {
     font-size: 16px !important;
@@ -2082,9 +2083,24 @@ footer .footer_desc {
     color: #7a7a7a;
 }
 
+/* .service_last .position_sticky {
+    position: sticky;
+    top: 108px;
+    opacity: 1;
+    transform: scale(1);
+} */
+
 .service_last .position_sticky {
     position: sticky;
     top: 108px;
+    opacity: 1;
+    /* transform: scale(1); */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.service_last .position_sticky.hidden {
+    opacity: 0;
+    /* transform: scale(0); */
 }
 
 .service_last h1 span.price_heading {
@@ -3321,18 +3337,16 @@ body .backhomebutton {
     border-radius: 50%;
     color: white;
     position: fixed;
-    bottom: 90px;
+    bottom: 15px;
     display: flex;
-    left: 25px;
+    right: 15px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
 }
-.telegram a {
-    text-decoration: none;
-}
-.telegram a:hover {
+
+.telegram:hover {
     color: white !important;
 }
 .telegram i {

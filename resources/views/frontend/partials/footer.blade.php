@@ -166,7 +166,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
     <!-- -------------------- address End --------------- -->
     <!-- -------------------- links Start --------------- -->
 
-  {{--  <section class="links">
+  <section class="links">
       <div class="container">
         <div class="row">
           <div
@@ -259,7 +259,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
       </div>
     </section>
 
-    --}} 
+
 
     <!-- -------------------- links End --------------- -->
 
@@ -310,22 +310,10 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
     </section>
     <!-- fix footer -->
 
-
-
-
-
-
-
  <!--Footer Ends-->
-
-
  <a href="https://t.me/+917428899959"  target="_blank" class="telegram" >
  <i class="fa fa-telegram" aria-hidden="true"></i>
  </a>
-
-
-
-
  <!-- whatsapp -->
  <div class="">
                 <div class="whatsapp_chat_support wcs_fixed_right" id="example_1">
