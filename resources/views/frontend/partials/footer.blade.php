@@ -170,9 +170,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
       <div class="container">
         <div class="row">
           <div
-            class="col-md-3 col-6 mb-md-0 mb-3 first_links"
-            
-            
+            class="col-md-2  mb-md-0 mb-3 first_links"
           >
             <ul class="links_url">
               @php
@@ -189,14 +187,10 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                     </a>
                 </li>
             @endforeach
-              
-              
             </ul>
           </div>
           <div
-            class="col-md-3 col-6 mb-md-0 mb-3 first_links"
-            
-            
+            class="col-md-2  mb-md-0 mb-3 first_links"
           >
             <ul class="links_url">
               @php
@@ -216,9 +210,7 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             </ul>
           </div>
           <div
-            class="col-md-3 col-6 first_links"
-            
-            
+            class="col-md-2 first_links"
           >
             <ul class="links_url">
               @php
@@ -237,8 +229,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
               @endforeach
             </ul>
           </div>
-          <div class="col-md-3 col-6"  >
-            <ul class="links_url">
+          <div class="col-md-2 first_links"  >
+            <ul class="links_url ">
               @php
                   $subcate = DB::table('practice_areas')
                       ->where('parent_id', 4)
@@ -255,6 +247,27 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
               @endforeach
             </ul>
           </div>
+          <div class="col-md-2"  >
+            <ul class="links_url">
+              @php
+                  $subcate = DB::table('practice_areas')
+                      ->where('parent_id', 5)
+                      ->where('status', 1)
+                      ->get(['title', 'slug', 'status']);
+              @endphp
+              @foreach ($subcate as $iteams)
+                  <li>
+                      <a
+                          href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug])) }}">
+                          {{ $iteams->title }}
+                      </a>
+                  </li>
+              @endforeach
+            </ul>
+          </div>
+
+
+
         </div>
       </div>
     </section>
@@ -302,18 +315,28 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             Call
           </span>
         </a>
+        <a href="https://t.me/+917428899959" class="d-flex align-items-center flex-column" >
+          <i class="fa fa-telegram" aria-hidden="true"></i>
+          <span>
+            Telegram
+          </span>
+        </a>
       
-        <div>
-          <button>Book a consultation</button>
-        </div>
+       
         
     </section>
+
+        <div>
+          <button type="button" class="fixed_btn" data-bs-toggle="modal" data-bs-target="#ask-modal" >Book a consultation</button>
+        </div>
+
+
     <!-- fix footer -->
 
  <!--Footer Ends-->
- <a href="https://t.me/+917428899959"  target="_blank" class="telegram" >
+ <!-- <a href="https://t.me/+917428899959"  target="_blank" class="telegram" >
  <i class="fa fa-telegram" aria-hidden="true"></i>
- </a>
+ </a> -->
  <!-- whatsapp -->
  <div class="">
                 <div class="whatsapp_chat_support wcs_fixed_right" id="example_1">
@@ -321,7 +344,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                     <div class="wcs_button wcs_button_circle">
                         <div class="whatsapp_blink">
                             <span href="" class="btn-whatsapp-pulse">
-                                <span class="fa fa-whatsapp"></span>
+                                <!-- <span class="fa fa-whatsapp"></span> -->
+                                <i class="fa fa-commenting" aria-hidden="true"></i>
                             </span>
                         </div>
                     </div>
@@ -340,13 +364,25 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                         </div>
                         <div class="wcs_popup_person_container">
                             <div class="wcs_popup_person" data-number="+{{ get_settings('whatsapp') }}">
-                                <div class="wcs_popup_person_img"><img src="/assets/frontend/images/wh.png"
-                                        alt="" /></div>
+                                <div class="wcs_popup_person_img whatsapp"><span class="fa fa-whatsapp"></span></div>
                                 <div class="wcs_popup_person_content">
-                                    <div class="wcs_popup_person_name">Seedling  Associates</div>
-                                    <div class="wcs_popup_person_description">Seedling  Associates</div>
+                                    <div class="wcs_popup_person_name">Whatsapp</div>
+                                    <div class="wcs_popup_person_description">Chat Now</div>
                                     <div class="wcs_popup_person_status">I'm Online</div>
                                 </div>
+                            </div>
+                            <div  class="wcs_popup_person teli">
+                              <a href="{{ get_settings('instagram') }}">
+
+                                <div class="wcs_popup_person_img telegram_icon"><span class="fa fa-telegram"></span></div>
+                              </a>
+                              <a href="{{ get_settings('instagram') }}" class="text-decoration-none" >
+                              <div class="wcs_popup_person_content tele">
+                                    <div class="wcs_popup_person_name">Telegram</div>
+                                    <div class="wcs_popup_person_description">Chat Now</div>
+                                    <div class="wcs_popup_person_status">I'm Online</div>
+                                </div>
+                              </a>
                             </div>
                         </div>
                     </div>

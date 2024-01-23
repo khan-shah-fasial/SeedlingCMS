@@ -256,7 +256,7 @@
                                         <input type="text" class="form-control" name="whatsapp" value="{{ get_settings('whatsapp') }}" >
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label>Instagram</label>
+                                        <label>Telegram</label>
                                         <input type="text" class="form-control" name="instagram" value="{{ get_settings('instagram') }}" >
                                     </div>
                                     <div class="form-group mb-3">

@@ -1427,6 +1427,9 @@ section.banner_slider .item a {
     padding: 45px 0 0 0;
     background: #000;
 }
+.links .col-md-2 {
+    width: 20%;
+}
 
 .links .links_url {
     list-style: none;
@@ -2945,7 +2948,7 @@ body .backhomebutton {
 }
 
 .whatsapp_blink .btn-whatsapp-pulse {
-    background: #25d366;
+    background: #e13333;
     color: white;
     font-size: 40px;
     display: flex;
@@ -2960,6 +2963,9 @@ body .backhomebutton {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
+}
+.wcs_popup .wcs_popup_header {
+    background: #e13333 !important;
 }
 
 @keyframes pulse {
@@ -2984,12 +2990,26 @@ body .backhomebutton {
 }
 
 .wcs_popup_person_img {
-    border: 2px solid #26c281 !important;
     border-radius: 50% !important;
     width: 65px !important;
     height: 65px !important;
+    text-align: center;
+}
+.wcs_popup_person_img span {
+    font-size: 40px !important;
+    color: white;
+}
+.wcs_popup_person_img.whatsapp {
+    background: #26c281;
+}
+.wcs_popup_person_img.telegram_icon {
+    background: #0088cc;
+}
+.wcs_popup_person_content.tele .wcs_popup_person_status {
+    background: #0088cc !important;
 }
 
+/* 
 .wcs_popup_person_img img {
     border: none !important;
     border-radius: 0% !important;
@@ -2997,7 +3017,7 @@ body .backhomebutton {
     margin-left: auto !important;
     width: 40px !important;
     height: 40px !important;
-}
+} */
 
 .select_drp_image {
     background-image: url(/assets/frontend/images/down.png) !important;

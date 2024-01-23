@@ -157,7 +157,7 @@
     font-size: 20px;
     color: #333;
 }
-.fix_footer button {
+.fixed_btn {
     padding: 10px 15px;
     border: none;
     border-radius: 20px 0;
@@ -167,6 +167,9 @@
     line-height: 20px;
     background: #e13333;
     transition: all 0.5s;
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
 }
 .fix_footer .social_icon {
     gap: 38px;
@@ -198,6 +201,14 @@
 }
 
 @media (max-width: 767px) {
+    .right_arrow {
+        display: none;
+    }
+
+    .links .col-md-2 {
+        width: 50%;
+    }
+
     .telegram {
         display: none;
     }
@@ -363,7 +374,7 @@
     }
 
     .service_last .color_heading {
-        font-size: 28px;
+        font-size: 24px !important;
     }
 
     .service_last_benefit .benefit_box {

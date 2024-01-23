@@ -20,8 +20,8 @@
                 <div class="container_404 d-flex align-items-center justify-content-center flex-column">
                     <h2>404</h2>
                     <h4>Something’s missing?..</h4>
-                    <p>This page is missing or you assembled the link incorrectly.</p>
-                    <a href="/" >Go to Website</a>
+                    <p class="text-center" >This page is missing or you assembled the link incorrectly.</p>
+                    <a href="/" >Go to Homepage</a>
                 </div>
             </div>
         </div>
