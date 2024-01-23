@@ -3399,3 +3399,7 @@ body .backhomebutton {
     color: black !important;
     text-decoration: none;
 }
+
+.fixed_btn {
+    display: none;
+}

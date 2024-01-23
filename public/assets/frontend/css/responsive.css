@@ -170,6 +170,7 @@
     position: fixed;
     bottom: 70px;
     right: 15px;
+    z-index: 99;
 }
 .fix_footer .social_icon {
     gap: 38px;
@@ -201,6 +202,10 @@
 }
 
 @media (max-width: 767px) {
+    .fixed_btn {
+        display: block;
+    }
+
     .right_arrow {
         display: none;
     }
@@ -763,6 +768,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .fixed_btn {
+        display: block;
+    }
+
     .home_service .col-xl-3 {
         width: 50%;
     }
