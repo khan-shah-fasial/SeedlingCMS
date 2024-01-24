@@ -371,9 +371,8 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                                     <div class="wcs_popup_person_status">I'm Online</div>
                                 </div>
                             </div>
-                            <div  class="wcs_popup_person teli">
+                            <div  class=" teli">
                               <a href="{{ get_settings('instagram') }}">
-
                                 <div class="wcs_popup_person_img telegram_icon"><span class="fa fa-telegram"></span></div>
                               </a>
                               <a href="{{ get_settings('instagram') }}" class="text-decoration-none" >
