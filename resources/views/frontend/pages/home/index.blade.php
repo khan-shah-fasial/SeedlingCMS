@@ -553,7 +553,7 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
 
 <section class="seo">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <img src="{{ asset('/assets/frontend/images/seo.jpg') }}" alt="">
                 <!-- <h2>Why Choose Seedling Associate for Company and Business Certification?</h2>
