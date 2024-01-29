@@ -187,7 +187,6 @@
                                 @if ($session_data['country'] == 'IN')
                                     (Price Start at Rs {{ $detail->indian_price }} /-)
                                 @elseif($session_data['country'] == 'none')
-                                    @php var_dump($session_data['country']); @endphp
                                     (Price Start at Rs {{ $detail->indian_price }} /-)
                                 @else
                                     (Price Start at $ {{ $detail->foreign_price }} /-)
