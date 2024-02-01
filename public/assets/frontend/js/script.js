@@ -91,10 +91,10 @@ $(document).ready(function () {
                 items: 1.2,
             },
             600: {
-                items: 2,
+                items: 2.6,
             },
             1000: {
-                items: 4,
+                items: 5,
             },
         },
         // navText: [
