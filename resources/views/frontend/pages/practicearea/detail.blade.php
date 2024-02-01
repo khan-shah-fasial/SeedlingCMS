@@ -186,6 +186,8 @@
                             <span class="price_heading mb-4" >
                                 @if ($session_data['country'] == 'IN')
                                     (Price Start at Rs {{ $detail->indian_price }} /-)
+                                @elseif($session_data['country'] == 'none')
+                                    (Price Start at Rs {{ $detail->indian_price }} /-)
                                 @else
                                     (Price Start at $ {{ $detail->foreign_price }} /-)
                                 @endif

@@ -1,9 +1,8 @@
 @extends('frontend.layouts.app')
 
-@section('page.title', 'Seedling Associates: Top Lawyers &amp; Law Firms in Delhi, India')
+@section('page.title', 'Seedling Associate | Business Registration License Certification Service India')
 
-@section('page.description', 'Seedling & Associates is one of the best law firms in Delhi, India. We provide legal
-assistance for startups, FDI, Property law, IP, and more')
+@section('page.description', 'We do Business Registration, License, Certification Service in India. Seedling offers GST, Start Up, Import Export & Food License Registration. Get Expert guidance on Procedure, pricing, fees, Process, Benefits and Required Documents.')
 
 @section('page.type', 'website')
 
