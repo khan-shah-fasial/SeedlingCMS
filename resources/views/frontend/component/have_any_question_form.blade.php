@@ -7,9 +7,9 @@ $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
     <p class="contact_form_logo fs-6 fw-bolder mb-md-2 mb-1" >
        HAVE ANY QUESTION ?
     </p>
-    <h5 class="contact_form_heading  fw-bolder mb-md-2 mb-2" >
+    <p class="contact_form_heading  fw-bolder mb-md-2 mb-2" >
        Drop Us a Line
-    </h5>
+    </p>
 
     <input type="hidden" name="section" value="Have any Question Form"   />
     <input type="hidden" name="url" value="{{ url()->current() }}"   />
