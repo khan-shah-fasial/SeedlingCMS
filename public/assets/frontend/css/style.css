@@ -3247,6 +3247,9 @@ body .backhomebutton {
 
 .connect_heading {
     font-size: 24px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .pagination_link {

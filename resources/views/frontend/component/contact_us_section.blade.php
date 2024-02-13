@@ -13,9 +13,9 @@
                     <br>
                     <span style="color: #E13333">INR 999/-</span>
                 </h2>
-                <h4 class="connect_heading">
+                <p class="connect_heading">
                     and embark on the journey to swiftly resolve <br> your legal matters
-                </h4>
+                </p>
 
                 <div class="contact_icon_box">
                     <div class="row">
