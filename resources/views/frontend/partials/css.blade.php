@@ -3,7 +3,7 @@
 <!------------------- seedling ---------------->
 <link rel="shortcut icon" href="{{ asset('/assets/frontend/images/favicon.png') }}">
 <!------------------- seedling ---------------->
-
+<link rel="stylesheet" href="/assets/frontend/css/font-style.css" />
 <link rel="stylesheet" href="/assets/frontend/css/style.css" />
 <link rel="stylesheet" href="/assets/frontend/css/responsive.css" />
 <!-- <link rel="stylesheet" href="/assets/frontend/css/aos.css" /> -->
