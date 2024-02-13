@@ -10,8 +10,12 @@
 <link rel="stylesheet" href="/assets/frontend/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/assets/frontend/css/owl.carousel.min.css" />
 <link rel="stylesheet" href="/assets/frontend/css/owl.theme.default.min.css" />
-<link rel="stylesheet" href="/assets/frontend/css/whatsapp-chat-support.css" />
-<link rel="preload" href="/assets/frontend/css/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="/assets/frontend/css/whatsapp-chat-support.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/assets/frontend/css/whatsapp-chat-support.css">
+    </noscript>
+    
+    <link rel="preload" href="/assets/frontend/css/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="/assets/frontend/css/toastr.min.css">
     </noscript>
