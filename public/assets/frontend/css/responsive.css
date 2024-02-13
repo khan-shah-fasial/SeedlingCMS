@@ -148,6 +148,11 @@
     border-top: 1px solid #d3d3d394;
 }
 
+.home_service {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 .fix_footer a {
     color: #333;
     text-decoration: none;
