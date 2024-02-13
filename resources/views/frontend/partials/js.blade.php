@@ -6,8 +6,8 @@
 <script src="/assets/frontend/js/combined.js"></script>
 <!---- seedling banner --------->
 
-<!--aos js-->
-<script src="/assets/frontend/js/aos.js"></script>
+<!--aos js
+<script src="/assets/frontend/js/aos.js"></script>-->
 
 <!--owl carousel js-->
 <script src="/assets/frontend/js/owl.carousel.js"></script>

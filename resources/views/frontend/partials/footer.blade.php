@@ -284,11 +284,11 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
             <ul
               class="footer_links mb-0"
             >
-              <li><a>© 2023 SEEDLING</a></li>
+              <li><span>© 2023 SEEDLING</span></li>
               <li><a href="{{ url(route('terms')) }}"> TERMS OF USE </a></li>
               <li><a href="{{ url(route('privacy-policy')) }}">PRIVACY</a></li>
-              <li><a >SITE MAP</a></li>
-              <li><a >CIN Number: U69100DL2022PTC403662</a></li>
+              <li><span >SITE MAP</span></li>
+              <li><span >CIN Number: U69100DL2022PTC403662</span></li>
               
             </ul>
           </div>
