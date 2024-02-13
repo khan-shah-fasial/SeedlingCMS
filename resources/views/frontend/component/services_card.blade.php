@@ -1,9 +1,9 @@
 <!-------============================== Services card ===================-------------------->
 
-<section class="home_service">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 about mb-md-5">
+
+
+<div class="container">
+<div class="col-md-12 about mb-md-5">
             <div class="row" id="counter">
             <div class="col-lg-3 col-6 first_counter">
                 <div class="about_counter_container">
@@ -88,6 +88,11 @@
             </div>
         </div>
             </div>
+</div>
+<section class="home_service">
+    <div class="container">
+        <div class="row">
+            
 
             <div class="col-md-12">
                 <h4 class="color_heading text-center mt-5" >Our Services</h4>
