@@ -1,9 +1,3 @@
-//AOS.init();
-
-AOS.init({
-    duration: 1200,
-});
-
 $(document).ready(function () {
     var owl = $("#banner_slider_carousel");
     owl.owlCarousel({

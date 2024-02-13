@@ -12,7 +12,7 @@ $testimonial = DB::table('testimonials')->orderBy('id', 'desc')->get();
       <div class="container">
          <div class="row">
             <div class="col-md-12">
-               <h5 class="color_heading text-center" >OUR TESTIMONIALS</h5>
+               <p class="color_heading text-center" >OUR TESTIMONIALS</p>
                <h2 class="main_heading text-center mb-3" >What our client says about us</h2>
             </div>
          </div>
