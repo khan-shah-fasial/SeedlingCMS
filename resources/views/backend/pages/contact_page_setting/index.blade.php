@@ -120,7 +120,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group mb-3">
                                     <label>Form Heading</label>
-                                    <input type="text" class="form-control" name="f_title" value="{{ get_settings('f_title') }}">
+                                    <input type="text" class="form-control" name="f_title" value="{{ get_contactpage('f_title') }}">
                                 </div>
                             </div>
                             
@@ -134,7 +134,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group mb-3">
                                     <label>Payment Link For 20 Min</label>
-                                    <input type="url" class="form-control" name="f_20_url" value="{{ get_settings('f_20_url') }}">
+                                    <input type="url" class="form-control" name="f_20_url" value="{{ get_contactpage('f_20_url') }}">
                                 </div>
                             </div>
 
@@ -148,7 +148,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group mb-3">
                                     <label>Payment Link For 40 Min</label>
-                                    <input type="url" class="form-control" name="f_40_url" value="{{ get_settings('f_40_url') }}">
+                                    <input type="url" class="form-control" name="f_40_url" value="{{ get_contactpage('f_40_url') }}">
                                 </div>
                             </div>
 
