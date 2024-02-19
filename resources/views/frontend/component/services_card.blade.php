@@ -96,7 +96,7 @@
 
             <div class="col-md-12">
                 <h4 class="color_heading text-center mt-5" >Our Services</h4>
-                <h2 class="main_heading text-center mb-3" >We are Professionals for your Business</h2>
+                <h2 class="main_heading text-center mb-3" >{{ get_settings('h_title') }}</h2>
             </div>
 
 

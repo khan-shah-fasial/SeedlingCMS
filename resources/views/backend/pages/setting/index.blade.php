@@ -184,34 +184,46 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="col-md-12">
-                                    <h4 class="header-title">Home Who We Are Section</h4>
+                                    <h4 class="header-title">Home Page Section</h4>
                                     <hr>
                                 </div>
 
                                 <div class="col-sm-12">
                                     <div class="form-group mb-3">
-                                        <label>Title</label>
+                                        <label>Our Services Heading</label>
                                         <input type="text" class="form-control" name="h_title" value="{{ get_settings('h_title') }}">
                                     </div>
-                                </div>  
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-3">
+                                        <label>About Heading</label>
+                                        <input type="text" class="form-control" name="h_vision" value="{{ get_settings('h_vision') }}">
+                                    </div>
+                                </div> 
+                                
                                 <div class="col-sm-12">
                                     <div class="form-group mb-3">
                                         <label>Description</label>
-                                        <textarea class="form-control" name="h_description" rows="3">{{ get_settings('h_description') }}</textarea>
+                                        <textarea class="form-control" name="h_description" rows="4">{{ get_settings('h_description') }}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <div class="form-group mb-3">
+                                            <label>Section Image <span class="red">*</span> <span class="font-size11">(Max file size 80kb - 1125*196)</span></label>
+                                            <input class="form-control" type="file" id="image" name="h_mission">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        @if(get_settings('h_mission')) 
+                                            <img src="{{ asset('storage/' . get_settings('h_mission')) }}" class="img-thumbnail"> 
+                                        @endif
                                     </div>
                                 </div> 
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-3">
-                                        <label>Vision</label>
-                                        <textarea class="form-control" name="h_vision" rows="3">{{ get_settings('h_vision') }}</textarea>
-                                    </div>
-                                </div> 
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-3">
-                                        <label>Mission</label>
-                                        <textarea class="form-control" name="h_mission" rows="3">{{ get_settings('h_mission') }}</textarea>
-                                    </div>
-                                </div>                
+
+
                             </div>
                         </div>
 

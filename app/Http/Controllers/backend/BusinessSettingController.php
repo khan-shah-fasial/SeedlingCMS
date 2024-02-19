@@ -39,7 +39,7 @@ class BusinessSettingController extends Controller
 
         foreach ($requestData as $key => $value) {
             if ($key !== '_token' && $value !== null) {
-                if ($key === 'Banner_1' || $key === 'Banner_2' || $key === 'Banner_3' || $key === 'Banner_4') {
+                if ($key === 'Banner_1' || $key === 'Banner_2' || $key === 'Banner_3' || $key === 'Banner_4' || $key === 'h_mission') {
                     // Handle image update here
                     $type = $key;
                     

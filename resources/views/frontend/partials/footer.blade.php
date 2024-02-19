@@ -363,26 +363,30 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                             <div class="wcs_popup_header_description">Click one of our representatives below</div>
                         </div>
                         <div class="wcs_popup_person_container">
-                            <div class="wcs_popup_person" data-number="+{{ get_settings('whatsapp') }}">
-                                <div class="wcs_popup_person_img whatsapp"><span class="fa fa-whatsapp"></span></div>
-                                <div class="wcs_popup_person_content">
-                                    <div class="wcs_popup_person_name">Whatsapp</div>
-                                    <div class="wcs_popup_person_description">Chat Now</div>
-                                    <div class="wcs_popup_person_status">I'm Online</div>
-                                </div>
-                            </div>
-                            <div  class=" teli">
-                              <a href="{{ get_settings('instagram') }}">
-                                <div class="wcs_popup_person_img telegram_icon"><span class="fa fa-telegram"></span></div>
-                              </a>
-                              <a href="{{ get_settings('instagram') }}" class="text-decoration-none" >
-                              <div class="wcs_popup_person_content tele">
-                                    <div class="wcs_popup_person_name">Telegram</div>
-                                    <div class="wcs_popup_person_description">Chat Now</div>
-                                    <div class="wcs_popup_person_status">I'm Online</div>
-                                </div>
-                              </a>
-                            </div>
+                            @if(!empty(get_settings('whatsapp')))
+                              <div class="wcs_popup_person" data-number="+{{ get_settings('whatsapp') }}">
+                                  <div class="wcs_popup_person_img whatsapp"><span class="fa fa-whatsapp"></span></div>
+                                  <div class="wcs_popup_person_content">
+                                      <div class="wcs_popup_person_name">Whatsapp</div>
+                                      <div class="wcs_popup_person_description">Chat Now</div>
+                                      <div class="wcs_popup_person_status">I'm Online</div>
+                                  </div>
+                              </div>
+                            @endif
+                            @if(!empty(get_settings('instagram')))
+                              <div  class=" teli">
+                                <a href="{{ get_settings('instagram') }}">
+                                  <div class="wcs_popup_person_img telegram_icon"><span class="fa fa-telegram"></span></div>
+                                </a>
+                                <a href="{{ get_settings('instagram') }}" class="text-decoration-none" >
+                                <div class="wcs_popup_person_content tele">
+                                      <div class="wcs_popup_person_name">Telegram</div>
+                                      <div class="wcs_popup_person_description">Chat Now</div>
+                                      <div class="wcs_popup_person_status">I'm Online</div>
+                                  </div>
+                                </a>
+                              </div>
+                            @endif
                         </div>
                     </div>
                 </div>

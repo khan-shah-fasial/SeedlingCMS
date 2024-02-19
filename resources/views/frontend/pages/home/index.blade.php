@@ -113,7 +113,7 @@
 
 
 
-
+{{---
 <!--Hero End-->
 <!--Banner Slider Start-->
 <!-- <section class="banner_slider">
@@ -333,7 +333,7 @@
 
 <!--About End-->
 
-
+---}}
 
 
 
@@ -554,7 +554,7 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <img src="{{ asset('/assets/frontend/images/seo.jpg') }}" alt="">
+                <img src="{{ asset('storage/' . get_settings('h_mission')) }}" alt="">
                 <!-- <h2>Why Choose Seedling Associate for Company and Business Certification?</h2>
                 <p>At Seedling Associate, we understand the significance of certifications in establishing trust and credibility for your business. Here's why we stand out:
 
@@ -569,19 +569,21 @@ $blog = DB::table('blogs')->where('status', 1)->whereJsonContains('blog_category
                
             </div>
             <div class="col-md-6 mt-md-0 mt-5">
-                <h1 class="seo_title mb-4" >Seedling Associate - Your Trusted Partner for Seamless Company and Business Certification Registration in India</h1>
-                <p class=" mb-4" >Seedling Associate is your go-to business ally for seamless registration, licensing, and certification services in India. As a reliable firm, we specialize in simplifying complex processes, ensuring your business is legally compliant and ready for success. Whether it's company registration, license acquisition, certification processes, or filing requirements, we've got you covered.
+                <h1 class="seo_title mb-4" >{{ get_settings('h_vision') }}</h1>
+
+                    {{--<p class=" mb-4" >Seedling Associate is your go-to business ally for seamless registration, licensing, and certification services in India. As a reliable firm, we specialize in simplifying complex processes, ensuring your business is legally compliant and ready for success. Whether it's company registration, license acquisition, certification processes, or filing requirements, we've got you covered.
 
 
-                </p>
-                <p class=" mb-4" >
+                    </p>
+                    <p class=" mb-4" >
 
-                Our expert team navigates the intricacies, offering tailored solutions to meet your unique needs. With Seedling Associate, experience a hassle-free journey to establish, grow, and thrive in the business landscape. Trust us to handle the paperwork while you focus on what matters most – building your business.
-</p>
-                <p>
+                    Our expert team navigates the intricacies, offering tailored solutions to meet your unique needs. With Seedling Associate, experience a hassle-free journey to establish, grow, and thrive in the business landscape. Trust us to handle the paperwork while you focus on what matters most – building your business.
+                    </p>
+                    <p>
 
-                Seedling Associate - Simplifying Company and Business Certification in India Are you a company looking for hassle-free certification registration services in India? Look no further than Seedling Associate, your dedicated partner in navigating the complexities of the certification process. With a commitment to excellence, we ensure a smooth and efficient journey towards obtaining the necessary certifications for your business.
-</p>
+                    Seedling Associate - Simplifying Company and Business Certification in India Are you a company looking for hassle-free certification registration services in India? Look no further than Seedling Associate, your dedicated partner in navigating the complexities of the certification process. With a commitment to excellence, we ensure a smooth and efficient journey towards obtaining the necessary certifications for your business.
+                    </p> --}}
+                <p class=" mb-4" >@php echo nl2br(get_settings('h_description')) @endphp</p>
             </div>
         </div>
     </div>
