@@ -45,7 +45,7 @@
                     <div class="payment_box">
 
 
-                    <h3 class="text-center" >Process a payment for consulting services</h3>
+                    <h3 class="text-center" >{{ get_settings('f_title') }}</h3>
                     
                             @php
                                 $practice_Area = DB::table('practice_areas')->orderBy('id', 'asc')->get();
@@ -58,19 +58,19 @@
                                     <div class="price_container" >
                                          <span class="price" >
                                     ₹{{ get_contactpage('p_20') }}
-                                    </span> for 20 mins <a target="_blank" href="https://easebuzz.in/quickpay/jolsprknwp"><span class="price_btn" >
+                                    </span> for 20 mins <a target="_blank" href="{{ get_settings('f_20_url') }}"><span class="price_btn" >
                                    Pay
                                     </span></a>  </div>
                                     <input type="radio" name="radio" id="two" />
                                     <div class="price_container" > <span class="price" >
                                     ₹{{ get_contactpage('p_40') }}
-                                    </span>  for 40 mins <a target="_blank" href="https://easebuzz.in/quickpay/eekdmnpvjj"><span class="price_btn" >
+                                    </span>  for 40 mins <a target="_blank" href="{{ get_settings('f_40_url') }}"><span class="price_btn" >
                                    Pay
                                     </span></a>   </div>
                                 </div>
                             </form>
 
-                            <p>A 20 minute consultation will be enough to identify the material facts, process and documents to be collected in your case</p>
+                            <p>{{ get_contactpage('f_description') }}</p>
                            
 
                         </div>

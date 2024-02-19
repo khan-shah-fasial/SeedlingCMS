@@ -79,36 +79,10 @@
 
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="col-md-12">
-                                    <h4 class="header-title">Consultation Form</h4>
-                                    <hr>
-                                </div>
-                                
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-3">
-                                        <label>Price For 20 Min</label>
-                                        <input type="text" class="form-control" name="p_20" value="{{ get_contactpage('p_20') }}" >
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-3">
-                                        <label>Price For 40 Min</label>
-                                        <input type="text" class="form-control" name="p_40" value="{{ get_contactpage('p_40') }}" >
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-3">
-                                        <label>Short Description For Form</label>
-                                        <input type="text" class="form-control" name="f_description" value="{{ get_contactpage('f_description') }}" >
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
+
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                    {{--    <div class="card">
                             <div class="card-body">
                                 <div class="col-md-12">
                                     <h4 class="header-title">Details</h4>
@@ -134,6 +108,59 @@
                                 </div>                   
                             </div>
                         </div>
+                    --}}
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-md-12">
+                                <h4 class="header-title">Consultation Form</h4>
+                                <hr>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group mb-3">
+                                    <label>Form Heading</label>
+                                    <input type="text" class="form-control" name="f_title" value="{{ get_settings('f_title') }}">
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-12">
+                                <div class="form-group mb-3">
+                                    <label>Price For 20 Min</label>
+                                    <input type="text" class="form-control" name="p_20" value="{{ get_contactpage('p_20') }}" >
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group mb-3">
+                                    <label>Payment Link For 20 Min</label>
+                                    <input type="url" class="form-control" name="f_20_url" value="{{ get_settings('f_20_url') }}">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group mb-3">
+                                    <label>Price For 40 Min</label>
+                                    <input type="text" class="form-control" name="p_40" value="{{ get_contactpage('p_40') }}" >
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group mb-3">
+                                    <label>Payment Link For 40 Min</label>
+                                    <input type="url" class="form-control" name="f_40_url" value="{{ get_settings('f_40_url') }}">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group mb-3">
+                                    <label>Short Description For Form</label>
+                                    <textarea class="form-control" name="f_description" rows="4">{{ get_contactpage('f_description') }}</textarea>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>    
+
                         <div class="card">
                             <div class="card-body">
                                 <!--<div class="col-md-12">
