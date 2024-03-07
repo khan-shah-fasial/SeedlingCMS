@@ -17,6 +17,8 @@ $i = 1;
 
 @section('page.publish_time', "$detail->updated_at")
 
+@section('og.image',"$detail->main_image")
+
 @section('page.schema')
 <!--------------------------- Page Schema --------------------------------->
 

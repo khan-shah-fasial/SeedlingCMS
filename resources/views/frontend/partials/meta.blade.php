@@ -11,6 +11,8 @@ $page_type = !empty(trim($__env->yieldContent('page.type'))) ? $__env->yieldCont
 $publish_time = !empty(trim($__env->yieldContent('page.publish_time'))) ? $__env->yieldContent('page.publish_time') :
 '2023-09-18T13:41:39+00:00';
 
+$og_image = !empty($__env->yieldContent('og.image')) ? $__env->yieldContent('og.image') : 'assets/frontend/images/logo.png';
+
 $current_url = url()->current();
 $url = str_replace('www.', '', $current_url);
 
@@ -44,7 +46,7 @@ $base_url = str_replace('www.', '', $base_url);
 
 <!----------------- og tag ------------------->
 
-<meta property="og:image" content="{{ asset('assets/frontend/images/logo.png') }}">
+<meta property="og:image" content="{{ asset('storage/' . $og_image) }}">
 <meta property="og:image:width" content="500">
 <meta property="og:image:height" content="500">
 <meta property="og:image:type" content="image/png" />
@@ -56,7 +58,7 @@ $base_url = str_replace('www.', '', $base_url);
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ahlawat & Associates">
 <meta name="twitter:description" content="Ahlawat & Associates">
-<meta name="twitter:image" content="{{ asset('assets/frontend/images/logo.png') }}">
+<meta name="twitter:image" content="{{ asset('storage/' . $og_image) }}">
 <meta name="twitter:site" content="@ahlawatlaw" />
 <link rel="shortcut icon" href="{{ asset('/assets/frontend/images/favicon.png') }}">
 
